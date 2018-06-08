@@ -1,0 +1,29 @@
+Texture2D tex0 <string uiname="Depth 0";>;
+Texture2D tex1 <string uiname="Depth 1";>;
+Texture2D tex2 <string uiname="Depth 2";>;
+Texture2D tex3 <string uiname="Depth 3";>;
+
+
+
+
+SamplerState s0 <bool visible=false;string uiname="Sampler";> {Filter=MIN_MAG_MIP_POINT;AddressU=CLAMP;AddressV=CLAMP;};
+
+float4 FilterDepth(float4 PosWVP:SV_POSITION,float2 x:TEXCOORD0):SV_Target{
+
+	float4 c=tex0.SampleLevel(s0,x,0);
+	//some parts of depth image tend to flicker, we try to fill the gaps with previous frames
+	if (c.r == 0)  c=tex1.SampleLevel(s0,x,0);
+	if (c.r == 0)  c=tex2.SampleLevel(s0,x,0);
+	if (c.r == 0)  c=tex3.SampleLevel(s0,x,0);
+
+	return c;
+}
+
+technique10 SimpleFilterDepth{
+
+	pass P0
+	{SetPixelShader(CompileShader(ps_4_0,FilterDepth()));}
+}
+
+
+

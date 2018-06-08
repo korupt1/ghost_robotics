@@ -1,0 +1,203 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_45beta34.2_x64\packs\VVVV.OpenVR\girlpower\subpatches\Scene.v4p" systemname="Scene" filename="C:\vvvv\PROJECTS\2016\07_OpenVR\VVVV.OpenVR\girlpower\subpatches\Scene.v4p" scrollx="0" scrolly="0">
+   <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <BOUNDS type="Box" left="1485" top="12885" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1485" top="12885" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="825" top="1470" width="21015" height="12480">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1485" top="12075" width="14115" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 7" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="6300" top="9465" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Layer Out" dstnodeid="1" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Boxes" filename="Boxes.v4p" nodename="Boxes.v4p" componentmode="Hidden" id="115">
+   <BOUNDS type="Node" left="14809" top="10142" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9987" top="6342" width="9645" height="7600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13425" top="7020" width="9645" height="7590">
+   </BOUNDS>
+   <PIN pinname="Enablede Boxes" visible="1">
+   </PIN>
+   <PIN pinname="Light DirectionXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="115" srcpinname="Layer" dstnodeid="7" dstpinname="Layer 7">
+   </LINK>
+   <NODE systemname="InfoText" filename="InfoText.v4p" nodename="InfoText.v4p" componentmode="Hidden" id="116">
+   <BOUNDS type="Node" left="11267" top="10007" width="2715" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9025" top="6560" width="4485" height="6895">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17280" top="9270" width="8220" height="7710">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Scaling" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="MiniSolarSystem" filename="MiniSolarSystem.v4p" nodename="MiniSolarSystem.v4p" componentmode="Hidden" id="120">
+   <BOUNDS type="Node" left="9320" top="9990" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5683" top="5718" width="7275" height="8545">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11175" top="7455" width="7275" height="8535">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Light DirectionXYZ" slicecount="3" values="0.807420611381531,-0.587785243988037,0.0507985986769199">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="116" srcpinname="Layer" dstnodeid="7" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="120" srcpinname="Layer Out" dstnodeid="7" dstpinname="Layer 5">
+   </LINK>
+   <NODE id="22" systemname="Light (DX11 Direction)" filename="%VVVV%\packs\dx11\nodes\modules\Light (DX11 Direction).v4p" nodename="Light (DX11 Direction)" componentmode="Hidden">
+   <BOUNDS type="Node" left="13665" top="7860" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Light Direction Out" visible="1">
+   </PIN>
+   <PIN pinname="Yaw" slicecount="1" values="0.24">
+   </PIN>
+   <PIN pinname="Pitch" slicecount="1" values="-0.4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Light Direction Out" dstnodeid="120" dstpinname="Light DirectionXYZ">
+   </LINK>
+   <NODE systemname="Paint" filename="Paint.v4p" nodename="Paint.v4p" componentmode="Hidden" id="123">
+   <BOUNDS type="Node" left="2511" top="9898" width="5145" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="2946" width="13135" height="13905">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2130" top="3285" width="22875" height="13905">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Input - Input 1" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="123" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Light Direction Out" dstnodeid="123" dstpinname="Light DirectionXYZ">
+   </LINK>
+   <LINK srcnodeid="123" srcpinname="Layer Out" dstnodeid="7" dstpinname="Layer 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="124" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="15495" top="8895" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15495" top="8895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Enablede Boxes|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="124" srcpinname="Y Output Value" dstnodeid="115" dstpinname="Enablede Boxes">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="126" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="4815" top="2025" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4815" top="2025" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Controller">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Light Direction Out" dstnodeid="115" dstpinname="Light DirectionXYZ">
+   </LINK>
+   <NODE systemname="Controller (OpenVR Split)" filename="..\..\nodes\plugins\VVVV.OpenVR.dll" nodename="Controller (OpenVR Split)" componentmode="Hidden" id="125">
+   <BOUNDS type="Node" left="4815" top="2955" width="10155" height="270">
+   </BOUNDS>
+   <PIN pinname="Controller" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Device Role" visible="1">
+   </PIN>
+   <PIN pinname="Device Index" visible="1">
+   </PIN>
+   <PIN pinname="Trigger Touch" visible="1">
+   </PIN>
+   <PIN pinname="Trigger Axis" visible="1">
+   </PIN>
+   <PIN pinname="Touchpad Touch" visible="1">
+   </PIN>
+   <PIN pinname="Touchpad Press" visible="1">
+   </PIN>
+   <PIN pinname="Touchpad AxisXY" visible="1">
+   </PIN>
+   <PIN pinname="Pose" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="126" srcpinname="Output Node" dstnodeid="125" dstpinname="Controller">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Trigger Axis" dstnodeid="123" dstpinname="Pressure">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Touchpad Press" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Touchpad AxisXY" dstnodeid="116" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Touchpad Touch" dstnodeid="116" dstpinname="Scaling">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Trigger Touch" dstnodeid="123" dstpinname="Paint">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Pose" dstnodeid="123" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Pose" dstnodeid="120" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Pose" dstnodeid="116" dstpinname="Transform In">
+   </LINK>
+   </PATCH>

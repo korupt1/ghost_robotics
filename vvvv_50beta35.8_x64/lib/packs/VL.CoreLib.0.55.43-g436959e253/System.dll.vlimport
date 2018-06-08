@@ -1,0 +1,1494 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "CredentialCache",
+        "Category": "IO.Net",
+        "Help": "Provides storage for multiple credentials.",
+        "ImportedHelp": "<member name=\"T:System.Net.CredentialCache\">\r\n  <summary>Provides storage for multiple credentials.</summary>\r\n</member>",
+        "Hidden": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "DefaultCredentials",
+            "Help": "Gets the system credentials of the application.",
+            "ImportedHelp": "<member name=\"P:System.Net.CredentialCache.DefaultCredentials\">\r\n  <summary>Gets the system credentials of the application.</summary>\r\n  <returns>An <see cref=\"T:System.Net.ICredentials\" /> that represents the system credentials of the application.</returns>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Read=\"USERNAME\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "DefaultCredentials"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DefaultNetworkCredentials",
+            "Help": "Gets the network credentials of the current security context.",
+            "ImportedHelp": "<member name=\"P:System.Net.CredentialCache.DefaultNetworkCredentials\">\r\n  <summary>Gets the network credentials of the current security context.</summary>\r\n  <returns>An <see cref=\"T:System.Net.NetworkCredential\" /> that represents the network credentials of the current user or application.</returns>\r\n</member>"
+          },
+          "DotNetName": "DefaultNetworkCredentials"
+        }
+      ],
+      "DotNetName": "System.Net.CredentialCache"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "DuplicateAddressDetectionState",
+        "Category": "IO.Net",
+        "Help": "Specifies the current state of an IP address.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.DuplicateAddressDetectionState\">\r\n  <summary>Specifies the current state of an IP address.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.DuplicateAddressDetectionState"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "FileWebRequest",
+        "Category": "IO.WebRequest",
+        "Help": "Provides a file system implementation of the WebRequest class.",
+        "ImportedHelp": "<member name=\"T:System.Net.FileWebRequest\">\r\n  <summary>Provides a file system implementation of the <see cref=\"T:System.Net.WebRequest\" /> class.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.FileWebRequest"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "FileWebResponse",
+        "Category": "IO.WebRequest",
+        "Help": "Provides a file system implementation of the WebResponse class.",
+        "ImportedHelp": "<member name=\"T:System.Net.FileWebResponse\">\r\n  <summary>Provides a file system implementation of the <see cref=\"T:System.Net.WebResponse\" /> class.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.FileWebResponse"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "FtpWebRequest",
+        "Category": "IO.WebRequest",
+        "Help": "Implements a File Transfer Protocol (FTP) client.",
+        "ImportedHelp": "<member name=\"T:System.Net.FtpWebRequest\">\r\n  <summary>Implements a File Transfer Protocol (FTP) client.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.FtpWebRequest"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "FtpWebResponse",
+        "Category": "IO.WebRequest",
+        "Help": "Encapsulates a File Transfer Protocol (FTP) server's response to a request.",
+        "ImportedHelp": "<member name=\"T:System.Net.FtpWebResponse\">\r\n  <summary>Encapsulates a File Transfer Protocol (FTP) server's response to a request.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.FtpWebResponse"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "HttpWebRequest",
+        "Category": "IO.WebRequest",
+        "Help": "Provides an HTTP-specific implementation of the WebRequest class.",
+        "ImportedHelp": "<member name=\"T:System.Net.HttpWebRequest\">\r\n  <summary>Provides an HTTP-specific implementation of the <see cref=\"T:System.Net.WebRequest\" /> class.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Accept",
+            "ShowCategory": true,
+            "Help": "Gets or sets the value of the Accept HTTP header.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.Accept\">\r\n  <summary>Gets or sets the value of the Accept HTTP header.</summary>\r\n  <returns>The value of the Accept HTTP header. The default value is null.</returns>\r\n</member>"
+          },
+          "DotNetName": "Accept"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Connection",
+            "ShowCategory": true,
+            "Help": "Gets or sets the value of the Connection HTTP header.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.Connection\">\r\n  <summary>Gets or sets the value of the Connection HTTP header.</summary>\r\n  <returns>The value of the Connection HTTP header. The default value is null.</returns>\r\n  <exception cref=\"T:System.ArgumentException\">The value of <see cref=\"P:System.Net.HttpWebRequest.Connection\" /> is set to Keep-alive or Close. </exception>\r\n</member>"
+          },
+          "DotNetName": "Connection"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ContinueTimeout",
+            "ShowCategory": true,
+            "Help": "Gets or sets a timeout, in milliseconds, to wait until the 100-Continue is received from the server.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.ContinueTimeout\">\r\n  <summary>Gets or sets a timeout, in milliseconds, to wait until the 100-Continue is received from the server. </summary>\r\n  <returns>The timeout, in milliseconds, to wait until the 100-Continue is received. </returns>\r\n</member>"
+          },
+          "DotNetName": "ContinueTimeout"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Date",
+            "ShowCategory": true,
+            "Help": "Get or set the Date HTTP header value to use in an HTTP request.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.Date\">\r\n  <summary>Get or set the Date HTTP header value to use in an HTTP request.</summary>\r\n  <returns>The Date header value in the HTTP request.</returns>\r\n</member>"
+          },
+          "DotNetName": "Date"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Host",
+            "ShowCategory": true,
+            "Help": "Get or set the Host header value to use in an HTTP request independent from the request URI.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.Host\">\r\n  <summary>Get or set the Host header value to use in an HTTP request independent from the request URI.</summary>\r\n  <returns>The Host header value in the HTTP request.</returns>\r\n  <exception cref=\"T:System.ArgumentNullException\">The Host header cannot be set to null. </exception>\r\n  <exception cref=\"T:System.ArgumentException\">The Host header cannot be set to an invalid value. </exception>\r\n  <exception cref=\"T:System.InvalidOperationException\">The Host header cannot be set after the <see cref=\"T:System.Net.HttpWebRequest\" /> has already started to be sent. </exception>\r\n</member>"
+          },
+          "DotNetName": "Host"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "KeepAlive",
+            "ShowCategory": true,
+            "Help": "Gets or sets a value that indicates whether to make a persistent connection to the Internet resource.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.KeepAlive\">\r\n  <summary>Gets or sets a value that indicates whether to make a persistent connection to the Internet resource.</summary>\r\n  <returns>true if the request to the Internet resource should contain a Connection HTTP header with the value Keep-alive; otherwise, false. The default is true.</returns>\r\n</member>"
+          },
+          "DotNetName": "KeepAlive"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MediaType",
+            "ShowCategory": true,
+            "Help": "Gets or sets the media type of the request.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.MediaType\">\r\n  <summary>Gets or sets the media type of the request.</summary>\r\n  <returns>The media type of the request. The default value is null.</returns>\r\n</member>"
+          },
+          "DotNetName": "MediaType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ProtocolVersion",
+            "ShowCategory": true,
+            "Help": "Gets or sets the version of HTTP to use for the request.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.ProtocolVersion\">\r\n  <summary>Gets or sets the version of HTTP to use for the request.</summary>\r\n  <returns>The HTTP version to use for the request. The default is <see cref=\"F:System.Net.HttpVersion.Version11\" />.</returns>\r\n  <exception cref=\"T:System.ArgumentException\">The HTTP version is set to a value other than 1.0 or 1.1. </exception>\r\n</member>"
+          },
+          "DotNetName": "ProtocolVersion"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ReadWriteTimeout",
+            "ShowCategory": true,
+            "Help": "Gets or sets a time-out in milliseconds when writing to or reading from a stream.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.ReadWriteTimeout\">\r\n  <summary>Gets or sets a time-out in milliseconds when writing to or reading from a stream.</summary>\r\n  <returns>The number of milliseconds before the writing or reading times out. The default value is 300,000 milliseconds (5 minutes).</returns>\r\n  <exception cref=\"T:System.InvalidOperationException\">The request has already been sent. </exception>\r\n  <exception cref=\"T:System.ArgumentOutOfRangeException\">The value specified for a set operation is less than or equal to zero and is not equal to <see cref=\"F:System.Threading.Timeout.Infinite\" /></exception>\r\n</member>"
+          },
+          "DotNetName": "ReadWriteTimeout"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Referer",
+            "ShowCategory": true,
+            "Help": "Gets or sets the value of the Referer HTTP header.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.Referer\">\r\n  <summary>Gets or sets the value of the Referer HTTP header.</summary>\r\n  <returns>The value of the Referer HTTP header. The default value is null.</returns>\r\n</member>"
+          },
+          "DotNetName": "Referer"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SendChunked",
+            "ShowCategory": true,
+            "Help": "Gets or sets a value that indicates whether to send data in segments to the Internet resource.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.SendChunked\">\r\n  <summary>Gets or sets a value that indicates whether to send data in segments to the Internet resource.</summary>\r\n  <returns>true to send data to the Internet resource in segments; otherwise, false. The default value is false.</returns>\r\n  <exception cref=\"T:System.InvalidOperationException\">The request has been started by calling the <see cref=\"M:System.Net.HttpWebRequest.GetRequestStream\" />, <see cref=\"M:System.Net.HttpWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)\" />, <see cref=\"M:System.Net.HttpWebRequest.GetResponse\" />, or <see cref=\"M:System.Net.HttpWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)\" /> method. </exception>\r\n</member>"
+          },
+          "DotNetName": "SendChunked"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TransferEncoding",
+            "ShowCategory": true,
+            "Help": "Gets or sets the value of the Transfer-encoding HTTP header.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.TransferEncoding\">\r\n  <summary>Gets or sets the value of the Transfer-encoding HTTP header.</summary>\r\n  <returns>The value of the Transfer-encoding HTTP header. The default value is null.</returns>\r\n  <exception cref=\"T:System.InvalidOperationException\">\r\n    <see cref=\"P:System.Net.HttpWebRequest.TransferEncoding\" /> is set when <see cref=\"P:System.Net.HttpWebRequest.SendChunked\" /> is false. </exception>\r\n  <exception cref=\"T:System.ArgumentException\">\r\n    <see cref=\"P:System.Net.HttpWebRequest.TransferEncoding\" /> is set to the value \"Chunked\". </exception>\r\n</member>"
+          },
+          "DotNetName": "TransferEncoding"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "UnsafeAuthenticatedConnectionSharing",
+            "ShowCategory": true,
+            "Help": "Gets or sets a value that indicates whether to allow high-speed NTLM-authenticated connection sharing.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.UnsafeAuthenticatedConnectionSharing\">\r\n  <summary>Gets or sets a value that indicates whether to allow high-speed NTLM-authenticated connection sharing.</summary>\r\n  <returns>true to keep the authenticated connection open; otherwise, false.</returns>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Net.WebPermission, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "UnsafeAuthenticatedConnectionSharing"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "UserAgent",
+            "ShowCategory": true,
+            "Help": "Gets or sets the value of the User-agent HTTP header.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebRequest.UserAgent\">\r\n  <summary>Gets or sets the value of the User-agent HTTP header.</summary>\r\n  <returns>The value of the User-agent HTTP header. The default value is null.NoteThe value for this property is stored in <see cref=\"T:System.Net.WebHeaderCollection\" />. If WebHeaderCollection is set, the property value is lost.</returns>\r\n</member>"
+          },
+          "DotNetName": "UserAgent"
+        }
+      ],
+      "DotNetName": "System.Net.HttpWebRequest"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "HttpWebResponse",
+        "Category": "IO.WebRequest",
+        "Help": "Provides an HTTP-specific implementation of the WebResponse class.",
+        "ImportedHelp": "<member name=\"T:System.Net.HttpWebResponse\">\r\n  <summary>Provides an HTTP-specific implementation of the <see cref=\"T:System.Net.WebResponse\" /> class.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "CharacterSet",
+            "ShowCategory": true,
+            "Help": "Gets the character set of the response.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebResponse.CharacterSet\">\r\n  <summary>Gets the character set of the response.</summary>\r\n  <returns>A string that contains the character set of the response.</returns>\r\n  <exception cref=\"T:System.ObjectDisposedException\">The current instance has been disposed. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "CharacterSet"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ContentEncoding",
+            "ShowCategory": true,
+            "Help": "Gets the method that is used to encode the body of the response.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebResponse.ContentEncoding\">\r\n  <summary>Gets the method that is used to encode the body of the response.</summary>\r\n  <returns>A string that describes the method that is used to encode the body of the response.</returns>\r\n  <exception cref=\"T:System.ObjectDisposedException\">The current instance has been disposed. </exception>\r\n</member>"
+          },
+          "DotNetName": "ContentEncoding"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "LastModified",
+            "ShowCategory": true,
+            "Help": "Gets the last date and time that the contents of the response were modified.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebResponse.LastModified\">\r\n  <summary>Gets the last date and time that the contents of the response were modified.</summary>\r\n  <returns>A <see cref=\"T:System.DateTime\" /> that contains the date and time that the contents of the response were modified.</returns>\r\n  <exception cref=\"T:System.ObjectDisposedException\">The current instance has been disposed. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "LastModified"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Method",
+            "ShowCategory": true,
+            "Help": "Gets the method that is used to return the response.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebResponse.Method\">\r\n  <summary>Gets the method that is used to return the response.</summary>\r\n  <returns>A string that contains the HTTP method that is used to return the response.</returns>\r\n  <exception cref=\"T:System.ObjectDisposedException\">The current instance has been disposed. </exception>\r\n</member>"
+          },
+          "DotNetName": "Method"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ProtocolVersion",
+            "ShowCategory": true,
+            "Help": "Gets the version of the HTTP protocol that is used in the response.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebResponse.ProtocolVersion\">\r\n  <summary>Gets the version of the HTTP protocol that is used in the response.</summary>\r\n  <returns>A <see cref=\"T:System.Version\" /> that contains the HTTP protocol version of the response.</returns>\r\n  <exception cref=\"T:System.ObjectDisposedException\">The current instance has been disposed. </exception>\r\n</member>"
+          },
+          "DotNetName": "ProtocolVersion"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Server",
+            "ShowCategory": true,
+            "Help": "Gets the name of the server that sent the response.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebResponse.Server\">\r\n  <summary>Gets the name of the server that sent the response.</summary>\r\n  <returns>A string that contains the name of the server that sent the response.</returns>\r\n  <exception cref=\"T:System.ObjectDisposedException\">The current instance has been disposed. </exception>\r\n</member>"
+          },
+          "DotNetName": "Server"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "StatusCode",
+            "ShowCategory": true,
+            "Help": "Gets the status of the response.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebResponse.StatusCode\">\r\n  <summary>Gets the status of the response.</summary>\r\n  <returns>One of the <see cref=\"T:System.Net.HttpStatusCode\" /> values.</returns>\r\n  <exception cref=\"T:System.ObjectDisposedException\">The current instance has been disposed. </exception>\r\n</member>"
+          },
+          "DotNetName": "StatusCode"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "StatusDescription",
+            "ShowCategory": true,
+            "Help": "Gets the status description returned with the response.",
+            "ImportedHelp": "<member name=\"P:System.Net.HttpWebResponse.StatusDescription\">\r\n  <summary>Gets the status description returned with the response.</summary>\r\n  <returns>A string that describes the status of the response.</returns>\r\n  <exception cref=\"T:System.ObjectDisposedException\">The current instance has been disposed. </exception>\r\n</member>"
+          },
+          "DotNetName": "StatusDescription"
+        }
+      ],
+      "DotNetName": "System.Net.HttpWebResponse"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ICredentials",
+        "Category": "IO.Net",
+        "Help": "Provides the base authentication interface for retrieving credentials for Web client authentication.",
+        "ImportedHelp": "<member name=\"T:System.Net.ICredentials\">\r\n  <summary>Provides the base authentication interface for retrieving credentials for Web client authentication.</summary>\r\n</member>",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.ICredentials"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IPAddress",
+        "Category": "IO.Net",
+        "Help": "Provides an Internet Protocol (IP) address.",
+        "ImportedHelp": "<member name=\"T:System.Net.IPAddress\">\r\n  <summary>Provides an Internet Protocol (IP) address.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Any",
+            "Help": "Provides an IP address that indicates that the server must listen for client activity on all network interfaces. This field is read-only.",
+            "ImportedHelp": "<member name=\"F:System.Net.IPAddress.Any\">\r\n  <summary>Provides an IP address that indicates that the server must listen for client activity on all network interfaces. This field is read-only.</summary>\r\n</member>"
+          },
+          "DotNetName": "Any"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Broadcast",
+            "Help": "Provides the IP broadcast address. This field is read-only.",
+            "ImportedHelp": "<member name=\"F:System.Net.IPAddress.Broadcast\">\r\n  <summary>Provides the IP broadcast address. This field is read-only.</summary>\r\n</member>"
+          },
+          "DotNetName": "Broadcast"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv6Any",
+            "Help": "The M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint) method uses the IPv6Any field to indicate that a Socket must listen for client activity on all network interfaces.",
+            "ImportedHelp": "<member name=\"F:System.Net.IPAddress.IPv6Any\">\r\n  <summary>The <see cref=\"M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)\" /> method uses the <see cref=\"F:System.Net.IPAddress.IPv6Any\" /> field to indicate that a <see cref=\"T:System.Net.Sockets.Socket\" /> must listen for client activity on all network interfaces.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPv6Any"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv6Loopback",
+            "Help": "Provides the IP loopback address. This property is read-only.",
+            "ImportedHelp": "<member name=\"F:System.Net.IPAddress.IPv6Loopback\">\r\n  <summary>Provides the IP loopback address. This property is read-only.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPv6Loopback"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv6None",
+            "Help": "Provides an IP address that indicates that no network interface should be used. This property is read-only.",
+            "ImportedHelp": "<member name=\"F:System.Net.IPAddress.IPv6None\">\r\n  <summary>Provides an IP address that indicates that no network interface should be used. This property is read-only.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPv6None"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsIPv4MappedToIPv6",
+            "ShowCategory": true,
+            "Help": "Gets whether the IP address is an IPv4-mapped IPv6 address.",
+            "ImportedHelp": "<member name=\"P:System.Net.IPAddress.IsIPv4MappedToIPv6\">\r\n  <summary>Gets whether the IP address is an IPv4-mapped IPv6 address.</summary>\r\n  <returns>Returns <see cref=\"T:System.Boolean\" />.true if the IP address is an IPv4-mapped IPv6 address; otherwise, false.</returns>\r\n</member>"
+          },
+          "DotNetName": "IsIPv4MappedToIPv6"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsIPv6LinkLocal",
+            "ShowCategory": true,
+            "Help": "Gets whether the address is an IPv6 link local address.",
+            "ImportedHelp": "<member name=\"P:System.Net.IPAddress.IsIPv6LinkLocal\">\r\n  <summary>Gets whether the address is an IPv6 link local address.</summary>\r\n  <returns>true if the IP address is an IPv6 link local address; otherwise, false.</returns>\r\n</member>"
+          },
+          "DotNetName": "IsIPv6LinkLocal"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsIPv6Multicast",
+            "ShowCategory": true,
+            "Help": "Gets whether the address is an IPv6 multicast global address.",
+            "ImportedHelp": "<member name=\"P:System.Net.IPAddress.IsIPv6Multicast\">\r\n  <summary>Gets whether the address is an IPv6 multicast global address.</summary>\r\n  <returns>true if the IP address is an IPv6 multicast global address; otherwise, false.</returns>\r\n</member>"
+          },
+          "DotNetName": "IsIPv6Multicast"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsIPv6SiteLocal",
+            "ShowCategory": true,
+            "Help": "Gets whether the address is an IPv6 site local address.",
+            "ImportedHelp": "<member name=\"P:System.Net.IPAddress.IsIPv6SiteLocal\">\r\n  <summary>Gets whether the address is an IPv6 site local address.</summary>\r\n  <returns>true if the IP address is an IPv6 site local address; otherwise, false.</returns>\r\n</member>"
+          },
+          "DotNetName": "IsIPv6SiteLocal"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsIPv6Teredo",
+            "ShowCategory": true,
+            "Help": "Gets whether the address is an IPv6 Teredo address.",
+            "ImportedHelp": "<member name=\"P:System.Net.IPAddress.IsIPv6Teredo\">\r\n  <summary>Gets whether the address is an IPv6 Teredo address.</summary>\r\n  <returns>true if the IP address is an IPv6 Teredo address; otherwise, false.</returns>\r\n</member>"
+          },
+          "DotNetName": "IsIPv6Teredo"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsLoopback",
+            "Help": "Indicates whether the specified IP address is the loopback address.",
+            "ImportedHelp": "<member name=\"M:System.Net.IPAddress.IsLoopback(System.Net.IPAddress)\">\r\n  <summary>Indicates whether the specified IP address is the loopback address.</summary>\r\n  <returns>true if <paramref name=\"address\" /> is the loopback address; otherwise, false.</returns>\r\n  <param name=\"address\">An IP address. </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Net.IPAddress",
+              "PinAttribute": {
+                "Help": "An IP address.",
+                "ImportedHelp": "<param name=\"address\">An IP address. </param>"
+              },
+              "DotNetName": "address"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinAttribute": {
+              "Help": "true if Address is the loopback address; otherwise, false.",
+              "ImportedHelp": "<returns>true if <paramref name=\"address\" /> is the loopback address; otherwise, false.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsLoopback"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Loopback",
+            "Help": "Provides the IP loopback address. This field is read-only.",
+            "ImportedHelp": "<member name=\"F:System.Net.IPAddress.Loopback\">\r\n  <summary>Provides the IP loopback address. This field is read-only.</summary>\r\n</member>"
+          },
+          "DotNetName": "Loopback"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "None",
+            "Help": "Provides an IP address that indicates that no network interface should be used. This field is read-only.",
+            "ImportedHelp": "<member name=\"F:System.Net.IPAddress.None\">\r\n  <summary>Provides an IP address that indicates that no network interface should be used. This field is read-only.</summary>\r\n</member>"
+          },
+          "DotNetName": "None"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToIPAddress",
+            "Help": "Converts an IP address string to an IPAddress instance.",
+            "ImportedHelp": "<member name=\"M:System.Net.IPAddress.Parse(System.String)\">\r\n  <summary>Converts an IP address string to an <see cref=\"T:System.Net.IPAddress\" /> instance.</summary>\r\n  <returns>An <see cref=\"T:System.Net.IPAddress\" /> instance.</returns>\r\n  <param name=\"ipString\">A string that contains an IP address in dotted-quad notation for IPv4 and in colon-hexadecimal notation for IPv6. </param>\r\n  <exception cref=\"T:System.ArgumentNullException\">\r\n    <paramref name=\"ipString\" /> is null. </exception>\r\n  <exception cref=\"T:System.FormatException\">\r\n    <paramref name=\"ipString\" /> is not a valid IP address. </exception>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "A string that contains an IP address in dotted-quad notation for IPv4 and in colon-hexadecimal notation for IPv6.",
+                "ImportedHelp": "<param name=\"ipString\">A string that contains an IP address in dotted-quad notation for IPv4 and in colon-hexadecimal notation for IPv6. </param>"
+              },
+              "DotNetName": "ipString"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Net.IPAddress",
+            "PinAttribute": {
+              "Help": "An IPAddress instance.",
+              "ImportedHelp": "<returns>An <see cref=\"T:System.Net.IPAddress\" /> instance.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Parse"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString",
+            "Help": "Converts an Internet address to its standard notation.",
+            "ImportedHelp": "<member name=\"M:System.Net.IPAddress.ToString\">\r\n  <summary>Converts an Internet address to its standard notation.</summary>\r\n  <returns>A string that contains the IP address in either IPv4 dotted-quad or in IPv6 colon-hexadecimal notation.</returns>\r\n  <exception cref=\"T:System.Net.Sockets.SocketException\">The address family is <see cref=\"F:System.Net.Sockets.AddressFamily.InterNetworkV6\" /> and the address is bad. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinAttribute": {
+              "Help": "A string that contains the IP address in either IPv4 dotted-quad or in IPv6 colon-hexadecimal notation.",
+              "ImportedHelp": "<returns>A string that contains the IP address in either IPv4 dotted-quad or in IPv6 colon-hexadecimal notation.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        }
+      ],
+      "DotNetName": "System.Net.IPAddress"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IPAddressInformation",
+        "Category": "IO.Net",
+        "Help": "Provides information about a network interface address.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.IPAddressInformation\">\r\n  <summary>Provides information about a network interface address.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.IPAddressInformation"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IPEndPoint",
+        "Category": "IO.Net",
+        "Help": "Represents a network endpoint as an IP address and a port number.",
+        "ImportedHelp": "<member name=\"T:System.Net.IPEndPoint\">\r\n  <summary>Represents a network endpoint as an IP address and a port number.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Address",
+            "ShowCategory": true,
+            "Help": "Gets or sets the IP address of the endpoint.",
+            "ImportedHelp": "<member name=\"P:System.Net.IPEndPoint.Address\">\r\n  <summary>Gets or sets the IP address of the endpoint.</summary>\r\n  <returns>An <see cref=\"T:System.Net.IPAddress\" /> instance containing the IP address of the endpoint.</returns>\r\n</member>"
+          },
+          "DotNetName": "Address"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals",
+            "Help": "Determines whether the specified T:System.Object is equal to the current IPEndPoint instance.",
+            "ImportedHelp": "<member name=\"M:System.Net.IPEndPoint.Equals(System.Object)\">\r\n  <summary>Determines whether the specified <see cref=\"T:System.Object\" /> is equal to the current <see cref=\"T:System.Net.IPEndPoint\" /> instance.</summary>\r\n  <returns>true if the specified object  is equal to the current object; otherwise, false.</returns>\r\n  <param name=\"comparand\">The specified <see cref=\"T:System.Object\" /> to compare with the current <see cref=\"T:System.Net.IPEndPoint\" /> instance.</param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Object",
+              "PinAttribute": {
+                "Name": "Input 2",
+                "Help": "The specified T:System.Object to compare with the current IPEndPoint instance.",
+                "ImportedHelp": "<param name=\"comparand\">The specified <see cref=\"T:System.Object\" /> to compare with the current <see cref=\"T:System.Net.IPEndPoint\" /> instance.</param>"
+              },
+              "DotNetName": "comparand"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinAttribute": {
+              "Help": "true if the specified object  is equal to the current object; otherwise, false.",
+              "ImportedHelp": "<returns>true if the specified object  is equal to the current object; otherwise, false.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Join",
+            "Version": "IPAddress Int32",
+            "Help": "Initializes a new instance of the IPEndPoint class with the specified address and port number.",
+            "ImportedHelp": "<member name=\"M:System.Net.IPEndPoint.#ctor(System.Net.IPAddress,System.Int32)\">\r\n  <summary>Initializes a new instance of the <see cref=\"T:System.Net.IPEndPoint\" /> class with the specified address and port number.</summary>\r\n  <param name=\"address\">An <see cref=\"T:System.Net.IPAddress\" />. </param>\r\n  <param name=\"port\">The port number associated with the <paramref name=\"address\" />, or 0 to specify any available port. <paramref name=\"port\" /> is in host order.</param>\r\n  <exception cref=\"T:System.ArgumentNullException\">\r\n    <paramref name=\"address\" /> is null.</exception>\r\n  <exception cref=\"T:System.ArgumentOutOfRangeException\">\r\n    <paramref name=\"port\" /> is less than <see cref=\"F:System.Net.IPEndPoint.MinPort\" />.-or- <paramref name=\"port\" /> is greater than <see cref=\"F:System.Net.IPEndPoint.MaxPort\" />.-or- <paramref name=\"address\" /> is less than 0 or greater than 0x00000000FFFFFFFF. </exception>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Net.IPAddress",
+              "PinAttribute": {
+                "Help": "An IPAddress.",
+                "ImportedHelp": "<param name=\"address\">An <see cref=\"T:System.Net.IPAddress\" />. </param>"
+              },
+              "DotNetName": "address"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The port number associated with the Address, or 0 to specify any available port. Port is in host order.",
+                "ImportedHelp": "<param name=\"port\">The port number associated with the <paramref name=\"address\" />, or 0 to specify any available port. <paramref name=\"port\" /> is in host order.</param>"
+              },
+              "DotNetName": "port"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MaxPort",
+            "Help": "Specifies the maximum value that can be assigned to the Port property. The MaxPort value is set to 0x0000FFFF. This field is read-only.",
+            "ImportedHelp": "<member name=\"F:System.Net.IPEndPoint.MaxPort\">\r\n  <summary>Specifies the maximum value that can be assigned to the <see cref=\"P:System.Net.IPEndPoint.Port\" /> property. The MaxPort value is set to 0x0000FFFF. This field is read-only.</summary>\r\n</member>"
+          },
+          "DotNetName": "MaxPort"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MinPort",
+            "Help": "Specifies the minimum value that can be assigned to the Port property. This field is read-only.",
+            "ImportedHelp": "<member name=\"F:System.Net.IPEndPoint.MinPort\">\r\n  <summary>Specifies the minimum value that can be assigned to the <see cref=\"P:System.Net.IPEndPoint.Port\" /> property. This field is read-only.</summary>\r\n</member>"
+          },
+          "DotNetName": "MinPort"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Port",
+            "ShowCategory": true,
+            "Help": "Gets or sets the port number of the endpoint.",
+            "ImportedHelp": "<member name=\"P:System.Net.IPEndPoint.Port\">\r\n  <summary>Gets or sets the port number of the endpoint.</summary>\r\n  <returns>An integer value in the range <see cref=\"F:System.Net.IPEndPoint.MinPort\" /> to <see cref=\"F:System.Net.IPEndPoint.MaxPort\" /> indicating the port number of the endpoint.</returns>\r\n  <exception cref=\"T:System.ArgumentOutOfRangeException\">The value that was specified for a set operation is less than <see cref=\"F:System.Net.IPEndPoint.MinPort\" /> or greater than <see cref=\"F:System.Net.IPEndPoint.MaxPort\" />. </exception>\r\n</member>"
+          },
+          "DotNetName": "Port"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString",
+            "Help": "Returns the IP address and port number of the specified endpoint.",
+            "ImportedHelp": "<member name=\"M:System.Net.IPEndPoint.ToString\">\r\n  <summary>Returns the IP address and port number of the specified endpoint.</summary>\r\n  <returns>A string containing the IP address and the port number of the specified endpoint (for example, 192.168.1.2:80).</returns>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinAttribute": {
+              "Help": "A string containing the IP address and the port number of the specified endpoint (for example, 192.168.1.2:80).",
+              "ImportedHelp": "<returns>A string containing the IP address and the port number of the specified endpoint (for example, 192.168.1.2:80).</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        }
+      ],
+      "DotNetName": "System.Net.IPEndPoint"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IPInterfaceProperties",
+        "Category": "IO.Net",
+        "Help": "Provides information about network interfaces that support Internet Protocol version 4 (IPv4) or Internet Protocol version 6 (IPv6).",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.IPInterfaceProperties\">\r\n  <summary>Provides information about network interfaces that support Internet Protocol version 4 (IPv4) or Internet Protocol version 6 (IPv6).</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "GetIPv4Properties",
+            "Help": "Provides Internet Protocol version 4 (IPv4) configuration data for this network interface.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties\">\r\n  <summary>Provides Internet Protocol version 4 (IPv4) configuration data for this network interface.</summary>\r\n  <returns>An <see cref=\"T:System.Net.NetworkInformation.IPv4InterfaceProperties\" /> object that contains IPv4 configuration data, or null if no data is available for the interface.</returns>\r\n  <exception cref=\"T:System.Net.NetworkInformation.NetworkInformationException\">The interface does not support the IPv4 protocol.</exception>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Net.NetworkInformation.IPv4InterfaceProperties",
+            "PinAttribute": {
+              "Help": "An IPv4InterfaceProperties object that contains IPv4 configuration data, or null if no data is available for the interface.",
+              "ImportedHelp": "<returns>An <see cref=\"T:System.Net.NetworkInformation.IPv4InterfaceProperties\" /> object that contains IPv4 configuration data, or null if no data is available for the interface.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetIPv4Properties"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetIPv6Properties",
+            "Help": "Provides Internet Protocol version 6 (IPv6) configuration data for this network interface.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv6Properties\">\r\n  <summary>Provides Internet Protocol version 6 (IPv6) configuration data for this network interface.</summary>\r\n  <returns>An <see cref=\"T:System.Net.NetworkInformation.IPv6InterfaceProperties\" /> object that contains IPv6 configuration data.</returns>\r\n  <exception cref=\"T:System.Net.NetworkInformation.NetworkInformationException\">The interface does not support the IPv6 protocol.</exception>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Net.NetworkInformation.IPv6InterfaceProperties",
+            "PinAttribute": {
+              "Help": "An IPv6InterfaceProperties object that contains IPv6 configuration data.",
+              "ImportedHelp": "<returns>An <see cref=\"T:System.Net.NetworkInformation.IPv6InterfaceProperties\" /> object that contains IPv6 configuration data.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetIPv6Properties"
+        }
+      ],
+      "DotNetName": "System.Net.NetworkInformation.IPInterfaceProperties"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IPInterfaceStatistics",
+        "Category": "IO.Net",
+        "Help": "Provides Internet Protocol (IP) statistical data for an network interface on the local computer.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.IPInterfaceStatistics\">\r\n  <summary>Provides Internet Protocol (IP) statistical data for an network interface on the local computer.</summary>\r\n</member>"
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.IPInterfaceStatistics"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IPv4InterfaceProperties",
+        "Category": "IO.Net",
+        "Help": "Provides information about network interfaces that support Internet Protocol version 4 (IPv4).",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.IPv4InterfaceProperties\">\r\n  <summary>Provides information about network interfaces that support Internet Protocol version 4 (IPv4).</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.IPv4InterfaceProperties"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IPv4InterfaceStatistics",
+        "Category": "IO.Net",
+        "Help": "Provides statistical data for a network interface on the local computer.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.IPv4InterfaceStatistics\">\r\n  <summary>Provides statistical data for a network interface on the local computer.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.IPv4InterfaceStatistics"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "IPv6InterfaceProperties",
+        "Category": "IO.Net",
+        "Help": "Provides information about network interfaces that support Internet Protocol version 6 (IPv6).",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.IPv6InterfaceProperties\">\r\n  <summary>Provides information about network interfaces that support Internet Protocol version 6 (IPv6).</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.IPv6InterfaceProperties"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MulticastIPAddressInformation",
+        "Category": "IO.Net",
+        "Help": "Provides information about a network interface's multicast address.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.MulticastIPAddressInformation\">\r\n  <summary>Provides information about a network interface's multicast address.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.MulticastIPAddressInformation"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "NetworkCredential",
+        "Category": "IO.Net",
+        "Help": "Provides credentials for password-based authentication schemes such as basic, digest, NTLM, and Kerberos authentication.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkCredential\">\r\n  <summary>Provides credentials for password-based authentication schemes such as basic, digest, NTLM, and Kerberos authentication.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "String String",
+            "Help": "Initializes a new instance of the NetworkCredential class with the specified user name and password.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkCredential.#ctor(System.String,System.String)\">\r\n  <summary>Initializes a new instance of the <see cref=\"T:System.Net.NetworkCredential\" /> class with the specified user name and password.</summary>\r\n  <param name=\"userName\">The user name associated with the credentials. </param>\r\n  <param name=\"password\">The password for the user name associated with the credentials. </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The user name associated with the credentials.",
+                "ImportedHelp": "<param name=\"userName\">The user name associated with the credentials. </param>"
+              },
+              "DotNetName": "userName"
+            },
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The password for the user name associated with the credentials.",
+                "ImportedHelp": "<param name=\"password\">The password for the user name associated with the credentials. </param>"
+              },
+              "DotNetName": "password"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "String String String",
+            "Help": "Initializes a new instance of the NetworkCredential class with the specified user name, password, and domain.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkCredential.#ctor(System.String,System.String,System.String)\">\r\n  <summary>Initializes a new instance of the <see cref=\"T:System.Net.NetworkCredential\" /> class with the specified user name, password, and domain.</summary>\r\n  <param name=\"userName\">The user name associated with the credentials. </param>\r\n  <param name=\"password\">The password for the user name associated with the credentials. </param>\r\n  <param name=\"domain\">The domain associated with these credentials. </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The user name associated with the credentials.",
+                "ImportedHelp": "<param name=\"userName\">The user name associated with the credentials. </param>"
+              },
+              "DotNetName": "userName"
+            },
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The password for the user name associated with the credentials.",
+                "ImportedHelp": "<param name=\"password\">The password for the user name associated with the credentials. </param>"
+              },
+              "DotNetName": "password"
+            },
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The domain associated with these credentials.",
+                "ImportedHelp": "<param name=\"domain\">The domain associated with these credentials. </param>"
+              },
+              "DotNetName": "domain"
+            }
+          ],
+          "DotNetName": ".ctor"
+        }
+      ],
+      "DotNetName": "System.Net.NetworkCredential"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "NetworkInterface",
+        "Category": "IO.Net",
+        "Help": "Provides configuration and statistical information for a network interface.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.NetworkInterface\">\r\n  <summary>Provides configuration and statistical information for a network interface.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "GetAllNetworkInterfaces",
+            "Help": "Returns objects that describe the network interfaces on the local computer.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfaces\">\r\n  <summary>Returns objects that describe the network interfaces on the local computer.</summary>\r\n  <returns>A <see cref=\"T:System.Net.NetworkInformation.NetworkInterface\" /> array that contains objects that describe the available network interfaces, or an empty array if no interfaces are detected.</returns>\r\n  <exception cref=\"T:System.Net.NetworkInformation.NetworkInformationException\">A Windows system function call failed. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n    <IPermission class=\"System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode\" />\r\n    <IPermission class=\"System.Net.NetworkInformation.NetworkInformationPermission, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Access=\"Read\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Net.NetworkInformation.NetworkInterface[]",
+            "PinAttribute": {
+              "Help": "A NetworkInterface array that contains objects that describe the available network interfaces, or an empty array if no interfaces are detected.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.Net.NetworkInformation.NetworkInterface\" /> array that contains objects that describe the available network interfaces, or an empty array if no interfaces are detected.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetAllNetworkInterfaces"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetIPProperties",
+            "Help": "Returns an object that describes the configuration of this network interface.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.NetworkInterface.GetIPProperties\">\r\n  <summary>Returns an object that describes the configuration of this network interface.</summary>\r\n  <returns>An <see cref=\"T:System.Net.NetworkInformation.IPInterfaceProperties\" /> object that describes this network interface.</returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Net.NetworkInformation.IPInterfaceProperties",
+            "PinAttribute": {
+              "Help": "An IPInterfaceProperties object that describes this network interface.",
+              "ImportedHelp": "<returns>An <see cref=\"T:System.Net.NetworkInformation.IPInterfaceProperties\" /> object that describes this network interface.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetIPProperties"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetIPStatistics",
+            "Help": "Gets the IP statistics for this NetworkInterface instance.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.NetworkInterface.GetIPStatistics\">\r\n  <summary>Gets the IP statistics for this <see cref=\"T:System.Net.NetworkInformation.NetworkInterface\" /> instance.</summary>\r\n  <returns>Returns <see cref=\"T:System.Net.NetworkInformation.IPInterfaceStatistics\" />.The IP statistics.</returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Net.NetworkInformation.IPInterfaceStatistics",
+            "PinAttribute": {
+              "Help": "Returns IPInterfaceStatistics.The IP statistics.",
+              "ImportedHelp": "<returns>Returns <see cref=\"T:System.Net.NetworkInformation.IPInterfaceStatistics\" />.The IP statistics.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetIPStatistics"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetIPv4Statistics",
+            "Help": "Gets the IPv4 statistics for this NetworkInterface instance.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.NetworkInterface.GetIPv4Statistics\">\r\n  <summary>Gets the IPv4 statistics for this <see cref=\"T:System.Net.NetworkInformation.NetworkInterface\" /> instance.</summary>\r\n  <returns>An <see cref=\"T:System.Net.NetworkInformation.IPv4InterfaceStatistics\" /> object.</returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Net.NetworkInformation.IPv4InterfaceStatistics",
+            "PinAttribute": {
+              "Help": "An IPv4InterfaceStatistics object.",
+              "ImportedHelp": "<returns>An <see cref=\"T:System.Net.NetworkInformation.IPv4InterfaceStatistics\" /> object.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetIPv4Statistics"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetIsNetworkAvailable",
+            "Help": "Indicates whether any network connection is available.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable\">\r\n  <summary>Indicates whether any network connection is available.</summary>\r\n  <returns>true if a network connection is available; otherwise, false.</returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinAttribute": {
+              "Help": "true if a network connection is available; otherwise, false.",
+              "ImportedHelp": "<returns>true if a network connection is available; otherwise, false.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetIsNetworkAvailable"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetPhysicalAddress",
+            "Help": "Returns the Media Access Control (MAC) or physical address for this adapter.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.NetworkInterface.GetPhysicalAddress\">\r\n  <summary>Returns the Media Access Control (MAC) or physical address for this adapter.</summary>\r\n  <returns>A <see cref=\"T:System.Net.NetworkInformation.PhysicalAddress\" /> object that contains the physical address.</returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Net.NetworkInformation.PhysicalAddress",
+            "PinAttribute": {
+              "Help": "A PhysicalAddress object that contains the physical address.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.Net.NetworkInformation.PhysicalAddress\" /> object that contains the physical address.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetPhysicalAddress"
+        }
+      ],
+      "DotNetName": "System.Net.NetworkInformation.NetworkInterface"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "NetworkInterfaceType",
+        "Category": "IO.Net",
+        "Help": "Specifies types of network interfaces.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.NetworkInterfaceType\">\r\n  <summary>Specifies types of network interfaces.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.NetworkInterfaceType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "OperationalStatus",
+        "Category": "IO.Net",
+        "Help": "Specifies the operational state of a network interface.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.OperationalStatus\">\r\n  <summary>Specifies the operational state of a network interface.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.OperationalStatus"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "PhysicalAddress",
+        "Category": "IO.Net",
+        "Help": "Provides the Media Access Control (MAC) address for a network interface (adapter).",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.PhysicalAddress\">\r\n  <summary>Provides the Media Access Control (MAC) address for a network interface (adapter).</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "GetAddressBytes",
+            "Help": "Returns the address of the current instance.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.PhysicalAddress.GetAddressBytes\">\r\n  <summary>Returns the address of the current instance.</summary>\r\n  <returns>A <see cref=\"T:System.Byte\" /> array containing the address.</returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Byte[]",
+            "PinAttribute": {
+              "Help": "A T:System.Byte array containing the address.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.Byte\" /> array containing the address.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetAddressBytes"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Parse",
+            "Help": "Parses the specified T:System.String and stores its contents as the address bytes of the PhysicalAddress returned by this method.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.PhysicalAddress.Parse(System.String)\">\r\n  <summary>Parses the specified <see cref=\"T:System.String\" /> and stores its contents as the address bytes of the <see cref=\"T:System.Net.NetworkInformation.PhysicalAddress\" /> returned by this method.</summary>\r\n  <returns>A <see cref=\"T:System.Net.NetworkInformation.PhysicalAddress\" /> instance with the specified address.</returns>\r\n  <param name=\"address\">A <see cref=\"T:System.String\" /> containing the address that will be used to initialize the <see cref=\"T:System.Net.NetworkInformation.PhysicalAddress\" /> instance returned by this method.</param>\r\n  <exception cref=\"T:System.FormatException\">The <paramref name=\"address\" /> parameter contains an illegal hardware address. This exception also occurs if the <paramref name=\"address\" /> parameter contains a string in the incorrect format.</exception>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "A T:System.String containing the address that will be used to initialize the PhysicalAddress instance returned by this method.",
+                "ImportedHelp": "<param name=\"address\">A <see cref=\"T:System.String\" /> containing the address that will be used to initialize the <see cref=\"T:System.Net.NetworkInformation.PhysicalAddress\" /> instance returned by this method.</param>"
+              },
+              "DotNetName": "address"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Net.NetworkInformation.PhysicalAddress",
+            "PinAttribute": {
+              "Help": "A PhysicalAddress instance with the specified address.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.Net.NetworkInformation.PhysicalAddress\" /> instance with the specified address.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Parse"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString",
+            "Help": "Returns the T:System.String representation of the address of this instance.",
+            "ImportedHelp": "<member name=\"M:System.Net.NetworkInformation.PhysicalAddress.ToString\">\r\n  <summary>Returns the <see cref=\"T:System.String\" /> representation of the address of this instance.</summary>\r\n  <returns>A <see cref=\"T:System.String\" /> containing the address contained in this instance.</returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinAttribute": {
+              "Help": "A T:System.String containing the address contained in this instance.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.String\" /> containing the address contained in this instance.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        }
+      ],
+      "DotNetName": "System.Net.NetworkInformation.PhysicalAddress"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "PrefixOrigin",
+        "Category": "IO.Net",
+        "Help": "Specifies how an IP address network prefix was located.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.PrefixOrigin\">\r\n  <summary>Specifies how an IP address network prefix was located.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.PrefixOrigin"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ProtocolType",
+        "Category": "IO.Socket",
+        "Help": "Specifies the protocols that the Socket class supports.",
+        "ImportedHelp": "<member name=\"T:System.Net.Sockets.ProtocolType\">\r\n  <summary>Specifies the protocols that the <see cref=\"T:System.Net.Sockets.Socket\" /> class supports.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Ggp",
+            "Help": "Gateway To Gateway Protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Ggp\">\r\n  <summary>Gateway To Gateway Protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Ggp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IP",
+            "Help": "Internet Protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IP\">\r\n  <summary>Internet Protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "IP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPSecAuthenticationHeader",
+            "Help": "IPv6 Authentication header. For details, see RFC 2292 section 2.2.1, available at http://www.ietf.org.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IPSecAuthenticationHeader\">\r\n  <summary>IPv6 Authentication header. For details, see RFC 2292 section 2.2.1, available at http://www.ietf.org.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPSecAuthenticationHeader"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPSecEncapsulatingSecurityPayload",
+            "Help": "IPv6 Encapsulating Security Payload header.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IPSecEncapsulatingSecurityPayload\">\r\n  <summary>IPv6 Encapsulating Security Payload header.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPSecEncapsulatingSecurityPayload"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv4",
+            "Help": "Internet Protocol version 4.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IPv4\">\r\n  <summary>Internet Protocol version 4.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPv4"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv6",
+            "Help": "Internet Protocol version 6 (IPv6).",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IPv6\">\r\n  <summary>Internet Protocol version 6 (IPv6). </summary>\r\n</member>"
+          },
+          "DotNetName": "IPv6"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv6DestinationOptions",
+            "Help": "IPv6 Destination Options header.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IPv6DestinationOptions\">\r\n  <summary>IPv6 Destination Options header.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPv6DestinationOptions"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv6FragmentHeader",
+            "Help": "IPv6 Fragment header.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IPv6FragmentHeader\">\r\n  <summary>IPv6 Fragment header.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPv6FragmentHeader"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv6HopByHopOptions",
+            "Help": "IPv6 Hop by Hop Options header.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IPv6HopByHopOptions\">\r\n  <summary>IPv6 Hop by Hop Options header.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPv6HopByHopOptions"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv6NoNextHeader",
+            "Help": "IPv6 No next header.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IPv6NoNextHeader\">\r\n  <summary>IPv6 No next header.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPv6NoNextHeader"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IPv6RoutingHeader",
+            "Help": "IPv6 Routing header.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IPv6RoutingHeader\">\r\n  <summary>IPv6 Routing header.</summary>\r\n</member>"
+          },
+          "DotNetName": "IPv6RoutingHeader"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Icmp",
+            "Help": "Internet Control Message Protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Icmp\">\r\n  <summary>Internet Control Message Protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Icmp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IcmpV6",
+            "Help": "Internet Control Message Protocol for IPv6.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.IcmpV6\">\r\n  <summary>Internet Control Message Protocol for IPv6.</summary>\r\n</member>"
+          },
+          "DotNetName": "IcmpV6"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Idp",
+            "Help": "Internet Datagram Protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Idp\">\r\n  <summary>Internet Datagram Protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Idp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Igmp",
+            "Help": "Internet Group Management Protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Igmp\">\r\n  <summary>Internet Group Management Protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Igmp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Ipx",
+            "Help": "Internet Packet Exchange Protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Ipx\">\r\n  <summary>Internet Packet Exchange Protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Ipx"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ND",
+            "Help": "Net Disk Protocol (unofficial).",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.ND\">\r\n  <summary>Net Disk Protocol (unofficial).</summary>\r\n</member>"
+          },
+          "DotNetName": "ND"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pup",
+            "Help": "PARC Universal Packet Protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Pup\">\r\n  <summary>PARC Universal Packet Protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Pup"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Raw",
+            "Help": "Raw IP packet protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Raw\">\r\n  <summary>Raw IP packet protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Raw"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Spx",
+            "Help": "Sequenced Packet Exchange protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Spx\">\r\n  <summary>Sequenced Packet Exchange protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Spx"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SpxII",
+            "Help": "Sequenced Packet Exchange version 2 protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.SpxII\">\r\n  <summary>Sequenced Packet Exchange version 2 protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "SpxII"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Tcp",
+            "Help": "Transmission Control Protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Tcp\">\r\n  <summary>Transmission Control Protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Tcp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Udp",
+            "Help": "User Datagram Protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Udp\">\r\n  <summary>User Datagram Protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Udp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Unknown",
+            "Help": "Unknown protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Unknown\">\r\n  <summary>Unknown protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Unknown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Unspecified",
+            "Help": "Unspecified protocol.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.ProtocolType.Unspecified\">\r\n  <summary>Unspecified protocol.</summary>\r\n</member>"
+          },
+          "DotNetName": "Unspecified"
+        }
+      ],
+      "DotNetName": "System.Net.Sockets.ProtocolType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Socket",
+        "Category": "IO.Socket",
+        "Help": "Implements the Berkeley sockets interface.",
+        "ImportedHelp": "<member name=\"T:System.Net.Sockets.Socket\">\r\n  <summary>Implements the Berkeley sockets interface.</summary>\r\n</member>"
+      },
+      "Members": [],
+      "DotNetName": "System.Net.Sockets.Socket"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SocketType",
+        "Category": "IO.Socket",
+        "Help": "Specifies the type of socket that an instance of the Socket class represents.",
+        "ImportedHelp": "<member name=\"T:System.Net.Sockets.SocketType\">\r\n  <summary>Specifies the type of socket that an instance of the <see cref=\"T:System.Net.Sockets.Socket\" /> class represents.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Dgram",
+            "Help": "Supports datagrams, which are connectionless, unreliable messages of a fixed (typically small) maximum length. Messages might be lost or duplicated and might arrive out of order. A Socket of type Dgram requires no connection prior to sending and receiving data, and can communicate with multiple peers. Dgram uses the Datagram Protocol (Udp) and the F:System.Net.Sockets.AddressFamily.InterNetworkT:System.Net.Sockets.AddressFamily.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.SocketType.Dgram\">\r\n  <summary>Supports datagrams, which are connectionless, unreliable messages of a fixed (typically small) maximum length. Messages might be lost or duplicated and might arrive out of order. A <see cref=\"T:System.Net.Sockets.Socket\" /> of type <see cref=\"F:System.Net.Sockets.SocketType.Dgram\" /> requires no connection prior to sending and receiving data, and can communicate with multiple peers. <see cref=\"F:System.Net.Sockets.SocketType.Dgram\" /> uses the Datagram Protocol (<see cref=\"F:System.Net.Sockets.ProtocolType.Udp\" />) and the <see cref=\"F:System.Net.Sockets.AddressFamily.InterNetwork\" /><see cref=\"T:System.Net.Sockets.AddressFamily\" />.</summary>\r\n</member>"
+          },
+          "DotNetName": "Dgram"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Raw",
+            "Help": "Supports access to the underlying transport protocol. Using the SocketTypeRaw, you can communicate using protocols like Internet Control Message Protocol (Icmp) and Internet Group Management Protocol (Igmp). Your application must provide a complete IP header when sending. Received datagrams return with the IP header and options intact.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.SocketType.Raw\">\r\n  <summary>Supports access to the underlying transport protocol. Using the <see cref=\"T:System.Net.Sockets.SocketType\" /><see cref=\"F:System.Net.Sockets.SocketType.Raw\" />, you can communicate using protocols like Internet Control Message Protocol (<see cref=\"F:System.Net.Sockets.ProtocolType.Icmp\" />) and Internet Group Management Protocol (<see cref=\"F:System.Net.Sockets.ProtocolType.Igmp\" />). Your application must provide a complete IP header when sending. Received datagrams return with the IP header and options intact.</summary>\r\n</member>"
+          },
+          "DotNetName": "Raw"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Rdm",
+            "Help": "Supports connectionless, message-oriented, reliably delivered messages, and preserves message boundaries in data. Rdm (Reliably Delivered Messages) messages arrive unduplicated and in order. Furthermore, the sender is notified if messages are lost. If you initialize a Socket using Rdm, you do not require a remote host connection before sending and receiving data. With Rdm, you can communicate with multiple peers.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.SocketType.Rdm\">\r\n  <summary>Supports connectionless, message-oriented, reliably delivered messages, and preserves message boundaries in data. Rdm (Reliably Delivered Messages) messages arrive unduplicated and in order. Furthermore, the sender is notified if messages are lost. If you initialize a Socket using <see cref=\"F:System.Net.Sockets.SocketType.Rdm\" />, you do not require a remote host connection before sending and receiving data. With <see cref=\"F:System.Net.Sockets.SocketType.Rdm\" />, you can communicate with multiple peers.</summary>\r\n</member>"
+          },
+          "DotNetName": "Rdm"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Seqpacket",
+            "Help": "Provides connection-oriented and reliable two-way transfer of ordered byte streams across a network. Seqpacket does not duplicate data, and it preserves boundaries within the data stream. A Socket of type Seqpacket communicates with a single peer and requires a remote host connection before communication can begin.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.SocketType.Seqpacket\">\r\n  <summary>Provides connection-oriented and reliable two-way transfer of ordered byte streams across a network. <see cref=\"F:System.Net.Sockets.SocketType.Seqpacket\" /> does not duplicate data, and it preserves boundaries within the data stream. A Socket of type <see cref=\"F:System.Net.Sockets.SocketType.Seqpacket\" /> communicates with a single peer and requires a remote host connection before communication can begin.</summary>\r\n</member>"
+          },
+          "DotNetName": "Seqpacket"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Stream",
+            "Help": "Supports reliable, two-way, connection-based byte streams without the duplication of data and without preservation of boundaries. A Socket of this type communicates with a single peer and requires a remote host connection before communication can begin. Stream uses the Transmission Control Protocol (Tcp) ProtocolType and the InterNetworkT:System.Net.Sockets.AddressFamily.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.SocketType.Stream\">\r\n  <summary>Supports reliable, two-way, connection-based byte streams without the duplication of data and without preservation of boundaries. A Socket of this type communicates with a single peer and requires a remote host connection before communication can begin. <see cref=\"F:System.Net.Sockets.SocketType.Stream\" /> uses the Transmission Control Protocol (<see cref=\"F:System.Net.Sockets.ProtocolType.Tcp\" />) <see cref=\"T:System.Net.Sockets.ProtocolType\" /> and the InterNetwork<see cref=\"T:System.Net.Sockets.AddressFamily\" />.</summary>\r\n</member>"
+          },
+          "DotNetName": "Stream"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Unknown",
+            "Help": "Specifies an unknown Socket type.",
+            "ImportedHelp": "<member name=\"F:System.Net.Sockets.SocketType.Unknown\">\r\n  <summary>Specifies an unknown Socket type.</summary>\r\n</member>"
+          },
+          "DotNetName": "Unknown"
+        }
+      ],
+      "DotNetName": "System.Net.Sockets.SocketType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SuffixOrigin",
+        "Category": "IO.Net",
+        "Help": "Specifies how an IP address host suffix was located.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.SuffixOrigin\">\r\n  <summary>Specifies how an IP address host suffix was located.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.SuffixOrigin"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "UnicastIPAddressInformation",
+        "Category": "IO.Net",
+        "Help": "Provides information about a network interface's unicast address.",
+        "ImportedHelp": "<member name=\"T:System.Net.NetworkInformation.UnicastIPAddressInformation\">\r\n  <summary>Provides information about a network interface's unicast address.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Net.NetworkInformation.UnicastIPAddressInformation"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "WebRequest",
+        "Category": "IO.WebRequest",
+        "Help": "Makes a request to a Uniform Resource Identifier (URI). This is an abstract class.",
+        "ImportedHelp": "<member name=\"T:System.Net.WebRequest\">\r\n  <summary>Makes a request to a Uniform Resource Identifier (URI). This is an abstract class.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ContentLength",
+            "ShowCategory": true,
+            "Help": "When overridden in a descendant class, gets or sets the content length of the request data being sent.",
+            "ImportedHelp": "<member name=\"P:System.Net.WebRequest.ContentLength\">\r\n  <summary>When overridden in a descendant class, gets or sets the content length of the request data being sent.</summary>\r\n  <returns>The number of bytes of request data being sent.</returns>\r\n  <exception cref=\"T:System.NotImplementedException\">Any attempt is made to get or set the property, when the property is not overridden in a descendant class. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "ContentLength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ContentType",
+            "ShowCategory": true,
+            "Help": "When overridden in a descendant class, gets or sets the content type of the request data being sent.",
+            "ImportedHelp": "<member name=\"P:System.Net.WebRequest.ContentType\">\r\n  <summary>When overridden in a descendant class, gets or sets the content type of the request data being sent.</summary>\r\n  <returns>The content type of the request data.</returns>\r\n  <exception cref=\"T:System.NotImplementedException\">Any attempt is made to get or set the property, when the property is not overridden in a descendant class. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "ContentType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Help": "Initializes a new WebRequest instance for the specified URI scheme.",
+            "ImportedHelp": "<member name=\"M:System.Net.WebRequest.Create(System.String)\">\r\n  <summary>Initializes a new <see cref=\"T:System.Net.WebRequest\" /> instance for the specified URI scheme.</summary>\r\n  <returns>A <see cref=\"T:System.Net.WebRequest\" /> descendant for the specific URI scheme.</returns>\r\n  <param name=\"requestUriString\">The URI that identifies the Internet resource. </param>\r\n  <exception cref=\"T:System.NotSupportedException\">The request scheme specified in <paramref name=\"requestUriString\" /> has not been registered. </exception>\r\n  <exception cref=\"T:System.ArgumentNullException\">\r\n    <paramref name=\"requestUriString\" /> is null. </exception>\r\n  <exception cref=\"T:System.Security.SecurityException\">The caller does not have permission to connect to the requested URI or a URI that the request is redirected to. </exception>\r\n  <exception cref=\"T:System.UriFormatException\">In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, <see cref=\"T:System.FormatException\" />, instead.The URI specified in <paramref name=\"requestUriString\" /> is not a valid URI. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n    <IPermission class=\"System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The URI that identifies the Internet resource.",
+                "ImportedHelp": "<param name=\"requestUriString\">The URI that identifies the Internet resource. </param>"
+              },
+              "DotNetName": "requestUriString"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Net.WebRequest",
+            "PinAttribute": {
+              "Help": "A WebRequest descendant for the specific URI scheme.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.Net.WebRequest\" /> descendant for the specific URI scheme.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Create"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "CreateHttp",
+            "Help": "Initializes a new HttpWebRequest instance for the specified URI string.",
+            "ImportedHelp": "<member name=\"M:System.Net.WebRequest.CreateHttp(System.String)\">\r\n  <summary>Initializes a new <see cref=\"T:System.Net.HttpWebRequest\" /> instance for the specified URI string.</summary>\r\n  <returns>Returns <see cref=\"T:System.Net.HttpWebRequest\" />.An <see cref=\"T:System.Net.HttpWebRequest\" />  instance for the specific URI string.</returns>\r\n  <param name=\"requestUriString\">A URI string that identifies the Internet resource. </param>\r\n  <exception cref=\"T:System.NotSupportedException\">The request scheme specified in <paramref name=\"requestUriString\" /> is the http or https scheme. </exception>\r\n  <exception cref=\"T:System.ArgumentNullException\">\r\n    <paramref name=\"requestUriString\" /> is null. </exception>\r\n  <exception cref=\"T:System.Security.SecurityException\">The caller does not have permission to connect to the requested URI or a URI that the request is redirected to. </exception>\r\n  <exception cref=\"T:System.UriFormatException\">The URI specified in <paramref name=\"requestUriString\" /> is not a valid URI. </exception>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "A URI string that identifies the Internet resource.",
+                "ImportedHelp": "<param name=\"requestUriString\">A URI string that identifies the Internet resource. </param>"
+              },
+              "DotNetName": "requestUriString"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Net.HttpWebRequest",
+            "PinAttribute": {
+              "Help": "Returns HttpWebRequest.An HttpWebRequest  instance for the specific URI string.",
+              "ImportedHelp": "<returns>Returns <see cref=\"T:System.Net.HttpWebRequest\" />.An <see cref=\"T:System.Net.HttpWebRequest\" />  instance for the specific URI string.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "CreateHttp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Credentials",
+            "ShowCategory": true,
+            "Help": "When overridden in a descendant class, gets or sets the network credentials used for authenticating the request with the Internet resource.",
+            "ImportedHelp": "<member name=\"P:System.Net.WebRequest.Credentials\">\r\n  <summary>When overridden in a descendant class, gets or sets the network credentials used for authenticating the request with the Internet resource.</summary>\r\n  <returns>An <see cref=\"T:System.Net.ICredentials\" /> containing the authentication credentials associated with the request. The default is null.</returns>\r\n  <exception cref=\"T:System.NotImplementedException\">Any attempt is made to get or set the property, when the property is not overridden in a descendant class. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "Credentials"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Method",
+            "ShowCategory": true,
+            "Help": "When overridden in a descendant class, gets or sets the protocol method to use in this request.",
+            "ImportedHelp": "<member name=\"P:System.Net.WebRequest.Method\">\r\n  <summary>When overridden in a descendant class, gets or sets the protocol method to use in this request.</summary>\r\n  <returns>The protocol method to use in this request.</returns>\r\n  <exception cref=\"T:System.NotImplementedException\">If the property is not overridden in a descendant class, any attempt is made to get or set the property. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "Method"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PreAuthenticate",
+            "ShowCategory": true,
+            "Help": "When overridden in a descendant class, indicates whether to pre-authenticate the request.",
+            "ImportedHelp": "<member name=\"P:System.Net.WebRequest.PreAuthenticate\">\r\n  <summary>When overridden in a descendant class, indicates whether to pre-authenticate the request.</summary>\r\n  <returns>true to pre-authenticate; otherwise, false.</returns>\r\n  <exception cref=\"T:System.NotImplementedException\">Any attempt is made to get or set the property, when the property is not overridden in a descendant class. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "PreAuthenticate"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Timeout",
+            "ShowCategory": true,
+            "Help": "Gets or sets the length of time, in milliseconds, before the request times out.",
+            "ImportedHelp": "<member name=\"P:System.Net.WebRequest.Timeout\">\r\n  <summary>Gets or sets the length of time, in milliseconds, before the request times out.</summary>\r\n  <returns>The length of time, in milliseconds, until the request times out, or the value <see cref=\"F:System.Threading.Timeout.Infinite\" /> to indicate that the request does not time out. The default value is defined by the descendant class.</returns>\r\n  <exception cref=\"T:System.NotImplementedException\">Any attempt is made to get or set the property, when the property is not overridden in a descendant class. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "Timeout"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "UseDefaultCredentials",
+            "ShowCategory": true,
+            "Help": "When overridden in a descendant class, gets or sets a T:System.Boolean value that controls whether DefaultCredentials are sent with requests.",
+            "ImportedHelp": "<member name=\"P:System.Net.WebRequest.UseDefaultCredentials\">\r\n  <summary>When overridden in a descendant class, gets or sets a <see cref=\"T:System.Boolean\" /> value that controls whether <see cref=\"P:System.Net.CredentialCache.DefaultCredentials\" /> are sent with requests.</summary>\r\n  <returns>true if the default credentials are used; otherwise false. The default value is false.</returns>\r\n  <exception cref=\"T:System.InvalidOperationException\">You attempted to set this property after the request was sent.</exception>\r\n  <exception cref=\"T:System.NotImplementedException\">Any attempt is made to access the property, when the property is not overridden in a descendant class. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "UseDefaultCredentials"
+        }
+      ],
+      "DotNetName": "System.Net.WebRequest"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "WebResponse",
+        "Category": "IO.WebRequest",
+        "Help": "Provides a response from a Uniform Resource Identifier (URI). This is an abstract class.",
+        "ImportedHelp": "<member name=\"T:System.Net.WebResponse\">\r\n  <summary>Provides a response from a Uniform Resource Identifier (URI). This is an abstract class.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ContentLength",
+            "ShowCategory": true,
+            "Help": "When overridden in a descendant class, gets or sets the content length of data being received.",
+            "ImportedHelp": "<member name=\"P:System.Net.WebResponse.ContentLength\">\r\n  <summary>When overridden in a descendant class, gets or sets the content length of data being received.</summary>\r\n  <returns>The number of bytes returned from the Internet resource.</returns>\r\n  <exception cref=\"T:System.NotSupportedException\">Any attempt is made to get or set the property, when the property is not overridden in a descendant class. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "ContentLength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ContentType",
+            "ShowCategory": true,
+            "Help": "When overridden in a derived class, gets or sets the content type of the data being received.",
+            "ImportedHelp": "<member name=\"P:System.Net.WebResponse.ContentType\">\r\n  <summary>When overridden in a derived class, gets or sets the content type of the data being received.</summary>\r\n  <returns>A string that contains the content type of the response.</returns>\r\n  <exception cref=\"T:System.NotSupportedException\">Any attempt is made to get or set the property, when the property is not overridden in a descendant class. </exception>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode, ControlEvidence\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "ContentType"
+        }
+      ],
+      "DotNetName": "System.Net.WebResponse"
+    }
+  ],
+  "IsGAC": true,
+  "DotNetName": "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+}

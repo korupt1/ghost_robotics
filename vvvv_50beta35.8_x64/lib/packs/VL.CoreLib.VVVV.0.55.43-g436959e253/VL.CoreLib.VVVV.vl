@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GLM1d2Y2hD2MHwjLKXZpSR" Version="0.55">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <p:Info Summary="A base library for the VL integration into vvvv" Authors="vvvv group">
+    <p:LicenseUrl>https://www.gnu.org/licenses/lgpl-3.0-standalone.html</p:LicenseUrl>
+    <p:ProjectUrl>https://vvvv.org</p:ProjectUrl>
+  </p:Info>
+  <NugetDependency Id="UotO8tnnmhUPprvIZelmuK" Location="VL.CoreLib" Version="0.35.33" />
+  <NugetDependency Id="MNBFKJ5b0P8PjDIqcyZ0Cu" Location="VL.Core" Version="0.35.33" />
+  <PlatformDependency Id="VYtQQU8QjYrMLZ0EQGgHBb" Location="./src\bin\AnyCPU\Debug\VL.CoreLib.VVVV.dll" IsForward="true" />
+  <Patch Id="OcBLXCJDYOGPcQJ72MySjP">
+    <Canvas Id="UpP7bEFWlusOS2YgBJs3w4" BordersChecked="false" />
+  </Patch>
+</Document>

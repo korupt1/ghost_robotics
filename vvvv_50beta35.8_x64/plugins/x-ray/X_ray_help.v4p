@@ -1,0 +1,175 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\CE\Desktop\X_Ray\X_Ray\X_ray_help.v4p">
+   <BOUNDS height="9570" left="4065" top="11460" type="Window" width="14745">
+   </BOUNDS>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="13">
+   <BOUNDS type="Node" left="1860" top="6960" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1860" top="6960" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20205" top="2685" width="15525" height="15255">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" values="|0.00125,0.00125,0.00125,1.00000|">
+   </PIN>
+   <PIN pinname="AA Samples per Pixel" slicecount="1" values="8">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Box" left="4125" top="4725" width="3525" height="1380">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4125" top="4725" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="X_RayDX11 (DX11.Effect)" filename="..\..\X_RayDX11.fx" nodename="X_RayDX11 (DX11.Effect)" componentmode="Hidden" id="61">
+   <BOUNDS type="Node" left="1830" top="4305" width="5490" height="270">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Tweak" slicecount="1" values="3.41" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="0.32">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="61" srcpinname="Layer" dstnodeid="13" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Layout Message" dstnodeid="20" dstpinname="Input String">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="62">
+   <BOUNDS type="Node" left="2430" top="3660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2430" top="3660" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="AlphaAdd">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Render State" dstnodeid="61" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="4875" top="3900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Lightness" slicecount="1" values="0.41">
+   </PIN>
+   <PIN pinname="Hue" slicecount="1" values="0.22">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="0.42">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="61" dstpinname="Color">
+   </LINK>
+   <NODE systemname="Torus (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Torus (DX11.Geometry)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="3045" top="2970" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3045" top="2970" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   <PIN pinname="Radius" slicecount="1" values="0.08">
+   </PIN>
+   <PIN pinname="Resolution X" visible="1">
+   </PIN>
+   <PIN pinname="Resolution Y" visible="1">
+   </PIN>
+   <PIN pinname="Phase Rotation" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="64">
+   <BOUNDS type="Node" left="3375" top="6285" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="View" dstnodeid="13" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Projection" dstnodeid="13" dstpinname="Projection">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65">
+   <BOUNDS type="Box" left="3510" top="2370" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3510" top="2370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="78">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Resolution X">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Resolution Y">
+   </LINK>
+   <NODE systemname="Scale (Transform Vector)" nodename="Scale (Transform Vector)" componentmode="Hidden" id="67">
+   <BOUNDS type="Node" left="3660" top="3855" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="3" values="8.62,8.62,8.62">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Transform Out" dstnodeid="61" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Geometry Out" dstnodeid="61" dstpinname="Geometry">
+   </LINK>
+   <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="5580" top="2220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="ScaleX" visible="1" slicecount="1" values="0.5612">
+   </PIN>
+   <PIN pinname="ScaleY" visible="1" slicecount="1" values="0.5612">
+   </PIN>
+   <PIN pinname="ScaleZ" visible="1" slicecount="1" values="0.5612">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="Transform Out" dstnodeid="67" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="X_ray_help" filename="X_ray_help.v4p" nodename="X_ray_help.v4p" componentmode="InAWindow" id="77">
+   <BOUNDS type="Node" left="11520" top="510" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="80">
+   <BOUNDS type="Box" left="6735" top="3330" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6735" top="3330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.96">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Tweak">
+   </LINK>
+   </PATCH>

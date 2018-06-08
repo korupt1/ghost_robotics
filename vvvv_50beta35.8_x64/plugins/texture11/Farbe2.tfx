@@ -1,0 +1,49 @@
+//@author: vux
+//@help: template for texture fx
+//@tags: texture
+//@credits: 
+
+Texture2D texture2d : PREVIOUS;
+
+float hell <string uiname="Helligkeit";>;
+float R <string uiname="R";>;
+float G <string uiname="G";>;
+float B <string uiname="B";>;
+
+SamplerState linearSampler : IMMUTABLE
+{
+    Filter = MIN_MAG_MIP_LINEAR;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+struct psInput
+{
+	float4 p : SV_Position;
+	float2 uv : TEXCOORD0;
+};
+
+
+float4 PS(psInput input) : SV_Target
+
+{
+	float4 c = texture2d.Sample(linearSampler,input.uv);
+	
+	
+	c.b = c * (B) * hell;
+	c.g = c * (G) * hell;
+	c.r = c * (R) * hell;
+	
+	return c;
+}
+
+technique10 Process
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS()));
+	}
+}
+
+
+

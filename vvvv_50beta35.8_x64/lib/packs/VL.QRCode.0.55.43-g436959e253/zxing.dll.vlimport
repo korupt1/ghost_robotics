@@ -1,0 +1,234 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "ByteMatrix",
+        "Category": "ZXing.QrCode.Internal",
+        "Help": "JAVAPORT: The original code was a 2D array of ints, but since it only ever gets assigned\n            0, 1 and 2 I'm going to use less memory and go with bytes.",
+        "ImportedHelp": "<member name=\"T:ZXing.QrCode.Internal.ByteMatrix\">\r\n  <summary>\r\n            JAVAPORT: The original code was a 2D array of ints, but since it only ever gets assigned\r\n            0, 1 and 2 I'm going to use less memory and go with bytes.\r\n            </summary>\r\n  <author>dswitkin@google.com (Daniel Switkin)</author>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Array",
+            "ShowCategory": true,
+            "Help": "an internal representation as bytes, in row-major order. array[y][x] represents point (x,y)",
+            "ImportedHelp": "<member name=\"P:ZXing.QrCode.Internal.ByteMatrix.Array\">\r\n  <summary>\r\n            an internal representation as bytes, in row-major order. array[y][x] represents point (x,y)\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Array"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Height",
+            "ShowCategory": true,
+            "Help": "Gets the height.",
+            "ImportedHelp": "<member name=\"P:ZXing.QrCode.Internal.ByteMatrix.Height\">\r\n  <summary>\r\n            Gets the height.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Height"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true,
+            "Help": "Gets or sets the T:System.Int32 with the specified x.",
+            "ImportedHelp": "<member name=\"P:ZXing.QrCode.Internal.ByteMatrix.Item(System.Int32,System.Int32)\">\r\n  <summary>\r\n            Gets or sets the <see cref=\"T:System.Int32\" /> with the specified x.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Width",
+            "ShowCategory": true,
+            "Help": "Gets the width.",
+            "ImportedHelp": "<member name=\"P:ZXing.QrCode.Internal.ByteMatrix.Width\">\r\n  <summary>\r\n            Gets the width.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Width"
+        }
+      ],
+      "DotNetName": "ZXing.QrCode.Internal.ByteMatrix"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Encoder",
+        "Category": "ZXing.QrCode.Internal",
+        "Help": "",
+        "ImportedHelp": "<member name=\"T:ZXing.QrCode.Internal.Encoder\">\r\n  <summary></summary>\r\n  <author>satorux@google.com (Satoru Takabayashi) - creator</author>\r\n  <author>dswitkin@google.com (Daniel Switkin) - ported from C++</author>\r\n</member>"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "chooseMode",
+            "Category": "ZXing.QrCode.Internal",
+            "Help": "Chooses the mode.",
+            "ImportedHelp": "<member name=\"M:ZXing.QrCode.Internal.Encoder.chooseMode(System.String)\">\r\n  <summary>\r\n            Chooses the mode.\r\n            </summary>\r\n  <param name=\"content\">The content.</param>\r\n  <returns></returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The content.",
+                "ImportedHelp": "<param name=\"content\">The content.</param>"
+              },
+              "DotNetName": "content"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "ZXing.QrCode.Internal.Mode",
+            "PinAttribute": {
+              "Help": "",
+              "ImportedHelp": "<returns></returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "chooseMode"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "encode",
+            "Category": "ZXing.QrCode.Internal",
+            "Help": "Encode \"bytes\" with the error correction level \"ecLevel\". The encoding mode will be chosen\n            internally by chooseMode(). On success, store the result in \"qrCode\".\n            We recommend you to use QRCode.EC_LEVEL_L (the lowest level) for\n            \"getECLevel\" since our primary use is to show QR code on desktop screens. We don't need very\n            strong error correction for this purpose.\n            Note that there is no way to encode bytes in MODE_KANJI. We might want to add EncodeWithMode()\n            with which clients can specify the encoding mode. For now, we don't need the functionality.",
+            "ImportedHelp": "<member name=\"M:ZXing.QrCode.Internal.Encoder.encode(System.String,ZXing.QrCode.Internal.ErrorCorrectionLevel)\">\r\n  <summary>\r\n            Encode \"bytes\" with the error correction level \"ecLevel\". The encoding mode will be chosen\r\n            internally by chooseMode(). On success, store the result in \"qrCode\".\r\n            We recommend you to use QRCode.EC_LEVEL_L (the lowest level) for\r\n            \"getECLevel\" since our primary use is to show QR code on desktop screens. We don't need very\r\n            strong error correction for this purpose.\r\n            Note that there is no way to encode bytes in MODE_KANJI. We might want to add EncodeWithMode()\r\n            with which clients can specify the encoding mode. For now, we don't need the functionality.\r\n            </summary>\r\n  <param name=\"content\">The content.</param>\r\n  <param name=\"ecLevel\">The ec level.</param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The content.",
+                "ImportedHelp": "<param name=\"content\">The content.</param>"
+              },
+              "DotNetName": "content"
+            },
+            {
+              "TypeFullName": "ZXing.QrCode.Internal.ErrorCorrectionLevel",
+              "PinAttribute": {
+                "Help": "The ec level.",
+                "ImportedHelp": "<param name=\"ecLevel\">The ec level.</param>"
+              },
+              "DotNetName": "ecLevel"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "ZXing.QrCode.Internal.QRCode",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "encode"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "encode",
+            "Version": "String ErrorCorrectionLevel IDictionary<EncodeHintType,",
+            "Category": "ZXing.QrCode.Internal",
+            "Help": "Encodes the specified content.",
+            "ImportedHelp": "<member name=\"M:ZXing.QrCode.Internal.Encoder.encode(System.String,ZXing.QrCode.Internal.ErrorCorrectionLevel,System.Collections.Generic.IDictionary{ZXing.EncodeHintType,System.Object})\">\r\n  <summary>\r\n            Encodes the specified content.\r\n            </summary>\r\n  <param name=\"content\">The content.</param>\r\n  <param name=\"ecLevel\">The ec level.</param>\r\n  <param name=\"hints\">The hints.</param>\r\n  <returns></returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The content.",
+                "ImportedHelp": "<param name=\"content\">The content.</param>"
+              },
+              "DotNetName": "content"
+            },
+            {
+              "TypeFullName": "ZXing.QrCode.Internal.ErrorCorrectionLevel",
+              "PinAttribute": {
+                "Help": "The ec level.",
+                "ImportedHelp": "<param name=\"ecLevel\">The ec level.</param>"
+              },
+              "DotNetName": "ecLevel"
+            },
+            {
+              "TypeFullName": "System.Collections.Generic.IDictionary<ZXing.EncodeHintType, System.Object>",
+              "PinAttribute": {
+                "Help": "The hints.",
+                "ImportedHelp": "<param name=\"hints\">The hints.</param>"
+              },
+              "DotNetName": "hints"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "ZXing.QrCode.Internal.QRCode",
+            "PinAttribute": {
+              "Help": "",
+              "ImportedHelp": "<returns></returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "encode"
+        }
+      ],
+      "DotNetName": "ZXing.QrCode.Internal.Encoder"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ErrorCorrectionLevel",
+        "Category": "ZXing.QrCode.Internal",
+        "Help": "See ISO 18004:2006, 6.5.1. This enum encapsulates the four error correction levels\n            defined by the QR code standard.",
+        "ImportedHelp": "<member name=\"T:ZXing.QrCode.Internal.ErrorCorrectionLevel\">\r\n  <summary>\r\n    <p>See ISO 18004:2006, 6.5.1. This enum encapsulates the four error correction levels\r\n            defined by the QR code standard.</p>\r\n  </summary>\r\n  <author>Sean Owen</author>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "H",
+            "Help": "H = ~30% correction",
+            "ImportedHelp": "<member name=\"F:ZXing.QrCode.Internal.ErrorCorrectionLevel.H\">\r\n  <summary> H = ~30% correction</summary>\r\n</member>"
+          },
+          "DotNetName": "H"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "L",
+            "Help": "L = ~7% correction",
+            "ImportedHelp": "<member name=\"F:ZXing.QrCode.Internal.ErrorCorrectionLevel.L\">\r\n  <summary> L = ~7% correction</summary>\r\n</member>"
+          },
+          "DotNetName": "L"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "M",
+            "Help": "M = ~15% correction",
+            "ImportedHelp": "<member name=\"F:ZXing.QrCode.Internal.ErrorCorrectionLevel.M\">\r\n  <summary> M = ~15% correction</summary>\r\n</member>"
+          },
+          "DotNetName": "M"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Q",
+            "Help": "Q = ~25% correction",
+            "ImportedHelp": "<member name=\"F:ZXing.QrCode.Internal.ErrorCorrectionLevel.Q\">\r\n  <summary> Q = ~25% correction</summary>\r\n</member>"
+          },
+          "DotNetName": "Q"
+        }
+      ],
+      "DotNetName": "ZXing.QrCode.Internal.ErrorCorrectionLevel"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "QRCode",
+        "Category": "ZXing.QrCode.Internal",
+        "Help": "",
+        "ImportedHelp": "<member name=\"T:ZXing.QrCode.Internal.QRCode\">\r\n  <author>satorux@google.com (Satoru Takabayashi) - creator</author>\r\n  <author>dswitkin@google.com (Daniel Switkin) - ported from C++</author>\r\n</member>"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Matrix",
+            "ShowCategory": true,
+            "Help": "Gets or sets the matrix.",
+            "ImportedHelp": "<member name=\"P:ZXing.QrCode.Internal.QRCode.Matrix\">\r\n  <summary>\r\n            Gets or sets the matrix.\r\n            </summary>\r\n  <value>\r\n            The matrix.\r\n            </value>\r\n</member>"
+          },
+          "DotNetName": "Matrix"
+        }
+      ],
+      "DotNetName": "ZXing.QrCode.Internal.QRCode"
+    }
+  ],
+  "DotNetName": "zxing, Version=0.14.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60"
+}

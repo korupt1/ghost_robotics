@@ -1,0 +1,1194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="KzJiwWKpw9tMuuzafQREDK" Version="0.55">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <NugetDependency Id="FilmERihCJcPDldVTXMueK" Location="VL.CoreLib" Version="0.35.33" />
+  <NugetDependency Id="MVQ6qYG97zGP1rTWHtpY9g" Location="VL.CoreLib.VVVV" Version="0.35.33" />
+  <NugetDependency Id="PmxN8ZAezU4MjU5YbLdMEv" Location="VL.Core" Version="0.35.33" />
+  <Patch Id="Eo2a4kk9QqJNCAIhA2WafD">
+    <Canvas Id="VZJWAspHNNdPo1QrrBxJPX" BordersChecked="false">
+      <Canvas Id="BNMbFTYmc2RNHWUBHAmIIf" Name="BezierPatch" Position="108,284" DefaultCategory="VVVV.BezierPatch" BordersChecked="false">
+        <!--
+
+    ************************ BezierPatch (Join) ************************
+
+-->
+        <Node Name="BezierPatch (Join)" Bounds="56,184,280,147" Id="SCT35f7tnnUPUBCbAC2GKA">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="TQXiudZvL6dPb1aQakS1T2">
+            <Pin Id="RRN5wLCJIdwNeEfRqp7xeV" Name="Control 1" Kind="InputPin" />
+            <Pin Id="J25ej9IP2JWL6R0LotqiBU" Name="Control 2" Kind="InputPin" />
+            <Pin Id="Qkz9GTa1ZRzNm4coRu6lfS" Name="Control 3" Kind="InputPin" />
+            <Pin Id="BcvOElxeJv7NTQKXGr2AZk" Name="Control 4" Kind="InputPin" />
+            <Pin Id="HgVCqQGqInePc7PVWpfNkB" Name="BezierPatch" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.BezierPatch" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierPatch" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Node Bounds="72,258,105,22" Id="DWqiVNeiEPgNAEAJ63OLte">
+              <p:NodeReference LastCategoryFullName="Math.BezierPatch.BezierPatch" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Join" />
+                <CategoryReference Kind="Category" Name="BezierPatch" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="BezierPatch" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="PVkydn5wlRkLnVogFYxYPV" Name="Input" Kind="InputPin" />
+              <Pin Id="PHHG0Tqy4LSM4e2MmotqiR" Name="Control 1" Kind="InputPin" />
+              <Pin Id="RB4S2bdfX9nPiPKXn3j9I6" Name="Control 2" Kind="InputPin" />
+              <Pin Id="FFqaK5onzUALOBavkAOudI" Name="Control 3" Kind="InputPin" />
+              <Pin Id="Opvnqd8Vh2yQGBI9hOBQbt" Name="Control 4" Kind="InputPin" />
+              <Pin Id="Vt0WHJZ2g7EOFRFKMC0QYU" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="ALJnJPVX8ouMZrE9Hq21Qf" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="K5x0TN67lPrP0b4HHDzAzF" Bounds="84,200" />
+            <ControlPoint Id="GhXS1bOjltoMhR9NUUx4VL" Bounds="146,200" />
+            <ControlPoint Id="KSj0TF1wAy8N8r2LJwjPb6" Bounds="208,200" />
+            <ControlPoint Id="Hg30Tg2Z650MMHR4CWaoJe" Bounds="272,200" />
+            <ControlPoint Id="IcU9V0WuRstPRuUijir0Ff" Bounds="70,312" />
+            <Link Id="IHrjbSJfWBcOTYYxPdB2R5" Ids="K5x0TN67lPrP0b4HHDzAzF,PHHG0Tqy4LSM4e2MmotqiR" />
+            <Link Id="RunwJBh5YvWPnqpJRqKEu6" Ids="GhXS1bOjltoMhR9NUUx4VL,RB4S2bdfX9nPiPKXn3j9I6" />
+            <Link Id="I8efrurOLNuPCSJF82H3BM" Ids="KSj0TF1wAy8N8r2LJwjPb6,FFqaK5onzUALOBavkAOudI" />
+            <Link Id="RymEVzDH7W1M8i5llNjTLp" Ids="ALJnJPVX8ouMZrE9Hq21Qf,IcU9V0WuRstPRuUijir0Ff" />
+            <Link Id="ScKcT6VQEQAMLev7crj7Tj" Ids="Hg30Tg2Z650MMHR4CWaoJe,Opvnqd8Vh2yQGBI9hOBQbt" />
+            <Link Id="TDnPkmfQ1BKOFWEoNp1MTT" Ids="RRN5wLCJIdwNeEfRqp7xeV,K5x0TN67lPrP0b4HHDzAzF" IsHidden="true" />
+            <Link Id="GsrMtVv7W6qOAdOxtqaVUB" Ids="J25ej9IP2JWL6R0LotqiBU,GhXS1bOjltoMhR9NUUx4VL" IsHidden="true" />
+            <Link Id="GCRU1rTNZBBNDG0DydBn21" Ids="Qkz9GTa1ZRzNm4coRu6lfS,KSj0TF1wAy8N8r2LJwjPb6" IsHidden="true" />
+            <Link Id="MKT6b56o7vBLeZJtTc6huY" Ids="BcvOElxeJv7NTQKXGr2AZk,Hg30Tg2Z650MMHR4CWaoJe" IsHidden="true" />
+            <Link Id="PLT4tvf74clPJ02jeiphGn" Ids="IcU9V0WuRstPRuUijir0Ff,HgVCqQGqInePc7PVWpfNkB" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierPatch (Split) ************************
+
+-->
+        <Node Name="BezierPatch (Split)" Bounds="462,176,260,177" Id="KewkKLEzb6EPu7GuEWs356">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="FIF3Htqk3mbMWla3eqtAxx">
+            <Pin Id="Gi21WzWlmcQMcCZfTvkfbI" Name="BezierPatch" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.BezierPatch" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierPatch" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="SSWd5nCfYxELuh0rYBGZmZ" Name="Control 1" Kind="OutputPin" />
+            <Pin Id="Re1h3v9gijXOT68FiZgMSw" Name="Control 2" Kind="OutputPin" />
+            <Pin Id="KQFp4oyI9UYLlTLzlgsWuN" Name="Control 3" Kind="OutputPin" />
+            <Pin Id="HKBsd8E6G5yMocLvb6dNTy" Name="Control 4" Kind="OutputPin" />
+            <Node Bounds="478,245,65,22" Id="DLP1ZFmhEHOLsrBeKZ60cy">
+              <p:NodeReference LastCategoryFullName="Math.BezierPatch.BezierPatch" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Split" />
+                <CategoryReference Kind="Category" Name="BezierPatch" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="BezierPatch" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="P9DPp1sCOd7L06Of0PNzMJ" Name="Input" Kind="InputPin" />
+              <Pin Id="LiJyIsN2VaLPOa0PjqJdzC" Name="Control 1" Kind="OutputPin" />
+              <Pin Id="By2jouKaqZGN8tiTPzDT0b" Name="Control 2" Kind="OutputPin" />
+              <Pin Id="H5Y2TAa0FWfPCTCDS1suzS" Name="Control 3" Kind="OutputPin" />
+              <Pin Id="S8leTs1nwNEQKrjkH12mKE" Name="Control 4" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Gp7GVr6LWLlOmKkGVQcVuh" Bounds="476,192" />
+            <ControlPoint Id="McTxPexzDZvLs09Eaw1FkZ" Bounds="476,334" />
+            <ControlPoint Id="KerXkXWGArOLHB0iByXp77" Bounds="534,334" />
+            <ControlPoint Id="F1818ubalhXLYEUWXYqNfN" Bounds="596,334" />
+            <ControlPoint Id="ToSgWvEx06XNu09snMpmMC" Bounds="658,334" />
+            <Link Id="KomNWO1dGWuOfDC2NcVYQe" Ids="Gp7GVr6LWLlOmKkGVQcVuh,P9DPp1sCOd7L06Of0PNzMJ" />
+            <Link Id="HAhjyM6dhbIN8ujadP6DUo" Ids="LiJyIsN2VaLPOa0PjqJdzC,McTxPexzDZvLs09Eaw1FkZ" />
+            <Link Id="JUw2ItosOngObF40LjTIEt" Ids="By2jouKaqZGN8tiTPzDT0b,KerXkXWGArOLHB0iByXp77" />
+            <Link Id="VlCdqEcjhruM9Ky7Ye54W1" Ids="H5Y2TAa0FWfPCTCDS1suzS,F1818ubalhXLYEUWXYqNfN" />
+            <Link Id="MRFOO9SdElrOCpTfGmkhZ9" Ids="S8leTs1nwNEQKrjkH12mKE,ToSgWvEx06XNu09snMpmMC" />
+            <Link Id="OMEvmkJCxrdNjyHSPj3iFC" Ids="Gi21WzWlmcQMcCZfTvkfbI,Gp7GVr6LWLlOmKkGVQcVuh" IsHidden="true" />
+            <Link Id="L5Tn0v5qVInLx7IPi4ZqSo" Ids="McTxPexzDZvLs09Eaw1FkZ,SSWd5nCfYxELuh0rYBGZmZ" IsHidden="true" />
+            <Link Id="RWsSmbliDHqOs2mtOoLTJk" Ids="KerXkXWGArOLHB0iByXp77,Re1h3v9gijXOT68FiZgMSw" IsHidden="true" />
+            <Link Id="BFCyGihvmklOpkjhka7TBo" Ids="F1818ubalhXLYEUWXYqNfN,KQFp4oyI9UYLlTLzlgsWuN" IsHidden="true" />
+            <Link Id="CQs28vXosJZMtvrO77DA0C" Ids="ToSgWvEx06XNu09snMpmMC,HKBsd8E6G5yMocLvb6dNTy" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Sample ************************
+
+-->
+        <Node Name="Sample" Bounds="-182,196,160,123" Id="N8ms2eDMCjwLIRBoCRmHnE">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="EJT4MEHmGrDNs8Ne7204mG">
+            <Pin Id="E84QkG4ngujMr7MtD50gvG" Name="BezierPatch" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.BezierPatch" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierPatch" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PVL2TpXHnHeO7Xw5aPrN3w" Name="Scalar" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="LL7CT49WoX2PcMPJnhvo1g" Name="Position" Kind="OutputPin" />
+            <Node Bounds="-166,250,42,13" Id="PleO3Hr9Ki3LVEr6fagPii">
+              <p:NodeReference LastCategoryFullName="Math.BezierPatch" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Sample" />
+                <CategoryReference Kind="Category" Name="BezierPatch" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Math" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="K0gvBKTIYKTQSYPWibAhkl" Name="Input" Kind="InputPin" />
+              <Pin Id="Vd4j1u55QNTO75xWI7huhp" Name="Scalar" Kind="InputPin" />
+              <Pin Id="BiK2XamQOTZMnDb8kurOfp" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="LsEldYFFUdEOLNVncbF8p2" Bounds="-168,212" />
+            <ControlPoint Id="RzBZ7BsQFszNDfCTc6X7EU" Bounds="-70,212" />
+            <ControlPoint Id="O8zrZto1CBONOqtOoCnVfg" Bounds="-168,300" />
+            <Link Id="KH3ywKnb6QsOnvuIBosNrT" Ids="LsEldYFFUdEOLNVncbF8p2,K0gvBKTIYKTQSYPWibAhkl" />
+            <Link Id="HZO3baYFUXULIwEcmyX3gN" Ids="BiK2XamQOTZMnDb8kurOfp,O8zrZto1CBONOqtOoCnVfg" />
+            <Link Id="KwIX1QdFOjmLFUpSnDmbpc" Ids="RzBZ7BsQFszNDfCTc6X7EU,Vd4j1u55QNTO75xWI7huhp" />
+            <Link Id="SlT59MOkWQOLxJTM0oCiwT" Ids="E84QkG4ngujMr7MtD50gvG,LsEldYFFUdEOLNVncbF8p2" IsHidden="true" />
+            <Link Id="Ak8Hg8QstxRPFF1IX8VM6M" Ids="PVL2TpXHnHeO7Xw5aPrN3w,RzBZ7BsQFszNDfCTc6X7EU" IsHidden="true" />
+            <Link Id="OVcg60wwvpfNwZL9hSTnE9" Ids="O8zrZto1CBONOqtOoCnVfg,LL7CT49WoX2PcMPJnhvo1g" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierPatchSpread ************************
+
+-->
+        <Node Name="BezierPatchSpread" Bounds="836,192,189,149" Id="AcR2z2UGVUTNkPXjwVExlT">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="ERwBkcJkB9UOLecdQRICOk">
+            <Pin Id="EJ7vgSRDDEROoBRvXrZFjj" Name="BezierPatch" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.BezierPatch" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierPatch" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="I8JjkvepRsqQDT4BvgwDfU" Name="Count" Kind="InputPin" />
+            <Pin Id="CuMPqv0BCYWOePYwLNRlH8" Name="Positions" Kind="OutputPin" />
+            <Node Bounds="853,260,94,13" Id="KTml6MKL9GXLl0KqzQzuch">
+              <p:NodeReference LastCategoryFullName="Math.BezierPatch" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <CategoryReference Kind="Category" Name="Math" />
+                <CategoryReference Kind="Category" Name="BezierPatch" />
+                <Choice Kind="OperationNode" Name="BezierPatchSpread" />
+              </p:NodeReference>
+              <Pin Id="VjCfnNX0uRDNnSteyzNjaM" Name="Bezier" Kind="InputPin" />
+              <Pin Id="Go8WlA1QhoCQWQjr7FHuUX" Name="Outer" Kind="InputPin" />
+              <Pin Id="IuyNlEM7zJmMmX8jmlG4DQ" Name="Inner" Kind="InputPin" />
+              <Pin Id="HIfEYQPZAp3PsEbe6emyEL" Name="Positions" Kind="OutputPin" />
+              <Pin Id="IxhbiJXDanuQCbvLx1rqse" Name="Normals" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="TZpXhF2b6oOOVZZ4v4g5Pb" Bounds="850,208" />
+            <ControlPoint Id="R7QnUYOvetANhgf8AczDaC" Bounds="976,208" />
+            <ControlPoint Id="BveTC5fcmbyPyLsmpXiPE6" Bounds="852,322" />
+            <Link Id="LYdG0PjBWn2LYHPgRiWfJb" Ids="HIfEYQPZAp3PsEbe6emyEL,BveTC5fcmbyPyLsmpXiPE6" />
+            <Link Id="H0eQYaBPqBEOQljfUu4NUu" Ids="TZpXhF2b6oOOVZZ4v4g5Pb,VjCfnNX0uRDNnSteyzNjaM" />
+            <Link Id="D9ckBJnCWSPPsxkKee5piE" Ids="R7QnUYOvetANhgf8AczDaC,Go8WlA1QhoCQWQjr7FHuUX" />
+            <Link Id="V2hItKdficbMybW8wk5q6F" Ids="R7QnUYOvetANhgf8AczDaC,IuyNlEM7zJmMmX8jmlG4DQ" />
+            <Link Id="QnWz4ggXgcwN1dBoOGJzkx" Ids="EJ7vgSRDDEROoBRvXrZFjj,TZpXhF2b6oOOVZZ4v4g5Pb" IsHidden="true" />
+            <Link Id="PB2I9ktIvRXPHOcFXbdQJQ" Ids="I8JjkvepRsqQDT4BvgwDfU,R7QnUYOvetANhgf8AczDaC" IsHidden="true" />
+            <Link Id="Py6RyPopC9nO022X9t6Vsg" Ids="BveTC5fcmbyPyLsmpXiPE6,CuMPqv0BCYWOePYwLNRlH8" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="C3cpVQvcd94LT9P3J9kfpp" Name="BezierSegment2d" Position="110,206" DefaultCategory="VVVV.BezierSegment" BordersChecked="false">
+        <!--
+
+    ************************ BezierSegment (2d Join) ************************
+
+-->
+        <Node Name="BezierSegment (2d Join)" Bounds="361,79,280,154" Id="Vbxec71sWiqOStheOGzhac">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="Du334pSD7UZQWrc3CJqFV8">
+            <Pin Id="KAT4Exibe4ZNEoR5fPTJvj" Name="Control 1" Kind="InputPin" />
+            <Pin Id="G7tSAwG1GasPcnWqAJ9i1c" Name="Control 2" Kind="InputPin" />
+            <Pin Id="HGNLpMgx8bcQXCa301iqGI" Name="Control 3" Kind="InputPin" />
+            <Pin Id="BaPUuN9NzyeMypBQQR8NK1" Name="Control 4" Kind="InputPin" />
+            <Pin Id="NWD58ZirxaMQcP1e0AP6ah" Name="BezierSegment" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSegment" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Node Bounds="378,141,80,22" Id="MJhocsxkCwvPuCZB2tber6">
+              <p:NodeReference LastCategoryFullName="Math.Bezier.BezierSegment" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Join" />
+                <CategoryReference Kind="Category" Name="BezierSegment" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Bezier" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="PZBQww5qjOUPNJimOArEGT" Name="Input" Kind="InputPin" />
+              <Pin Id="GRPOWtvgORmMpdmuwHJrje" Name="Control 1" Kind="InputPin" />
+              <Pin Id="V5kjLiEDtBtOckMKxDePuA" Name="Control 2" Kind="InputPin" />
+              <Pin Id="KENRfI12ssWO5qyHtPTV8Y" Name="Control 3" Kind="InputPin" />
+              <Pin Id="FjrmgUi6G7ZODf8z3auhfg" Name="Control 4" Kind="InputPin" />
+              <Pin Id="C6G197k7n5dOi6P6CAenD8" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="SVTuDUjCtZsPobd3JlYRSI" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="T3ddllrfUyLLr5VA89BNUl" Bounds="390,96" />
+            <ControlPoint Id="IxhHyAmrE2WQTFFVtjzBUZ" Bounds="453,96" />
+            <ControlPoint Id="VsvMuPYDOdHNUf6HeR4LGy" Bounds="515,96" />
+            <ControlPoint Id="RSszBab39krM2D94NilWlH" Bounds="578,96" />
+            <ControlPoint Id="CH1Am1Q0iObLIIYj9arXVn" Bounds="376,215" />
+            <Link Id="Um0HtMDoaC7LvcybvFMm8P" Ids="RSszBab39krM2D94NilWlH,FjrmgUi6G7ZODf8z3auhfg" />
+            <Link Id="Q5Cc7GvL6PkM7GnaaFsJSB" Ids="VsvMuPYDOdHNUf6HeR4LGy,KENRfI12ssWO5qyHtPTV8Y" />
+            <Link Id="F4Gx8prOFjcOHbVNN8aGFq" Ids="IxhHyAmrE2WQTFFVtjzBUZ,V5kjLiEDtBtOckMKxDePuA" />
+            <Link Id="G0AgNeOc2D3PMSDZgpuNsn" Ids="T3ddllrfUyLLr5VA89BNUl,GRPOWtvgORmMpdmuwHJrje" />
+            <Link Id="NsP0E2fUH0EP2vK5s1JIPr" Ids="SVTuDUjCtZsPobd3JlYRSI,CH1Am1Q0iObLIIYj9arXVn" />
+            <Link Id="NxPvJRSh18sQc6kuVxCEjJ" Ids="KAT4Exibe4ZNEoR5fPTJvj,T3ddllrfUyLLr5VA89BNUl" IsHidden="true" />
+            <Link Id="TKBPMAXkCzcPOe6JdMHrd6" Ids="G7tSAwG1GasPcnWqAJ9i1c,IxhHyAmrE2WQTFFVtjzBUZ" IsHidden="true" />
+            <Link Id="MZYmvNfFj5GPu2LLp2p7EV" Ids="HGNLpMgx8bcQXCa301iqGI,VsvMuPYDOdHNUf6HeR4LGy" IsHidden="true" />
+            <Link Id="Px38jd3s22uOtv6G1dtC8W" Ids="BaPUuN9NzyeMypBQQR8NK1,RSszBab39krM2D94NilWlH" IsHidden="true" />
+            <Link Id="Ec7yxUQJsdfMgUuu7984V4" Ids="CH1Am1Q0iObLIIYj9arXVn,NWD58ZirxaMQcP1e0AP6ah" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierSegmentSpread (2d) ************************
+
+-->
+        <Node Name="BezierSegmentSpread (2d)" Bounds="1114,79,188,154" Id="IPhucJEZmusP1GAFDA01iq">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="VkrIAITyJvnOGTBQkBaQjQ">
+            <Pin Id="IzDsErh0aPsLK77y7Woffh" Name="BezierSegment" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSegment" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="JBZHyP7EJWgOxRJzCqPDQM" Name="Count" Kind="InputPin" />
+            <Pin Id="Qx8lBaI6tOBPC0IZju9skD" Name="Positions" Kind="OutputPin" />
+            <Node Bounds="1131,141,109,13" Id="C5txOZe6rr9ORiKOGfqJiQ">
+              <p:NodeReference LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <CategoryReference Kind="Category" Name="Math" />
+                <CategoryReference Kind="Category" Name="Bezier" />
+                <Choice Kind="OperationNode" Name="BezierSegmentSpread" />
+              </p:NodeReference>
+              <Pin Id="SNJgvMg1GbHNZ2qsytKf9r" Name="Bezier Segment" Kind="InputPin" />
+              <Pin Id="Guv0rDsb56SMtpxelaOzB3" Name="Count" Kind="InputPin" />
+              <Pin Id="K7TbMtt50jbMdVJteVkKfM" Name="Positions" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="I2i2bBysaziOEZfPaSJ9uz" Bounds="1129,96" />
+            <ControlPoint Id="DOKoCF4nLYmPhEMSHzwkmH" Bounds="1254,96" />
+            <ControlPoint Id="Uy1baWm0ioTLpbmEjyFWeV" Bounds="1131,215" />
+            <Link Id="IFgdvT7qwRpL3TOz0fWgoy" Ids="I2i2bBysaziOEZfPaSJ9uz,SNJgvMg1GbHNZ2qsytKf9r" />
+            <Link Id="LE8hjLk4XSxOmFLg6a8qkE" Ids="DOKoCF4nLYmPhEMSHzwkmH,Guv0rDsb56SMtpxelaOzB3" />
+            <Link Id="AUozI6ryhSHOqpnHWxi4Nt" Ids="K7TbMtt50jbMdVJteVkKfM,Uy1baWm0ioTLpbmEjyFWeV" />
+            <Link Id="SmLmsn9uLvyQLPRnkjylEQ" Ids="IzDsErh0aPsLK77y7Woffh,I2i2bBysaziOEZfPaSJ9uz" IsHidden="true" />
+            <Link Id="HSTgK3ctFmJLipfzR6tOup" Ids="JBZHyP7EJWgOxRJzCqPDQM,DOKoCF4nLYmPhEMSHzwkmH" IsHidden="true" />
+            <Link Id="A8aw7JCLYziMQ1PQIPTLSh" Ids="Uy1baWm0ioTLpbmEjyFWeV,Qx8lBaI6tOBPC0IZju9skD" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Sample (2d) ************************
+
+-->
+        <Node Name="Sample (2d)" Bounds="43,102,160,124" Id="Gv6oZ4QEIxkMF8XKWRxYib">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="Jiadx3GiKpFO7nkxrRA28a">
+            <Pin Id="VoemBktGazlM9XGswKiWpY" Name="BezierSegment" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSegment" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="K8UlxkP0rUwMiE14va95mQ" Name="Scalar" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OLSWQOlErRGOfKJmsLvwM1" Name="Position" Kind="OutputPin" />
+            <Node Bounds="60,157,42,13" Id="R1zoBwBVzUBNk2XIaqVgnw">
+              <p:NodeReference LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Sample" />
+                <CategoryReference Kind="Category" Name="Bezier" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Math" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="AU3U7D2NtdvMfTEjhghpij" Name="Input" Kind="InputPin" />
+              <Pin Id="J5mZSBDbgW7Lw7N5WnLh3k" Name="Scalar" Kind="InputPin" />
+              <Pin Id="B9FZPb8nEPpPoXHda1Gopu" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="RwSUxI0pnWiOksO2QMNWPa" Bounds="58,119" />
+            <ControlPoint Id="PhtglWTzDEuMpJwOGNc0Ag" Bounds="156,119" />
+            <ControlPoint Id="LA4rujXoyjuOK3NnE668mY" Bounds="58,208" />
+            <Link Id="PD1KOZpCC3VLQ1UnRARMCQ" Ids="RwSUxI0pnWiOksO2QMNWPa,AU3U7D2NtdvMfTEjhghpij" />
+            <Link Id="TMmrkQRCXB0LiQ6jxkw8oI" Ids="PhtglWTzDEuMpJwOGNc0Ag,J5mZSBDbgW7Lw7N5WnLh3k" />
+            <Link Id="AorfiWTkarnPnlwbunhfjx" Ids="B9FZPb8nEPpPoXHda1Gopu,LA4rujXoyjuOK3NnE668mY" />
+            <Link Id="L3NmcKX5vuFOoJxh2Xu1Sa" Ids="VoemBktGazlM9XGswKiWpY,RwSUxI0pnWiOksO2QMNWPa" IsHidden="true" />
+            <Link Id="NH1N7pmQjDBMrBk7sMaBBX" Ids="K8UlxkP0rUwMiE14va95mQ,PhtglWTzDEuMpJwOGNc0Ag" IsHidden="true" />
+            <Link Id="MC8R32jD0xCMPdnvRwUKPJ" Ids="LA4rujXoyjuOK3NnE668mY,OLSWQOlErRGOfKJmsLvwM1" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierSegment (2d Split) ************************
+
+-->
+        <Node Name="BezierSegment (2d Split)" Bounds="751,79,260,154" Id="Irdqg3lRfDsNvWKkB2GI6A">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="PtoIWbqZ6rBNBESLZDjLGs">
+            <Pin Id="Obe08Qf1YCrOrTdQpBbT4R" Name="BezierSegment" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSegment" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OaxxP4uLayAPvNZeX88gK7" Name="Control 1" Kind="OutputPin" />
+            <Pin Id="I27wDbANUteMcnHA33JutF" Name="Control 2" Kind="OutputPin" />
+            <Pin Id="MEI6YUhTBZ5LpZbiJcseoE" Name="Control 3" Kind="OutputPin" />
+            <Pin Id="Kxt4TyVfyXbL8K5dN4TKiy" Name="Control 4" Kind="OutputPin" />
+            <Node Bounds="769,141,62,22" Id="NTz3oNoIhK4MDyLQIFnQKJ">
+              <p:NodeReference LastCategoryFullName="Math.Bezier.BezierSegment" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Split" />
+                <CategoryReference Kind="Category" Name="BezierSegment" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Bezier" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="NWRXunRnbDoMy7ikg3UrCy" Name="Input" Kind="InputPin" />
+              <Pin Id="F8llFXekMWnPBp6EMJJk35" Name="Control 1" Kind="OutputPin" />
+              <Pin Id="IaCF4O4TdE6NcK0hOZGXKs" Name="Control 2" Kind="OutputPin" />
+              <Pin Id="PbjeVf7dF14LTWm1TH63bj" Name="Control 3" Kind="OutputPin" />
+              <Pin Id="LxrToaYvU4lQGmwz2a3swU" Name="Control 4" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="FvdLN2m00PbON2uSfQwaJi" Bounds="766,96" />
+            <ControlPoint Id="CLRsOO2wMF6Mlojki5WKaD" Bounds="766,215" />
+            <ControlPoint Id="VQz9U1kvPOHOv7yfSePPVr" Bounds="825,215" />
+            <ControlPoint Id="JCEpfU3WRShPMybm8IHx8I" Bounds="887,215" />
+            <ControlPoint Id="FNuSTJtaptWOTCESMuktwD" Bounds="948,215" />
+            <Link Id="HKIW1Sdm1w5OIxREKloBHM" Ids="FvdLN2m00PbON2uSfQwaJi,NWRXunRnbDoMy7ikg3UrCy" />
+            <Link Id="AoiNSzOYsklNyfLLpNjqkB" Ids="F8llFXekMWnPBp6EMJJk35,CLRsOO2wMF6Mlojki5WKaD" />
+            <Link Id="RhnoSmwT7yTQJgudiDGAbP" Ids="IaCF4O4TdE6NcK0hOZGXKs,VQz9U1kvPOHOv7yfSePPVr" />
+            <Link Id="GuRFK9UjXedNQZjhzFfdlz" Ids="PbjeVf7dF14LTWm1TH63bj,JCEpfU3WRShPMybm8IHx8I" />
+            <Link Id="DUf7piJ9aTYLMddvvrLASH" Ids="LxrToaYvU4lQGmwz2a3swU,FNuSTJtaptWOTCESMuktwD" />
+            <Link Id="M8aeqqjApuROLyYd8d9yme" Ids="Obe08Qf1YCrOrTdQpBbT4R,FvdLN2m00PbON2uSfQwaJi" IsHidden="true" />
+            <Link Id="AsntntLNacqOoy8oCICKhn" Ids="CLRsOO2wMF6Mlojki5WKaD,OaxxP4uLayAPvNZeX88gK7" IsHidden="true" />
+            <Link Id="GisMk95Q89dM9yTnGw09uT" Ids="VQz9U1kvPOHOv7yfSePPVr,I27wDbANUteMcnHA33JutF" IsHidden="true" />
+            <Link Id="HIM7KGgIYkvQZ5IMc8kvcI" Ids="JCEpfU3WRShPMybm8IHx8I,MEI6YUhTBZ5LpZbiJcseoE" IsHidden="true" />
+            <Link Id="M63wykENgMNLMNS40ZldYf" Ids="FNuSTJtaptWOTCESMuktwD,Kxt4TyVfyXbL8K5dN4TKiy" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="E14ploUekbaLTsxWjJutRt" Name="BezierSegment3d" Position="345,205" DefaultCategory="VVVV.BezierSegment" BordersChecked="false">
+        <!--
+
+    ************************ BezierSegment (3d Join) ************************
+
+-->
+        <Node Name="BezierSegment (3d Join)" Bounds="134,80,280,151" Id="AEzmWjjdrh1PiXHOvIFOP0">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="AEyt2uzTTIxLvIQudCfMj7">
+            <Pin Id="CrlO3r1ff17NuyWEBSSoQR" Name="Control 1" Kind="InputPin" />
+            <Pin Id="QeiNg5lYRlcOHdoVhAfsWK" Name="Control 2" Kind="InputPin" />
+            <Pin Id="FHUxSfvQUirLnRZmX1eq8H" Name="Control 3" Kind="InputPin" />
+            <Pin Id="VBT9FwuHGoWL9Fj9N9Jq7o" Name="Control 4" Kind="InputPin" />
+            <Pin Id="JfDGwFNXdBeP9udkKU5eUY" Name="BezierSegment" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSegment" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Node Bounds="151,160,80,22" Id="IA68p4dGvn6NymKNxABb0T">
+              <p:NodeReference LastCategoryFullName="Math.Bezier.BezierSegment" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Join" />
+                <CategoryReference Kind="Category" Name="BezierSegment" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Bezier" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="HWyT5XWPSZkMNebZxA3U0Y" Name="Input" Kind="InputPin" />
+              <Pin Id="VRuRuLFBfoyM34RK2NSZTA" Name="Control 1" Kind="InputPin" />
+              <Pin Id="MdI6HA4fB1oMaf4uRCqAEa" Name="Control 2" Kind="InputPin" />
+              <Pin Id="MBC4G7u5jfHMkH4aRtd2LG" Name="Control 3" Kind="InputPin" />
+              <Pin Id="ByzfYWQ6xrxMqQ24QSywo6" Name="Control 4" Kind="InputPin" />
+              <Pin Id="BaErByJA0vCNPmdHzaSV4H" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="VS2sRHpP4xTNZrvoq2npMz" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="KXmiFrNtwd6Luuw8RwxqcV" Bounds="163,97" />
+            <ControlPoint Id="TKVq2IOXNOEMdnqSfeMCK9" Bounds="226,97" />
+            <ControlPoint Id="NfYMDmHSbEHNbbKBoObatZ" Bounds="288,97" />
+            <ControlPoint Id="V3GAUJbBgRpNh4L7cYCFgJ" Bounds="351,97" />
+            <ControlPoint Id="HPnPL4UXTJIOHgCobeGy23" Bounds="149,213" />
+            <Link Id="Dvfas48f0CxOtbnRxiKm7W" Ids="VS2sRHpP4xTNZrvoq2npMz,HPnPL4UXTJIOHgCobeGy23" />
+            <Link Id="KnbkCpSqU4xOJuMFvqG8fC" Ids="V3GAUJbBgRpNh4L7cYCFgJ,ByzfYWQ6xrxMqQ24QSywo6" />
+            <Link Id="VMztf9lNOGNLF7i46142o1" Ids="NfYMDmHSbEHNbbKBoObatZ,MBC4G7u5jfHMkH4aRtd2LG" />
+            <Link Id="Bg8oocearY5OvjuVc8rG2z" Ids="TKVq2IOXNOEMdnqSfeMCK9,MdI6HA4fB1oMaf4uRCqAEa" />
+            <Link Id="I5uID2uAQuDNX1sTKeDWY0" Ids="KXmiFrNtwd6Luuw8RwxqcV,VRuRuLFBfoyM34RK2NSZTA" />
+            <Link Id="UfUUcHDhDk5NMC1V6ewDU2" Ids="CrlO3r1ff17NuyWEBSSoQR,KXmiFrNtwd6Luuw8RwxqcV" IsHidden="true" />
+            <Link Id="QBA4kVRJJ1pOgoyZljqhU7" Ids="QeiNg5lYRlcOHdoVhAfsWK,TKVq2IOXNOEMdnqSfeMCK9" IsHidden="true" />
+            <Link Id="QjSzbvIgMl6PQriBWPoOcV" Ids="FHUxSfvQUirLnRZmX1eq8H,NfYMDmHSbEHNbbKBoObatZ" IsHidden="true" />
+            <Link Id="MAZLRQQTe0QP6Gq2VuBLOe" Ids="VBT9FwuHGoWL9Fj9N9Jq7o,V3GAUJbBgRpNh4L7cYCFgJ" IsHidden="true" />
+            <Link Id="JAFfqwrlQWmLrpEjcKbXWb" Ids="HPnPL4UXTJIOHgCobeGy23,JfDGwFNXdBeP9udkKU5eUY" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierSegment (3d Split) ************************
+
+-->
+        <Node Name="BezierSegment (3d Split)" Bounds="515,72,260,169" Id="NIyBGrooPl5Ou8jPwfmjy8">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="M4XZJFSyEW2N0h1D5fG3tK">
+            <Pin Id="Ogw9x8kmK9CNx9mDt69E6I" Name="BezierSegment" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSegment" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HiFqFuDYkoWMGpJgCuQmXG" Name="Control 1" Kind="OutputPin" />
+            <Pin Id="I6EqB9TnUzMO0oKNiQhrQ3" Name="Control 2" Kind="OutputPin" />
+            <Pin Id="UmpsdA5Ld7XOlEAqM7DlTg" Name="Control 3" Kind="OutputPin" />
+            <Pin Id="AhIxsImEayGPT0QP6m4DPV" Name="Control 4" Kind="OutputPin" />
+            <Node Bounds="533,134,62,22" Id="ROJ19OeZwrHNkqizIbGqAp">
+              <p:NodeReference LastCategoryFullName="Math.Bezier.BezierSegment" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Split" />
+                <CategoryReference Kind="Category" Name="BezierSegment" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Bezier" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="CFvVpyvf85LNPMnb6XYy1j" Name="Input" Kind="InputPin" />
+              <Pin Id="Gqizvm2LDj9NMzDJhS2Ftp" Name="Control 1" Kind="OutputPin" />
+              <Pin Id="H7Zh62TmefPOkc3FhoJRhs" Name="Control 2" Kind="OutputPin" />
+              <Pin Id="D5vlMh0s7hiPnrh4W64Weq" Name="Control 3" Kind="OutputPin" />
+              <Pin Id="T2rNym3pXCPPyowAkorrwH" Name="Control 4" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="DNRMrHOLcvQOmpQ1MV4z6r" Bounds="530,89" />
+            <ControlPoint Id="CO1NcZqntX7LY44WN9vx2I" Bounds="530,223" />
+            <ControlPoint Id="KQPnJuvYhW8LG4Cc7X376H" Bounds="589,223" />
+            <ControlPoint Id="TyQj57pZti2MJ4wk8sXmiT" Bounds="651,223" />
+            <ControlPoint Id="QGXWJtXthQ1OSeXlKzq9SA" Bounds="712,223" />
+            <Link Id="Cmg7eldpGFKOR6XzVMgMFy" Ids="DNRMrHOLcvQOmpQ1MV4z6r,CFvVpyvf85LNPMnb6XYy1j" />
+            <Link Id="MbVnrvHRBpSPcIONYD8bC8" Ids="Gqizvm2LDj9NMzDJhS2Ftp,CO1NcZqntX7LY44WN9vx2I" />
+            <Link Id="P5530oFNJPeP5FwbJ9LW1s" Ids="H7Zh62TmefPOkc3FhoJRhs,KQPnJuvYhW8LG4Cc7X376H" />
+            <Link Id="MysBNHvVZ0jQDTUv0eIk4Y" Ids="D5vlMh0s7hiPnrh4W64Weq,TyQj57pZti2MJ4wk8sXmiT" />
+            <Link Id="LVLsTFQUb3PPoHlpWtKK94" Ids="T2rNym3pXCPPyowAkorrwH,QGXWJtXthQ1OSeXlKzq9SA" />
+            <Link Id="FOxLThJ4sXVO0UqdSFRas0" Ids="Ogw9x8kmK9CNx9mDt69E6I,DNRMrHOLcvQOmpQ1MV4z6r" IsHidden="true" />
+            <Link Id="TjUGduPeJflNUUk2DacQmZ" Ids="CO1NcZqntX7LY44WN9vx2I,HiFqFuDYkoWMGpJgCuQmXG" IsHidden="true" />
+            <Link Id="D6GIZqhndtVLsne1g7scqg" Ids="KQPnJuvYhW8LG4Cc7X376H,I6EqB9TnUzMO0oKNiQhrQ3" IsHidden="true" />
+            <Link Id="TS2sQGavOsHN2ZJKIvMVCk" Ids="TyQj57pZti2MJ4wk8sXmiT,UmpsdA5Ld7XOlEAqM7DlTg" IsHidden="true" />
+            <Link Id="PMdw1q7PcGnMo2GTvEu1Ys" Ids="QGXWJtXthQ1OSeXlKzq9SA,AhIxsImEayGPT0QP6m4DPV" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Sample (3d) ************************
+
+-->
+        <Node Name="Sample (3d)" Bounds="-130,84,160,124" Id="Bpaumo7gExvMMRpfWWd433">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="FTR64LAxSxNNxw7xcNEkCA">
+            <Pin Id="Qsdqujq4FNKQQ8AQIMIjrM" Name="BezierSegment" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSegment" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="CoTzMelSKjfOxTB7C9ztVw" Name="Scalar" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="KIGpYPwYL2pNV7zb0cFXQh" Name="Position" Kind="OutputPin" />
+            <Node Bounds="-113,139,42,13" Id="AqJnHkzE2jnQPqZVAKdrVR">
+              <p:NodeReference LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Sample" />
+                <CategoryReference Kind="Category" Name="Bezier" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Math" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="R3rgApl1F0SMYtmdArN2c4" Name="Input" Kind="InputPin" />
+              <Pin Id="RB9OHbEoxyIPIZKKi9CjRk" Name="Scalar" Kind="InputPin" />
+              <Pin Id="QrX3G5TPCjxNZhm67MNmGM" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="TfIgIwCO3XnN9QVAndXGdw" Bounds="-115,101" />
+            <ControlPoint Id="RKoNWDhvqSOOBYg9ZCVt30" Bounds="-17,101" />
+            <ControlPoint Id="KnVz2CyFgY5PbKCKUq8JeA" Bounds="-115,190" />
+            <Link Id="NJi3QIc28LiO4guDjh2os8" Ids="TfIgIwCO3XnN9QVAndXGdw,R3rgApl1F0SMYtmdArN2c4" />
+            <Link Id="JQeNDeRvbcBOE8ckSFjjBS" Ids="RKoNWDhvqSOOBYg9ZCVt30,RB9OHbEoxyIPIZKKi9CjRk" />
+            <Link Id="IbYd0zWfDXjM56P6HGHfJL" Ids="QrX3G5TPCjxNZhm67MNmGM,KnVz2CyFgY5PbKCKUq8JeA" />
+            <Link Id="B1sbmME4Bd4NfVkfKmKcAS" Ids="Qsdqujq4FNKQQ8AQIMIjrM,TfIgIwCO3XnN9QVAndXGdw" IsHidden="true" />
+            <Link Id="Sv9cMSsFm29MapOzw934nf" Ids="CoTzMelSKjfOxTB7C9ztVw,RKoNWDhvqSOOBYg9ZCVt30" IsHidden="true" />
+            <Link Id="Vkg4Robu9sqOsMcMIrkjKB" Ids="KnVz2CyFgY5PbKCKUq8JeA,KIGpYPwYL2pNV7zb0cFXQh" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierSegmentSpread (3d) ************************
+
+-->
+        <Node Name="BezierSegmentSpread (3d)" Bounds="879,84,188,149" Id="ERFvglWaVGNLyTsL3XZuGL">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="UDoK9CHCwl1Pe8urgExAXV">
+            <Pin Id="PEiFIlATteGNJ9XuWnaqSB" Name="BezierSegment" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSegment" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Fvz2UwyBh4jLqZHDk5nJcc" Name="Count" Kind="InputPin" />
+            <Pin Id="Rkvw5pzMck3PGZ3PRUKvZk" Name="Positions" Kind="OutputPin" />
+            <Node Bounds="897,153,109,13" Id="B8uMBipUnoQMRPPuT4nCBB">
+              <p:NodeReference LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <CategoryReference Kind="Category" Name="Math" />
+                <CategoryReference Kind="Category" Name="Bezier" />
+                <Choice Kind="OperationNode" Name="BezierSegmentSpread" />
+              </p:NodeReference>
+              <Pin Id="TPogAQhq54RMKfTVkwYUkF" Name="Bezier Segment" Kind="InputPin" />
+              <Pin Id="NvsbRfH0WZtLaSeNC1SYgI" Name="Count" Kind="InputPin" />
+              <Pin Id="UqweteGkI7kMB0z5GIjTfZ" Name="Positions" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="O3rkVQb8kbkO5nNpNkudQq" Bounds="894,101" />
+            <ControlPoint Id="T97a3kl5hc4Li9RtqwadGL" Bounds="1019,101" />
+            <ControlPoint Id="LWr2L6i2SY8OgWwgW1M3Z0" Bounds="897,215" />
+            <Link Id="HhH8l4M0Bs7MBvDjPwBB8B" Ids="UqweteGkI7kMB0z5GIjTfZ,LWr2L6i2SY8OgWwgW1M3Z0" />
+            <Link Id="IOCCzPBuCbuM8fg8BEE4Fw" Ids="T97a3kl5hc4Li9RtqwadGL,NvsbRfH0WZtLaSeNC1SYgI" />
+            <Link Id="RDGdBm1mKtXOEjxWpDz812" Ids="O3rkVQb8kbkO5nNpNkudQq,TPogAQhq54RMKfTVkwYUkF" />
+            <Link Id="RMmmGbMlX6lLvwUg3pZJBC" Ids="PEiFIlATteGNJ9XuWnaqSB,O3rkVQb8kbkO5nNpNkudQq" IsHidden="true" />
+            <Link Id="ND1xJ62uM8dNiyR0NPuY97" Ids="Fvz2UwyBh4jLqZHDk5nJcc,T97a3kl5hc4Li9RtqwadGL" IsHidden="true" />
+            <Link Id="IuDzTL9pevEPFhtIJ2oQBp" Ids="LWr2L6i2SY8OgWwgW1M3Z0,Rkvw5pzMck3PGZ3PRUKvZk" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="Vm6vuzzxnaaLTTPG2X7hqP" Name="BezierSpline2d" Position="107,139" DefaultCategory="VVVV.2d" BordersChecked="false">
+        <!--
+
+    ************************ BezierSpread (BezierSpline) ************************
+
+-->
+        <Node Name="BezierSpread (BezierSpline)" Bounds="613,134,211,118" Id="MbkUzETjAtKPwdJbOKcGxj">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="HycXTdjfWxzPoJbfTNIG2F">
+            <Pin Id="MdfA7pjWq77Pr1TugC1xLV" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSpline" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Vf4FymU1nPsMEncoIqXLqT" Name="Count" Kind="InputPin" DefaultValue="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="QHgntWaMyuYNt7X0xVkeo5" Name="Point" Kind="OutputPin" />
+            <Node Bounds="638,182,97,13" Id="BxLpTR73w3hM8jYlqEBiQJ">
+              <p:NodeReference LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="BezierSplineSpread" />
+                <FullNameCategoryReference ID="Math.Bezier" />
+              </p:NodeReference>
+              <Pin Id="Dd8VrDMcXp3Ps59ZkVZTu7" Name="Input" Kind="InputPin" />
+              <Pin Id="HPPvMKGYZpSPtbuFsd7KEn" Name="Count" Kind="InputPin" />
+              <Pin Id="KzuJM5ITPX5L9avGk9F3HB" Name="Points" Kind="OutputPin" />
+              <Pin Id="O1z95aVnLa0OlshUSkF3FJ" Name="Segment Count" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="KDKqiRRY88mMffh5SoCfcq" Bounds="628,151" />
+            <ControlPoint Id="IIiatBsn5gDM0DYdcaQIYO" Bounds="739,151" />
+            <ControlPoint Id="RGhPLu11iKpNAwOYKomk92" Bounds="640,231" />
+            <Link Id="SSIoQGJR6pxPTBXLY2G2Ku" Ids="KDKqiRRY88mMffh5SoCfcq,Dd8VrDMcXp3Ps59ZkVZTu7" />
+            <Link Id="KCsZ0CeDw3tOohz8dTQXcJ" Ids="IIiatBsn5gDM0DYdcaQIYO,HPPvMKGYZpSPtbuFsd7KEn" />
+            <Link Id="OMzRX4PbvJCMkTSOyJminn" Ids="KzuJM5ITPX5L9avGk9F3HB,RGhPLu11iKpNAwOYKomk92" />
+            <Link Id="DYZgZkHxb6nPnVcMXTyVDw" Ids="MdfA7pjWq77Pr1TugC1xLV,KDKqiRRY88mMffh5SoCfcq" IsHidden="true" />
+            <Link Id="MRjgyhTc4LQLyeZsVhLlBh" Ids="Vf4FymU1nPsMEncoIqXLqT,IIiatBsn5gDM0DYdcaQIYO" IsHidden="true" />
+            <Link Id="AGEpFhE73WKNTJVVsCdEWZ" Ids="RGhPLu11iKpNAwOYKomk92,QHgntWaMyuYNt7X0xVkeo5" IsHidden="true" />
+            <ControlPoint Id="JTZtRhxukOPLwrawKbTYpp" Bounds="733,234" />
+            <Link Id="FSw1aBryjsRN3MZW5xbl62" Ids="O1z95aVnLa0OlshUSkF3FJ,JTZtRhxukOPLwrawKbTYpp" />
+            <Pin Id="MQ4zdEgvSZlL6NhHBJZXUo" Name="Segment Count" Kind="OutputPin" />
+            <Link Id="JUZjF0AY0cyMlODsfPBITG" Ids="JTZtRhxukOPLwrawKbTYpp,MQ4zdEgvSZlL6NhHBJZXUo" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierSpline (Join) ************************
+
+-->
+        <Node Name="BezierSpline (Join)" Bounds="397,135,104,175" Id="R3JA5tahafgOQFkxwnlzNV">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="AqVCGu4T7sNQULte5VxZPg">
+            <Pin Id="FjFTbIb89iMLjwpHAY8T0V" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Sequence" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="BezierKnot" />
+                    <p:TypeArguments>
+                      <TypeReference ReferenceKind="App">
+                        <Choice Kind="TypeFlag" Name="Vector2" />
+                      </TypeReference>
+                    </p:TypeArguments>
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="McUiD8cJZuBM7fWLntNrex" Name="BezierSpline" Kind="OutputPin" />
+            <Node Bounds="414,240,52,22" Id="LyXfO4zwYFJLHTxM4NTgjH">
+              <p:NodeReference LastCategoryFullName="Math.Bezier.BezierSpline" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <CategoryReference Kind="Category" Name="BezierSpline" />
+                <Choice Kind="OperationNode" Name="Join" />
+              </p:NodeReference>
+              <Pin Id="Co2Ys0re3JDOrwGaEPuddO" Name="Input" Kind="InputPin" />
+              <Pin Id="H3hF7HW0sazQYpVLKS1Y10" Name="Knots" Kind="InputPin" />
+              <Pin Id="CDLUkbew8uyOv0V8XlHqyb" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="KMUaR57fmgbNkqSQ6jq1Es" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="437,196,52,22" Id="DJ62TBKsyK3QDsfJsXxUb4">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Core.dll">
+                <Choice Kind="OperationNode" Name="ToSpread" />
+                <CategoryReference Kind="Category" Name="Sequence" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="Jx7xPFb4Hv6PEIcAQixxqI" Name="Input" Kind="InputPin" />
+              <Pin Id="RRbB6MZjHuNQWYvPfwNhj9" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="SyKOQ9c0VF6NKcZRRNmlPp" Bounds="435,152" />
+            <ControlPoint Id="OOAPB4YW9PkNHBUVziTi0f" Bounds="412,292" />
+            <Link Id="JYilIOPG9onO3UsLEm0ean" Ids="KMUaR57fmgbNkqSQ6jq1Es,OOAPB4YW9PkNHBUVziTi0f" />
+            <Link Id="VVRUfsQiZwPL0wcdq4cmj2" Ids="SyKOQ9c0VF6NKcZRRNmlPp,Jx7xPFb4Hv6PEIcAQixxqI" />
+            <Link Id="Il6YKNpxsoFNeciR5jZYgH" Ids="RRbB6MZjHuNQWYvPfwNhj9,H3hF7HW0sazQYpVLKS1Y10" />
+            <Link Id="BdkNHrdpt6hM2Dnuov7vs7" Ids="FjFTbIb89iMLjwpHAY8T0V,SyKOQ9c0VF6NKcZRRNmlPp" IsHidden="true" />
+            <Link Id="Tf9zWzXEkcBOu1vbd4KOOt" Ids="OOAPB4YW9PkNHBUVziTi0f,McUiD8cJZuBM7fWLntNrex" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ArcLength (BezierSpline) ************************
+
+-->
+        <Node Name="ArcLength (BezierSpline)" Bounds="859,134,302,410" Id="VuwIyhqH6rnNleJTTYwCQw">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="KdLYzSBlRO9OCSVRPivYBo">
+            <Node Bounds="898,269,97,13" Id="E6tH2KsWDiwOnRn5kekmsn">
+              <p:NodeReference LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="BezierSplineSpread" />
+                <CategoryReference Kind="Category" Name="Bezier" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="BhxZvGlpCbrL5KnpPrzDRW" Name="Input" Kind="InputPin" />
+              <Pin Id="DJUqDNyKeDqP9CNtp5gUQ1" Name="Count" Kind="InputPin" />
+              <Pin Id="Kz1lvL3bbeaP6VKbuxTlVm" Name="Points" Kind="OutputPin" />
+              <Pin Id="PxOA9FzxdGWO2unCSRdMjL" Name="Segment Count" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="898,369,56,13" Id="Gde4v8vDp32P2BfHlMAVTD">
+              <p:NodeReference LastCategoryFullName="Math.Path" LastSymbolSource="VL.Paths.vl">
+                <Choice Kind="OperationNode" Name="ArcLength" />
+              </p:NodeReference>
+              <Pin Id="DpedG5pkX8aLhuYUDAhW07" Name="Points" Kind="InputPin" />
+              <Pin Id="HF8PWKk9ZwqOmDWTe51V8k" Name="Position On Curve" Kind="InputPin" />
+              <Pin Id="N1sexrI4RWNMB4FcyWxYIm" Name="Point" Kind="OutputPin" />
+              <Pin Id="B0lfRvScvBuPEzYpkuyeH4" Name="Segment Index" Kind="OutputPin" />
+              <Pin Id="Fje02HPNLgxOziA3ZknzJd" Name="Total Length" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Rh4mvfxi2rkLjYhSAjNqKa" Bounds="874,151" />
+            <ControlPoint Id="T3jHItJtgkHML6cGck7yXu" Bounds="964,151" />
+            <ControlPoint Id="MfFECrwipS4NasnKEPOI6Q" Bounds="1092,152" />
+            <ControlPoint Id="MoMP7EWkUg4QXPFZ9Phuq2" Bounds="901,526" />
+            <Link Id="LyM8Pm36nhKMAtEMpuAQf1" Ids="Rh4mvfxi2rkLjYhSAjNqKa,BhxZvGlpCbrL5KnpPrzDRW" />
+            <Link Id="HU9YhyXTo9IMlFybruvl6P" Ids="Kz1lvL3bbeaP6VKbuxTlVm,DpedG5pkX8aLhuYUDAhW07" />
+            <Link Id="Ox6wY3pmIGtMKJMkHdz8PR" Ids="T3jHItJtgkHML6cGck7yXu,HF8PWKk9ZwqOmDWTe51V8k" />
+            <Link Id="IZUj6EiicuiOD4NMRSSF32" Ids="N1sexrI4RWNMB4FcyWxYIm,MoMP7EWkUg4QXPFZ9Phuq2" />
+            <Link Id="OgRxIW3VzxYMJY84SG3aMR" Ids="PO4UOx8e6lyOrLyPAF0URK,Rh4mvfxi2rkLjYhSAjNqKa" IsHidden="true" />
+            <Link Id="GTRdEdGbhWCL1WGq9IQyCG" Ids="Ts3ZmYk5MTEMsYbMci6eA8,T3jHItJtgkHML6cGck7yXu" IsHidden="true" />
+            <Link Id="ToZanNHOtF2N25PNMguhOn" Ids="DPuFjsMLWLXNA4qwUZY5J6,MfFECrwipS4NasnKEPOI6Q" IsHidden="true" />
+            <Link Id="QRbEEOE9mElOdlRG5HFyf2" Ids="MoMP7EWkUg4QXPFZ9Phuq2,LUYNiO3uRf8QIVJeGT7E5H" IsHidden="true" />
+            <ControlPoint Id="FQErAbITUcpMa7jm1bA0QC" Bounds="1050,526" />
+            <Link Id="BKoik3RPYqAOlK92BcbnMp" Ids="Fje02HPNLgxOziA3ZknzJd,FQErAbITUcpMa7jm1bA0QC" />
+            <Link Id="A1prO79CLDGPQOPwi8lZjD" Ids="FQErAbITUcpMa7jm1bA0QC,Tq8sl42BAoGPj9MC97GCWY" IsHidden="true" />
+            <Node Bounds="976,379,35,13" Id="K5J8RsE3DYmPtLxLmAwahQ">
+              <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationNode" Name="Max" />
+                <CategoryReference Kind="Category" Name="Ranges" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="FfCjrULLO5nPEpCRQav0xz" Name="Input" Kind="InputPin" />
+              <Pin Id="Ti1z6lAlwibPOCRnhD9UK1" Name="Input 2" Kind="InputPin" />
+              <Pin Id="Mhduw4daJyHNmw9w66IaM8" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="AtOgBwfGgDRNccFC6a5FTB" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="MFNn2EzRXDFL9UGpaV2F3X" Bounds="1103,191" ShowValueBox="true" isIOBox="true" Value="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Link Id="NMjHxZwIpmMLBUy1wapIpf" Ids="MFNn2EzRXDFL9UGpaV2F3X,Ti1z6lAlwibPOCRnhD9UK1" />
+            <Node Bounds="924,413,80,90" Id="BdpZwn3hov6LkQkNEW4mAM">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                <Choice Kind="ForEachLoop" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="AEV1bRddkXjNYh8RM2iCRz" Name="Break" Kind="OutputPin" />
+              <ControlPoint Id="Bz2uW6py6IuLDUd4d29OWj" Bounds="948,419" Alignment="Top" />
+              <ControlPoint Id="BK4oolkjwIIPYZCQcr3YXJ" Bounds="949,496" Alignment="Bottom" />
+              <Patch Id="GlAnGYyIiDmPKwdxx4K312">
+                <Patch Id="JSdpZVOENyULwzF2MV8oEQ" Name="Create" />
+                <Patch Id="Dx3Aroiq5w7Nv5Qr6C9sdE" Name="Update" />
+                <Patch Id="RRGVfy1T3f4QTRS9p3wgAU" Name="Destroy" />
+                <Node Bounds="946,448,35,13" Id="Bo3qjGEEXseQZHulLNcXxF">
+                  <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationNode" Name="DIV" />
+                    <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="Jt8XvRpnG8uNFp22N7qplb" Name="Input" Kind="InputPin" />
+                  <Pin Id="PreAciuxvi4LL5C9U1m0Oo" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="BZQQ565AnAjOdXjbLrvItr" Name="Apply" Kind="ApplyPin" />
+                  <Pin Id="SwVlMCXwjndNJ5MUnJVjTB" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Link Id="JxHi1PkTIRHOZTgVlhpDBe" Ids="B0lfRvScvBuPEzYpkuyeH4,Bz2uW6py6IuLDUd4d29OWj" />
+            <Link Id="Ti7isgSRMe7M5nitodzxdh" Ids="Bz2uW6py6IuLDUd4d29OWj,Jt8XvRpnG8uNFp22N7qplb" />
+            <Link Id="O6czOP2jlmaN4VEVjSjzi9" Ids="SwVlMCXwjndNJ5MUnJVjTB,BK4oolkjwIIPYZCQcr3YXJ" />
+            <ControlPoint Id="G9yvxWY9SBvOvKAhaXDsme" Bounds="950,526" />
+            <Link Id="UKpTFpJjUYWOZAvgLQT8X6" Ids="BK4oolkjwIIPYZCQcr3YXJ,G9yvxWY9SBvOvKAhaXDsme" />
+            <Link Id="FohemLXsnGBLwFOeS6yc3K" Ids="G9yvxWY9SBvOvKAhaXDsme,TxGD3UeBRamLmtBuxSDofD" IsHidden="true" />
+            <Pin Id="LUYNiO3uRf8QIVJeGT7E5H" Name="Point" Kind="OutputPin" />
+            <Pin Id="TxGD3UeBRamLmtBuxSDofD" Name="Segment Index" Kind="OutputPin" />
+            <Pin Id="Tq8sl42BAoGPj9MC97GCWY" Name="Total Length" Kind="OutputPin" />
+            <Pin Id="PO4UOx8e6lyOrLyPAF0URK" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSpline" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Ts3ZmYk5MTEMsYbMci6eA8" Name="Position" Kind="InputPin" />
+            <Pin Id="DPuFjsMLWLXNA4qwUZY5J6" Name="Resolution" Kind="InputPin" DefaultValue="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Node Bounds="976,345,35,13" Id="NUFsGhIH4HNMX8xRvMuKU0">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationNode" Name="DIV" />
+              </p:NodeReference>
+              <Pin Id="DZME5k6qasmOHSKNdY9wJs" Name="Input" Kind="InputPin" />
+              <Pin Id="EAegVh4NZTNMPET61T9nAS" Name="Input 2" Kind="InputPin" />
+              <Pin Id="KjfIlwbKD0HOVlXHIfJZs1" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="AOUEc1Io7XkMaynGAzMWHh" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="991,311,35,13" Id="HHFTS8AJMUDPAPZy5kce78">
+              <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationNode" Name="Max" />
+                <CategoryReference Kind="Category" Name="Ranges" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="UDku6LXCBoPOhCf9Qr0t8x" Name="Input" Kind="InputPin" />
+              <Pin Id="GiY1vMYlJxzOOnoohrn38Q" Name="Input 2" Kind="InputPin" />
+              <Pin Id="Ufje0bEpceBL3WB7xq2gGF" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="B9Akg2OFxreNOtkEQKrBKk" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Link Id="HSotkwf19XBNbU3jmfFQHn" Ids="MFNn2EzRXDFL9UGpaV2F3X,GiY1vMYlJxzOOnoohrn38Q" />
+            <Link Id="LLQi7LFiXujLkXY8syanZM" Ids="PxOA9FzxdGWO2unCSRdMjL,UDku6LXCBoPOhCf9Qr0t8x" />
+            <Link Id="L68lCCkXeWyQQ5Ta718US2" Ids="B9Akg2OFxreNOtkEQKrBKk,EAegVh4NZTNMPET61T9nAS" />
+            <Link Id="R0AUnThcL8JMxDJBQyVL9H" Ids="MfFECrwipS4NasnKEPOI6Q,DJUqDNyKeDqP9CNtp5gUQ1" />
+            <Link Id="KFSevOHabduNxJTQN7RatW" Ids="MfFECrwipS4NasnKEPOI6Q,DZME5k6qasmOHSKNdY9wJs" />
+            <Link Id="Hw3I7GD4PffMCAzOkYfWRt" Ids="AOUEc1Io7XkMaynGAzMWHh,FfCjrULLO5nPEpCRQav0xz" />
+            <Link Id="Iq5Jf2Qiz59O1XhTmiFe4e" Ids="AtOgBwfGgDRNccFC6a5FTB,PreAciuxvi4LL5C9U1m0Oo" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierSpline (Split) ************************
+
+-->
+        <Node Name="BezierSpline (Split)" Bounds="390,374,81,127" Id="Jvkh7KJFxIwPk5HPBDxJlF">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="FLWPSsZH735M8ivgeHvMut">
+            <Pin Id="BE5J3ZsR7ACNLE5W1zzlmW" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSpline" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HwgTatspQ2XOUvlYfl5x6B" Name="Result" Kind="OutputPin" />
+            <Node Bounds="407,432,52,22" Id="SWQuf4c7bh3MchCIFTP1mg">
+              <p:NodeReference LastCategoryFullName="Math.Bezier.BezierSpline" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Split" />
+                <CategoryReference Kind="Category" Name="BezierSpline" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="UDhwCOHxOaiMqAAtW3UeNe" Name="Input" Kind="InputPin" />
+              <Pin Id="BomzePYdF7yLzn05GUOCnh" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="NwDZc536xrXL7uN4lqZbNL" Bounds="406,391" />
+            <ControlPoint Id="RE8NX09rdGlPK7gRtuELUa" Bounds="405,483" />
+            <Link Id="VRsbO2zF0qGQBc3r4My8CR" Ids="NwDZc536xrXL7uN4lqZbNL,UDhwCOHxOaiMqAAtW3UeNe" />
+            <Link Id="Oh70RzhcF2LNP7wqkG7R4X" Ids="BomzePYdF7yLzn05GUOCnh,RE8NX09rdGlPK7gRtuELUa" />
+            <Link Id="VTANn68z3RoNlpGxJdrF9X" Ids="BE5J3ZsR7ACNLE5W1zzlmW,NwDZc536xrXL7uN4lqZbNL" IsHidden="true" />
+            <Link Id="FvwWJGIVrylL8y9vF5smqs" Ids="RE8NX09rdGlPK7gRtuELUa,HwgTatspQ2XOUvlYfl5x6B" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="AZ4b3LwYa9AQD0DyCNc4HS" Name="BezierSpline3d" Position="346,139" DefaultCategory="VVVV.3d" BordersChecked="false">
+        <!--
+
+    ************************ BezierSpread (BezierSpline) ************************
+
+-->
+        <Node Name="BezierSpread (BezierSpline)" Bounds="719,114,220,113" Id="RrUfO0gcIWuMjLIoqhQVeG">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="A4i7Ck6gP9hL4N2rB6KZca">
+            <Pin Id="KGIAqG2JCOHP5mO4Dzfk4h" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSpline" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PeF8SRTTnoJPSixfFawbEU" Name="Count" Kind="InputPin" />
+            <Pin Id="Ar5usUAQQMgOwcFAEHcVay" Name="Positions" Kind="OutputPin" />
+            <Node Bounds="754,162,97,13" Id="EYQ8mvYAmzvPr8OukUmoyW">
+              <p:NodeReference LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="BezierSplineSpread" />
+                <FullNameCategoryReference ID="Math.Bezier" />
+              </p:NodeReference>
+              <Pin Id="RFBcjrcjF6kPazhn1AXipd" Name="Input" Kind="InputPin" />
+              <Pin Id="LgftuPNOCkFM0jyQyOCvom" Name="Count" Kind="InputPin" />
+              <Pin Id="NGlSHFMFj95QErqRr7oclM" Name="Points" Kind="OutputPin" />
+              <Pin Id="TXr9FjN6T4GNVLhgUfdEB8" Name="Segment Count" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="CABNyb5ZJDDNxnBrZEgiHN" Bounds="734,131" />
+            <ControlPoint Id="CgJWTsQGEVVMpMglrBdHRh" Bounds="875,131" />
+            <ControlPoint Id="RJaNrIs7OxRO1QNtw4HKpD" Bounds="754,209" />
+            <Link Id="P7Lw5mLMQybNdL2xkok21H" Ids="CgJWTsQGEVVMpMglrBdHRh,LgftuPNOCkFM0jyQyOCvom" />
+            <Link Id="C7uGeHikJzsL9kHSc6Pntr" Ids="CABNyb5ZJDDNxnBrZEgiHN,RFBcjrcjF6kPazhn1AXipd" />
+            <Link Id="OvBKlJBcjiyMqzMx7ZxmLc" Ids="NGlSHFMFj95QErqRr7oclM,RJaNrIs7OxRO1QNtw4HKpD" />
+            <Link Id="SFlcejGh49lMPbw8ywFuKx" Ids="KGIAqG2JCOHP5mO4Dzfk4h,CABNyb5ZJDDNxnBrZEgiHN" IsHidden="true" />
+            <Link Id="KcDeEYspgRrPm3m2Qr8vEa" Ids="PeF8SRTTnoJPSixfFawbEU,CgJWTsQGEVVMpMglrBdHRh" IsHidden="true" />
+            <Link Id="FT8QJABHKQlMkuTObRhszP" Ids="RJaNrIs7OxRO1QNtw4HKpD,Ar5usUAQQMgOwcFAEHcVay" IsHidden="true" />
+            <ControlPoint Id="J86h48a2m4sO5ZHhZIylz3" Bounds="848,209" />
+            <Pin Id="HLg51ldHlACMA9wu8XTWPO" Name="Segment Count" Kind="OutputPin" />
+            <Link Id="T0ysTAKXgQ5PmV35t9kT7q" Ids="J86h48a2m4sO5ZHhZIylz3,HLg51ldHlACMA9wu8XTWPO" IsHidden="true" />
+            <Link Id="HqsUXMZ3jbXLzgqY4BNNkZ" Ids="TXr9FjN6T4GNVLhgUfdEB8,J86h48a2m4sO5ZHhZIylz3" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierSpline (Join) ************************
+
+-->
+        <Node Name="BezierSpline (Join)" Bounds="497,114,105,168" Id="LzQnvsMC3tRQabdZgu8MfI">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="HRQB8bucxisPBqShbL3SA8">
+            <Pin Id="FbB3BjGLliWLYKvWYm2kRo" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Sequence" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="BezierKnot" />
+                    <p:TypeArguments>
+                      <TypeReference ReferenceKind="App">
+                        <Choice Kind="TypeFlag" Name="Vector3" />
+                      </TypeReference>
+                    </p:TypeArguments>
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="FOVCMAXOLtyLQEOPpcCtga" Name="BezierSpline" Kind="OutputPin" />
+            <Node Bounds="538,162,52,22" Id="MciCkwDZtAlNEbeMqDAocp">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Core.dll">
+                <Choice Kind="OperationNode" Name="ToSpread" />
+                <CategoryReference Kind="Category" Name="Sequence" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="LfTCVGAqs3ZOtwn8Or7E0d" Name="Input" Kind="InputPin" />
+              <Pin Id="TlF5dLX1Z80QGm8SRjcgvv" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="514,219,52,22" Id="Vbm12Svc7KiL5h2XnWWzFg">
+              <p:NodeReference LastCategoryFullName="Math.Bezier.BezierSpline" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <CategoryReference Kind="Category" Name="BezierSpline" />
+                <Choice Kind="OperationNode" Name="Join" />
+              </p:NodeReference>
+              <Pin Id="DemYyyzLKpdMqyVotQdJei" Name="Input" Kind="InputPin" />
+              <Pin Id="H3Eg9IbMDXWMdZGCcwLHeC" Name="Knots" Kind="InputPin" />
+              <Pin Id="JVU5ETNnUqaLfPlkzrfmfW" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="EKyw3TpIqgzOhFsmJfnr0N" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="RFqmNwQ3WzKMoTVMbflBsG" Bounds="535,131" />
+            <ControlPoint Id="EJDXHB6kfVYOlEVyNG5dpW" Bounds="512,264" />
+            <Link Id="V2DJlkYvlmzNaqPtNH78Z4" Ids="RFqmNwQ3WzKMoTVMbflBsG,LfTCVGAqs3ZOtwn8Or7E0d" />
+            <Link Id="NZbrxM4mIv9QWZVcOsoSuo" Ids="EKyw3TpIqgzOhFsmJfnr0N,EJDXHB6kfVYOlEVyNG5dpW" />
+            <Link Id="IOvid5pCVFaL4JNE5tPRwH" Ids="TlF5dLX1Z80QGm8SRjcgvv,H3Eg9IbMDXWMdZGCcwLHeC" />
+            <Link Id="S7k9PivXfW4PvMABnL1tXz" Ids="FbB3BjGLliWLYKvWYm2kRo,RFqmNwQ3WzKMoTVMbflBsG" IsHidden="true" />
+            <Link Id="KcauKGSLmZZPqlInv69Mkx" Ids="EJDXHB6kfVYOlEVyNG5dpW,FOVCMAXOLtyLQEOPpcCtga" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ArcLength (BezierSpline) ************************
+
+-->
+        <Node Name="ArcLength (BezierSpline)" Bounds="1000,114,301,429" Id="SLZAaMGFqWTPDnjG2qqElx">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="TjigWb1amZHNtcysIFp9HN">
+            <Pin Id="Cm1F5ANyoLFOpeZtqPK9IR" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSpline" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Es6Qrk4HLSwPqbGB60gl86" Name="Position" Kind="InputPin" />
+            <Pin Id="LwIKQqY8G5HOiZz6HaeOHu" Name="Resolution" Kind="InputPin" />
+            <Pin Id="Ja0a6QX4b8dPNWlIi5WOvC" Name="Point" Kind="OutputPin" />
+            <Node Bounds="1041,234,97,13" Id="DqclZRCXuzvQQkCtKEnrkp">
+              <p:NodeReference LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="BezierSplineSpread" />
+                <CategoryReference Kind="Category" Name="Bezier" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="L7EEfVaK9o1PzcaW45Il58" Name="Input" Kind="InputPin" />
+              <Pin Id="AzEi1zdrRXgM5tuCktgXkC" Name="Count" Kind="InputPin" />
+              <Pin Id="CSGp8oWN5UUNwZc0UXa28T" Name="Points" Kind="OutputPin" />
+              <Pin Id="SIEUp9zDEGQNId7PxnDdMs" Name="Segment Count" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1042,277,56,13" Id="R1RMFFlDXhWNmKuZDAJL7H">
+              <p:NodeReference LastCategoryFullName="Math.Path" LastSymbolSource="VL.Paths.vl">
+                <Choice Kind="OperationNode" Name="ArcLength" />
+                <FullNameCategoryReference ID="Math.Path" />
+              </p:NodeReference>
+              <Pin Id="QynbzXHD3oAP12IsM2SByr" Name="Points" Kind="InputPin" />
+              <Pin Id="FbS9HmcAsqpL8MeB3A3Nj0" Name="Position On Curve" Kind="InputPin" />
+              <Pin Id="KSk58aJ1jnaON6fRBZLXDu" Name="Point" Kind="OutputPin" />
+              <Pin Id="CczRsi16hc3N5iXWAlxqoa" Name="Segment Index" Kind="OutputPin" />
+              <Pin Id="Dg3j6mBqDqUOYUlFYzwwaq" Name="Total Length" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="R4aNcSGH71bNeyKN7XpUBx" Bounds="1015,131" />
+            <ControlPoint Id="IK5v4kTzRm5NkUviP46gsV" Bounds="1105,131" />
+            <ControlPoint Id="VSaZeAxVLsTOR0tg7Y079g" Bounds="1232,131" />
+            <ControlPoint Id="B2svDCpxGIyPmME4dcYAG1" Bounds="1040,525" />
+            <Link Id="CK7xFSO1DnWMYiu8z5C4bJ" Ids="IK5v4kTzRm5NkUviP46gsV,FbS9HmcAsqpL8MeB3A3Nj0" />
+            <Link Id="Msuqv27iMGJQE9lkTtC8jE" Ids="R4aNcSGH71bNeyKN7XpUBx,L7EEfVaK9o1PzcaW45Il58" />
+            <Link Id="Sc62Qq6qgPPOduvV8I0BCB" Ids="KSk58aJ1jnaON6fRBZLXDu,B2svDCpxGIyPmME4dcYAG1" />
+            <Link Id="Huhmx0bDrZ4LPnhmVShnkd" Ids="CSGp8oWN5UUNwZc0UXa28T,QynbzXHD3oAP12IsM2SByr" />
+            <Link Id="IKLeVq3YhAVLqgTOD00Jcp" Ids="Cm1F5ANyoLFOpeZtqPK9IR,R4aNcSGH71bNeyKN7XpUBx" IsHidden="true" />
+            <Link Id="T3l82DiOaxsMRWVR5AR7li" Ids="Es6Qrk4HLSwPqbGB60gl86,IK5v4kTzRm5NkUviP46gsV" IsHidden="true" />
+            <Link Id="OH1Hv0T3qzMOcpO46V0iIk" Ids="LwIKQqY8G5HOiZz6HaeOHu,VSaZeAxVLsTOR0tg7Y079g" IsHidden="true" />
+            <Link Id="SA6Eb7aohpVOM9vfMCgriV" Ids="B2svDCpxGIyPmME4dcYAG1,Ja0a6QX4b8dPNWlIi5WOvC" IsHidden="true" />
+            <ControlPoint Id="SVdYVP68MtPPE3InLdf8mi" Bounds="1193,513" />
+            <Node Bounds="1068,402,80,80" Id="VfQ4xb7w0mwPaDZXmverYu">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                <Choice Kind="ForEachLoop" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="JYUNff6r7wTPdXoLKnEsmB" Name="Break" Kind="OutputPin" />
+              <ControlPoint Id="MDKM3aQM0eSLoF9j0J6uW6" Bounds="1093,408" Alignment="Top" />
+              <ControlPoint Id="Rvs6iSq2Lk1MFo1wow02CV" Bounds="1092,475" Alignment="Bottom" />
+              <Patch Id="TJWwMHYUbDgN3hG73pevNs">
+                <Patch Id="A1i2VjvYIZRM9oxd2Ulojy" Name="Create" />
+                <Patch Id="PR7pk2OXogFOGwcqAulV6S" Name="Update" />
+                <Patch Id="ImJNbZa4o8dLbh0TPVhXKg" Name="Destroy" />
+                <Node Bounds="1091,437,35,13" Id="Vhn9n27nXxTOg4wCVzoLWL">
+                  <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationNode" Name="DIV" />
+                    <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="MMLp1Dt4fiZNyRXiyeA0da" Name="Input" Kind="InputPin" />
+                  <Pin Id="HomGQh4FqefODAeavRgBor" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="C4pHG3ASJfMMW1We9WSQEE" Name="Apply" Kind="ApplyPin" />
+                  <Pin Id="R0S4AZLInWNP8gHigpZrrg" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="Ew89XsguMcCLikU97Y4vrD" Bounds="1095,515" />
+            <Pin Id="RGPSTMxYNe4LqbmlbSbwEl" Name="Segment Index" Kind="OutputPin" />
+            <Pin Id="Jf1kTf6vsSyNQFRDJvABDk" Name="Total Length" Kind="OutputPin" />
+            <Node Bounds="1117,324,35,13" Id="JmG4jHjfDhkMWhcGxpSKHY">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationNode" Name="DIV" />
+              </p:NodeReference>
+              <Pin Id="MSwHNiKUcy4N5zXePU6Gub" Name="Input" Kind="InputPin" />
+              <Pin Id="EJZJslp35PRQGGk401ySq7" Name="Input 2" Kind="InputPin" />
+              <Pin Id="OAq7Bt58SZkNy15UgTm8Xr" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="Oj1OLvmx2kFOWOMqDz0yrh" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1133,283,35,13" Id="BRbT1G5iOnaQa6lsncRWLA">
+              <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationNode" Name="Max" />
+                <CategoryReference Kind="Category" Name="Ranges" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="TAZg24VvHDdLOBmrRKppEo" Name="Input" Kind="InputPin" />
+              <Pin Id="BsycHxOA3xSLiadM8UheSN" Name="Input 2" Kind="InputPin" />
+              <Pin Id="UBogIOsrTeILpHZWoFMMjt" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="Dxn0o4m63suMApfGP9e2XQ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Link Id="USC1LkvflQaMiBrShOvXDW" Ids="SVdYVP68MtPPE3InLdf8mi,Jf1kTf6vsSyNQFRDJvABDk" IsHidden="true" />
+            <Link Id="HojmL0ChhzSPjFa9UOCBGz" Ids="MDKM3aQM0eSLoF9j0J6uW6,MMLp1Dt4fiZNyRXiyeA0da" />
+            <Link Id="R3hQGH5JjUDMTLAUNcYPUE" Ids="R0S4AZLInWNP8gHigpZrrg,Rvs6iSq2Lk1MFo1wow02CV" />
+            <Link Id="HcUnIGkKT21M01fY2CkLy6" Ids="Rvs6iSq2Lk1MFo1wow02CV,Ew89XsguMcCLikU97Y4vrD" />
+            <Link Id="P22peCgSMYQPP6Lu15cqDG" Ids="Ew89XsguMcCLikU97Y4vrD,RGPSTMxYNe4LqbmlbSbwEl" IsHidden="true" />
+            <Link Id="GLTSJraZuLnQZ4osxzp49H" Ids="Dxn0o4m63suMApfGP9e2XQ,EJZJslp35PRQGGk401ySq7" />
+            <Link Id="SyK0HViezArOp7Wlz8S1WN" Ids="CczRsi16hc3N5iXWAlxqoa,MDKM3aQM0eSLoF9j0J6uW6" />
+            <Link Id="Qiz0gVcMoUVNS5eeuoUlVs" Ids="Dg3j6mBqDqUOYUlFYzwwaq,SVdYVP68MtPPE3InLdf8mi" />
+            <Pad Id="BJmxnFdLhCyLmkctzsZMNL" Bounds="1245,148" ShowValueBox="true" isIOBox="true" Value="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Link Id="LjTKcYkrDNmLNY33L0x6V6" Ids="BJmxnFdLhCyLmkctzsZMNL,BsycHxOA3xSLiadM8UheSN" />
+            <Link Id="LzbGLfesFX8LJKxqbGNhsN" Ids="SIEUp9zDEGQNId7PxnDdMs,TAZg24VvHDdLOBmrRKppEo" />
+            <Node Bounds="1118,368,35,13" Id="BYTizoroyaGPH1jsKXfO45">
+              <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationNode" Name="Max" />
+                <CategoryReference Kind="Category" Name="Ranges" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="TATtr1xF9cLL3IA7v1Jrog" Name="Input" Kind="InputPin" />
+              <Pin Id="BTWwVbE8Ho7NjU8lIz3cUc" Name="Input 2" Kind="InputPin" />
+              <Pin Id="Uyua8RNvaK5Mol62OJsSqZ" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="Ihubw3BX9JpLbYec7isMqa" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Link Id="P3HTKxqEnJhNQWWh0HxXnm" Ids="BJmxnFdLhCyLmkctzsZMNL,BTWwVbE8Ho7NjU8lIz3cUc" />
+            <Link Id="OBBpvauaPlHMcGgsHrB6FW" Ids="Oj1OLvmx2kFOWOMqDz0yrh,TATtr1xF9cLL3IA7v1Jrog" />
+            <Link Id="FOcKXfGpSpfP7XOuhlzyJp" Ids="Ihubw3BX9JpLbYec7isMqa,HomGQh4FqefODAeavRgBor" />
+            <Link Id="CxosbD4LwUlLDGfkRMD3b7" Ids="VSaZeAxVLsTOR0tg7Y079g,AzEi1zdrRXgM5tuCktgXkC" />
+            <Link Id="HW8nlsltDQ0MAKJL2a8Jq1" Ids="VSaZeAxVLsTOR0tg7Y079g,MSwHNiKUcy4N5zXePU6Gub" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BezierSpline (Split) ************************
+
+-->
+        <Node Name="BezierSpline (Split)" Bounds="499,331,81,122" Id="IPi6ozKALw1NUSxWebnWy1">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="LnOl1c0H5haMzdkiRKj278">
+            <Pin Id="PFsvWNBsbT1OKuA4edyex5" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Math.Bezier" LastSymbolSource="VL.Bezier.Cubic.vl" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="BezierSpline" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="KHbrPo2Vlb4OANjfUnfchh" Name="Result" Kind="OutputPin" />
+            <Node Bounds="516,384,52,22" Id="U7vmqLcyRThODQmHxSDxb6">
+              <p:NodeReference LastCategoryFullName="Math.Bezier.BezierSpline" LastSymbolSource="VL.Bezier.Cubic.vl">
+                <Choice Kind="OperationNode" Name="Split" />
+                <CategoryReference Kind="Category" Name="BezierSpline" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="BmzEqbi0h2MNzQYJrpHXgb" Name="Input" Kind="InputPin" />
+              <Pin Id="P6oqdmMJFd8OWe1th58Qty" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="A9GMMLYWu6YNjvPflAymWF" Bounds="514,348" />
+            <ControlPoint Id="LYFMswQFDOHNYZjSJMCoLg" Bounds="514,435" />
+            <Link Id="E04M4d69BZiNtIFQiQSAXA" Ids="A9GMMLYWu6YNjvPflAymWF,BmzEqbi0h2MNzQYJrpHXgb" />
+            <Link Id="QEdNAtVNtcHPERRvBiJYve" Ids="P6oqdmMJFd8OWe1th58Qty,LYFMswQFDOHNYZjSJMCoLg" />
+            <Link Id="V1mKWDcd1vcLzNrPIbmgO9" Ids="PFsvWNBsbT1OKuA4edyex5,A9GMMLYWu6YNjvPflAymWF" IsHidden="true" />
+            <Link Id="ACeS5qNSw66OiatZTGtMsK" Ids="LYFMswQFDOHNYZjSJMCoLg,KHbrPo2Vlb4OANjfUnfchh" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+  </Patch>
+</Document>

@@ -1,0 +1,373 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv_50beta35.8_x64\kinectdings.v4p" systemname="kinectdings" filename="C:\vvvv_50beta35.8_x64\kinectdings.v4p">
+   <BOUNDS type="Window" left="14112" top="7128" width="17148" height="10632">
+   </BOUNDS>
+   <NODE systemname="IR (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="IR (Kinect2 Microsoft)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2952" top="2340" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2952" top="2340" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="3">
+   <BOUNDS type="Node" left="2592" top="8628" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2592" top="8628" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12288" top="-12468" width="9204" height="8304">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2796" top="4308" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="World (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="World (Kinect2 Microsoft)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="3780" top="2952" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3780" top="2952" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6144" top="4632" width="576" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6144" top="4632" width="576" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="aspect">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="2796" top="8148" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2796" top="8148" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Layer Out" dstnodeid="3" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="3972" top="6084" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3972" top="6084" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="4140" top="5664" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleX" visible="1">
+   </PIN>
+   <PIN pinname="ScaleY" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" visible="1">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="8" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="FilterWorld (DX11.Particles.Kinect)" filename="%VVVV%\packs\dx11.particles\nodes\modules\Kinect\FilterWorld (DX11.Particles.Kinect).v4p" nodename="FilterWorld (DX11.Particles.Kinect)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="5220" top="1800" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE id="1" systemname="Face (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="Face (Kinect2 Microsoft)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Kinect Runtime" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Node" left="4440" top="2268" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4440" top="2268" width="2400" height="2400">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Position InfraredXY" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Size InfraredXY" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Position ColorXY" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Size ColorXY" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Points ColorXY" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Points Color Bin Size" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Points WorldXYZ" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Points World Bin Size" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="OrientationXYZW" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Engaged" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Wear Glasses" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Happy" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Left Eye Closed" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Right Eye Closed" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Looking Away" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Mouth Open" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Mouth Moved" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="User Index" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Frame Number" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4716" top="4992" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4716" top="4992" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.01">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="9" dstpinname="ScaleX">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="9" dstpinname="ScaleY">
+   </LINK>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="4584" top="3744" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Points ColorXY" dstnodeid="12" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="X" dstnodeid="9" dstpinname="TranslateX">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Y" dstnodeid="9" dstpinname="TranslateY">
+   </LINK>
+   <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="7968" top="6972" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Initial Longitude" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="WithinProjection (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="WithinProjection (DX11.Layer)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="5160" top="7212" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5160" top="7212" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Layer In" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="14" dstpinname="Layer In">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Layer Out" dstnodeid="7" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="PhongDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongDirectional.fx" nodename="PhongDirectional (DX11.Effect)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="1092" top="6924" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Geometry" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="View" dstnodeid="3" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Projection" dstnodeid="3" dstpinname="Projection">
+   </LINK>
+   <NODE systemname="Box (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Box (DX11.Geometry)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="1692" top="5784" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1692" top="5784" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Geometry Out" dstnodeid="15" dstpinname="Geometry">
+   </LINK>
+   <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="252" top="7668" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="252" top="7668" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Layer In" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitHeight">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Layer" dstnodeid="17" dstpinname="Layer In">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="7" dstpinname="Layer 1">
+   </LINK>
+   <NODE systemname="RGBDepth (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="RGBDepth (Kinect2 Microsoft)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="3216" top="3540" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3216" top="3540" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RayTable (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="RayTable (Kinect2 Microsoft)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="1500" top="2592" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="2592" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Skeleton (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="Skeleton (Kinect2 Microsoft)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="600" top="1656" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="1656" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Hand (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="Hand (Kinect2 Microsoft)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="1308" top="3696" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1308" top="3696" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Skeleton Count" visible="1">
+   </PIN>
+   <PIN pinname="Left PositionXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1272" top="4344" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1272" top="4344" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Skeleton Count" dstnodeid="23" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1488" top="5052" width="792" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1488" top="5052" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Left PositionXYZ" dstnodeid="24" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="RGB (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="RGB (Kinect2 Microsoft)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="2952" top="3144" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2952" top="3144" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Texture" dstnodeid="4" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Kinect2 (DX11.Particles.Kinect)" filename="%VVVV%\packs\dx11.particles\nodes\modules\Kinect\Kinect2 (DX11.Particles.Kinect).v4p" nodename="Kinect2 (DX11.Particles.Kinect)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="4536" top="1164" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4536" top="1164" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Raw Data" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Kinect Runtime" dstnodeid="2" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Kinect Runtime" dstnodeid="5" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Kinect Runtime" dstnodeid="1" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Kinect Runtime" dstnodeid="18" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Kinect Runtime" dstnodeid="19" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Kinect Runtime" dstnodeid="20" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Kinect Runtime" dstnodeid="22" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Kinect Runtime" dstnodeid="25" dstpinname="Kinect Runtime">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>

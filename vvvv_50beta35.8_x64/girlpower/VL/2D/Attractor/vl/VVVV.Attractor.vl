@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Fz46qSVgKjPL4WN3sxqZrX" Version="0.55">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <NugetDependency Id="NcoLbAORr5zLl3wRGp9mtJ" Location="VL.CoreLib" Version="0.35.33" />
+  <NugetDependency Id="K0rSftnph70QJFWnljcSmw" Location="VL.CoreLib.VVVV" Version="0.35.33" />
+  <NugetDependency Id="ND5v7DPlZZxQbU1bOnmKhY" Location="VL.Core" Version="0.35.33" />
+  <Patch Id="LiX74zNYKMBPlbqVYWdWeq">
+    <Canvas Id="RoXYWJQRKNfMFhn1mA3Y4C" BordersChecked="false">
+      <Canvas Id="KsDpcAPk1uCMVTJ0TyDAfe" Name="Attractor" Position="100,200" DefaultCategory="VVVV.2d" BordersChecked="false">
+        <!--
+
+    ************************ Attractor (Join) ************************
+
+-->
+        <Node Name="Attractor (Join)" Bounds="206,96,326,197" Id="GCI3LVoAK1xPHLYraUUL55">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="EDbyZsx40q3MG4ZasCvaLc">
+            <Pin Id="L8s7ZILD1Q2PCFlYWKMon8" Name="Position" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="SharpDX.Mathematics.dll" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="UjadCd95xIzQQgTI1AM7S3" Name="Strength" Kind="InputPin" />
+            <Pin Id="KiqJmBt4rXeL1N0BXX9wfS" Name="Power" Kind="InputPin" />
+            <Pin Id="KYlCEb31zZAQGeQI43lfp4" Name="Radius" Kind="InputPin" />
+            <Pin Id="MwP0TcAwsogMwEenI2z1HM" Name="Attractor" Kind="OutputPin" />
+            <Node Bounds="301,209,80,22" Id="UOYTD3SCY7pMoszvqiMFRH">
+              <p:NodeReference LastCategoryFullName="Math.Attractor.Attractor" LastSymbolSource="VL.Attractor.vl">
+                <Choice Kind="OperationNode" Name="Join" />
+                <CategoryReference Kind="Category" Name="Attractor" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="Attractor" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="ASOTM3fkFPaPPivoz6QTKi" Name="Input" Kind="InputPin" />
+              <Pin Id="Iv6g245IrTtN3X3BZXtsHQ" Name="Position" Kind="InputPin" />
+              <Pin Id="Ln4o9FKZ39sMXP9WzAUKFg" Name="Strength" Kind="InputPin" />
+              <Pin Id="AjLeJjGn4u9N9Vl189B7Cq" Name="Power" Kind="InputPin" />
+              <Pin Id="Q3Y3Hz5ymLiOVqyBsa1mcH" Name="Radius" Kind="InputPin" />
+              <Pin Id="UdeGDzy2d92LipsVYhkYel" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="J0SUwMXKMWiN3AdvsxqPn5" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="L5RthZHlWlMMHrrdS8VlkJ" Bounds="221,113" />
+            <ControlPoint Id="RTbgoh5tiwVON9DoI4FDkH" Bounds="317,113" />
+            <ControlPoint Id="HYxiytQDtcGLNrTPSx3lau" Bounds="395,113" />
+            <ControlPoint Id="JGjEyfjpbFjNJ6mDSqpmFv" Bounds="481,113" />
+            <ControlPoint Id="Iif7ba5pAEHNHeIkzHV8Fl" Bounds="299,275" />
+            <Link Id="J10Thl08BkKNwU05yMJwJ7" Ids="L5RthZHlWlMMHrrdS8VlkJ,Iv6g245IrTtN3X3BZXtsHQ" />
+            <Link Id="DYdySE6WW93O37hXCIJOnR" Ids="RTbgoh5tiwVON9DoI4FDkH,Ln4o9FKZ39sMXP9WzAUKFg" />
+            <Link Id="Dfcg54Xt4VGOHM4q4kmZPZ" Ids="HYxiytQDtcGLNrTPSx3lau,AjLeJjGn4u9N9Vl189B7Cq" />
+            <Link Id="LahkCgz4HybQULFaZadJ85" Ids="JGjEyfjpbFjNJ6mDSqpmFv,Q3Y3Hz5ymLiOVqyBsa1mcH" />
+            <Link Id="Tol4EnjoZw7PemcnxedxZI" Ids="J0SUwMXKMWiN3AdvsxqPn5,Iif7ba5pAEHNHeIkzHV8Fl" />
+            <Link Id="RDmyLxWEF7KPEqYkhiGxYg" Ids="L8s7ZILD1Q2PCFlYWKMon8,L5RthZHlWlMMHrrdS8VlkJ" IsHidden="true" />
+            <Link Id="A4W4EqsOgbpLP3gAfsdPV9" Ids="UjadCd95xIzQQgTI1AM7S3,RTbgoh5tiwVON9DoI4FDkH" IsHidden="true" />
+            <Link Id="PEfNqcPOwvhMM83VIES764" Ids="KiqJmBt4rXeL1N0BXX9wfS,HYxiytQDtcGLNrTPSx3lau" IsHidden="true" />
+            <Link Id="P5rwlxpa7rWNBHcqroDEW9" Ids="KYlCEb31zZAQGeQI43lfp4,JGjEyfjpbFjNJ6mDSqpmFv" IsHidden="true" />
+            <Link Id="VGskVN6W90sNzx6UNv8941" Ids="Iif7ba5pAEHNHeIkzHV8Fl,MwP0TcAwsogMwEenI2z1HM" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="R6la9a9zAdJOABbxQcds9g" Name="AttractorUtils" Position="450,200" DefaultCategory="VVVV.2d" BordersChecked="false">
+        <!--
+
+    ************************ Attract ************************
+
+-->
+        <Node Name="Attract" Bounds="103,75,161,210" Id="HzzHki8AVMJPS8tsNcMZMK">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="OQeldXmTj6CM2NyCE7ep9r">
+            <Pin Id="R4A1A5FEKSzQZ2NDDtXiPx" Name="Point" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Sequence" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="QBHZOhIaBLQPM99M31iNEt" Name="Attractor" Kind="InputPin" />
+            <Pin Id="RimPhxGFtPVNWRojU70CN0" Name="Point" Kind="OutputPin" />
+            <Node Bounds="122,179,92,13" Id="RNUqbwE93iQNKKjlRDMWzN">
+              <p:NodeReference LastCategoryFullName="Math.Attractor" LastSymbolSource="VL.Attractor.vl">
+                <Choice Kind="OperationNode" Name="AttractByMany" />
+              </p:NodeReference>
+              <Pin Id="FalwWCQLL6qPYwneUpzshI" Name="Point" Kind="InputPin" />
+              <Pin Id="OSV9UFu0WT8NeaL16rJIiZ" Name="Attractor" Kind="InputPin" />
+              <Pin Id="Qdkd2eUN9mMNLcy4FOipkW" Name="Point" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="QEubv2MGByUP73K6TirIul" Bounds="118,92" />
+            <ControlPoint Id="RnfJx47dPKdNjpi2XAp32f" Bounds="203,92" />
+            <ControlPoint Id="Sf7VEV4MKEuMLoLha0c4kj" Bounds="120,267" />
+            <Link Id="SrVGub9tGPILW3p0NP8L3R" Ids="Qdkd2eUN9mMNLcy4FOipkW,Sf7VEV4MKEuMLoLha0c4kj" />
+            <Link Id="C7WT9RSS2NXNcxVquICI21" Ids="RnfJx47dPKdNjpi2XAp32f,OSV9UFu0WT8NeaL16rJIiZ" />
+            <Link Id="AVTSG8Xx7zbQLQlRTojEGi" Ids="QEubv2MGByUP73K6TirIul,FalwWCQLL6qPYwneUpzshI" />
+            <Link Id="EJIQjuq7cIfN6aL0xzqbQU" Ids="R4A1A5FEKSzQZ2NDDtXiPx,QEubv2MGByUP73K6TirIul" IsHidden="true" />
+            <Link Id="Dw1LuvBIrTTLHlbDSnBkaC" Ids="QBHZOhIaBLQPM99M31iNEt,RnfJx47dPKdNjpi2XAp32f" IsHidden="true" />
+            <Link Id="OOa6ehrN5DHM30Oj2lhGCw" Ids="Sf7VEV4MKEuMLoLha0c4kj,RimPhxGFtPVNWRojU70CN0" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+  </Patch>
+</Document>

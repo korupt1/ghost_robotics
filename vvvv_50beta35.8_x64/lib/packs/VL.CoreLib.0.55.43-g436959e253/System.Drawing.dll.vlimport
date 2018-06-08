@@ -1,0 +1,29 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "Point",
+        "Category": "Graphics.Forms",
+        "Help": "Represents an ordered pair of integer x- and y-coordinates that defines a point in a two-dimensional plane.",
+        "ImportedHelp": "<member name=\"T:System.Drawing.Point\">\r\n  <summary>Represents an ordered pair of integer x- and y-coordinates that defines a point in a two-dimensional plane.</summary>\r\n  <filterpriority>1</filterpriority>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Drawing.Point"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Size",
+        "Category": "Graphics.Forms",
+        "Help": "Stores an ordered pair of integers, which specify a P:System.Drawing.Size.Height and P:System.Drawing.Size.Width.",
+        "ImportedHelp": "<member name=\"T:System.Drawing.Size\">\r\n  <summary>Stores an ordered pair of integers, which specify a <see cref=\"P:System.Drawing.Size.Height\" /> and <see cref=\"P:System.Drawing.Size.Width\" />.</summary>\r\n  <filterpriority>1</filterpriority>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Drawing.Size"
+    }
+  ],
+  "IsGAC": true,
+  "DotNetName": "System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+}

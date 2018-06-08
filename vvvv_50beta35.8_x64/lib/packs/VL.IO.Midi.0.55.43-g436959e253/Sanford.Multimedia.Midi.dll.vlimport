@@ -1,0 +1,1875 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "ChannelCommand",
+        "Category": "IO.Midi.Messages",
+        "Help": "Defines constants for ChannelMessage types.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.ChannelCommand\">\r\n  <summary>\r\n            Defines constants for ChannelMessage types.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "Sanford.Multimedia.Midi.ChannelCommand"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ChannelMessage",
+        "Category": "IO.Midi.Messages",
+        "Help": "Represents MIDI channel messages.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.ChannelMessage\">\r\n  <summary>\r\n            Represents MIDI channel messages.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Command",
+            "ShowCategory": true,
+            "Help": "Gets the channel command value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.ChannelMessage.Command\">\r\n  <summary>\r\n            Gets the channel command value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Command"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Help": "Initializes a new instance of the ChannelEventArgs class with the \n            specified command, MIDI channel, data 1, and data 2 values.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.ChannelMessage.#ctor(Sanford.Multimedia.Midi.ChannelCommand,System.Int32,System.Int32,System.Int32)\">\r\n  <summary>\r\n            Initializes a new instance of the ChannelEventArgs class with the \r\n            specified command, MIDI channel, data 1, and data 2 values.\r\n            </summary>\r\n  <param name=\"command\">\r\n            The command value.\r\n            </param>\r\n  <param name=\"midiChannel\">\r\n            The MIDI channel.\r\n            </param>\r\n  <param name=\"data1\">\r\n            The data 1 value.\r\n            </param>\r\n  <param name=\"data2\">\r\n            The data 2 value.\r\n            </param>\r\n  <exception cref=\"T:System.ArgumentOutOfRangeException\">\r\n            If midiChannel is less than zero or greater than 15. Or if \r\n            data1 or data 2 is less than zero or greater than 127. \r\n            </exception>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.ChannelCommand",
+              "PinAttribute": {
+                "Help": "The command value.",
+                "ImportedHelp": "<param name=\"command\">\r\n            The command value.\r\n            </param>"
+              },
+              "DotNetName": "command"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The MIDI channel.",
+                "ImportedHelp": "<param name=\"midiChannel\">\r\n            The MIDI channel.\r\n            </param>"
+              },
+              "DotNetName": "midiChannel"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The data 1 value.",
+                "ImportedHelp": "<param name=\"data1\">\r\n            The data 1 value.\r\n            </param>"
+              },
+              "DotNetName": "data1"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The data 2 value.",
+                "ImportedHelp": "<param name=\"data2\">\r\n            The data 2 value.\r\n            </param>"
+              },
+              "DotNetName": "data2"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Data1",
+            "ShowCategory": true,
+            "Help": "Gets the first data value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.ChannelMessage.Data1\">\r\n  <summary>\r\n            Gets the first data value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Data1"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Data2",
+            "ShowCategory": true,
+            "Help": "Gets the second data value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.ChannelMessage.Data2\">\r\n  <summary>\r\n            Gets the second data value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Data2"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MessageType",
+            "ShowCategory": true,
+            "Help": "Gets the EventType.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.ChannelMessage.MessageType\">\r\n  <summary>\r\n            Gets the EventType.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "MessageType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MidiChannel",
+            "ShowCategory": true,
+            "Help": "Gets the MIDI channel.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.ChannelMessage.MidiChannel\">\r\n  <summary>\r\n            Gets the MIDI channel.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "MidiChannel"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MidiChannelMaxValue",
+            "Help": "Maximum value allowed for MIDI channels.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.ChannelMessage.MidiChannelMaxValue\">\r\n  <summary>\r\n            Maximum value allowed for MIDI channels.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "MidiChannelMaxValue"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.ChannelMessage"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ChasedEventArgs",
+        "Category": "IO.Midi.Dev"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.ICollection",
+              "DotNetName": "messages"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Messages",
+            "ShowCategory": true
+          },
+          "DotNetName": "Messages"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.ChasedEventArgs"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ControllerType",
+        "Category": "IO.Midi.Messages",
+        "Help": "Defines constants for controller types.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.ControllerType\">\r\n  <summary>\r\n            Defines constants for controller types.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "Sanford.Multimedia.Midi.ControllerType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GeneralMidiInstrument",
+        "Category": "IO.Midi.Messages",
+        "Help": "Defines constants representing the General MIDI instrument set.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.GeneralMidiInstrument\">\r\n  <summary>\r\n            Defines constants representing the General MIDI instrument set.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "Sanford.Multimedia.Midi.GeneralMidiInstrument"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "InputDevice",
+        "Category": "IO.Midi.Dev",
+        "Help": "Represents a MIDI device capable of receiving MIDI events.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.InputDevice\">\r\n  <summary>\r\n            Represents a MIDI device capable of receiving MIDI events.\r\n            </summary>\r\n</member>"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "DeviceCount"
+          },
+          "DotNetName": "DeviceCount"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetDeviceCapabilities"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "deviceID"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Sanford.Multimedia.Midi.MidiInCaps",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetDeviceCapabilities"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.InputDevice"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MessageType",
+        "Category": "IO.Midi.Messages",
+        "Help": "Defines constants representing MIDI message types.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.MessageType\">\r\n  <summary>\r\n            Defines constants representing MIDI message types.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "Sanford.Multimedia.Midi.MessageType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MetaMessage",
+        "Category": "IO.Midi.Messages",
+        "Help": "Represents MIDI meta messages.\r\nRemarks: Meta messages are MIDI messages that are stored in MIDI files. These\n            messages are not sent or received via MIDI but are read and \n            interpretted from MIDI files. They provide information that describes \n            a MIDI file's properties. For example, tempo changes are implemented\n            using meta messages.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.MetaMessage\">\r\n  <summary>\r\n            Represents MIDI meta messages.\r\n            </summary>\r\n  <remarks>\r\n            Meta messages are MIDI messages that are stored in MIDI files. These\r\n            messages are not sent or received via MIDI but are read and \r\n            interpretted from MIDI files. They provide information that describes \r\n            a MIDI file's properties. For example, tempo changes are implemented\r\n            using meta messages.\r\n            </remarks>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Help": "Initializes a new instance of the MetaMessage class.\r\nRemarks: Each MetaMessage has type and length properties. For certain \n            types, the length of the message data must be a specific value. For\n            example, tempo messages must have a data length of exactly three. \n            Some MetaMessage types can have any data length. Text messages are\n            an example of a MetaMessage that can have a variable data length.\n            When a MetaMessage is created, the length of the data is checked\n            to make sure that it is valid for the specified type. If it is not,\n            an exception is thrown.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.MetaMessage.#ctor(Sanford.Multimedia.Midi.MetaType,System.Byte[])\">\r\n  <summary>\r\n            Initializes a new instance of the MetaMessage class.\r\n            </summary>\r\n  <param name=\"type\">\r\n            The type of MetaMessage.\r\n            </param>\r\n  <param name=\"data\">\r\n            The MetaMessage data.\r\n            </param>\r\n  <exception cref=\"T:System.ArgumentException\">\r\n            The length of the MetaMessage is not valid for the MetaMessage type.\r\n            </exception>\r\n  <remarks>\r\n            Each MetaMessage has type and length properties. For certain \r\n            types, the length of the message data must be a specific value. For\r\n            example, tempo messages must have a data length of exactly three. \r\n            Some MetaMessage types can have any data length. Text messages are\r\n            an example of a MetaMessage that can have a variable data length.\r\n            When a MetaMessage is created, the length of the data is checked\r\n            to make sure that it is valid for the specified type. If it is not,\r\n            an exception is thrown. \r\n            </remarks>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.MetaType",
+              "PinAttribute": {
+                "Help": "The type of MetaMessage.",
+                "ImportedHelp": "<param name=\"type\">\r\n            The type of MetaMessage.\r\n            </param>"
+              },
+              "DotNetName": "type"
+            },
+            {
+              "TypeFullName": "System.Byte[]",
+              "PinAttribute": {
+                "Help": "The MetaMessage data.",
+                "ImportedHelp": "<param name=\"data\">\r\n            The MetaMessage data.\r\n            </param>"
+              },
+              "DotNetName": "data"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "EndOfTrackMessage",
+            "Help": "End of track meta message.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MetaMessage.EndOfTrackMessage\">\r\n  <summary>\r\n            End of track meta message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "EndOfTrackMessage"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetBytes",
+            "Help": "Gets a copy of the data bytes for this meta message.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.MetaMessage.GetBytes\">\r\n  <summary>\r\n            Gets a copy of the data bytes for this meta message.\r\n            </summary>\r\n  <returns>\r\n            A copy of the data bytes for this meta message.\r\n            </returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Byte[]",
+            "PinAttribute": {
+              "Help": "A copy of the data bytes for this meta message.",
+              "ImportedHelp": "<returns>\r\n            A copy of the data bytes for this meta message.\r\n            </returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetBytes"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true,
+            "Help": "Gets the element at the specified index.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.MetaMessage.Item(System.Int32)\">\r\n  <summary>\r\n            Gets the element at the specified index.\r\n            </summary>\r\n  <exception cref=\"T:System.ArgumentOutOfRangeException\">\r\n            index is less than zero or greater than or equal to Length.\r\n            </exception>\r\n</member>"
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "KeySigLength",
+            "Help": "Length in bytes for key signature meta message data.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MetaMessage.KeySigLength\">\r\n  <summary>\r\n            Length in bytes for key signature meta message data.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "KeySigLength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Length",
+            "ShowCategory": true,
+            "Help": "Gets the length of the meta message.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.MetaMessage.Length\">\r\n  <summary>\r\n            Gets the length of the meta message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Length"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MessageType",
+            "ShowCategory": true,
+            "Help": "Gets the MetaMessage's MessageType.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.MetaMessage.MessageType\">\r\n  <summary>\r\n            Gets the MetaMessage's MessageType.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "MessageType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MetaType",
+            "ShowCategory": true,
+            "Help": "Gets the type of meta message.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.MetaMessage.MetaType\">\r\n  <summary>\r\n            Gets the type of meta message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "MetaType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SmpteOffsetLength",
+            "Help": "Length in bytes for SMPTE offset meta message data.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MetaMessage.SmpteOffsetLength\">\r\n  <summary>\r\n            Length in bytes for SMPTE offset meta message data.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "SmpteOffsetLength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Status",
+            "ShowCategory": true,
+            "Help": "Gets the status value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.MetaMessage.Status\">\r\n  <summary>\r\n            Gets the status value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Status"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TempoLength",
+            "Help": "Length in bytes for tempo meta message data.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MetaMessage.TempoLength\">\r\n  <summary>\r\n            Length in bytes for tempo meta message data.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "TempoLength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TimeSigLength",
+            "Help": "Length in bytes for time signature meta message data.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MetaMessage.TimeSigLength\">\r\n  <summary>\r\n            Length in bytes for time signature meta message data.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "TimeSigLength"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.MetaMessage"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MetaTextBuilder",
+        "Category": "IO.Midi.Dev",
+        "Help": "Provides functionality for building meta text messages.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.MetaTextBuilder\">\r\n  <summary>\r\n            Provides functionality for building meta text messages.\r\n            </summary>\r\n</member>"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Build",
+            "Help": "Builds the text MetaMessage.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.MetaTextBuilder.Build\">\r\n  <summary>\r\n            Builds the text MetaMessage.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Build"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Help": "Initializes a new instance of the MetaMessageTextBuilder class.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.MetaTextBuilder.#ctor\">\r\n  <summary>\r\n            Initializes a new instance of the MetaMessageTextBuilder class.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "MetaMessage",
+            "Help": "Initializes a new instance of the MetaMessageTextBuilder class with the\n            specified MetaMessage.\r\nRemarks: The MetaMessage must be one of the following text based types:\n            \n            Copyright\n            \n            Cuepoint\n            \n            DeviceName\n            \n            InstrumentName\n            \n            Lyric\n            \n            Marker\n            \n            ProgramName\n            \n            Text\n            \n            TrackName\n            \n            If the MetaMessage is not a text based type, an exception will be \n            thrown.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.MetaTextBuilder.#ctor(Sanford.Multimedia.Midi.MetaMessage)\">\r\n  <summary>\r\n            Initializes a new instance of the MetaMessageTextBuilder class with the\r\n            specified MetaMessage.\r\n            </summary>\r\n  <param name=\"message\">\r\n            The MetaMessage to use for initializing the MetaMessageTextBuilder.\r\n            </param>\r\n  <exception cref=\"T:System.ArgumentException\">\r\n            If the MetaMessage is not a text based type.\r\n            </exception>\r\n  <remarks>\r\n            The MetaMessage must be one of the following text based types:\r\n            <list><item>\r\n            Copyright\r\n            </item><item>\r\n            Cuepoint\r\n            </item><item>\r\n            DeviceName\r\n            </item><item>\r\n            InstrumentName\r\n            </item><item>\r\n            Lyric\r\n            </item><item>\r\n            Marker\r\n            </item><item>\r\n            ProgramName\r\n            </item><item>\r\n            Text\r\n            </item><item>\r\n            TrackName\r\n            </item></list>\r\n            If the MetaMessage is not a text based type, an exception will be \r\n            thrown.\r\n            </remarks>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.MetaMessage",
+              "PinAttribute": {
+                "Help": "The MetaMessage to use for initializing the MetaMessageTextBuilder.",
+                "ImportedHelp": "<param name=\"message\">\r\n            The MetaMessage to use for initializing the MetaMessageTextBuilder.\r\n            </param>"
+              },
+              "DotNetName": "message"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "MetaType",
+            "Help": "Initializes a new instance of the MetaMessageTextBuilder class with the \n            specified type.\r\nRemarks: The MetaMessage type must be one of the following text based \n            types:\n            \n            Copyright\n            \n            Cuepoint\n            \n            DeviceName\n            \n            InstrumentName\n            \n            Lyric\n            \n            Marker\n            \n            ProgramName\n            \n            Text\n            \n            TrackName\n            \n            If the MetaMessage is not a text based type, an exception \n            will be thrown.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.MetaTextBuilder.#ctor(Sanford.Multimedia.Midi.MetaType)\">\r\n  <summary>\r\n            Initializes a new instance of the MetaMessageTextBuilder class with the \r\n            specified type.\r\n            </summary>\r\n  <param name=\"type\">\r\n            The type of MetaMessage.\r\n            </param>\r\n  <exception cref=\"T:System.ArgumentException\">\r\n            If the MetaMessage type is not a text based type.\r\n            </exception>\r\n  <remarks>\r\n            The MetaMessage type must be one of the following text based \r\n            types:\r\n            <list><item>\r\n            Copyright\r\n            </item><item>\r\n            Cuepoint\r\n            </item><item>\r\n            DeviceName\r\n            </item><item>\r\n            InstrumentName\r\n            </item><item>\r\n            Lyric\r\n            </item><item>\r\n            Marker\r\n            </item><item>\r\n            ProgramName\r\n            </item><item>\r\n            Text\r\n            </item><item>\r\n            TrackName\r\n            </item></list>\r\n            If the MetaMessage is not a text based type, an exception \r\n            will be thrown.\r\n            </remarks>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.MetaType",
+              "PinAttribute": {
+                "Help": "The type of MetaMessage.",
+                "ImportedHelp": "<param name=\"type\">\r\n            The type of MetaMessage.\r\n            </param>"
+              },
+              "DotNetName": "type"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "MetaType String",
+            "Help": "Initializes a new instance of the MetaMessageTextBuilder class with the \n            specified type.\r\nRemarks: The MetaMessage type must be one of the following text based \n            types:\n            \n            Copyright\n            \n            Cuepoint\n            \n            DeviceName\n            \n            InstrumentName\n            \n            Lyric\n            \n            Marker\n            \n            ProgramName\n            \n            Text\n            \n            TrackName\n            \n            If the MetaMessage is not a text based type, an exception \n            will be thrown.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.MetaTextBuilder.#ctor(Sanford.Multimedia.Midi.MetaType,System.String)\">\r\n  <summary>\r\n            Initializes a new instance of the MetaMessageTextBuilder class with the \r\n            specified type.\r\n            </summary>\r\n  <param name=\"type\">\r\n            The type of MetaMessage.\r\n            </param>\r\n  <exception cref=\"T:System.ArgumentException\">\r\n            If the MetaMessage type is not a text based type.\r\n            </exception>\r\n  <remarks>\r\n            The MetaMessage type must be one of the following text based \r\n            types:\r\n            <list><item>\r\n            Copyright\r\n            </item><item>\r\n            Cuepoint\r\n            </item><item>\r\n            DeviceName\r\n            </item><item>\r\n            InstrumentName\r\n            </item><item>\r\n            Lyric\r\n            </item><item>\r\n            Marker\r\n            </item><item>\r\n            ProgramName\r\n            </item><item>\r\n            Text\r\n            </item><item>\r\n            TrackName\r\n            </item></list>\r\n            If the MetaMessage is not a text based type, an exception \r\n            will be thrown.\r\n            </remarks>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.MetaType",
+              "PinAttribute": {
+                "Help": "The type of MetaMessage.",
+                "ImportedHelp": "<param name=\"type\">\r\n            The type of MetaMessage.\r\n            </param>"
+              },
+              "DotNetName": "type"
+            },
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "text"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Initialize",
+            "Help": "Initializes the MetaMessageTextBuilder with the specified MetaMessage.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.MetaTextBuilder.Initialize(Sanford.Multimedia.Midi.MetaMessage)\">\r\n  <summary>\r\n            Initializes the MetaMessageTextBuilder with the specified MetaMessage.\r\n            </summary>\r\n  <param name=\"message\">\r\n            The MetaMessage to use for initializing the MetaMessageTextBuilder.\r\n            </param>\r\n  <exception cref=\"T:System.ArgumentException\">\r\n            If the MetaMessage is not a text based type.\r\n            </exception>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.MetaMessage",
+              "PinAttribute": {
+                "Help": "The MetaMessage to use for initializing the MetaMessageTextBuilder.",
+                "ImportedHelp": "<param name=\"message\">\r\n            The MetaMessage to use for initializing the MetaMessageTextBuilder.\r\n            </param>"
+              },
+              "DotNetName": "message"
+            }
+          ],
+          "DotNetName": "Initialize"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Result",
+            "ShowCategory": true,
+            "Help": "Gets the built MetaMessage.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.MetaTextBuilder.Result\">\r\n  <summary>\r\n            Gets the built MetaMessage.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Result"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Text",
+            "ShowCategory": true,
+            "Help": "Gets or sets the text for the MetaMessage.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.MetaTextBuilder.Text\">\r\n  <summary>\r\n            Gets or sets the text for the MetaMessage.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Text"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Type",
+            "ShowCategory": true,
+            "Help": "Gets or sets the MetaMessage type.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.MetaTextBuilder.Type\">\r\n  <summary>\r\n            Gets or sets the MetaMessage type.\r\n            </summary>\r\n  <exception cref=\"T:System.ArgumentException\">\r\n            If the type is not a text based type.\r\n            </exception>\r\n</member>"
+          },
+          "DotNetName": "Type"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.MetaTextBuilder"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MetaType",
+        "Category": "IO.Midi.Messages",
+        "Help": "Represents MetaMessage types.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.MetaType\">\r\n  <summary>\r\n            Represents MetaMessage types.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "Sanford.Multimedia.Midi.MetaType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MidiInCaps",
+        "Category": "IO.Midi.Dev",
+        "Help": "Represents MIDI input device capabilities.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.MidiInCaps\">\r\n  <summary>\r\n            Represents MIDI input device capabilities.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "driverVersion",
+            "ShowCategory": true,
+            "Help": "Version number of the device driver for the Midi output device. The \n            high-order byte is the major version number, and the low-order byte \n            is the minor version number.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiInCaps.driverVersion\">\r\n  <summary>\r\n            Version number of the device driver for the Midi output device. The \r\n            high-order byte is the major version number, and the low-order byte \r\n            is the minor version number. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "driverVersion"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "mid",
+            "ShowCategory": true,
+            "Help": "Manufacturer identifier of the device driver for the Midi output \n            device.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiInCaps.mid\">\r\n  <summary>\r\n            Manufacturer identifier of the device driver for the Midi output \r\n            device. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "mid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "name",
+            "ShowCategory": true,
+            "Help": "Product name.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiInCaps.name\">\r\n  <summary>\r\n            Product name.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "name"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "pid",
+            "ShowCategory": true,
+            "Help": "Product identifier of the Midi output device.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiInCaps.pid\">\r\n  <summary>\r\n            Product identifier of the Midi output device. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "pid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "support",
+            "ShowCategory": true,
+            "Help": "Optional functionality supported by the device.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiInCaps.support\">\r\n  <summary>\r\n            Optional functionality supported by the device. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "support"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.MidiInCaps"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MidiMessage",
+        "Category": "IO.Midi.Messages",
+        "Help": "Represents the basic functionality for all MIDI messages.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.IMidiMessage\">\r\n  <summary>\r\n            Represents the basic functionality for all MIDI messages.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "DeltaFrames",
+            "ShowCategory": true,
+            "Help": "Delta samples when the event should be processed in the next audio buffer.\n            Leave at 0 for realtime input to play as fast as possible.\n            Set to the desired sample in the next buffer if you play a midi sequence synchronized to the audio callback",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.IMidiMessage.DeltaFrames\">\r\n  <summary>\r\n            Delta samples when the event should be processed in the next audio buffer.\r\n            Leave at 0 for realtime input to play as fast as possible.\r\n            Set to the desired sample in the next buffer if you play a midi sequence synchronized to the audio callback\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "DeltaFrames"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetBytes",
+            "Help": "Gets a byte array representation of the MIDI message.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.IMidiMessage.GetBytes\">\r\n  <summary>\r\n            Gets a byte array representation of the MIDI message.\r\n            </summary>\r\n  <returns>\r\n            A byte array representation of the MIDI message.\r\n            </returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Byte[]",
+            "PinAttribute": {
+              "Help": "A byte array representation of the MIDI message.",
+              "ImportedHelp": "<returns>\r\n            A byte array representation of the MIDI message.\r\n            </returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetBytes"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MessageType",
+            "ShowCategory": true,
+            "Help": "Gets the MIDI event's type.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.IMidiMessage.MessageType\">\r\n  <summary>\r\n            Gets the MIDI event's type.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "MessageType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Status",
+            "ShowCategory": true,
+            "Help": "Gets the MIDI message's status value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.IMidiMessage.Status\">\r\n  <summary>\r\n            Gets the MIDI message's status value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Status"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.IMidiMessage"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MidiOutCaps",
+        "Category": "IO.Midi.Dev",
+        "Help": "Represents MIDI output device capabilities.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.MidiOutCaps\">\r\n  <summary>\r\n            Represents MIDI output device capabilities.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "channelMask",
+            "ShowCategory": true,
+            "Help": "Channels that an internal synthesizer device responds to, where the \n            least significant bit refers to channel 0 and the most significant \n            bit to channel 15. Port devices that transmit on all channels set \n            this member to 0xFFFF.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiOutCaps.channelMask\">\r\n  <summary>\r\n            Channels that an internal synthesizer device responds to, where the \r\n            least significant bit refers to channel 0 and the most significant \r\n            bit to channel 15. Port devices that transmit on all channels set \r\n            this member to 0xFFFF. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "channelMask"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "driverVersion",
+            "ShowCategory": true,
+            "Help": "Version number of the device driver for the Midi output device. The \n            high-order byte is the major version number, and the low-order byte \n            is the minor version number.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiOutCaps.driverVersion\">\r\n  <summary>\r\n            Version number of the device driver for the Midi output device. The \r\n            high-order byte is the major version number, and the low-order byte \r\n            is the minor version number. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "driverVersion"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "mid",
+            "ShowCategory": true,
+            "Help": "Manufacturer identifier of the device driver for the Midi output \n            device.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiOutCaps.mid\">\r\n  <summary>\r\n            Manufacturer identifier of the device driver for the Midi output \r\n            device. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "mid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "name",
+            "ShowCategory": true,
+            "Help": "Product name.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiOutCaps.name\">\r\n  <summary>\r\n            Product name.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "name"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "notes",
+            "ShowCategory": true,
+            "Help": "Maximum number of simultaneous notes that can be played by an \n            internal synthesizer device. If the device is a port, this member \n            is not meaningful and is set to 0.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiOutCaps.notes\">\r\n  <summary>\r\n            Maximum number of simultaneous notes that can be played by an \r\n            internal synthesizer device. If the device is a port, this member \r\n            is not meaningful and is set to 0. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "notes"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "pid",
+            "ShowCategory": true,
+            "Help": "Product identifier of the Midi output device.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiOutCaps.pid\">\r\n  <summary>\r\n            Product identifier of the Midi output device. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "pid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "support",
+            "ShowCategory": true,
+            "Help": "Optional functionality supported by the device.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiOutCaps.support\">\r\n  <summary>\r\n            Optional functionality supported by the device. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "support"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "technology",
+            "ShowCategory": true,
+            "Help": "Flags describing the type of the Midi output device.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiOutCaps.technology\">\r\n  <summary>\r\n            Flags describing the type of the Midi output device. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "technology"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "voices",
+            "ShowCategory": true,
+            "Help": "Number of voices supported by an internal synthesizer device. If \n            the device is a port, this member is not meaningful and is set \n            to 0.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.MidiOutCaps.voices\">\r\n  <summary>\r\n            Number of voices supported by an internal synthesizer device. If \r\n            the device is a port, this member is not meaningful and is set \r\n            to 0. \r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "voices"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.MidiOutCaps"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "OutputDeviceBase",
+        "Category": "IO.Midi.Dev"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "DeviceCount"
+          },
+          "DotNetName": "DeviceCount"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetDeviceCapabilities"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "deviceID"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Sanford.Multimedia.Midi.MidiOutCaps",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetDeviceCapabilities"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.OutputDeviceBase"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Sequence",
+        "Category": "IO.Midi.Dev",
+        "Help": "Represents a collection of Tracks.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.Sequence\">\r\n  <summary>\r\n            Represents a collection of Tracks.\r\n            </summary>\r\n</member>"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Add"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.Track",
+              "DotNetName": "item"
+            }
+          ],
+          "DotNetName": "Add"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Clear"
+          },
+          "DotNetName": "Clear"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Contains"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.Track",
+              "DotNetName": "item"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Contains"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "CopyTo"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.Track[]",
+              "DotNetName": "array"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "arrayIndex"
+            }
+          ],
+          "DotNetName": "CopyTo"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Help": "Initializes a new instance of the Sequence class.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Sequence.#ctor\">\r\n  <summary>\r\n            Initializes a new instance of the Sequence class.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Int32",
+            "Help": "Initializes a new instance of the Sequence class with the specified division.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Sequence.#ctor(System.Int32)\">\r\n  <summary>\r\n            Initializes a new instance of the Sequence class with the specified division.\r\n            </summary>\r\n  <param name=\"division\">\r\n            The Sequence's division value.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The Sequence's division value.",
+                "ImportedHelp": "<param name=\"division\">\r\n            The Sequence's division value.\r\n            </param>"
+              },
+              "DotNetName": "division"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Stream",
+            "Help": "Initializes a new instance of the Sequence class with the specified\n            file stream of the MIDI file to load.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Sequence.#ctor(System.IO.Stream)\">\r\n  <summary>\r\n            Initializes a new instance of the Sequence class with the specified\r\n            file stream of the MIDI file to load.\r\n            </summary>\r\n  <param name=\"fileStream\">\r\n            The stream of the MIDI file to load.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IO.Stream",
+              "PinAttribute": {
+                "Help": "The stream of the MIDI file to load.",
+                "ImportedHelp": "<param name=\"fileStream\">\r\n            The stream of the MIDI file to load.\r\n            </param>"
+              },
+              "DotNetName": "fileStream"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "String",
+            "Help": "Initializes a new instance of the Sequence class with the specified\n            file name of the MIDI file to load.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Sequence.#ctor(System.String)\">\r\n  <summary>\r\n            Initializes a new instance of the Sequence class with the specified\r\n            file name of the MIDI file to load.\r\n            </summary>\r\n  <param name=\"fileName\">\r\n            The name of the MIDI file to load.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The name of the MIDI file to load.",
+                "ImportedHelp": "<param name=\"fileName\">\r\n            The name of the MIDI file to load.\r\n            </param>"
+              },
+              "DotNetName": "fileName"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Division",
+            "ShowCategory": true,
+            "Help": "Gets the Sequence's division value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.Sequence.Division\">\r\n  <summary>\r\n            Gets the Sequence's division value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Division"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Format",
+            "ShowCategory": true,
+            "Help": "Gets or sets the Sequence's format value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.Sequence.Format\">\r\n  <summary>\r\n            Gets or sets the Sequence's format value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Format"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Sanford.Multimedia.Midi.Track>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetLength",
+            "Help": "Gets the length in ticks of the Sequence.\r\nRemarks: The length in ticks of the Sequence is represented by the Track \n            with the longest length.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Sequence.GetLength\">\r\n  <summary>\r\n            Gets the length in ticks of the Sequence.\r\n            </summary>\r\n  <returns>\r\n            The length in ticks of the Sequence.\r\n            </returns>\r\n  <remarks>\r\n            The length in ticks of the Sequence is represented by the Track \r\n            with the longest length.\r\n            </remarks>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Int32",
+            "PinAttribute": {
+              "Help": "The length in ticks of the Sequence.",
+              "ImportedHelp": "<returns>\r\n            The length in ticks of the Sequence.\r\n            </returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetLength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsBusy",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsBusy"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsReadOnly",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsReadOnly"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true,
+            "Help": "Gets the Track at the specified index.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.Sequence.Item(System.Int32)\">\r\n  <summary>\r\n            Gets the Track at the specified index.\r\n            </summary>\r\n  <param name=\"index\">\r\n            The index of the Track to get.\r\n            </param>\r\n  <returns>\r\n            The Track at the specified index.\r\n            </returns>\r\n</member>"
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Load",
+            "Help": "Loads a MIDI file into the Sequence.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Sequence.Load(System.String)\">\r\n  <summary>\r\n            Loads a MIDI file into the Sequence.\r\n            </summary>\r\n  <param name=\"fileName\">\r\n            The MIDI file's name.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The MIDI file's name.",
+                "ImportedHelp": "<param name=\"fileName\">\r\n            The MIDI file's name.\r\n            </param>"
+              },
+              "DotNetName": "fileName"
+            }
+          ],
+          "DotNetName": "Load"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "LoadAsync"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "fileName"
+            }
+          ],
+          "DotNetName": "LoadAsync"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "LoadAsyncCancel"
+          },
+          "DotNetName": "LoadAsyncCancel"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Load",
+            "Version": "Stream",
+            "Help": "Loads a MIDI stream into the Sequence.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Sequence.Load(System.IO.Stream)\">\r\n  <summary>\r\n            Loads a MIDI stream into the Sequence.\r\n            </summary>\r\n  <param name=\"fileStream\">\r\n            The MIDI file's stream.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IO.Stream",
+              "PinAttribute": {
+                "Help": "The MIDI file's stream.",
+                "ImportedHelp": "<param name=\"fileStream\">\r\n            The MIDI file's stream.\r\n            </param>"
+              },
+              "DotNetName": "fileStream"
+            }
+          ],
+          "DotNetName": "Load"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Remove"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.Track",
+              "DotNetName": "item"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Remove"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Save",
+            "Help": "Saves the Sequence as a MIDI file.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Sequence.Save(System.String)\">\r\n  <summary>\r\n            Saves the Sequence as a MIDI file.\r\n            </summary>\r\n  <param name=\"fileName\">\r\n            The name to use for saving the MIDI file.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The name to use for saving the MIDI file.",
+                "ImportedHelp": "<param name=\"fileName\">\r\n            The name to use for saving the MIDI file.\r\n            </param>"
+              },
+              "DotNetName": "fileName"
+            }
+          ],
+          "DotNetName": "Save"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SaveAsync"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "fileName"
+            }
+          ],
+          "DotNetName": "SaveAsync"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SaveAsyncCancel"
+          },
+          "DotNetName": "SaveAsyncCancel"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Save",
+            "Version": "Stream",
+            "Help": "Saves the Sequence as a Stream.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Sequence.Save(System.IO.Stream)\">\r\n  <summary>\r\n            Saves the Sequence as a Stream.\r\n            </summary>\r\n  <param name=\"stream\">\r\n            The stream to use for saving the sequence.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IO.Stream",
+              "PinAttribute": {
+                "Help": "The stream to use for saving the sequence.",
+                "ImportedHelp": "<param name=\"stream\">\r\n            The stream to use for saving the sequence.\r\n            </param>"
+              },
+              "DotNetName": "stream"
+            }
+          ],
+          "DotNetName": "Save"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SequenceType",
+            "ShowCategory": true,
+            "Help": "Gets the Sequence's type.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.Sequence.SequenceType\">\r\n  <summary>\r\n            Gets the Sequence's type.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "SequenceType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Site",
+            "ShowCategory": true
+          },
+          "DotNetName": "Site"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.Sequence"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SequenceType",
+        "Category": "IO.Midi.Dev",
+        "Help": "The different types of sequences.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.SequenceType\">\r\n  <summary>\r\n            The different types of sequences.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "Sanford.Multimedia.Midi.SequenceType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Sequencer",
+        "Category": "IO.Midi.Dev"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Continue"
+          },
+          "DotNetName": "Continue"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Position",
+            "ShowCategory": true
+          },
+          "DotNetName": "Position"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Sequence",
+            "ShowCategory": true
+          },
+          "DotNetName": "Sequence"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Site",
+            "ShowCategory": true
+          },
+          "DotNetName": "Site"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Start"
+          },
+          "DotNetName": "Start"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Stop"
+          },
+          "DotNetName": "Stop"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.Sequencer"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ShortMessage",
+        "Category": "IO.Midi.Messages",
+        "Help": "Represents the basic class for all MIDI short messages.\r\nRemarks: MIDI short messages represent all MIDI messages except meta messages\n            and system exclusive messages. This includes channel messages, system\n            realtime messages, and system common messages.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.ShortMessage\">\r\n  <summary>\r\n            Represents the basic class for all MIDI short messages.\r\n            </summary>\r\n  <remarks>\r\n            MIDI short messages represent all MIDI messages except meta messages\r\n            and system exclusive messages. This includes channel messages, system\r\n            realtime messages, and system common messages.\r\n            </remarks>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Bytes",
+            "ShowCategory": true
+          },
+          "DotNetName": "Bytes"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Byte Byte Byte"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Byte",
+              "DotNetName": "status"
+            },
+            {
+              "TypeFullName": "System.Byte",
+              "DotNetName": "data1"
+            },
+            {
+              "TypeFullName": "System.Byte",
+              "DotNetName": "data2"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Integer32"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "message"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DataMaxValue"
+          },
+          "DotNetName": "DataMaxValue"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Message",
+            "ShowCategory": true,
+            "Help": "Gets the short message as a packed integer.\r\nRemarks: The message is packed into an integer value with the low-order byte\n            of the low-word representing the status value. The high-order byte\n            of the low-word represents the first data value, and the low-order\n            byte of the high-word represents the second data value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.ShortMessage.Message\">\r\n  <summary>\r\n            Gets the short message as a packed integer.\r\n            </summary>\r\n  <remarks>\r\n            The message is packed into an integer value with the low-order byte\r\n            of the low-word representing the status value. The high-order byte\r\n            of the low-word represents the first data value, and the low-order\r\n            byte of the high-word represents the second data value.\r\n            </remarks>\r\n</member>"
+          },
+          "DotNetName": "Message"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MessageType",
+            "ShowCategory": true
+          },
+          "DotNetName": "MessageType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Status",
+            "ShowCategory": true,
+            "Help": "Gets the messages's status value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.ShortMessage.Status\">\r\n  <summary>\r\n            Gets the messages's status value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Status"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "StatusMaxValue"
+          },
+          "DotNetName": "StatusMaxValue"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.ShortMessage"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SmpteFrameRate",
+        "Category": "IO.Midi.Messages",
+        "Help": "Defintes constants representing SMPTE frame rates.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.SmpteFrameRate\">\r\n  <summary>\r\n            Defintes constants representing SMPTE frame rates.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "Sanford.Multimedia.Midi.SmpteFrameRate"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "StoppedEventArgs",
+        "Category": "IO.Midi.Dev"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.ICollection",
+              "DotNetName": "messages"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Messages",
+            "ShowCategory": true
+          },
+          "DotNetName": "Messages"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.StoppedEventArgs"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SysCommonMessage",
+        "Category": "IO.Midi.Messages",
+        "Help": "Represents MIDI system common messages.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.SysCommonMessage\">\r\n  <summary>\r\n            Represents MIDI system common messages.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Help": "Initializes a new instance of the SysCommonMessage class with the\n            specified type.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.SysCommonMessage.#ctor(Sanford.Multimedia.Midi.SysCommonType)\">\r\n  <summary>\r\n            Initializes a new instance of the SysCommonMessage class with the\r\n            specified type.\r\n            </summary>\r\n  <param name=\"type\">\r\n            The type of SysCommonMessage.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.SysCommonType",
+              "PinAttribute": {
+                "Help": "The type of SysCommonMessage.",
+                "ImportedHelp": "<param name=\"type\">\r\n            The type of SysCommonMessage.\r\n            </param>"
+              },
+              "DotNetName": "type"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "SysCommonType Int32",
+            "Help": "Initializes a new instance of the SysCommonMessage class with the \n            specified type and the first data value.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.SysCommonMessage.#ctor(Sanford.Multimedia.Midi.SysCommonType,System.Int32)\">\r\n  <summary>\r\n            Initializes a new instance of the SysCommonMessage class with the \r\n            specified type and the first data value.\r\n            </summary>\r\n  <param name=\"type\">\r\n            The type of SysCommonMessage.\r\n            </param>\r\n  <param name=\"data1\">\r\n            The first data value.\r\n            </param>\r\n  <exception cref=\"T:System.ArgumentOutOfRangeException\">\r\n            If data1 is less than zero or greater than 127.\r\n            </exception>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.SysCommonType",
+              "PinAttribute": {
+                "Help": "The type of SysCommonMessage.",
+                "ImportedHelp": "<param name=\"type\">\r\n            The type of SysCommonMessage.\r\n            </param>"
+              },
+              "DotNetName": "type"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The first data value.",
+                "ImportedHelp": "<param name=\"data1\">\r\n            The first data value.\r\n            </param>"
+              },
+              "DotNetName": "data1"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "SysCommonType Int32 Int32",
+            "Help": "Initializes a new instance of the SysCommonMessage class with the \n            specified type, first data value, and second data value.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.SysCommonMessage.#ctor(Sanford.Multimedia.Midi.SysCommonType,System.Int32,System.Int32)\">\r\n  <summary>\r\n            Initializes a new instance of the SysCommonMessage class with the \r\n            specified type, first data value, and second data value.\r\n            </summary>\r\n  <param name=\"type\">\r\n            The type of SysCommonMessage.\r\n            </param>\r\n  <param name=\"data1\">\r\n            The first data value.\r\n            </param>\r\n  <param name=\"data2\">\r\n            The second data value.\r\n            </param>\r\n  <exception cref=\"T:System.ArgumentOutOfRangeException\">\r\n            If data1 or data2 is less than zero or greater than 127.\r\n            </exception>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.SysCommonType",
+              "PinAttribute": {
+                "Help": "The type of SysCommonMessage.",
+                "ImportedHelp": "<param name=\"type\">\r\n            The type of SysCommonMessage.\r\n            </param>"
+              },
+              "DotNetName": "type"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The first data value.",
+                "ImportedHelp": "<param name=\"data1\">\r\n            The first data value.\r\n            </param>"
+              },
+              "DotNetName": "data1"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The second data value.",
+                "ImportedHelp": "<param name=\"data2\">\r\n            The second data value.\r\n            </param>"
+              },
+              "DotNetName": "data2"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Data1",
+            "ShowCategory": true,
+            "Help": "Gets the first data value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysCommonMessage.Data1\">\r\n  <summary>\r\n            Gets the first data value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Data1"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Data2",
+            "ShowCategory": true,
+            "Help": "Gets the second data value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysCommonMessage.Data2\">\r\n  <summary>\r\n            Gets the second data value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Data2"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MessageType",
+            "ShowCategory": true,
+            "Help": "Gets the MessageType.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysCommonMessage.MessageType\">\r\n  <summary>\r\n            Gets the MessageType.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "MessageType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SysCommonType",
+            "ShowCategory": true,
+            "Help": "Gets the SysCommonType.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysCommonMessage.SysCommonType\">\r\n  <summary>\r\n            Gets the SysCommonType.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "SysCommonType"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.SysCommonMessage"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SysCommonType",
+        "Category": "IO.Midi.Messages",
+        "Help": "Defines constants representing the various system common message types.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.SysCommonType\">\r\n  <summary>\r\n            Defines constants representing the various system common message types.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "Sanford.Multimedia.Midi.SysCommonType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SysExMessage",
+        "Category": "IO.Midi.Messages",
+        "Help": "Represents MIDI system exclusive messages.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.SysExMessage\">\r\n  <summary>\r\n            Represents MIDI system exclusive messages.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "CopyTo"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Byte[]",
+              "DotNetName": "buffer"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "index"
+            }
+          ],
+          "DotNetName": "CopyTo"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Help": "Initializes a new instance of the SysExMessageEventArgs class with the\n            specified system exclusive data.\r\nRemarks: The system exclusive data's status byte, the first byte in the \n            data, must have a value of 0xF0 or 0xF7.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.SysExMessage.#ctor(System.Byte[])\">\r\n  <summary>\r\n            Initializes a new instance of the SysExMessageEventArgs class with the\r\n            specified system exclusive data.\r\n            </summary>\r\n  <param name=\"data\">\r\n            The system exclusive data.\r\n            </param>\r\n  <remarks>\r\n            The system exclusive data's status byte, the first byte in the \r\n            data, must have a value of 0xF0 or 0xF7.\r\n            </remarks>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Byte[]",
+              "PinAttribute": {
+                "Help": "The system exclusive data.",
+                "ImportedHelp": "<param name=\"data\">\r\n            The system exclusive data.\r\n            </param>"
+              },
+              "DotNetName": "data"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetBytes"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Byte[]",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetBytes"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.IEnumerator",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true,
+            "Help": "Gets the element at the specified index.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysExMessage.Item(System.Int32)\">\r\n  <summary>\r\n            Gets the element at the specified index.\r\n            </summary>\r\n  <exception cref=\"T:System.ArgumentOutOfRangeException\">\r\n            If index is less than zero or greater than or equal to the length \r\n            of the message.\r\n            </exception>\r\n</member>"
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Length",
+            "ShowCategory": true,
+            "Help": "Gets the length of the system exclusive data.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysExMessage.Length\">\r\n  <summary>\r\n            Gets the length of the system exclusive data.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Length"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MessageType",
+            "ShowCategory": true,
+            "Help": "Gets the MessageType.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysExMessage.MessageType\">\r\n  <summary>\r\n            Gets the MessageType.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "MessageType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Status",
+            "ShowCategory": true,
+            "Help": "Gets the status value.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysExMessage.Status\">\r\n  <summary>\r\n            Gets the status value.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Status"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SysExChannelMaxValue",
+            "Help": "Maximum value for system exclusive channels.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.SysExMessage.SysExChannelMaxValue\">\r\n  <summary>\r\n            Maximum value for system exclusive channels.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "SysExChannelMaxValue"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SysExType",
+            "ShowCategory": true,
+            "Help": "Gets the system exclusive type.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysExMessage.SysExType\">\r\n  <summary>\r\n            Gets the system exclusive type.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "SysExType"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.SysExMessage"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SysRealtimeMessage",
+        "Category": "IO.Midi.Messages",
+        "Help": "Represents MIDI system realtime messages.\r\nRemarks: System realtime messages are MIDI messages that are primarily concerned \n            with controlling and synchronizing MIDI devices.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.SysRealtimeMessage\">\r\n  <summary>\r\n            Represents MIDI system realtime messages.\r\n            </summary>\r\n  <remarks>\r\n            System realtime messages are MIDI messages that are primarily concerned \r\n            with controlling and synchronizing MIDI devices. \r\n            </remarks>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ActiveSenseMessage",
+            "Help": "The instance of the system realtime active sense message.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.SysRealtimeMessage.ActiveSenseMessage\">\r\n  <summary>\r\n            The instance of the system realtime active sense message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "ActiveSenseMessage"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ClockMessage",
+            "Help": "The instance of the system realtime clock message.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.SysRealtimeMessage.ClockMessage\">\r\n  <summary>\r\n            The instance of the system realtime clock message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "ClockMessage"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ContinueMessage",
+            "Help": "The instance of the system realtime continue message.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.SysRealtimeMessage.ContinueMessage\">\r\n  <summary>\r\n            The instance of the system realtime continue message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "ContinueMessage"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MessageType",
+            "ShowCategory": true,
+            "Help": "Gets the MessageType.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysRealtimeMessage.MessageType\">\r\n  <summary>\r\n            Gets the MessageType.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "MessageType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ResetMessage",
+            "Help": "The instance of the system realtime reset message.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.SysRealtimeMessage.ResetMessage\">\r\n  <summary>\r\n            The instance of the system realtime reset message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "ResetMessage"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "StartMessage",
+            "Help": "The instance of the system realtime start message.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.SysRealtimeMessage.StartMessage\">\r\n  <summary>\r\n            The instance of the system realtime start message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "StartMessage"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "StopMessage",
+            "Help": "The instance of the system realtime stop message.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.SysRealtimeMessage.StopMessage\">\r\n  <summary>\r\n            The instance of the system realtime stop message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "StopMessage"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SysRealtimeType",
+            "ShowCategory": true,
+            "Help": "Gets the SysRealtimeType.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.SysRealtimeMessage.SysRealtimeType\">\r\n  <summary>\r\n            Gets the SysRealtimeType.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "SysRealtimeType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TickMessage",
+            "Help": "The instance of the system realtime tick message.",
+            "ImportedHelp": "<member name=\"F:Sanford.Multimedia.Midi.SysRealtimeMessage.TickMessage\">\r\n  <summary>\r\n            The instance of the system realtime tick message.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "TickMessage"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.SysRealtimeMessage"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SysRealtimeType",
+        "Category": "IO.Midi.Messages",
+        "Help": "Defines constants representing the various system realtime message types.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.SysRealtimeType\">\r\n  <summary>\r\n            Defines constants representing the various system realtime message types.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "Sanford.Multimedia.Midi.SysRealtimeType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Track",
+        "Category": "IO.Midi.Dev",
+        "Help": "Represents a collection of MidiEvents and a MIDI track within a \n            Sequence.",
+        "ImportedHelp": "<member name=\"T:Sanford.Multimedia.Midi.Track\">\r\n  <summary>\r\n            Represents a collection of MidiEvents and a MIDI track within a \r\n            Sequence.\r\n            </summary>\r\n</member>"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Clear",
+            "Help": "Clears all of the MidiEvents, with the exception of the end of track\n            message, from the Track.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Track.Clear\">\r\n  <summary>\r\n            Clears all of the MidiEvents, with the exception of the end of track\r\n            message, from the Track.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Clear"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true,
+            "Help": "Gets the number of MidiEvents in the Track.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.Track.Count\">\r\n  <summary>\r\n            Gets the number of MidiEvents in the Track.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DispatcherIterator"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.MessageDispatcher",
+              "DotNetName": "dispatcher"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<System.Int32>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DispatcherIterator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "EndOfTrackOffset",
+            "ShowCategory": true,
+            "Help": "Gets or sets the end of track meta message position offset.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.Track.EndOfTrackOffset\">\r\n  <summary>\r\n            Gets or sets the end of track meta message position offset.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "EndOfTrackOffset"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetMidiEvent",
+            "Help": "Gets the MidiEvent at the specified index.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Track.GetMidiEvent(System.Int32)\">\r\n  <summary>\r\n            Gets the MidiEvent at the specified index.\r\n            </summary>\r\n  <param name=\"index\">\r\n            The index of the MidiEvent to get.\r\n            </param>\r\n  <returns>\r\n            The MidiEvent at the specified index.\r\n            </returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The index of the MidiEvent to get.",
+                "ImportedHelp": "<param name=\"index\">\r\n            The index of the MidiEvent to get.\r\n            </param>"
+              },
+              "DotNetName": "index"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Sanford.Multimedia.Midi.MidiEvent",
+            "PinAttribute": {
+              "Help": "The MidiEvent at the specified index.",
+              "ImportedHelp": "<returns>\r\n            The MidiEvent at the specified index.\r\n            </returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetMidiEvent"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Insert",
+            "Help": "Inserts an IMidiMessage at the specified position in absolute ticks.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Track.Insert(System.Int32,Sanford.Multimedia.Midi.IMidiMessage)\">\r\n  <summary>\r\n            Inserts an IMidiMessage at the specified position in absolute ticks.\r\n            </summary>\r\n  <param name=\"position\">\r\n            The position in the Track in absolute ticks in which to insert the\r\n            IMidiMessage.\r\n            </param>\r\n  <param name=\"message\">\r\n            The IMidiMessage to insert.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The position in the Track in absolute ticks in which to insert the\n            IMidiMessage.",
+                "ImportedHelp": "<param name=\"position\">\r\n            The position in the Track in absolute ticks in which to insert the\r\n            IMidiMessage.\r\n            </param>"
+              },
+              "DotNetName": "position"
+            },
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.IMidiMessage",
+              "PinAttribute": {
+                "Help": "The IMidiMessage to insert.",
+                "ImportedHelp": "<param name=\"message\">\r\n            The IMidiMessage to insert.\r\n            </param>"
+              },
+              "DotNetName": "message"
+            }
+          ],
+          "DotNetName": "Insert"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Iterator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<Sanford.Multimedia.Midi.MidiEvent>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Iterator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Length",
+            "ShowCategory": true,
+            "Help": "Gets the length of the Track in ticks.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.Track.Length\">\r\n  <summary>\r\n            Gets the length of the Track in ticks.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "Length"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Merge",
+            "Help": "Merges the specified Track with the current Track.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Track.Merge(Sanford.Multimedia.Midi.Track)\">\r\n  <summary>\r\n            Merges the specified Track with the current Track.\r\n            </summary>\r\n  <param name=\"trk\">\r\n            The Track to merge with.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.Track",
+              "PinAttribute": {
+                "Help": "The Track to merge with.",
+                "ImportedHelp": "<param name=\"trk\">\r\n            The Track to merge with.\r\n            </param>"
+              },
+              "DotNetName": "trk"
+            }
+          ],
+          "DotNetName": "Merge"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Move"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.MidiEvent",
+              "DotNetName": "e"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "newPosition"
+            }
+          ],
+          "DotNetName": "Move"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RemoveAt",
+            "Help": "Removes the MidiEvent at the specified index.",
+            "ImportedHelp": "<member name=\"M:Sanford.Multimedia.Midi.Track.RemoveAt(System.Int32)\">\r\n  <summary>\r\n            Removes the MidiEvent at the specified index.\r\n            </summary>\r\n  <param name=\"index\">\r\n            The index into the Track at which to remove the MidiEvent.\r\n            </param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The index into the Track at which to remove the MidiEvent.",
+                "ImportedHelp": "<param name=\"index\">\r\n            The index into the Track at which to remove the MidiEvent.\r\n            </param>"
+              },
+              "DotNetName": "index"
+            }
+          ],
+          "DotNetName": "RemoveAt"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SyncRoot",
+            "ShowCategory": true,
+            "Help": "Gets an object that can be used to synchronize access to the Track.",
+            "ImportedHelp": "<member name=\"P:Sanford.Multimedia.Midi.Track.SyncRoot\">\r\n  <summary>\r\n            Gets an object that can be used to synchronize access to the Track.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "SyncRoot"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Test"
+          },
+          "DotNetName": "Test"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TickIterator"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "startPosition"
+            },
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.ChannelChaser",
+              "DotNetName": "chaser"
+            },
+            {
+              "TypeFullName": "Sanford.Multimedia.Midi.MessageDispatcher",
+              "DotNetName": "dispatcher"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<System.Int32>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "TickIterator"
+        }
+      ],
+      "DotNetName": "Sanford.Multimedia.Midi.Track"
+    }
+  ],
+  "DotNetName": "Sanford.Multimedia.Midi, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null"
+}

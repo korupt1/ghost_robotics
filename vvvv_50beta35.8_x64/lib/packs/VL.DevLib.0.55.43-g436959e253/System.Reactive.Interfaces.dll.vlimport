@@ -1,0 +1,46 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "ConnectableObservable",
+        "Category": "Reactive",
+        "Help": "Represents an observable wrapper that can be connected and disconnected from its underlying observable sequence.T: The type of the elements in the sequence.\n            This type parameter is covariant. That is, you can use either the type you specified or any type that is more derived. For more information about covariance and contravariance, see Covariance and Contravariance in Generics.\r\n",
+        "ImportedHelp": "<member name=\"T:System.Reactive.Subjects.IConnectableObservable`1\">\r\n  <summary>\r\n            Represents an observable wrapper that can be connected and disconnected from its underlying observable sequence.\r\n            </summary>\r\n  <typeparam name=\"T\">\r\n            The type of the elements in the sequence.\r\n            This type parameter is covariant. That is, you can use either the type you specified or any type that is more derived. For more information about covariance and contravariance, see Covariance and Contravariance in Generics.\r\n            </typeparam>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Connect",
+            "Category": "",
+            "Help": "Connects the observable wrapper to its source. All subscribed observers will receive values from the underlying observable sequence as long as the connection is established.",
+            "ImportedHelp": "<member name=\"M:System.Reactive.Subjects.IConnectableObservable`1.Connect\">\r\n  <summary>\r\n            Connects the observable wrapper to its source. All subscribed observers will receive values from the underlying observable sequence as long as the connection is established.\r\n            </summary>\r\n  <returns>Disposable used to disconnect the observable wrapper from its source, causing subscribed observer to stop receiving values from the underlying observable sequence.</returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.IDisposable",
+            "PinAttribute": {
+              "Help": "Disposable used to disconnect the observable wrapper from its source, causing subscribed observer to stop receiving values from the underlying observable sequence.",
+              "ImportedHelp": "<returns>Disposable used to disconnect the observable wrapper from its source, causing subscribed observer to stop receiving values from the underlying observable sequence.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Connect"
+        }
+      ],
+      "DotNetName": "System.Reactive.Subjects.IConnectableObservable`1"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Scheduler",
+        "Category": "Reactive",
+        "Help": "Represents an object that schedules units of work.",
+        "ImportedHelp": "<member name=\"T:System.Reactive.Concurrency.IScheduler\">\r\n  <summary>\r\n            Represents an object that schedules units of work.\r\n            </summary>\r\n</member>"
+      },
+      "Members": [],
+      "DotNetName": "System.Reactive.Concurrency.IScheduler"
+    }
+  ],
+  "DotNetName": "System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+}

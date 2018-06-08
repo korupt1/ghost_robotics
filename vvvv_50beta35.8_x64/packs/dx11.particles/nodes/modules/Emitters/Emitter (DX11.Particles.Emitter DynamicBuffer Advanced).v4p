@@ -1,0 +1,503 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="D:\workspace\dev\github\dx11-particles\packs\dx11.particles\nodes\modules\Emitters\Emitter (DX11.Particles.Emitter DynamicBuffer Advanced).v4p" systemname="EmitterSimple (DX11.Mcps.Emitter)" filename="D:\workspace\dev\git\dx11-mcps\packs\dx11.mcps\nodes\modules\emitters\EmitterSimple (DX11.Mcps.Emitter).v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="3060" top="5850" width="19770" height="7965">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="48" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1110" top="6330" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1110" top="6330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="49" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1110" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1110" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer In|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="81" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3840" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3840" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="100">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Emit Count|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="82" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2685" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2685" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1053414">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Emitter Size|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="83" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="7140" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7140" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Position Buffer|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="84" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="10560" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10560" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Velocity Buffer|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="86" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="12810" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12810" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Lifespan Buffer|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="94" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="16200" top="750" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16200" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|Default System|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ParticleSystem">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="107" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="18255" top="750" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18255" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="109" systemname="IOBox (String)" hiddenwhenlocked="0">
+   <BOUNDS type="Box" left="14415" top="750" width="1620" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14415" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="EmitterDynBuffer1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|Default Emittername|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Emitter Name|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.2">
+   </PACK>
+   <NODE systemname="Register (DX11.Particles.Core Emitter)" filename="%VVVV%\packs\dx11.particles\nodes\plugins\DX11.Particles.Core\x64\DX11.Particles.Core.dll" nodename="Register (DX11.Particles.Core Emitter)" componentmode="Hidden" id="123">
+   <BOUNDS type="Node" left="11640" top="6330" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="EmitCount" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Defines" visible="1">
+   </PIN>
+   <PIN pinname="Structure" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="11640" top="6330">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Output Enum" dstnodeid="123" dstpinname="ParticleSystem" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="16185" y="3668">
+   </LINKPOINT>
+   <LINKPOINT x="12390" y="3668">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="109" srcpinname="Output String" dstnodeid="123" dstpinname="EmitterName" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14415" y="3653">
+   </LINKPOINT>
+   <LINKPOINT x="12015" y="3653">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="124">
+   <BOUNDS type="Node" left="2685" top="1230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="2685" top="1230">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="124" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="124" srcpinname="Output" dstnodeid="123" dstpinname="EmitCount" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="2745" y="3900">
+   </LINKPOINT>
+   <LINKPOINT x="12165" y="3900">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="125">
+   <BOUNDS type="Node" left="3840" top="1230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3840" top="1230">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="125" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="126">
+   <BOUNDS type="Box" left="11760" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11760" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Force Buffer|">
+   </PIN>
+   </NODE>
+   <PACK Name="vvvv-Message" Version="2.9.0">
+   </PACK>
+   <INFO author="tmp" description="Simple Emitter where all mandatory particle-attributes can be set by DynamicBuffers." tags="">
+   </INFO>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="132">
+   <BOUNDS type="Box" left="5820" top="750" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5820" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ForceEmission">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="145">
+   <BOUNDS type="Box" left="11805" top="5670" width="1710" height="525">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11805" top="5670" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values="KNOW_COLOR=1,KNOW_SCALE=1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="145" srcpinname="Output String" dstnodeid="123" dstpinname="Defines">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="147">
+   <BOUNDS type="Box" left="9585" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9585" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Color Buffer|">
+   </PIN>
+   </NODE>
+   <NODE systemname="ExtractStruct (DX11.Particles.Tools)" filename="%VVVV%\packs\dx11.particles\nodes\plugins\DX11.Particles.Tools\x64\DX11.Particles.Tools.dll" nodename="ExtractStruct (DX11.Particles.Tools)" componentmode="Hidden" id="87">
+   <BOUNDS type="Node" left="11625" top="5265" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="dx11\Emitter_DynamicBufferAdvanced.fx">
+   </PIN>
+   <PIN pinname="Extract" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Variables" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="6810" top="1305" width="12735" height="14325">
+   </BOUNDS>
+   <PIN pinname="BufferSemantic" visible="1">
+   </PIN>
+   <PIN pinname="BufferType" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Variables" dstnodeid="123" dstpinname="Structure">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="150">
+   <BOUNDS type="Box" left="13725" top="6330" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13725" top="6330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Query">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="152">
+   <BOUNDS type="Box" left="8490" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8490" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Scale Buffer|">
+   </PIN>
+   </NODE>
+   <NODE id="153" systemname="Emitter_DynamicBufferAdvanced (DX11.Effect)" filename="%VVVV%\packs\dx11.particles\nodes\modules\Emitters\dx11\Emitter_DynamicBufferAdvanced.fx" nodename="Emitter_DynamicBufferAdvanced (DX11.Effect)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1110" top="4770" width="12675" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1110" top="4770">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output Node" dstnodeid="153" dstpinname="Layer In" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="535" y="2805">
+   </LINKPOINT>
+   <LINKPOINT x="1745" y="2955">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="107" srcpinname="Y Output Value" dstnodeid="153" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="18255" y="2858">
+   </LINKPOINT>
+   <LINKPOINT x="12990" y="2858">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="Output Node" dstnodeid="153" dstpinname="Position Buffer" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7170" y="2880">
+   </LINKPOINT>
+   <LINKPOINT x="7440" y="2880">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="124" srcpinname="Output" dstnodeid="153" dstpinname="EmitterSize" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="2745" y="3128">
+   </LINKPOINT>
+   <LINKPOINT x="5055" y="3128">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Output" dstnodeid="153" dstpinname="EmitCount" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="3870" y="3128">
+   </LINKPOINT>
+   <LINKPOINT x="4275" y="3128">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="84" srcpinname="Output Node" dstnodeid="153" dstpinname="Velocity Buffer" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="10575" y="2865">
+   </LINKPOINT>
+   <LINKPOINT x="9810" y="2865">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="86" srcpinname="Output Node" dstnodeid="153" dstpinname="Lifespan Buffer" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="12810" y="2873">
+   </LINKPOINT>
+   <LINKPOINT x="11385" y="2873">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="126" srcpinname="Output Node" dstnodeid="153" dstpinname="Force Buffer" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="11775" y="2880">
+   </LINKPOINT>
+   <LINKPOINT x="10605" y="2880">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="153" dstpinname="ForceEmission" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Output Node" dstnodeid="153" dstpinname="Color Buffer" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="9600" y="2873">
+   </LINKPOINT>
+   <LINKPOINT x="9030" y="2873">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Shader Path" dstnodeid="87" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Query" dstnodeid="150" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="152" srcpinname="Output Node" dstnodeid="153" dstpinname="Scale Buffer" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="8505" y="2880">
+   </LINKPOINT>
+   <LINKPOINT x="8235" y="2880">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="155">
+   <BOUNDS type="Box" left="5010" top="2055" width="420" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5010" top="2055" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="64">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Group Size|">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   </NODE>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="156">
+   <BOUNDS type="Node" left="6165" top="2130" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="156" dstpinname="Input 1" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="5845" y="1545">
+   </LINKPOINT>
+   <LINKPOINT x="6185" y="1545">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="107" srcpinname="Y Output Value" dstnodeid="156" dstpinname="Input 2" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="18250" y="1545">
+   </LINKPOINT>
+   <LINKPOINT x="6635" y="1545">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="SetupShader (DX11.Particles.Emitter Internal)" filename="SetupShader (DX11.Particles.Emitter Internal).v4p" nodename="SetupShader (DX11.Particles.Emitter Internal)" componentmode="Hidden" id="154">
+   <BOUNDS type="Node" left="2685" top="2595" width="5835" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="14920" height="5640">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5010" top="4860" width="9465" height="6540">
+   </BOUNDS>
+   <PIN pinname="Group Size" visible="1" pintype="Input" slicecount="1" values="64">
+   </PIN>
+   <PIN pinname="Enable SumUp" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="124" srcpinname="Output" dstnodeid="154" dstpinname="Emitter Size">
+   </LINK>
+   <LINK srcnodeid="154" srcpinname="Geometry Out" dstnodeid="153" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="154" srcpinname="Defines" dstnodeid="153" dstpinname="Defines" linkstyle="Bezier">
+   <LINKPOINT x="8550" y="3803">
+   </LINKPOINT>
+   <LINKPOINT x="13725" y="3803">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="94" srcpinname="Output Enum" dstnodeid="154" dstpinname="ParticleSystem" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="16200" y="1793">
+   </LINKPOINT>
+   <LINKPOINT x="8520" y="1793">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="109" srcpinname="Output String" dstnodeid="154" dstpinname="Emitter Name" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14415" y="1778">
+   </LINKPOINT>
+   <LINKPOINT x="7365" y="1778">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Output" dstnodeid="154" dstpinname="Emit Count" linkstyle="VHV">
+   <LINKPOINT x="3840" y="2190">
+   </LINKPOINT>
+   <LINKPOINT x="2925" y="1890">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="154" srcpinname="OffsetEmission" dstnodeid="153" dstpinname="OffsetEmission" linkstyle="Bezier">
+   <LINKPOINT x="5640" y="3818">
+   </LINKPOINT>
+   <LINKPOINT x="6630" y="3818">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="Y Output Value" dstnodeid="154" dstpinname="Group Size">
+   </LINK>
+   <LINK srcnodeid="156" srcpinname="Output" dstnodeid="154" dstpinname="Enable SumUp">
+   </LINK>
+   <NODE systemname="SetupCounter (DX11.Particles.Emitter Internal)" filename="SetupCounter (DX11.Particles.Emitter Internal).v4p" nodename="SetupCounter (DX11.Particles.Emitter Internal)" componentmode="Hidden" id="157">
+   <BOUNDS type="Node" left="1095" top="5400" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="153" srcpinname="Layer" dstnodeid="157" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="107" srcpinname="Y Output Value" dstnodeid="157" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="18255" y="3180">
+   </LINKPOINT>
+   <LINKPOINT x="2295" y="3180">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="Layer Out" dstnodeid="48" dstpinname="Input Node">
+   </LINK>
+   </PATCH>

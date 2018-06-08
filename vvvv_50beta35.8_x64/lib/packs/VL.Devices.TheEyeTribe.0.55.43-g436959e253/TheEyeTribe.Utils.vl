@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="VJnHDjK6RBSMDyhH64MQOq" Version="0.55">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <NugetDependency Id="FygxpUX4gYIO6V3TD82rGk" Location="VL.CoreLib" Version="0.35.33" />
+  <PlatformDependency Id="JtkTYg1vWjcLzvorokk4Gz" Location="./TETCSharpClient.dll.vlimport" />
+  <Patch Id="TpQYtpeJ7G2L0hK000Gt3S">
+    <Canvas Id="Mxp255Kvav7NuGAbpTfHOv" BordersChecked="false">
+      <Canvas Id="FlfGEApnde9MGBCQVZL62r" Name="GazeManagerUtils" Position="100,200" DefaultCategory="TETCSharpClient.GazeManager" BordersChecked="false">
+        <!--
+
+    ************************ HasListeners ************************
+
+-->
+        <Node Name="HasListeners" Bounds="527,215,275,321" Id="VShgCPDSEk7QQaxFX728hG">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="GSXgQ1hVsw2MVcHlVM9hch" IsGeneric="true">
+            <Pin Id="GbL5PTOqEobO3IeKFbBcIb" Name="GazeManager" Kind="InputPin" />
+            <Pin Id="JPHOL9t1JDhLqb8TJapnxT" Name="GazeManager" Kind="OutputPin" />
+            <Pin Id="AObHvJZRCQxPHirRsh5AB8" Name="HasListeners" Kind="OutputPin" />
+            <Pad Id="Nale902TBXlMeXb1aVeGmr" Comment="zero" Bounds="735,463" ShowValueBox="true" isIOBox="true" Value="0">
+              <p:ValueBoxSettings />
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="548,278,168,22" Id="UFq1D5FZg6WNhlGgKv2WqK">
+              <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                <Choice Kind="OperationNode" Name="GetNumCalibrationResultListeners" />
+              </p:NodeReference>
+              <Pin Id="EOo1dkrWBY5NFgc2rHBQpC" Name="Input" Kind="InputPin" />
+              <Pin Id="EAXsFRDrUg4MB3dC2F8Wua" Name="Output" Kind="OutputPin" />
+              <Pin Id="Jwhmv0QyqD7L2hxzrgwgyM" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="549,356,112,22" Id="OLjUoIChIQqLQIMwG3DoXy">
+              <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                <Choice Kind="OperationNode" Name="GetNumGazeListeners" />
+              </p:NodeReference>
+              <Pin Id="UPovGra1wUfOIJu8wszsjW" Name="Input" Kind="InputPin" />
+              <Pin Id="C37id3SEsJHQcKRqZ2za10" Name="Output" Kind="OutputPin" />
+              <Pin Id="VdegOU9QdjQL0XCmqu7f4D" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="548,320,165,22" Id="GPubJkj6cVgOVAFgOg46Nl">
+              <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                <Choice Kind="OperationNode" Name="GetNumConnectionStateListeners" />
+              </p:NodeReference>
+              <Pin Id="LF81FYt4RhzMT2vxuaKCSV" Name="Input" Kind="InputPin" />
+              <Pin Id="RSiIoFKnBarO4c9SVDHcJR" Name="Output" Kind="OutputPin" />
+              <Pin Id="C1Fafh1BGJWN08UtuGtn9I" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="701,435,80,13" Id="DlfqrDzdVV8LGBfu4wRzHA">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                <Choice Kind="OperationNode" Name="+" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="O1sVEbVGvy0MyRkLXKyklH" Name="Input" Kind="InputPin" />
+              <Pin Id="EkRxqN5tCwfMvkaXa2VJKK" Name="Input 2" Kind="InputPin" />
+              <Pin Id="OifFeLWmAGIPJ89TQOvL7n" Name="Input 3" Kind="InputPin" />
+              <Pin Id="PgbtGz2ehHDQVzX5vimgqc" Name="Input 4" Kind="InputPin" />
+              <Pin Id="M6v0beU7s6dPnZIQWP61NC" Name="Input 5" Kind="InputPin" />
+              <Pin Id="MqjziX9Zt3VNvAROlFC3zt" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="E7mLno3nVSaP8y6Fc1LmOZ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="547,408,147,22" Id="HP5HbTUKXEqNWzl2wYhpbP">
+              <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                <Choice Kind="OperationNode" Name="GetNumTrackerStateListeners" />
+              </p:NodeReference>
+              <Pin Id="KiR80bW5CYxN4ZyFDyypoe" Name="Input" Kind="InputPin" />
+              <Pin Id="KWm6V55we4IQTOts0WnhaB" Name="Output" Kind="OutputPin" />
+              <Pin Id="OLmuGxS6EOnNlDQJJcfrc1" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="701,487,20,13" Id="OQygCWpqrv8NzeE8alYqKV">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                <Choice Kind="OperationNode" Name="&gt;" />
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="PeL2qMzsX2NO8Zrmisls18" Name="Input" Kind="InputPin" />
+              <Pin Id="EdoECMM5PhULM4n2l6nILA" Name="Input 2" Kind="InputPin" />
+              <Pin Id="JpGrRCKj5eVMjczbQ7oufU" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="VuyciNviLR4NoghhCJ33Vx" Bounds="545,232" />
+            <ControlPoint Id="SPCMnTzHjipN6DF459ozS4" Bounds="542,515" />
+            <ControlPoint Id="GhkN9PsvmCENhNytG6RmL4" Bounds="698,515" />
+            <Link Id="JVW8vR5SWBWPEB7WpmmiKd" Ids="VuyciNviLR4NoghhCJ33Vx,EOo1dkrWBY5NFgc2rHBQpC" />
+            <Link Id="Qm1PDVNSpHZLyLk2UttD24" Ids="Nale902TBXlMeXb1aVeGmr,EdoECMM5PhULM4n2l6nILA" />
+            <Link Id="UOWjCLvqsBTNXJTIvWCOEV" Ids="KWm6V55we4IQTOts0WnhaB,SPCMnTzHjipN6DF459ozS4" />
+            <Link Id="A01awPxC2meLo5iX5nDij9" Ids="JpGrRCKj5eVMjczbQ7oufU,GhkN9PsvmCENhNytG6RmL4" />
+            <Link Id="H9AJhZrg7Y7LxfwLbOGDWF" Ids="EAXsFRDrUg4MB3dC2F8Wua,LF81FYt4RhzMT2vxuaKCSV" />
+            <Link Id="TtXOvIq3zspLViMlekK9hC" Ids="Jwhmv0QyqD7L2hxzrgwgyM,PgbtGz2ehHDQVzX5vimgqc" />
+            <Link Id="BiDdpwvEsITO9XYi4sc8ug" Ids="C37id3SEsJHQcKRqZ2za10,KiR80bW5CYxN4ZyFDyypoe" />
+            <Link Id="Kb2YUlNTwUXQbFw5YQzDil" Ids="VdegOU9QdjQL0XCmqu7f4D,EkRxqN5tCwfMvkaXa2VJKK" />
+            <Link Id="Fc7pGsaRppYOv4txVz8VZ1" Ids="RSiIoFKnBarO4c9SVDHcJR,UPovGra1wUfOIJu8wszsjW" />
+            <Link Id="GPopeNGgjc3MRNeXg4j3hH" Ids="C1Fafh1BGJWN08UtuGtn9I,OifFeLWmAGIPJ89TQOvL7n" />
+            <Link Id="DDlwdH8waiGNpQUc5F5EEs" Ids="E7mLno3nVSaP8y6Fc1LmOZ,PeL2qMzsX2NO8Zrmisls18" />
+            <Link Id="Jr5Bls39IBaQaAweo61JLh" Ids="OLmuGxS6EOnNlDQJJcfrc1,O1sVEbVGvy0MyRkLXKyklH" />
+            <Link Id="FigtqTrf8xjLuHPeIB3x5M" Ids="GbL5PTOqEobO3IeKFbBcIb,VuyciNviLR4NoghhCJ33Vx" IsHidden="true" />
+            <Link Id="QxlB7HICjpCM5mPXTHbdrP" Ids="SPCMnTzHjipN6DF459ozS4,JPHOL9t1JDhLqb8TJapnxT" IsHidden="true" />
+            <Link Id="QZLIBTObF7ENORwyBZTZy5" Ids="GhkN9PsvmCENhNytG6RmL4,AObHvJZRCQxPHirRsh5AB8" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ CalibrationPointStart (Vector2 Mapped) ************************
+
+-->
+        <Node Name="CalibrationPointStart (Vector2 Mapped)" Bounds="972,218,268,161" Id="BIvcplwFkNZLSMgl8rMhlY">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="GhGlVA9UoXsNHNVgI2PRVf" IsGeneric="true">
+            <Pin Id="Mt3C8ZBeas3MFjWZ9E3Csr" Name="GazeManager" Kind="InputPin" />
+            <Pin Id="PeCg7RO4fQzMVYZyzSuGhZ" Name="Vector2" Kind="InputPin" />
+            <Pin Id="C20PXUk1CD1LhPLBw1mfYj" Name="GazeManager" Kind="OutputPin" />
+            <Pad Id="UGceiYJ4qmdLJDEOJrZ205" Comment="Map Values" Bounds="1118,262,40,12" ShowValueBox="true" isIOBox="true" Value="true">
+              <p:ValueBoxSettings />
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="1006,276,85,13" Id="AL851fq1w4hLQzRxHrF9FZ">
+              <p:NodeReference LastCategoryFullName="TETCSharpClient.Data.Point2D" LastSymbolSource="TheEyeTribe.Utils.vl">
+                <Choice Kind="OperationNode" Name="FromVector2" />
+              </p:NodeReference>
+              <Pin Id="KF49SByqRWCPZtV0pJICkQ" Name="Vector2" Kind="InputPin" />
+              <Pin Id="OwIrrFL7yxkMAbmys417RK" Name="Map Values" Kind="InputPin" />
+              <Pin Id="Fbz1Wi4ipOWMrKKXzt6MCU" Name="Point2D" Kind="OutputPin" />
+              <Pin Id="TrlFn64QonvO0YYwESNP3p" Name="X" Kind="OutputPin" />
+              <Pin Id="HTlLLAzlBMMOqjb0PeIMFI" Name="Y" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="992,311,105,22" Id="H6pwt7xysuXL9ezjPHjUIQ">
+              <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                <Choice Kind="OperationNode" Name="CalibrationPointStart" />
+              </p:NodeReference>
+              <Pin Id="VHo63SSXFeLQKlT92sqiF7" Name="Input" Kind="InputPin" />
+              <Pin Id="QZ9sS70uf1INsvHz0gfH6k" Name="X" Kind="InputPin" />
+              <Pin Id="PcZ3GHzgfvaNbVjRkIJ3C6" Name="Y" Kind="InputPin" />
+              <Pin Id="B8cSVmfGK5UQUmCbzLzwL9" Name="Apply" Kind="ApplyPin" />
+              <Pin Id="UmPavlHPyecPIxFWCrA55x" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Pv1JjEppcPyPzY4sgXxQ6J" Bounds="994,235" />
+            <ControlPoint Id="G2jyAi4zS3JMOqDAtG1xbH" Bounds="1089,235" />
+            <ControlPoint Id="RuBzFYiQTXROOVj786rwJ0" Bounds="987,361" />
+            <Link Id="D71NbKmOMySL806NHN70Wy" Ids="TrlFn64QonvO0YYwESNP3p,QZ9sS70uf1INsvHz0gfH6k" />
+            <Link Id="OnhjcTVGrJsNzcH5mvzgrj" Ids="HTlLLAzlBMMOqjb0PeIMFI,PcZ3GHzgfvaNbVjRkIJ3C6" />
+            <Link Id="S5kYl1TteivLjZwgEN812U" Ids="Pv1JjEppcPyPzY4sgXxQ6J,VHo63SSXFeLQKlT92sqiF7" />
+            <Link Id="CWH3u46PDxwMeTuiYn6ii7" Ids="G2jyAi4zS3JMOqDAtG1xbH,KF49SByqRWCPZtV0pJICkQ" />
+            <Link Id="OsM2FgEJEUtLvrfOX3ZiXs" Ids="UmPavlHPyecPIxFWCrA55x,RuBzFYiQTXROOVj786rwJ0" />
+            <Link Id="JZWO2iavarMMj2JpQSm1So" Ids="UGceiYJ4qmdLJDEOJrZ205,OwIrrFL7yxkMAbmys417RK" />
+            <Link Id="DgQzx6bNwkCM7kbcW1xCp1" Ids="Mt3C8ZBeas3MFjWZ9E3Csr,Pv1JjEppcPyPzY4sgXxQ6J" IsHidden="true" />
+            <Link Id="OmBRILajMOGPJaOJaOIXnn" Ids="PeCg7RO4fQzMVYZyzSuGhZ,G2jyAi4zS3JMOqDAtG1xbH" IsHidden="true" />
+            <Link Id="BZhog9LO2HkL3LUX3ezv0H" Ids="RuBzFYiQTXROOVj786rwJ0,C20PXUk1CD1LhPLBw1mfYj" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="ERVU4JPAOygPWl4R4BhgJd" Name="TETPoint2Utils" Position="450,200" DefaultCategory="TETCSharpClient.Data.Point2D" BordersChecked="false">
+        <!--
+
+    ************************ ToVector2 ************************
+
+-->
+        <Node Name="ToVector2" Bounds="44,192,382,552" Id="LyTyAVNfv3GNU7fKIPaP82">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="FTb5XHrEq0TPTfxgdkwGM7" IsGeneric="true">
+            <Pin Id="PYF2XwXyht7NOiSEUnOOaF" Name="TETPoint2D" Kind="InputPin" />
+            <Pin Id="EnA1kLRDr3tPTjBMXwtIle" Name="Map Values" Kind="InputPin" />
+            <Pin Id="Lzye5vAaLCQM5eePQgxeE8" Name="Vector2" Kind="OutputPin" />
+            <Node Bounds="201,330,56,22" Id="BejdMubrfHFMqdOL2QGxnt">
+              <p:NodeReference LastCategoryFullName="Primitive.Float64" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="ToFloat32" />
+                <CategoryReference Kind="Category" Name="Float64" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="EA6kn9C11P8NvxGnfdegvD" Name="Input" Kind="InputPin" />
+              <Pin Id="MU5UKEaB5oVL7ZdmJkNnj6" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="133,330,56,22" Id="J48tGuVfX25PY82hAesxrY">
+              <p:NodeReference LastCategoryFullName="Primitive.Float64" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="ToFloat32" />
+                <CategoryReference Kind="Category" Name="Float64" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="OTcV2u5cEeEPAylDnWE4zt" Name="Input" Kind="InputPin" />
+              <Pin Id="J26bBkgyn90QV0sI2oM9xJ" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="134,374,39,13" Id="LZ6YVeGVUoTOxt8gxiZKF0">
+              <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="SharpDX.Mathematics.dll">
+                <Choice Kind="OperationNode" Name="Vector (Join)" />
+                <CategoryReference Kind="Category" Name="Vector2" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="ReQQNo4X0KDN00Q0v0xdKe" Name="X" Kind="InputPin" />
+              <Pin Id="N6UUc1zlJToQVZbG06cBfr" Name="Y" Kind="InputPin" />
+              <Pin Id="IehfhUqfwCjOfV125Pg52X" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="134,275,37,22" Id="E3dxAggDCsuL5uNesGNArV">
+              <p:NodeReference LastCategoryFullName="TETCSharpClient.Data.Point2D" LastSymbolSource="TETCSharpClient.dll">
+                <Choice Kind="OperationNode" Name="X" />
+                <CategoryReference Kind="Category" Name="Point2D" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="RlGESs8oNOwOmc8M1Yb4Rr" Name="Input" Kind="InputPin" />
+              <Pin Id="KHpStXf5jh0QGJWFZeT0OF" Name="Output" Kind="OutputPin" />
+              <Pin Id="Rxz1Vq3FX6TN8wAMObeMgk" Name="X" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="134,237,37,22" Id="LjrmCsAznBFNz01RtgfbDu">
+              <p:NodeReference LastCategoryFullName="TETCSharpClient.Data.Point2D" LastSymbolSource="TETCSharpClient.dll">
+                <Choice Kind="OperationNode" Name="Y" />
+                <CategoryReference Kind="Category" Name="Point2D" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="UKV5nwHD8LYLrudoL8330n" Name="Input" Kind="InputPin" />
+              <Pin Id="M966LA1I0fkPeOr2eKokf2" Name="Output" Kind="OutputPin" />
+              <Pin Id="MwBYVHoknxQNK3FIMZHHwE" Name="Y" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="117,406,297,278" Id="LI5mBOSd1C8Le9v8SXoJZf">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+                <Choice Kind="If" Name="If" />
+              </p:NodeReference>
+              <Pin Id="ThAnFGsv0yUPEzhpmOnnEk" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="TuqBzUpMvGgNjc461Fjwfj" Bounds="133,412" Name="Output" Alignment="Top" />
+              <ControlPoint Id="EHJcCkuRkJ1L970E45Xzx4" Bounds="133,677" Name="Output" Alignment="Bottom" />
+              <Patch Id="UweAJpr9ZMQPu50EKEK3Pu" Name="Then" IsGeneric="true">
+                <Pad Id="QMdGwl3mjtxPNaAiT4XJ4W" Bounds="266,576,40,42" ShowValueBox="true" isIOBox="true" Value="new vec(1.0,-1.0)">
+                  <p:ValueBoxSettings />
+                  <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="SharpDX.Mathematics.dll" ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                    <CategoryReference Kind="Category" Name="2D" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="JFTcpncn0KlN6SXS2amHiH" Bounds="222,544,40,39" ShowValueBox="true" isIOBox="true" Value="new vec(-1.0,1.0)">
+                  <p:ValueBoxSettings />
+                  <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="SharpDX.Mathematics.dll" ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                    <CategoryReference Kind="Category" Name="2D" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="161,527,39,13" Id="LtsxUDpzo8FLGwUOpm7YEH">
+                  <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="SharpDX.Mathematics.dll">
+                    <Choice Kind="OperationNode" Name="Vector (Join)" />
+                    <CategoryReference Kind="Category" Name="Vector2" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="B0IlLxTWsEEMaJihC77U2y" Name="X" Kind="InputPin" />
+                  <Pin Id="HRNI0qgfFrBMldAeG6BfX3" Name="Y" Kind="InputPin" />
+                  <Pin Id="CggWwshiUrSNhdzjatS3UF" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="162,479,115,22" Id="EE7b7ST5RGoMQO6QdjXjO6">
+                  <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                    <Choice Kind="OperationNode" Name="ScreenResolutionWidth" />
+                  </p:NodeReference>
+                  <Pin Id="GUFKCAISd3TPuIlVb9tUXI" Name="Input" Kind="InputPin" />
+                  <Pin Id="TzFFG9S5RFYQJtIcYoKgvP" Name="Output" Kind="OutputPin" />
+                  <Pin Id="RQOLKznWUS1NpiES1SWNLZ" Name="Screen Resolution Width" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="283,481,119,22" Id="DELXTjNZlgQQWihjELqDnJ">
+                  <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                    <Choice Kind="OperationNode" Name="ScreenResolutionHeight" />
+                  </p:NodeReference>
+                  <Pin Id="KD3o3p7WohHLJZQXSUK7kl" Name="Input" Kind="InputPin" />
+                  <Pin Id="KmAkQXf6TPXQBHl1O55P4D" Name="Output" Kind="OutputPin" />
+                  <Pin Id="In341SfgvnoOpQhjmaBjTB" Name="Screen Resolution Height" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="129,635,80,13" Id="EVcLGPh1oQ9Nu6Ba74FR0U">
+                  <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="VL.CoreLib.vl">
+                    <Choice Kind="OperationNode" Name="Map" />
+                  </p:NodeReference>
+                  <Pin Id="CdES8AoptBdO35QJaXNvbG" Name="Input" Kind="InputPin" />
+                  <Pin Id="RkUnGrWmYhVQPdmzxcntL9" Name="Input Minimum" Kind="InputPin" />
+                  <Pin Id="QBPpLcgZRtgLl2ltOkT0Oi" Name="Input Maximum" Kind="InputPin" />
+                  <Pin Id="Tfm5aJ5XmUfLRaRr2kzdjw" Name="Output Minimum" Kind="InputPin" />
+                  <Pin Id="ERQm25wS9fGOlL6sZDRGuI" Name="Output Maximum" Kind="InputPin" />
+                  <Pin Id="TYOf6MqvRefMnlF7gWoL2H" Name="Apply" Kind="ApplyPin" />
+                  <Pin Id="IyzodTGePHQM6hkrqbT7jm" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="162,445,67,13" Id="Ni9RzCaRw3gK97Q2CcI78r">
+                  <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                    <CategoryReference Kind="Category" Name="GazeManager" />
+                    <Choice Kind="OperationNode" Name="get_Instance" />
+                  </p:NodeReference>
+                  <Pin Id="U26BkdfsBYJNqVe6sh5s17" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="Ic04owQU9cmMxLZdHfB9ON" Bounds="132,209" />
+            <ControlPoint Id="G8qjTng7NztNdJNkPFxyQe" Bounds="308,209" />
+            <ControlPoint Id="SSdRje0pDb1QVQvgCqDMCp" Bounds="129,726" />
+            <Link Id="Cg05OtMWCHiO56YeCwfbs5" Ids="MU5UKEaB5oVL7ZdmJkNnj6,N6UUc1zlJToQVZbG06cBfr" />
+            <Link Id="KqtnnBevJnmNvdfzWXd4Tn" Ids="J26bBkgyn90QV0sI2oM9xJ,ReQQNo4X0KDN00Q0v0xdKe" />
+            <Link Id="CIi2q7cWIMMOYG4gy0YMeP" Ids="Rxz1Vq3FX6TN8wAMObeMgk,OTcV2u5cEeEPAylDnWE4zt" />
+            <Link Id="QLGe49DoEH7MjPnfkHq7QE" Ids="M966LA1I0fkPeOr2eKokf2,RlGESs8oNOwOmc8M1Yb4Rr" />
+            <Link Id="DAnPtu1YFCkMGTQOCCR868" Ids="MwBYVHoknxQNK3FIMZHHwE,EA6kn9C11P8NvxGnfdegvD" />
+            <Link Id="Q2vwpOGGgdWN7nHiuiSQie" Ids="Ic04owQU9cmMxLZdHfB9ON,UKV5nwHD8LYLrudoL8330n" />
+            <Link Id="P6tszaWl1HOMFLEthpVEbb" Ids="EHJcCkuRkJ1L970E45Xzx4,SSdRje0pDb1QVQvgCqDMCp" />
+            <Link Id="JFkNb1VIJrEOJABRzRa9mk" Ids="IehfhUqfwCjOfV125Pg52X,TuqBzUpMvGgNjc461Fjwfj" />
+            <ControlPoint Id="TGUcoI3WACJNBy5IjQ7Pil" Bounds="298,374" />
+            <Link Id="U2KabdfKU6lPiqCX8PdpzR" Ids="G8qjTng7NztNdJNkPFxyQe,TGUcoI3WACJNBy5IjQ7Pil,ThAnFGsv0yUPEzhpmOnnEk" />
+            <Link Id="F6zCiDNCxK1QcZQYxHR074" Ids="QMdGwl3mjtxPNaAiT4XJ4W,ERQm25wS9fGOlL6sZDRGuI" />
+            <Link Id="RqpWLNZfh1vL2Cpu34dQmA" Ids="JFTcpncn0KlN6SXS2amHiH,Tfm5aJ5XmUfLRaRr2kzdjw" />
+            <Link Id="AtYctJblidKLikfHatNK8v" Ids="CggWwshiUrSNhdzjatS3UF,QBPpLcgZRtgLl2ltOkT0Oi" />
+            <Link Id="N2yX9ka4B2QNYmPhboH3YI" Ids="RQOLKznWUS1NpiES1SWNLZ,B0IlLxTWsEEMaJihC77U2y" />
+            <Link Id="GRcGHf2FueyMvpaOGMXvLY" Ids="In341SfgvnoOpQhjmaBjTB,HRNI0qgfFrBMldAeG6BfX3" />
+            <Link Id="BG3oldTAi5mLn3cHiLdYuS" Ids="IyzodTGePHQM6hkrqbT7jm,EHJcCkuRkJ1L970E45Xzx4" />
+            <Link Id="DVyTMbYqsRxMKLWtllowYJ" Ids="TuqBzUpMvGgNjc461Fjwfj,CdES8AoptBdO35QJaXNvbG" />
+            <Link Id="QyNnRVKl6gDO5nZ8N91NVY" Ids="U26BkdfsBYJNqVe6sh5s17,GUFKCAISd3TPuIlVb9tUXI" />
+            <Link Id="N7aWpaSAw3QLk4htY87qtB" Ids="TzFFG9S5RFYQJtIcYoKgvP,KD3o3p7WohHLJZQXSUK7kl" />
+            <Link Id="LmeLRhw6Sh0MslwUjPXZ1c" Ids="PYF2XwXyht7NOiSEUnOOaF,Ic04owQU9cmMxLZdHfB9ON" IsHidden="true" />
+            <Link Id="JLzO4pHMOdYLX8Ej1A2R9V" Ids="EnA1kLRDr3tPTjBMXwtIle,G8qjTng7NztNdJNkPFxyQe" IsHidden="true" />
+            <Link Id="BivQ9gSnS1FPpGVyv7pk6c" Ids="SSdRje0pDb1QVQvgCqDMCp,Lzye5vAaLCQM5eePQgxeE8" IsHidden="true" />
+            <Link Id="RuALzU1bI5oMtF6lr9Or4K" Ids="TuqBzUpMvGgNjc461Fjwfj,EHJcCkuRkJ1L970E45Xzx4" IsFeedback="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ FromVector2 ************************
+
+-->
+        <Node Name="FromVector2" Bounds="-517,202,553,561" Id="OSREm51DsteNf3AVewY5aq">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="RO3mQkN3ZeGNKEek9mWHtG" IsGeneric="true">
+            <Pin Id="KyB0yornwXFNXNh2aQhXBw" Name="Vector2" Kind="InputPin" />
+            <Pin Id="SudrCkfqknnOmKXXYm8K32" Name="Map Values" Kind="InputPin" />
+            <Pin Id="NFpPNjxPz31QJLaWNBhdxt" Name="Point2D" Kind="OutputPin" />
+            <Pin Id="S355dfKFM0pOc0UJatRyUQ" Name="X" Kind="OutputPin" />
+            <Pin Id="PfdqvGKpqqgNLvHpgcoNCE" Name="Y" Kind="OutputPin" />
+            <Node Bounds="-434,668,39,13" Id="UkDrNZbYAboQStuE9qf7g8">
+              <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="Vector (Split)" />
+                <CategoryReference Kind="Category" Name="Vector2" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="HsIlC5NxjfVMkbsq3qczwd" Name="Input" Kind="InputPin" />
+              <Pin Id="NgbbyhSubiXQR5I7mMQIba" Name="X" Kind="OutputPin" />
+              <Pin Id="Vm0R0onjIeQMDfDApAd4RX" Name="Y" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="-435,697,39,22" Id="BwBUR53smnNQU3ZyqUuRUt">
+              <p:NodeReference LastCategoryFullName="TETCSharpClient.Data.Point2D" LastSymbolSource="TETCSharpClient.dll">
+                <CategoryReference Kind="Category" Name="Point2D" />
+                <Choice Kind="OperationNode" Name="Create (Double Double)" />
+              </p:NodeReference>
+              <Pin Id="VLGcNU06aPVLOe5BnqrTlc" Name="X" Kind="InputPin" />
+              <Pin Id="QC1CZxFRJ2pNE3Eu8jq2aq" Name="Y" Kind="InputPin" />
+              <Pin Id="C1j3rSnFYjiLzutqTekcXP" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="-337,679,40,22" Id="JHEmeRwW1scNyXrf7P3Yxh">
+              <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="VL.CoreLib.dll">
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationNode" Name="Floor" />
+              </p:NodeReference>
+              <Pin Id="HPqYgqHhlGZNdiCpsdwHSG" Name="Input" Kind="InputPin" />
+              <Pin Id="Ct3bkYfsAFHMvNMyjSSh8A" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="-294,678,40,22" Id="IVymslTXMVuOXx5Kof5gn6">
+              <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="VL.CoreLib.dll">
+                <CategoryReference Kind="Category" Name="Adaptive" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationNode" Name="Floor" />
+              </p:NodeReference>
+              <Pin Id="JS6Yd5cfaxXMetHTv0f1Uu" Name="Input" Kind="InputPin" />
+              <Pin Id="MPrFGDxdqw4MR7st40HqCR" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="-444,312,468,310" Id="HvHFsmHWH4YOwXPsaiaBpu">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+                <Choice Kind="If" Name="If" />
+              </p:NodeReference>
+              <Pin Id="Q4zP6DLLJqGLTWR0dOwCgy" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="CDvux6n1ArZM4jqpU32kWb" Bounds="-436,319" Name="Output" Alignment="Top" />
+              <ControlPoint Id="SYFALXOlfE9P1ODQm9CI6B" Bounds="-436,616" Name="Output" Alignment="Bottom" />
+              <Patch Id="KQWz8x2xfvzORRGDPt4N1y" Name="Then" IsGeneric="true">
+                <Pad Id="PO2s1ksIKgnMYgPKb9KKe9" Bounds="-365,475" ShowValueBox="true" isIOBox="true" Value="new vec(0.0,0.0)">
+                  <p:ValueBoxSettings />
+                  <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="SharpDX.Mathematics.dll" ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                    <CategoryReference Kind="Category" Name="2D" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="LVye2pBeBDNOfPuJfdIIKr" Bounds="-377,417" ShowValueBox="true" isIOBox="true" Value="new vec(1.0,-1.0)">
+                  <p:ValueBoxSettings />
+                  <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="SharpDX.Mathematics.dll" ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                    <CategoryReference Kind="Category" Name="2D" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="Tc4qSSqEEOWO9niXTqhZ2U" Bounds="-390,367" ShowValueBox="true" isIOBox="true" Value="new vec(-1.0,1.0)">
+                  <p:ValueBoxSettings />
+                  <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="SharpDX.Mathematics.dll" ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                    <CategoryReference Kind="Category" Name="2D" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="-432,574,80,13" Id="NsXztDlbSExL4dCMRWFcRQ">
+                  <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="VL.CoreLib.vl">
+                    <Choice Kind="OperationNode" Name="Map" />
+                  </p:NodeReference>
+                  <Pin Id="RL3ow7TPtRkOZyU6nq9qjO" Name="Input" Kind="InputPin" />
+                  <Pin Id="SLFVOrOUGeHQdTaiZoGLpU" Name="Input Minimum" Kind="InputPin" />
+                  <Pin Id="UosFGL4IcEDNRGj9j8ui0Z" Name="Input Maximum" Kind="InputPin" />
+                  <Pin Id="Obw74aJBl1PO8sQO228KKB" Name="Output Minimum" Kind="InputPin" />
+                  <Pin Id="IdA0rhcttrtNhXdVbf99jQ" Name="Output Maximum" Kind="InputPin" />
+                  <Pin Id="UwRpgkWfDkaOaDRNx6j9EB" Name="Apply" Kind="ApplyPin" />
+                  <Pin Id="OPTaY8kjYZxNcS2wjTmwpi" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="-229,419,67,13" Id="Koqz1Ijh1OrPbU9pvxucKG">
+                  <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                    <CategoryReference Kind="Category" Name="GazeManager" />
+                    <Choice Kind="OperationNode" Name="get_Instance" />
+                  </p:NodeReference>
+                  <Pin Id="T3AEZIcQst5NseVRoBms6t" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="-228,453,115,22" Id="HsbBKohX12INS3LJbE2H2P">
+                  <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                    <Choice Kind="OperationNode" Name="ScreenResolutionWidth" />
+                  </p:NodeReference>
+                  <Pin Id="MjCv1ArmyVmLH7OC5evfNh" Name="Input" Kind="InputPin" />
+                  <Pin Id="LAtvRCWj2G2MS7jF2Qt5dc" Name="Output" Kind="OutputPin" />
+                  <Pin Id="POWr8A41W8NLj121VECIIb" Name="Screen Resolution Width" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="-229,501,39,13" Id="Vskflf09QTzMUiVTmXaDGC">
+                  <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="SharpDX.Mathematics.dll">
+                    <Choice Kind="OperationNode" Name="Vector (Join)" />
+                    <CategoryReference Kind="Category" Name="Vector2" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="NjBuB6oRznXQGHVfIGgxfg" Name="X" Kind="InputPin" />
+                  <Pin Id="VVrtLYxCNDfPpFosVnpiKE" Name="Y" Kind="InputPin" />
+                  <Pin Id="BCTpLxF7IW4M7zm24M3ar2" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="-107,455,119,22" Id="InFYAAA5BpkPknilV3nZxk">
+                  <p:NodeReference LastCategoryFullName="TETCSharpClient.GazeManager" LastSymbolSource="TETCSharpClient.dll">
+                    <Choice Kind="OperationNode" Name="ScreenResolutionHeight" />
+                  </p:NodeReference>
+                  <Pin Id="Iry64lJlhEBOlJzVHB1ddV" Name="Input" Kind="InputPin" />
+                  <Pin Id="DB4tCpsgx1TMd733SxI2DJ" Name="Output" Kind="OutputPin" />
+                  <Pin Id="GEo4Z6CobtdQLTFXqcfdgh" Name="Screen Resolution Height" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="T1xRtZsT8S7Ox3fsVFIr1O" Bounds="-432,219" />
+            <ControlPoint Id="BppsxV6JZo1K9bKfcu5dnk" Bounds="-299,219" />
+            <ControlPoint Id="KHcKdafpxLyQdALkPeOwtK" Bounds="-436,745" />
+            <ControlPoint Id="DOmawMQYj1qPYZl1FfxMnJ" Bounds="-337,745" />
+            <ControlPoint Id="NXGOE1OLtn6LDzaYZAWj9S" Bounds="-295,745" />
+            <Link Id="MMRvUEPbDlpMp9TBeg5NZg" Ids="NgbbyhSubiXQR5I7mMQIba,VLGcNU06aPVLOe5BnqrTlc" />
+            <Link Id="MmfC6Z7i1KPOPlwWqssjoM" Ids="Vm0R0onjIeQMDfDApAd4RX,QC1CZxFRJ2pNE3Eu8jq2aq" />
+            <Link Id="GE5N28TIut4M1uIZodoyRv" Ids="SYFALXOlfE9P1ODQm9CI6B,HsIlC5NxjfVMkbsq3qczwd" />
+            <Link Id="HYOzlE2nlRuL68vC2stzfo" Ids="T1xRtZsT8S7Ox3fsVFIr1O,CDvux6n1ArZM4jqpU32kWb" />
+            <ControlPoint Id="D53qJ9feplTQNB1wLienh8" Bounds="-303,279" />
+            <ControlPoint Id="H2qtRgQtI09OX58GQ9pIEu" Bounds="-446,286" />
+            <Link Id="SI3A2gEe8nZNXfWgltRO2w" Ids="BppsxV6JZo1K9bKfcu5dnk,D53qJ9feplTQNB1wLienh8,H2qtRgQtI09OX58GQ9pIEu,Q4zP6DLLJqGLTWR0dOwCgy" />
+            <Link Id="FKQ8ahtnHFFM6XXJ2fpno4" Ids="C1j3rSnFYjiLzutqTekcXP,KHcKdafpxLyQdALkPeOwtK" />
+            <Link Id="U9r3zT2NjDnLkWpFYzMKqB" Ids="NgbbyhSubiXQR5I7mMQIba,HPqYgqHhlGZNdiCpsdwHSG" />
+            <Link Id="PD3jldJDE0JOJLBPDEo6K0" Ids="Vm0R0onjIeQMDfDApAd4RX,JS6Yd5cfaxXMetHTv0f1Uu" />
+            <Link Id="Bm61C9jtewGN20RcycOr7t" Ids="Ct3bkYfsAFHMvNMyjSSh8A,DOmawMQYj1qPYZl1FfxMnJ" />
+            <Link Id="J6hM2mxcdxENx1WJ7AYkHe" Ids="MPrFGDxdqw4MR7st40HqCR,NXGOE1OLtn6LDzaYZAWj9S" />
+            <Link Id="HO1yO5VmnZjL9GUmYY6jtE" Ids="PO2s1ksIKgnMYgPKb9KKe9,Obw74aJBl1PO8sQO228KKB" />
+            <Link Id="JgZDDSFN2OqPcUUpM6Aety" Ids="LVye2pBeBDNOfPuJfdIIKr,UosFGL4IcEDNRGj9j8ui0Z" />
+            <Link Id="FSynZHHq0vbK93DAfUWjn9" Ids="Tc4qSSqEEOWO9niXTqhZ2U,SLFVOrOUGeHQdTaiZoGLpU" />
+            <Link Id="EOeU4QPmTiAPmMH8utD5El" Ids="CDvux6n1ArZM4jqpU32kWb,RL3ow7TPtRkOZyU6nq9qjO" />
+            <Link Id="IHfPfqGAR8gNZElBejHfYV" Ids="OPTaY8kjYZxNcS2wjTmwpi,SYFALXOlfE9P1ODQm9CI6B" />
+            <Link Id="BsnUEf4x9iBOwPvrkmTxAy" Ids="T3AEZIcQst5NseVRoBms6t,MjCv1ArmyVmLH7OC5evfNh" />
+            <Link Id="FuhoWVLVsbeMKbwSr4fqas" Ids="LAtvRCWj2G2MS7jF2Qt5dc,Iry64lJlhEBOlJzVHB1ddV" />
+            <Link Id="N3v1u4FYlhhOhdms9Luofo" Ids="POWr8A41W8NLj121VECIIb,NjBuB6oRznXQGHVfIGgxfg" />
+            <Link Id="M6EDiJcM8U7OI9ZuMHircn" Ids="GEo4Z6CobtdQLTFXqcfdgh,VVrtLYxCNDfPpFosVnpiKE" />
+            <Link Id="NXVIAJubwK1O9l0qUOeix7" Ids="BCTpLxF7IW4M7zm24M3ar2,IdA0rhcttrtNhXdVbf99jQ" />
+            <Link Id="VTqNWTAmKj0MX1shUBtsmy" Ids="KyB0yornwXFNXNh2aQhXBw,T1xRtZsT8S7Ox3fsVFIr1O" IsHidden="true" />
+            <Link Id="HNtRiskTq3mPa3n1Nj7voq" Ids="SudrCkfqknnOmKXXYm8K32,BppsxV6JZo1K9bKfcu5dnk" IsHidden="true" />
+            <Link Id="K9cKhy2odXpPEUfSVZpxS5" Ids="KHcKdafpxLyQdALkPeOwtK,NFpPNjxPz31QJLaWNBhdxt" IsHidden="true" />
+            <Link Id="EDUvGcr74lbQNFt2JWwcFO" Ids="DOmawMQYj1qPYZl1FfxMnJ,S355dfKFM0pOc0UJatRyUQ" IsHidden="true" />
+            <Link Id="SZLRAlH4s1xLKDTNtzaJJL" Ids="NXGOE1OLtn6LDzaYZAWj9S,PfdqvGKpqqgNLvHpgcoNCE" IsHidden="true" />
+            <Link Id="TH6f6KilUJVL6SCsFoCfWn" Ids="CDvux6n1ArZM4jqpU32kWb,SYFALXOlfE9P1ODQm9CI6B" IsFeedback="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+  </Patch>
+</Document>

@@ -1,0 +1,787 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug33.8.dtd" >
+   <PATCH nodename="C:\Dev\vvvv\vvvv\public\vvvv45\packs\VVVV.Audio\girlpower\VSTTest.v4p" systemname="VSTTest" filename="C:\Dev\vvvv\VVVV.Audio\Patches\VSTTest.v4p" scrollx="285" scrolly="0">
+   <BOUNDS type="Window" left="210" top="285" width="8145" height="10005">
+   </BOUNDS>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4695" top="11280" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4695" top="11280" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Play">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="2" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="5790" top="11505" width="1920" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5790" top="11505" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="|ASIO4ALL v2|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Driver">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1980" top="7875" width="2400" height="495">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1980" top="7875" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|..\..\..\..\..\..\..\..\Program Files (x86)\VST\Supercharger.dll|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|VST Plugin (*.dll, *.vst3)||*.dll;*.vst3|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1530" top="6105" width="1290" height="540">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1530" top="6105" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="4" values="1,0,0,1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="1530" top="6750" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1.67">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="53" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2295" top="10650" width="630" height="1485">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2295" top="10650" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Level dBfs|">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-90">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Sticky Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="0.000677600499484213,0.000415999399305373">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="68" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1980" top="465" width="2130" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1980" top="465" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|..\..\..\..\..\..\..\..\Program Files (x86)\VST\IL Minihost Modular.dll|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|VST Plugin (*.dll, *.vst3)||*.dll;*.vst3|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="75" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4605" top="8160" width="2415" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4605" top="8160" width="2175" height="525">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- free xmas present from native instruments|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE id="66" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <PIN pinname="Output String">
+   </PIN>
+   <PIN pinname="Input String" slicecount="2" values="DemoL.wav,DemoR.wav">
+   </PIN>
+   <BOUNDS type="Box" left="5235" top="9015" width="2295" height="555">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5235" top="9015" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="MyNextBigHit.wav">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values=".wav">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE id="74" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <PIN pinname="Y Output Value">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="3840" top="9075" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3840" top="9075" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Write">
+   </PIN>
+   </NODE>
+   <NODE systemname="MatrixMixer (VAudio Filter)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="MatrixMixer (VAudio Filter)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="1125" top="7155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Gain" slicecount="8" visible="1" values="0.57,,,,,,,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="14" dstpinname="Gain">
+   </LINK>
+   <NODE systemname="VSTHost (VAudio Source)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.VST.dll" nodename="VSTHost (VAudio Source)" componentmode="InAWindow" id="12">
+   <BOUNDS type="Node" left="1485" top="8775" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Audio Out" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="9660" top="11895" width="9645" height="4230">
+   </BOUNDS>
+   <PIN pinname="Safe Data" slicecount="1" values="QCRpTgEAAAACAAAAFAYAAAAAAAABAAAAaHNpbgEAAAAAAAAASleMh+lcTwirconzAV/gAZYAAAAAAAAARFNJTnYAAAABAAAASAAAAAAAAABEU0lOagAAAAEAAAAYAAAAAAAAAERTSU4BAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAANYmWFAQAAAARwEAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAADAAAAMAAwADAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAERTSU5lAAAAQgUAAAAAAAABAAAAaHNpbgEAAAAAAAAAxnTzHWjgSACqytOUv/5QuWcAAAAAAAAARFNJTmUAAAABAAAANAAAAAAAAABEU0lOagAAAAEAAAAYAAAAAAAAAERTSU4BAAAAAQAAAAEAAAABAAAAAgAAAAEAAAAAGwAAAAEAAAAHAAAAMQAuADEALgAwAC4AMAABAAAAAwAAAAAAAABEU0lObAAAAIABAAAAAAAAAQAAAGhzaW4BAAAAAAAAADAHpJ8Vz0R7g4kNlA/rOfJQAQAAAAAAAERTSU5sAAAAAQAAABgAAAAAAAAARFNJTgEAAAABAAAAAQAAAAEAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAABwAAAAcAAABcAEAAYwBvAGwAbwByAAEAAAAwABEAAABcAEAAZABlAHYAaQBjAGUAdAB5AHAAZQBmAGwAYQBnAHMAAQAAADAACwAAAFwAQABzAG8AdQBuAGQAdAB5AHAAZQABAAAAMAAHAAAAXABAAHQAZQBtAHAAbwABAAAAMAAGAAAAXABAAHYAZQByAGwABQAAADEALgA3AC4ANAAGAAAAXABAAHYAZQByAG0ABQAAADEALgA3AC4ANAAHAAAAXABAAHYAaQBzAGkAYgABAAAAMAABAAAAAAAAAAIAAABEU0lOeQAAALIBAAAAAAAAAQAAAGhzaW4BAAAAAAAAAKrYHorzpkg4kg3kNLH1k3KCAQAAAAAAAERTSU55AAAAAQAAABgAAAAAAAAARFNJTgEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAIAAAABAAAAE0AYQBpAG4AAQAAAAoAAABJAG4AcAB1AHQAIABUAHIAaQBtAAAAAAAAAIA/AAAAAAEAAAABAAAACQAAAFMAaQBkAGUAYwBoAGEAaQBuAAAAAAAAAIA/AQAAAAIAAAABAAAACAAAAEMAbwBtAHAAcgBlAHMAcwAAAAAAAACAPwIAAAADAAAAAQAAAAUAAABQAHUAbgBjAGgAAAAAAAAAgD8DAAAABAAAAAEAAAAEAAAARABpAHIAdAAAAAAAAACAPwQAAAAFAAAAAQAAAAMAAABNAGkAeAAAAAAAAACAPwUAAAAGAAAAAQAAAAYAAABPAHUAdABwAHUAdAAAAAAAAACAPwYAAAAHAAAAAQAAAA4AAAA8AHsAWwBhAHUAdABvAG4AYQBtAGUAXQB9AD4AAAAAAAAAgD//////CAAAAAEAAAAAAAAAAQAAAERTSU50AAAAVQEAAAAAAAABAAAAaHNpbgEAAAAAAAAA5XmAD6OuQMyU8++BB4xqLSUBAAAAAAAARFNJTnQAAAABAAAADAEAAAAAAABEU0lOcwAAAAEAAAAYAAAAAAAAAERTSU4BAAAAAQAAAAEAAAABAAAAAT0BAADTAAAAAj0BAGAAAAEgBQNoc2luQAdAABB0e8s58VFBWKuBHCw/Va8GGEAUIAADRFNJTkAj4AcDQABAGwBtIAgA6SADQABAI+ADUxBRSP+Ua95EJ4H3EqizmaXfuUAkIADAN0Av4BdnQCMAcSAzQABAC2AAAAkgBQACIAMHSQA3AK5HAT9ACwJTADQgEYAXB00ANQDTJ/0+QBcCUAA4IBWAFwJEADkgCQCAYC8GVwAxAEfhuqAjBDYAexTuYAsCVgAyYFsDVgAzAEAACw1iZYUBAAAAAAAAAAEAAAAAAQAAAAAAAAADAAAAAAAAAAAEAAAN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26DfCtug3wrboN8K26ARMAAABJAE4ASQBUACAALQAgAFMAdQBwAGUAcgBjAGgAYQByAGcAZQByAAMAAAABAWZpbGU6Ly8vQzovUHJvZ3JhbSUyMEZpbGVzL0NvbW1vbiUyMEZpbGVzL05hdGl2ZSUyMEluc3RydW1lbnRzL1N1cGVyY2hhcmdlci9JTklUJTIwLSUyMFN1cGVyY2hhcmdlci5uaWZ4AMZ08x1o4EgAqsrTlL/+ULkCAAAAAQAAAAAAAAATAAAASQBOAEkAVAAgAC0AIABTAHUAcABlAHIAYwBoAGEAcgBnAGUAcgAQAAAAUwBlAGIAYQBzAHQAaQBhAG4AIABNAPwAbABsAGUAcgASAAAATgBhAHQAaQB2AGUAIABJAG4AcwB0AHIAdQBtAGUAbgB0AHMAAAAAAAAAAAD//////////wAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAEAAAAMAAAAUwB1AHAAZQByAGMAaABhAHIAZwBlAHIAAgAAAAgAAABEAHkAbgBhAG0AaQBjAHMAFgAAAFMAaQBuAGcAbABlACAAQgBhAG4AZAAgAEMAbwBtAHAAcgBlAHMAcwBvAHIAAAAAAAcAAAAHAAAAXABAAGMAbwBsAG8AcgABAAAAMAARAAAAXABAAGQAZQB2AGkAYwBlAHQAeQBwAGUAZgBsAGEAZwBzAAEAAAAyAAsAAABcAEAAcwBvAHUAbgBkAHQAeQBwAGUAAQAAADAABwAAAFwAQAB0AGUAbQBwAG8AAQAAADAABgAAAFwAQAB2AGUAcgBsAAUAAAAxAC4ANwAuADQABgAAAFwAQAB2AGUAcgBtAAUAAAAxAC4ANwAuADQABwAAAFwAQAB2AGkAcwBpAGIAAQAAADAAAAAAAAATAAAASQBOAEkAVAAgAC0AIABTAHUAcABlAHIAYwBoAGEAcgBnAGUAcgA=">
+   </PIN>
+   <PIN pinname="Exposed Pins" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Compress" slicecount="1" values="0.64">
+   </PIN>
+   <PIN pinname="Mix" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="12" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="Meter (VAudio Sink)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="Meter (VAudio Sink)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="2280" top="10095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Smoothing" slicecount="1" values="0.28">
+   </PIN>
+   <PIN pinname="Level" visible="1">
+   </PIN>
+   <PIN pinname="Level dBs" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AudioEngine (VAudio)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="AudioEngine (VAudio)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="4680" top="12000" width="1590" height="270">
+   </BOUNDS>
+   <PIN pinname="Driver" slicecount="1" values="|ASIO4ALL v2|">
+   </PIN>
+   <PIN pinname="BPM" slicecount="1" visible="1" values="90">
+   </PIN>
+   <PIN pinname="Sample Rate" slicecount="1" values="44100">
+   </PIN>
+   <PIN pinname="Control Panel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Beat" visible="1">
+   </PIN>
+   <PIN pinname="Time" visible="1">
+   </PIN>
+   <PIN pinname="Loop" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output Enum" dstnodeid="0" dstpinname="Driver">
+   </LINK>
+   <NODE id="60" systemname="Writer (VAudio Sink)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="Writer (VAudio Sink)" componentmode="Hidden">
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Filename">
+   </PIN>
+   <PIN pinname="Write">
+   </PIN>
+   <BOUNDS type="Node" left="3630" top="10065" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Output String" dstnodeid="60" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="60" dstpinname="Write">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Audio Out" dstnodeid="60" dstpinname="Input">
+   </LINK>
+   <NODE systemname="MidiIn (VAudio Source)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.MIDI.dll" nodename="MidiIn (VAudio Source)" componentmode="Hidden" id="73">
+   <BOUNDS type="Node" left="6840" top="675" width="525" height="270">
+   </BOUNDS>
+   <PIN pinname="Beat Input" visible="1">
+   </PIN>
+   <PIN pinname="File Name" slicecount="1" values="..\assets\001128817247.mid">
+   </PIN>
+   <PIN pinname="Read" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="All Notes Off" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Midi Output Port" slicecount="1" values="|LoopBe Internal MIDI|">
+   </PIN>
+   <PIN pinname="Events" visible="1">
+   </PIN>
+   <PIN pinname="Driver" slicecount="1" visible="1" values="|LoopBe Internal MIDI|">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="33.8.0">
+   </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="76" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="3855" top="6420" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3855" top="6420" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="MidiNote (VAudio Join)" filename="%VVVV%\packs\VVVV.Audio\nodes\modules\MidiNote (VAudio Join).v4p" nodename="%VVVV%\packs\VVVV.Audio\nodes\modules\MidiNote (VAudio Join).v4p" componentmode="InAWindow" id="79">
+   <BOUNDS type="Node" left="4770" top="1575" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3220" top="90" width="3100" height="3100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6135" top="1320" width="10335" height="7665">
+   </BOUNDS>
+   <PIN pinname="Play" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Note" visible="1" slicecount="1" values="62">
+   </PIN>
+   <PIN pinname="Events" visible="1">
+   </PIN>
+   <PIN pinname="Velocity" slicecount="1" values="0.7">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="80" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4770" top="600" width="495" height="765">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4770" top="600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="79" dstpinname="Play">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="81" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5580" top="360" width="780" height="675">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5580" top="360" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="36,39,60">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="79" dstpinname="Note">
+   </LINK>
+   <NODE systemname="MidiControllerOut (Devices)" filename="%VVVV%\lib\nodes\modules\Devices\MidiControllerOut (Devices).v4p" nodename="MidiControllerOut (Devices)" componentmode="InAWindow" id="82">
+   <BOUNDS type="Node" left="5460" top="6825" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4335" top="7725" width="10440" height="6000">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="83" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="6825" top="195" width="1815" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6825" top="195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|LoopBe Internal MIDI|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="83" srcpinname="Output Enum" dstnodeid="73" dstpinname="Driver">
+   </LINK>
+   <NODE systemname="MidiMerge (VAudio Filter)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.MIDI.dll" nodename="MidiMerge (VAudio Filter)" componentmode="Hidden" id="84">
+   <BOUNDS type="Node" left="4155" top="2340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Events 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Events 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Events" visible="1">
+   </PIN>
+   <PIN pinname="Events Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Events 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Blinker (Animation)" nodename="Blinker (Animation)" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="4770" top="30" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="BlinkStyle" slicecount="1" values="BlinkSlow">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="87" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3045" top="1350" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3045" top="1350" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="90" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1575" top="3510" width="945" height="1515">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1575" top="3510" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Level dBfs|">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-90">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Sticky Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Meter (VAudio Sink)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="Meter (VAudio Sink)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="1560" top="3000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Smoothing" slicecount="1" values="0.28">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Level dBs" dstnodeid="90" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="91">
+   <BOUNDS type="Node" left="5820" top="10440" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5820" top="10440" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="93">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="91" srcpinname="Y Output Value" dstnodeid="0" dstpinname="BPM">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="92" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2925" top="1620" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2925" top="1620" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.15">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE systemname="MidiSequence (VAudio Source)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.MIDI.dll" nodename="MidiSequence (VAudio Source)" componentmode="Hidden" id="93">
+   <BOUNDS type="Node" left="5895" top="2190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Position" visible="1">
+   </PIN>
+   <PIN pinname="Events" visible="1">
+   </PIN>
+   <PIN pinname="Times" visible="1" slicecount="2" values="0,4">
+   </PIN>
+   <PIN pinname="Values" slicecount="1" visible="1" values="64">
+   </PIN>
+   <PIN pinname="Velocities" slicecount="1" values="0.72">
+   </PIN>
+   <PIN pinname="Lengths" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Length" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Notes" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="94" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7305" top="2655" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7305" top="2655" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Position" dstnodeid="94" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="96" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7650" top="1080" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7650" top="1080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="59.75,60.6">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Values">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="97" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7770" top="1800" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7770" top="1800" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.08">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="97" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Lengths">
+   </LINK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="98">
+   <BOUNDS type="Node" left="5940" top="1620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Alignment" slicecount="1" values="LeftJustified">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="5">
+   </PIN>
+   <PIN pinname="Phase" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="98" srcpinname="Output" dstnodeid="93" dstpinname="Times">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="12" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="99" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6810" top="1020" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6810" top="1020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="99" srcpinname="Y Output Value" dstnodeid="98" dstpinname="Spread Count">
+   </LINK>
+   <NODE systemname="MidiSequence (VAudio Source)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.MIDI.dll" nodename="MidiSequence (VAudio Source)" componentmode="Hidden" id="100">
+   <BOUNDS type="Node" left="5790" top="3435" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Position" visible="1">
+   </PIN>
+   <PIN pinname="Events" visible="1">
+   </PIN>
+   <PIN pinname="Times" visible="1" slicecount="2" values="0,4">
+   </PIN>
+   <PIN pinname="Values" slicecount="1" visible="1" values="64">
+   </PIN>
+   <PIN pinname="Velocities" slicecount="1" values="0.47">
+   </PIN>
+   <PIN pinname="Lengths" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Length" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Notes" slicecount="1" values="42">
+   </PIN>
+   </NODE>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="101">
+   <BOUNDS type="Node" left="5970" top="3000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Alignment" slicecount="1" values="LeftJustified">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="0.87">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Phase" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="101" srcpinname="Output" dstnodeid="100" dstpinname="Times">
+   </LINK>
+   <NODE systemname="MidiSequence (VAudio Source)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.MIDI.dll" nodename="MidiSequence (VAudio Source)" componentmode="Hidden" id="104">
+   <BOUNDS type="Node" left="5715" top="5475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Values" visible="1" slicecount="1" values="36">
+   </PIN>
+   <PIN pinname="Length" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Lengths" slicecount="1" visible="1" values="0.62">
+   </PIN>
+   <PIN pinname="Events" visible="1">
+   </PIN>
+   <PIN pinname="Velocities" visible="1">
+   </PIN>
+   <PIN pinname="Times" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Notes" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="106" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7320" top="4845" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7320" top="4845" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Lengths">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Events" dstnodeid="84" dstpinname="Events 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="107" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7095" top="4215" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7095" top="4215" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="107" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Velocities">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="114" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5790" top="4020" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5790" top="4020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.5,1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Times">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="115" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6075" top="4590" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6075" top="4590" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="36,78">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Values">
+   </LINK>
+   <LINK srcnodeid="93" srcpinname="Events" dstnodeid="84" dstpinname="Events 3">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="52" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Level dBs" dstnodeid="53" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Events" dstnodeid="84" dstpinname="Events 2">
+   </LINK>
+   <NODE systemname="VSTHost (VAudio Source)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.VST.dll" nodename="VSTHost (VAudio Source)" componentmode="InAWindow" id="116">
+   <BOUNDS type="Node" left="3360" top="4155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" values="|..\..\..\..\..\..\..\..\Program Files (x86)\VST\Free\TemperVST\Temper.dll|">
+   </PIN>
+   <PIN pinname="Audio Out" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="3915" top="2040" width="22380" height="15375">
+   </BOUNDS>
+   <PIN pinname="Safe Data" slicecount="1" values="eJzVV01v4zYQPadA/wPBPfjkmF8ipcLqot003T0EXRRt77RExYIpUZXkNPn3HVGSbTl2vEnbBcqLSfHNzOMMNU9evn8sLHowdZO7Mp7RazJDpkxcmpf38ez3327n4Qw1rS5TbV1p4tmTaWbo/ffffrMstk2ezBvz5xYMDEpXMSaU+IGRriqbJ7rtvOIOk7fbGu8CYUZISCgLMHi6Wt5bt9K2m14tC9PWrnSFQRritga8YrTwsMUe18H0vK11sunNNuYJbeamTOdtXvRGm3n7VI3T2rl2mFo3X+VtE+M5U5LykCguVaRIEErBO8A6HwFBxBWNeEgjEgoSUCKk96BXxsb4o64LV+YJustLVw8sr5atKSqHVlUR44jvngJhU6PC6GZbAymK0croLojoZ/MHbbfGL4fTTo+49DOUbJvWFfNSd4dM1gxhlKx1WXZ84HTNU5nA5FpGfoRwuIgo4I17FlVeGZuXxq+ulqVLDcpToBNgVDtrgA95DHtwR1q3yRpBbmOs6+q7uzzNP69r3ZhmPBeA8jJzyObp475U3WNrHoxtxvVy0cV6FjY8CCv6yyNeiv7RNe0v23Z66EtMCjCcGGhr3V9d/QnlTAb7Kh3SXC4myfIXM0+aAVf5NKCmp3ZjMr21QAuu9t2nm08YrTv3e7eFzstT4M+5Lh361VnrTWgEdciS7D7GnAkmMiGhhH5IKY3giowD1lkgAk6HfTH8BiE5OSQVQqgA3A54JQz4T8iwJqESMoO3IJMGfoUMpvZCn/ZHkyGu6LwJufMnRz9BBnfQD7PbhG0joiAUYmgZhB3xhn1wKQQJx54y5rKBOlSnkvmHsS7J26c+lQE5TqX8wlSOVPhbU5lKISMFEWQiqYogpbKbSaW436dH/oZUkORMvLOp0LZaa7SJsdw3msXhRYVkjS0SXjvz2KLE1nA1KVWCw5XhYJfm8OTgFTAIWgjzGVW4x0MDIUxEYSBPwigZcAwogl/B2REu9LgRNoZnYbinvWc6vlzQIAKuJMG7ttEaVMX4R/D+AD7BGCBwUaN9NI9pu8eKQThAf3jHPZxxD4eop+E0wgfOpXoJTT30ZvDciULngkUvExnQwqMDwk96huxNeQ9MeoKLo1T88I5dAE0o/PwSPCkOGfTVB2ygrgmD+oeSE1BDEol9zfpC9XJ1Qan4Qc+mbxcq8q/oFH2tTv1jmaKXiUxlin4VmbrYUz+4Er7HrDX1cTdNnvWx0900HHDROXzXTWkgRxx0U+itIt0B4CNNMUW4lisZjFJyMFj/Ewz2Iz99rnsf8ZNjmAvdfhS6Z91eSC4zuRdM9kp7yvjEQL3SHoRNhTKSwzobxs5+FFpxkt6BJO/wE7X53+fzwofL187nmMfxvr5V/b9I6AdBlqH6j3X+jH4ziBwd6/ftRWWbiNbtq9A/vQp9c57KOXWDVrsZct5Nu6ZJvDF07MzVoAb9tHaF32nd4V/Y0RqqN/n/DI/+Btc6qKI=">
+   </PIN>
+   <PIN pinname="Midi Message" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (VAudio)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="Add (VAudio)" componentmode="Hidden" id="117">
+   <BOUNDS type="Node" left="1140" top="5520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Audio Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="116" srcpinname="Audio Out" dstnodeid="117" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Audio Out" dstnodeid="14" dstpinname="Input">
+   </LINK>
+   <NODE id="88" componentmode="InAWindow" systemname="VSTHost (VAudio Source)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.VST.dll" nodename="VSTHost (VAudio Source)">
+   <PIN pinname="Audio Out" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="8820" top="690" width="19830" height="14130">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1110" top="2400" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Safe Data" slicecount="1" values="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ADoAaQBkAD0AIgAxACIAIAB0AHgAOgBwAGEAdABoAD0AIgAwACIAIAB0AHgAOgByAG8AbwB0AD0AIgBuAG8AIgAgAHQAeAA6AGYAaQBuAGUAPQAiADAAIgAgAHQAeAA6AHQAZQBtAHAAbwA9ACIAMQA4ADYALgAwACIAPgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAxACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADAAIgAgACAAdAB4ADoAZQBuAGQAPQAiADYAOAA1ADQANgAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADIAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIANgA4ADUANAA2ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAxADMANwAwADkAMgAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADMAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMQAzADcAMAA5ADIAIgAgACAAdAB4ADoAZQBuAGQAPQAiADIAMAA1ADYAMwA4ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMANAAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAyADAANQA2ADMAOAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMgA3ADQAMQA4ADQAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA1ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADIANwA0ADEAOAA0ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAzADQAMgA3ADMAMAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADYAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMwA0ADIANwAzADAAIgAgACAAdAB4ADoAZQBuAGQAPQAiADQAMQAxADIANwA2ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMANwAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgA0ADEAMQAyADcANgAiACAAIAB0AHgAOgBlAG4AZAA9ACIANAA3ADkAOAAyADIAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA4ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADQANwA5ADgAMgAyACIAIAAgAHQAeAA6AGUAbgBkAD0AIgA1ADQAOAAzADYAOAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADkAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIANQA0ADgAMwA2ADgAIgAgACAAdAB4ADoAZQBuAGQAPQAiADYAMQA2ADkAMQA0ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMQAwACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADYAMQA2ADkAMQA0ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgA2ADgANQA0ADYAMAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADEAMQAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgA2ADgANQA0ADYAMAAiACAAIAB0AHgAOgBlAG4AZAA9ACIANwA1ADQAMAAwADYAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAxADIAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIANwA1ADQAMAAwADYAIgAgACAAdAB4ADoAZQBuAGQAPQAiADgAMgAyADUANQAyACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMQAzACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADgAMgAyADUANQAyACIAIAAgAHQAeAA6AGUAbgBkAD0AIgA4ADkAMQAwADkAOAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADEANAAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgA4ADkAMQAwADkAOAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAOQA1ADkANgA0ADQAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAxADUAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAOQA1ADkANgA0ADQAIgAgACAAdAB4ADoAZQBuAGQAPQAiADEAMAAyADgAMQA5ADAAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAxADYAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMQAwADIAOAAxADkAMAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMQAwADkANgA3ADMANgAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADEANwAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAxADAAOQA2ADcAMwA2ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAxADEANgA1ADIAOAAyACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMQA4ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADEAMQA2ADUAMgA4ADIAIgAgACAAdAB4ADoAZQBuAGQAPQAiADEAMgAzADMAOAAyADgAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAxADkAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMQAyADMAMwA4ADIAOAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMQAzADAAMgAzADcANAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADIAMAAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAxADMAMAAyADMANwA0ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAxADMANwAwADkAMgAwACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMgAxACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADEAMwA3ADAAOQAyADAAIgAgACAAdAB4ADoAZQBuAGQAPQAiADEANAAzADkANAA2ADYAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAyADIAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMQA0ADMAOQA0ADYANgAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMQA1ADAAOAAwADEAMgAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADIAMwAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAxADUAMAA4ADAAMQAyACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAxADUANwA2ADUANQA4ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMgA0ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADEANQA3ADYANQA1ADgAIgAgACAAdAB4ADoAZQBuAGQAPQAiADEANgA0ADUAMQAwADQAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAyADUAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMQA2ADQANQAxADAANAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMQA3ADEAMwA2ADUAMAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADIANgAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAxADcAMQAzADYANQAwACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAxADcAOAAyADEAOQA2ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMgA3ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADEANwA4ADIAMQA5ADYAIgAgACAAdAB4ADoAZQBuAGQAPQAiADEAOAA1ADAANwA0ADIAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAyADgAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMQA4ADUAMAA3ADQAMgAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMQA5ADEAOQAyADgAOAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADIAOQAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAxADkAMQA5ADIAOAA4ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAxADkAOAA3ADgAMwA0ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMwAwACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADEAOQA4ADcAOAAzADQAIgAgACAAdAB4ADoAZQBuAGQAPQAiADIAMAA1ADYAMwA4ADAAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAzADEAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMgAwADUANgAzADgAMAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMgAxADIANAA5ADIANgAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADMAMgAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAyADEAMgA0ADkAMgA2ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAyADEAOQAzADQANwAyACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMwAzACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADIAMQA5ADMANAA3ADIAIgAgACAAdAB4ADoAZQBuAGQAPQAiADIAMgA2ADIAMAAxADgAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAzADQAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMgAyADYAMgAwADEAOAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMgAzADMAMAA1ADYANAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADMANQAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAyADMAMwAwADUANgA0ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAyADMAOQA5ADEAMQAwACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMwA2ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADIAMwA5ADkAMQAxADAAIgAgACAAdAB4ADoAZQBuAGQAPQAiADIANAA2ADcANgA1ADYAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwAzADcAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMgA0ADYANwA2ADUANgAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMgA1ADMANgAyADAAMgAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADMAOAAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAyADUAMwA2ADIAMAAyACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAyADYAMAA0ADcANAA4ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMAMwA5ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADIANgAwADQANwA0ADgAIgAgACAAdAB4ADoAZQBuAGQAPQAiADIANgA3ADMAMgA5ADQAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA0ADAAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMgA2ADcAMwAyADkANAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMgA3ADQAMQA4ADQAMAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADQAMQAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAyADcANAAxADgANAAwACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAyADgAMQAwADMAOAA2ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMANAAyACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADIAOAAxADAAMwA4ADYAIgAgACAAdAB4ADoAZQBuAGQAPQAiADIAOAA3ADgAOQAzADIAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA0ADMAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMgA4ADcAOAA5ADMAMgAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMgA5ADQANwA0ADcAOAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADQANAAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAyADkANAA3ADQANwA4ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAzADAAMQA2ADAAMgA0ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMANAA1ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADMAMAAxADYAMAAyADQAIgAgACAAdAB4ADoAZQBuAGQAPQAiADMAMAA4ADQANQA3ADAAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA0ADYAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMwAwADgANAA1ADcAMAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMwAxADUAMwAxADEANgAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADQANwAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAzADEANQAzADEAMQA2ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAzADIAMgAxADYANgAyACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMANAA4ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADMAMgAyADEANgA2ADIAIgAgACAAdAB4ADoAZQBuAGQAPQAiADMAMgA5ADAAMgAwADgAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA0ADkAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMwAyADkAMAAyADAAOAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMwAzADUAOAA3ADUANAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADUAMAAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAzADMANQA4ADcANQA0ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAzADQAMgA3ADMAMAAwACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMANQAxACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADMANAAyADcAMwAwADAAIgAgACAAdAB4ADoAZQBuAGQAPQAiADMANAA5ADUAOAA0ADYAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA1ADIAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMwA0ADkANQA4ADQANgAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMwA1ADYANAAzADkAMgAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADUAMwAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAzADUANgA0ADMAOQAyACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAzADYAMwAyADkAMwA4ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMANQA0ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADMANgAzADIAOQAzADgAIgAgACAAdAB4ADoAZQBuAGQAPQAiADMANwAwADEANAA4ADQAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA1ADUAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMwA3ADAAMQA0ADgANAAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMwA3ADcAMAAwADMAMAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADUANgAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAzADcANwAwADAAMwAwACIAIAAgAHQAeAA6AGUAbgBkAD0AIgAzADgAMwA4ADUANwA2ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMANQA3ACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADMAOAAzADgANQA3ADYAIgAgACAAdAB4ADoAZQBuAGQAPQAiADMAOQAwADcAMQAyADIAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA1ADgAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIAMwA5ADAANwAxADIAMgAiACAAIAB0AHgAOgBlAG4AZAA9ACIAMwA5ADcANQA2ADYAOAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQAJADwAdAB4ADoAbABvAG8AcAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAbABjADUAOQAiACAAdAB4ADoAcwB0AGEAcgB0AD0AIgAzADkANwA1ADYANgA4ACIAIAAgAHQAeAA6AGUAbgBkAD0AIgA0ADAANAA0ADIAMQA0ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBTAGwAaQBjAGUAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAG8AbwBwACAAdAB4ADoAbgBhAG0AZQA9ACIAUwBsAGMANgAwACIAIAB0AHgAOgBzAHQAYQByAHQAPQAiADQAMAA0ADQAMgAxADQAIgAgACAAdAB4ADoAZQBuAGQAPQAiADQAMQAxADIANwA2ADAAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAFMAbABpAGMAZQAiAC8APgAKAAkACQA8AHQAeAA6AGwAbwBvAHAAIAB0AHgAOgBuAGEAbQBlAD0AIgBTAGwAYwA2ADEAIgAgAHQAeAA6AHMAdABhAHIAdAA9ACIANAAxADEAMgA3ADYAMAAiACAAIAB0AHgAOgBlAG4AZAA9ACIANAAxADgAMQAzADMANAAiACAAdAB4ADoAbQBvAGQAZQA9ACIAUwBsAGkAYwBlACIALwA+AAoACQA8AC8AdAB4ADoAdwBhAHYAZQA+AAoACQA8AHQAeAA6AHIAYQBuAGcAZQAgAHQAeAA6AGwAbwB3AGsAZQB5AD0AIgBDAC0AMQAiACAAdAB4ADoAaABpAGcAaABrAGUAeQA9ACIARwA5ACIAIAB0AHgAOgBsAG8AdwB2AGUAbAA9ACIAMAAiACAAdAB4ADoAaABpAGcAaAB2AGUAbAA9ACIAMQAyADcAIgAvAD4ACgAJADwAdAB4ADoAZwByAG8AdQBwACAAdAB4ADoAbgBhAG0AZQA9ACIARgByAGUAZQB6AGUAIAA4AC0AQQB1AGQAaQBvACIACgAJAAkAdAB4ADoAYwBvAGEAcgBzAGUAPQAiADAAIgAKAAkACQB0AHgAOgBmAGkAbgBlAD0AIgAwACIACgAJAAkAdAB4ADoAdAB1AG4AaQBuAGcAPQAiAEYAaQB4AGUAZAAiAAoACQAJAHQAeAA6AGcAbABpAGQAZQA9ACIAMABtAHMAIgAKAAkACQB0AHgAOgB2AGUAbABvAGMAaQB0AHkAPQAiADAALgA3ADkAIgAKAAkACQB0AHgAOgB2AGUAbABvAGMAaQB0AHkATwBmAGYAcwBlAHQAPQAiADEAMAAiAAoACQAJAHQAeAA6AHAAYQBuAD0AIgAwAC4AMAAwACIACgAJAAkAdAB4ADoAYQBtAHAAPQAiADEALgAwADAAIgAKAAkACQB0AHgAOgBwAGwAYQB5AG0AbwBkAGUAPQAiAE4AbwByAG0AYQBsACIACgAJAAkAdAB4ADoAcABvAGwAeQBtAG8AZABlAD0AIgBQAG8AbAB5ACIACgAJAAkAdAB4ADoAbgBvAHQAZQBwAHIAaQBvAD0AIgBMAGEAcwB0ACIACgAJAAkAdAB4ADoAbwB1AHQAcAB1AHQAPQAiACgAYwBoACkAIgAKAAkACQB0AHgAOgBzAHQAYQByAHQAPQAiADQAOQAuADMAbQBzACIACgAJAAkAdAB4ADoAYwBoAG8AawBlAEcAcgBvAHUAcAA9ACIAMAAiAAoACQAJAD4ACgAJAAkAPAB0AHgAOgByAGEAbgBnAGUAIAB0AHgAOgBsAG8AdwBrAGUAeQA9ACIAQwAyACIAIAB0AHgAOgBoAGkAZwBoAGsAZQB5AD0AIgBDADcAIgAgAHQAeAA6AGwAbwB3AHYAZQBsAD0AIgAwACIAIAB0AHgAOgBoAGkAZwBoAHYAZQBsAD0AIgAxADIANwAiAC8APgAKAAkACQA8AHQAeAA6AGEAZQBnACAAdAB4ADoAYQB0AHQAYQBjAGsAPQAiADAAbQBzACIAIAB0AHgAOgBkAGUAYwBhAHkAMQA9ACIAMABtAHMAIgAgAHQAeAA6AGwAZQB2AGUAbAAxAD0AIgAxAC4AMAAwACIAIAB0AHgAOgBkAGUAYwBhAHkAMgA9ACIAMABtAHMAIgAgAHQAeAA6AHMAdQBzAHQAYQBpAG4APQAiADEALgAwADAAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADYAMAAuADIAbQBzACIALwA+AAoACQAJADwAdAB4ADoAZQBuAHYAMQAgAHQAeAA6AGwAZQB2AGUAbAAwAD0AIgAwAC4AMAAwACIAIAB0AHgAOgB0AGkAbQBlADEAPQAiADEALgAwADAAcwAiACAAdAB4ADoAbABlAHYAZQBsADEAPQAiADAALgAwADAAIgAgAHQAeAA6AHQAaQBtAGUAMgA9ACIAMQAuADAAMABzACIAIAB0AHgAOgBsAGUAdgBlAGwAMgA9ACIAMAAuADAAMAAiACAAdAB4ADoAdABpAG0AZQAzAD0AIgAxAC4AMAAwAHMAIgAgAHQAeAA6AGwAZQB2AGUAbAAzAD0AIgAwAC4AMAAwACIAIAB0AHgAOgBhAG0AcAA9ACIAMQAiAC8APgAKAAkACQA8AHQAeAA6AGUAbgB2ADIAIAB0AHgAOgBsAGUAdgBlAGwAMAA9ACIAMAAuADAAMAAiACAAdAB4ADoAdABpAG0AZQAxAD0AIgAxAC4AMAAwAHMAIgAgAHQAeAA6AGwAZQB2AGUAbAAxAD0AIgAwAC4AMAAwACIAIAB0AHgAOgB0AGkAbQBlADIAPQAiADEALgAwADAAcwAiACAAdAB4ADoAbABlAHYAZQBsADIAPQAiADAALgAwADAAIgAgAHQAeAA6AHQAaQBtAGUAMwA9ACIAMQAuADAAMABzACIAIAB0AHgAOgBsAGUAdgBlAGwAMwA9ACIAMAAuADAAMAAiACAAdAB4ADoAYQBtAHAAPQAiADEAIgAvAD4ACgAJAAkAPAB0AHgAOgBsAGYAbwAxACAAdAB4ADoAcgBhAHQAZQA9ACIAMAAuADUAMAAgAEgAegAiACAAdAB4ADoAdAB5AHAAZQA9ACIAUwBpAG4AdQBzACIAIAB0AHgAOgBzAHkAbgBjAD0AIgBLAGUAeQAiACAAdAB4ADoAbQBvAGQAZQA9ACIATgBvAHIAbQBhAGwAIgAgAHQAeAA6AGYAYQBkAGUAaQBuAD0AIgAwAG0AcwAiACAAdAB4ADoAcABvAHMAPQAiADAALgAwADAAIgAgAHQAeAA6AGEAbQBwAD0AIgAxAC4AMAAwACIALwA+AAoACQAJADwAdAB4ADoAbABmAG8AMgAgAHQAeAA6AHIAYQB0AGUAPQAiADAALgA1ADAAIABIAHoAIgAgAHQAeAA6AHQAeQBwAGUAPQAiAFMAaQBuAHUAcwAiACAAdAB4ADoAcwB5AG4AYwA9ACIASwBlAHkAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAE4AbwByAG0AYQBsACIAIAB0AHgAOgBmAGEAZABlAGkAbgA9ACIAMABtAHMAIgAgAHQAeAA6AHAAbwBzAD0AIgAwAC4AMAAwACIAIAB0AHgAOgBhAG0AcAA9ACIAMQAuADAAMAAiAC8APgAKAAkACQA8AHQAeAA6AHMAZQBxADEAIAB0AHgAOgByAGEAdABlAD0AIgAwAC4ANQAwACAASAB6ACIAIAB0AHgAOgBzAHkAbgBjAD0AIgBLAGUAeQAiACAAdAB4ADoAbQBvAGQAZQA9ACIATgBvAHIAbQBhAGwAIgAgAHQAeAA6AGYAYQBkAGUAaQBuAD0AIgAwAG0AcwAiACAAdAB4ADoAcABvAHMAPQAiADAALgAwADAAIgAgAHQAeAA6AGEAbQBwAD0AIgAxAC4AMAAwACIAIAB0AHgAOgBsAGUAbgBnAHQAaAA9ACIAMAAiACAAdAB4ADoAcwBtAG8AbwB0AGgAPQAiADAAIgAgAHQAeAA6AHMAdABlAHAAcwB5AG4AYwA9ACIAMAAiACAALwA+AAoACQAJADwAdAB4ADoAcwBlAHEAMgAgAHQAeAA6AHIAYQB0AGUAPQAiADAALgA1ADAAIABIAHoAIgAgAHQAeAA6AHMAeQBuAGMAPQAiAEsAZQB5ACIAIAB0AHgAOgBtAG8AZABlAD0AIgBOAG8AcgBtAGEAbAAiACAAdAB4ADoAZgBhAGQAZQBpAG4APQAiADAAbQBzACIAIAB0AHgAOgBwAG8AcwA9ACIAMAAuADAAMAAiACAAdAB4ADoAYQBtAHAAPQAiADEALgAwADAAIgAgAHQAeAA6AGwAZQBuAGcAdABoAD0AIgAwACIAIAB0AHgAOgBzAG0AbwBvAHQAaAA9ACIAMAAiACAAdAB4ADoAcwB0AGUAcABzAHkAbgBjAD0AIgAwACIAIAAvAD4ACgAJAAkAPAB0AHgAOgBzAGUAcQAzACAAdAB4ADoAcgBhAHQAZQA9ACIAMAAuADUAMAAgAEgAegAiACAAdAB4ADoAcwB5AG4AYwA9ACIASwBlAHkAIgAgAHQAeAA6AG0AbwBkAGUAPQAiAE4AbwByAG0AYQBsACIAIAB0AHgAOgBmAGEAZABlAGkAbgA9ACIAMABtAHMAIgAgAHQAeAA6AHAAbwBzAD0AIgAwAC4AMAAwACIAIAB0AHgAOgBhAG0AcAA9ACIAMQAuADAAMAAiACAAdAB4ADoAbABlAG4AZwB0AGgAPQAiADAAIgAgAHQAeAA6AHMAbQBvAG8AdABoAD0AIgAwACIAIAB0AHgAOgBzAHQAZQBwAHMAeQBuAGMAPQAiADAAIgAgAC8APgAKAAkACQA8AHQAeAA6AGYAaQBsAHQAZQByACAAdAB4ADoAdAB5AHAAZQA9ACIATABvAHcAUABhAHMAcwAiACAAdAB4ADoAZgByAGUAcQA9ACIAMwAwADUALgA2ACAASAB6ACIAIAB0AHgAOgByAGUAcwA9ACIAMAAuADYAMQAiACAAdAB4ADoAZAByAGkAdgBlAD0AIgAwAC4AMAAwACIAIAB0AHgAOgBzAGwAbwBwAGUAPQAiADIANABkAEIAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAGUAbgBkAC8APgAKAAkACQA8AHQAeAA6AHMAZQBuAGQALwA+AAoACQAJADwAdAB4ADoAcwBlAG4AZAAvAD4ACgAJAAkAPAB0AHgAOgBtAG8AZAB1AGwAYQB0AGkAbwBuAD4ACgAJAAkACQA8AHQAeAA6AGUAbgB0AHIAeQAgAHQAeAA6AHMAbwB1AHIAYwBlAD0AIgBQAGEAcgBhAG0AIAAwADAAIgAgAHQAeAA6AGQAZQBzAHQAaQBuAGEAdABpAG8AbgA9ACIARgBpAGwAdABlAHIAIABGAHIAZQBxACIAIAB0AHgAOgBhAG0AbwB1AG4AdAA9ACIAKwAxADYAMgAwADAAIABIAHoAIgAgAHQAeAA6AGYAcgBvAHoAZQBuAD0AIgAwACIALwA+AAoACQAJAAkAPAB0AHgAOgBlAG4AdAByAHkAIAB0AHgAOgBzAG8AdQByAGMAZQA9ACIAUABhAHIAYQBtACAAMAAxACIAIAB0AHgAOgBkAGUAcwB0AGkAbgBhAHQAaQBvAG4APQAiAC0ALQAiACAAdAB4ADoAYQBtAG8AdQBuAHQAPQAiADAALgAwADAAIgAgAHQAeAA6AGYAcgBvAHoAZQBuAD0AIgAwACIALwA+AAoACQAJADwALwB0AHgAOgBtAG8AZAB1AGwAYQB0AGkAbwBuAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIAQwAyACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAwACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAwACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEMAIwAyACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAxACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAxACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEQAMgAiACAAdAB4ADoAbABvAG8AcAA9ACIAMgAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMgAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBEACMAMgAiACAAdAB4ADoAbABvAG8AcAA9ACIAMwAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMwAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBFADIAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADQAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADQAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARgAyACIAIAB0AHgAOgBsAG8AbwBwAD0AIgA1ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgA1ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEYAIwAyACIAIAB0AHgAOgBsAG8AbwBwAD0AIgA2ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgA2ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEcAMgAiACAAdAB4ADoAbABvAG8AcAA9ACIANwAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIANwAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBHACMAMgAiACAAdAB4ADoAbABvAG8AcAA9ACIAOAAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAOAAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBBADIAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADkAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADkAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIAQQAjADIAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADEAMAAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMQAwACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEIAMgAiACAAdAB4ADoAbABvAG8AcAA9ACIAMQAxACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAxADEAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIAQwAzACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAxADIAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADEAMgAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBDACMAMwAiACAAdAB4ADoAbABvAG8AcAA9ACIAMQAzACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAxADMAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARAAzACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAxADQAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADEANAAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBEACMAMwAiACAAdAB4ADoAbABvAG8AcAA9ACIAMQA1ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAxADUAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARQAzACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAxADYAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADEANgAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBGADMAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADEANwAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMQA3ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEYAIwAzACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAxADgAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADEAOAAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBHADMAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADEAOQAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMQA5ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEcAIwAzACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAyADAAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADIAMAAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBBADMAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADIAMQAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMgAxACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEEAIwAzACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAyADIAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADIAMgAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBCADMAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADIAMwAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMgAzACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEMANAAiACAAdAB4ADoAbABvAG8AcAA9ACIAMgA0ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAyADQAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIAQwAjADQAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADIANQAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMgA1ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEQANAAiACAAdAB4ADoAbABvAG8AcAA9ACIAMgA2ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAyADYAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARAAjADQAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADIANwAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMgA3ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEUANAAiACAAdAB4ADoAbABvAG8AcAA9ACIAMgA4ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAyADgAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARgA0ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAyADkAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADIAOQAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBGACMANAAiACAAdAB4ADoAbABvAG8AcAA9ACIAMwAwACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAzADAAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARwA0ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAzADEAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADMAMQAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBHACMANAAiACAAdAB4ADoAbABvAG8AcAA9ACIAMwAyACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAzADIAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIAQQA0ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAzADMAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADMAMwAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBBACMANAAiACAAdAB4ADoAbABvAG8AcAA9ACIAMwA0ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgAzADQAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIAQgA0ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAzADUAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADMANQAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBDADUAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADMANgAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMwA2ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEMAIwA1ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAzADcAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADMANwAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBEADUAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADMAOAAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIAMwA4ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEQAIwA1ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgAzADkAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADMAOQAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBFADUAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADQAMAAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIANAAwACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEYANQAiACAAdAB4ADoAbABvAG8AcAA9ACIANAAxACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgA0ADEAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARgAjADUAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADQAMgAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIANAAyACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEcANQAiACAAdAB4ADoAbABvAG8AcAA9ACIANAAzACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgA0ADMAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARwAjADUAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADQANAAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIANAA0ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEEANQAiACAAdAB4ADoAbABvAG8AcAA9ACIANAA1ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgA0ADUAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIAQQAjADUAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADQANgAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIANAA2ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEIANQAiACAAdAB4ADoAbABvAG8AcAA9ACIANAA3ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgA0ADcAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIAQwA2ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgA0ADgAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADQAOAAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBDACMANgAiACAAdAB4ADoAbABvAG8AcAA9ACIANAA5ACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgA0ADkAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARAA2ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgA1ADAAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADUAMAAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBEACMANgAiACAAdAB4ADoAbABvAG8AcAA9ACIANQAxACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgA1ADEAIgAvAD4ACgAJAAkAPAB0AHgAOgBzAHAAbABpAHQAIAB0AHgAOgB3AGEAdgBlAD0AIgAxACIAIAB0AHgAOgBrAGUAeQA9ACIARQA2ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgA1ADIAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADUAMgAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBGADYAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADUAMwAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIANQAzACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEYAIwA2ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgA1ADQAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADUANAAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBHADYAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADUANQAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIANQA1ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEcAIwA2ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgA1ADYAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADUANgAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBBADYAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADUANwAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIANQA3ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEEAIwA2ACIAIAB0AHgAOgBsAG8AbwBwAD0AIgA1ADgAIgAgAHQAeAA6AHIAZQBsAGUAYQBzAGUAPQAiADUAOAAiAC8APgAKAAkACQA8AHQAeAA6AHMAcABsAGkAdAAgAHQAeAA6AHcAYQB2AGUAPQAiADEAIgAgAHQAeAA6AGsAZQB5AD0AIgBCADYAIgAgAHQAeAA6AGwAbwBvAHAAPQAiADUAOQAiACAAdAB4ADoAcgBlAGwAZQBhAHMAZQA9ACIANQA5ACIALwA+AAoACQAJADwAdAB4ADoAcwBwAGwAaQB0ACAAdAB4ADoAdwBhAHYAZQA9ACIAMQAiACAAdAB4ADoAawBlAHkAPQAiAEMANwAiACAAdAB4ADoAbABvAG8AcAA9ACIANgAwACIAIAB0AHgAOgByAGUAbABlAGEAcwBlAD0AIgA2ADAAIgAvAD4ACgAJADwALwB0AHgAOgBnAHIAbwB1AHAAPgAKADwALwB0AHgAOgBwAHIAbwBnAHIAYQBtAD4ACgAAAHBlcmbaBAAAAAAAAAAAAAAAAAAAAAAAAC4AdAB4AGIAYQBuAGsAXAAuAHQAeABiAGEAbgBrAFwALgB0AHgAYgBhAG4AawBcAC4AdAB4AGIAYQBuAGsAXAAuAHQAeABiAGEAbgBrAFwALgB0AHgAYgBhAG4AawBcAC4AdAB4AGIAYQBuAGsAXABOAGUAdwAgAFAAZQByAGYAbwByAG0AYQBuAGMAZQAuAHQAeABwAGUAcgBmAAAAPAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAdQB0AGYALQAxADYAIgA/AD4ACgA8AHQAeAA6AHAAZQByAGYAbwByAG0AYQBuAGMAZQAKAAkAeABtAGwAbgBzADoAdAB4AD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdAB4ADEANgB3AHgALgBjAG8AbQAvADIALgAwAC8AcABlAHIAZgBvAHIAbQBhAG4AYwBlACIACgAJAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAKAAkAeABzAGkAOgBzAGMAaABlAG0AYQBMAG8AYwBhAHQAaQBvAG4APQAiAGgAdAB0AHAAOgAvAC8AdwB3AHcALgB0AHgAMQA2AHcAeAAuAGMAbwBtAC8AMgAuADAALwBwAGUAcgBmAG8AcgBtAGEAbgBjAGUAIABwAGUAcgBmAG8AcgBtAGEAbgBjAGUALgB4AHMAZAAiAAoACQB0AHgAOgBjAHIAZQBhAHQAZQBkAC0AYgB5AD0AIgAyADAANAAwADEAIgAKAAkAdAB4ADoAYwBvAG0AcABhAHQAPQAiADIANAAwADAAIgAKAAkAdAB4ADoAbgBhAG0AZQA9ACIATgBlAHcAIABQAGUAcgBmAG8AcgBtAGEAbgBjAGUAIgAKAAkAPgAKAAkAPAB0AHgAOgBzAGwAbwB0ACAAdAB4ADoAbgBhAG0AZQA9ACIAQwBoADAAMQAiACAAdAB4ADoAYwBoAGEAbgBuAGUAbAA9ACIAMAAiACAAdAB4ADoAcAByAG8AZwByAGEAbQA9ACIAMAAiACAAdAB4ADoAbwB1AHQAcAB1AHQAPQAiAFMAIAAxACsAMgAiAD4ACgAJAAkAPAB0AHgAOgBhAG0AcAAgAHQAeAA6AHYAYQBsAHUAZQA9ACIAMQAuADAAMAAiAC8APgAKAAkACQA8AHQAeAA6AHAAYQBuACAAdAB4ADoAdgBhAGwAdQBlAD0AIgAtADAALgA3ADAAIgAgAHQAeAA6AGEAdQB0AG8AbQBhAHQAaQBvAG4APQAiAFAAYQByAGEAbQAgADAAMAAiAC8APgAKAAkACQA8AHQAeAA6AHMAZQBuAGQALwA+AAoACQAJADwAdAB4ADoAcwBlAG4AZAAvAD4ACgAJAAkAPAB0AHgAOgBzAGUAbgBkAC8APgAKAAkAPAAvAHQAeAA6AHMAbABvAHQAPgAKADwALwB0AHgAOgBwAGUAcgBmAG8AcgBtAGEAbgBjAGUAPgAKAAAAYmFua5APAAAAAAAAAAAAAAAAAAAAAAAALgB0AHgAYgBhAG4AawBcAC4AdAB4AGIAYQBuAGsAXAAuAHQAeABiAGEAbgBrAFwALgB0AHgAYgBhAG4AawBcAC4AdAB4AGIAYQBuAGsAXAAuAHQAeABiAGEAbgBrAFwALgB0AHgAYgBhAG4AawBcAC4AdAB4AGIAYQBuAGsAAAA8AD8AeABtAGwAIAB2AGUAcgBzAGkAbwBuAD0AIgAxAC4AMAAiACAAZQBuAGMAbwBkAGkAbgBnAD0AIgB1AHQAZgAtADEANgAiAD8APgAKADwAdAB4ADoAYgBhAG4AawAKAAkAeABtAGwAbgBzADoAdAB4AD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdAB4ADEANgB3AHgALgBjAG8AbQAvADIALgAwAC8AYgBhAG4AawAiAAoACQB4AG0AbABuAHMAOgB4AHMAaQA9ACIAaAB0AHQAcAA6AC8ALwB3AHcAdwAuAHcAMwAuAG8AcgBnAC8AMgAwADAAMQAvAFgATQBMAFMAYwBoAGUAbQBhAC0AaQBuAHMAdABhAG4AYwBlACIACgAJAHgAcwBpADoAcwBjAGgAZQBtAGEATABvAGMAYQB0AGkAbwBuAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdAB4ADEANgB3AHgALgBjAG8AbQAvADIALgAwAC8AYgBhAG4AawAgAGIAYQBuAGsALgB4AHMAZAAiAAoACQB0AHgAOgBjAHIAZQBhAHQAZQBkAC0AYgB5AD0AIgAyADAANAAwADEAIgAKAAkAdAB4ADoAYwBvAG0AcABhAHQAPQAiADIANAAwADAAIgAKAAkAPgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAAhAC0ALQAgAEIAYQBuAGsAIABTAGUAbABlAGMAdAAtAC0APgAKAAkAPAB0AHgAOgB4AGMAdAByAGwAIAB0AHgAOgBjAHQAcgBsAD0AIgAwACIAIAB0AHgAOgBvAGYAZgBzAGUAdAA9ACIAMAAiAC8APgAKAAkAPAB0AHgAOgBtAGkAZABpACAAdAB4ADoAcAByAG8AZwByAGEAbQAtAGMAaABhAG4AZwBlAC0AbQBvAGQAZQA9ACIAUABlAHIAZgBvAHIAbQBhAG4AYwBlACIAIAB0AHgAOgB1AHMAZQAtAGIAYQBuAGsALQBzAGUAbABlAGMAdAA9ACIAMAAiAC8APgAKAAkAPAB0AHgAOgBvAHUAdABwAHUAdAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAIAAxACsAMgAiACAAdAB4ADoAZQBuAGEAYgBsAGUAZAA9ACIAMQAiAC8APgAKAAkAPAB0AHgAOgBvAHUAdABwAHUAdAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAIAAzACsANAAiACAAdAB4ADoAZQBuAGEAYgBsAGUAZAA9ACIAMQAiAC8APgAKAAkAPAB0AHgAOgBvAHUAdABwAHUAdAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAIAA1ACsANgAiACAAdAB4ADoAZQBuAGEAYgBsAGUAZAA9ACIAMQAiAC8APgAKAAkAPAB0AHgAOgBvAHUAdABwAHUAdAAgAHQAeAA6AG4AYQBtAGUAPQAiAFMAIAA3ACsAOAAiACAAdAB4ADoAZQBuAGEAYgBsAGUAZAA9ACIAMQAiAC8APgAKAAkAPAB0AHgAOgBvAHUAdABwAHUAdAAgAHQAeAA6AG4AYQBtAGUAPQAiAE0AIAAxACIAIAB0AHgAOgBlAG4AYQBiAGwAZQBkAD0AIgAxACIALwA+AAoACQA8AHQAeAA6AG8AdQB0AHAAdQB0ACAAdAB4ADoAbgBhAG0AZQA9ACIATQAgADIAIgAgAHQAeAA6AGUAbgBhAGIAbABlAGQAPQAiADEAIgAvAD4ACgAJADwAdAB4ADoAbwB1AHQAcAB1AHQAIAB0AHgAOgBuAGEAbQBlAD0AIgBNACAAMwAiACAAdAB4ADoAZQBuAGEAYgBsAGUAZAA9ACIAMQAiAC8APgAKAAkAPAB0AHgAOgBvAHUAdABwAHUAdAAgAHQAeAA6AG4AYQBtAGUAPQAiAE0AIAA0ACIAIAB0AHgAOgBlAG4AYQBiAGwAZQBkAD0AIgAxACIALwA+AAoACQA8AHQAeAA6AG8AdQB0AHAAdQB0ACAAdAB4ADoAbgBhAG0AZQA9ACIATQAgADUAIgAgAHQAeAA6AGUAbgBhAGIAbABlAGQAPQAiADEAIgAvAD4ACgAJADwAdAB4ADoAbwB1AHQAcAB1AHQAIAB0AHgAOgBuAGEAbQBlAD0AIgBNACAANgAiACAAdAB4ADoAZQBuAGEAYgBsAGUAZAA9ACIAMQAiAC8APgAKAAkAPAB0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">
+   </PIN>
+   <PIN pinname="Exposed Pins" slicecount="2" values=",|0||Parameter 0||Minihost Modular|">
+   </PIN>
+   <PIN pinname="Parameter 0" slicecount="1" visible="1" values="0.45">
+   </PIN>
+   <PIN pinname="Midi Message" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="88" srcpinname="Audio Out" dstnodeid="117" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="88" dstpinname="Parameter 0">
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Audio Out" dstnodeid="89" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Output String" dstnodeid="88" dstpinname="Filename">
+   </LINK>
+   <NODE id="7" systemname="AudioOut (VAudio)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="AudioOut (VAudio)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1140" top="10725" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="96" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Notes">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Notes">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Events" dstnodeid="88" dstpinname="Midi Message">
+   </LINK>
+   </PATCH>

@@ -1,0 +1,8 @@
+[{
+  "Topic": "Event",
+  "ThisIsATest": "hello world",
+  "Stamp": {
+    "UTC": "2016-11-26 21:18:53.5386",
+    "ZoneId": "W. Europe Standard Time"
+  }
+}, ]

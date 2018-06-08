@@ -1,0 +1,29 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "Keys",
+        "Category": "IO.Keyboard",
+        "Help": "Specifies key codes and modifiers.",
+        "ImportedHelp": "<member name=\"T:System.Windows.Forms.Keys\">\r\n  <summary>Specifies key codes and modifiers.</summary>\r\n  <filterpriority>2</filterpriority>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Windows.Forms.Keys"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseButtons",
+        "Category": "IO.Mouse",
+        "Help": "Specifies constants that define which mouse button was pressed.",
+        "ImportedHelp": "<member name=\"T:System.Windows.Forms.MouseButtons\">\r\n  <summary>Specifies constants that define which mouse button was pressed.</summary>\r\n  <filterpriority>2</filterpriority>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Windows.Forms.MouseButtons"
+    }
+  ],
+  "IsGAC": true,
+  "DotNetName": "System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+}

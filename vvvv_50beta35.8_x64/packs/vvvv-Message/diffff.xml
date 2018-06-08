@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This file controls the conversion process when opening patches.
+    
+  The author of the pack enters name changes and default value changes for each new version of the pack.
+
+  ========================================================================================================
+	
+  For the author of the pack:	
+  
+  Pack versions must follow the pattern MAJOR.MINOR.PATCH with major, minor and patch being integer numbers 
+  smaller than 1000000.    
+  <PATCH version="0.1.0"> includes all changes for that new version of the pack.  
+  You may enter planned name and default value changes upfront. The actual pack version is then defined by 
+  the version.info file.
+  Conversion only happens when the version specified in the version.info doesn't match the pack info stored 
+  in the users patch.
+  If there is no pack info in the users' patch, the patch is treated as if it was stored with 
+  version 0.0.0 of this pack loaded.
+  In rare cases you might want to convert a patch back to an older version of your pack. Try to put your newest 
+  diffff.xml into the old pack (old dlls, old version.info). 
+  Users will only be asked to try back conversion if 
+    a) the their patch was stored with a newer version than the loaded pack
+	b) there are some rules in the diffff that show how to convert back from that newer version (new diffff in old pack!!)
+	c) some nodes of the users' patch would actually be affected by the back conversion
+  Note that we don't have back conversion of default values of pins.	
+      
+  * add a node tag within the patch tag for the node you want to be converted
+      <NODE old="I (Spread)">
+      </NODE>   
+      
+  * add attribute "new" if you want to change the node name
+      new="J (Value)"
+      
+  * add a pin tag within the node tag if you want to change the pin interface
+      <PIN old="Output"> </PIN>
+      
+  * add attribute "new" if you want to change the pin name
+      new="Integers"
+      
+  * add attribute "olddefault" if you want to change the default value of the pin. 
+    specify the old default value.
+      olddefault="3" 
+
+  * you may use <PATCH version="current">, which then refers to the version entered in the version.info file. 
+	  
+-->
+<CONVVVVERTER>
+  <PATCH version="2.6.0">
+    <NODE old="Merge (Message.Spread)" new="Cons (Message)"> </NODE>
+    <NODE old="Sift (Message.Spread)" new="Sift (Message)"> </NODE>
+    <NODE old="Sift (Message)" new="SiftCommon (Message)"> </NODE>
+    <NODE old="Create (Message.Keep)" new="ConfigKeep (Message)"> </NODE>
+    <NODE old="Hold (Message.Keep)" new="HoldKeep (Message)"> </NODE>
+    <NODE old="Safe (Message.Keep)" new="SafeKeep (Message)"> </NODE>
+    <NODE old="Session (Message.Keep)" new="SessionKeep (Message)"> </NODE>
+    <NODE old="Change (Message.Spread)" new="Change (Message)"> </NODE>
+    <NODE old="Default (Message Formular)" new="Default (Message Formular)"> 
+    	<PIN old="Spread Count Per Formular" new="Spread Count" />
+    </NODE>
+  </PATCH>
+  <PATCH version="2.7.0">
+    <NODE old="AvoidNil (Message Formular)" new="AvoidNil (Message Formular)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="Default (Message Formular)" new="Default (Message Formular)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="Reflection (Message)" new="Reflection (Message)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="HoldKeep (Message)" new="HoldKeep (Message)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="SafeKeep (Message)" new="SafeKeep (Message)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="SessionKeep (Message Typeable)" new="SessionKeep (Message Typeable)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="ConfigKeep (Message Formular)" new="ConfigKeep (Message Formular)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="AsOscMessage (Message)" new="AsOscMessage (Message)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="FromOscMessage (Message Raw)" new="FromOscMessage (Message Raw)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="Sort (Message Formular)" new="Sort (Message Formular)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="Create (Message Formular)" new="Create (Message Formular)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="Edit (Message Formular)" new="Edit (Message Formular)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+    <NODE old="Split (Message Formular)" new="Split (Message Formular)"> 
+      <PIN old="Message Formular" new="Formular"></PIN>
+    </NODE>
+  </PATCH>
+  <PATCH version="2.7.1">
+    <NODE old="SessionKeep (Message Typeable)" new="SessionKeep (Message Formular)"> 
+    </NODE>
+    <NODE old="AsMsgPack (Message.Raw)" new="AsMsgPack (Message Raw)"> 
+    </NODE>    
+    <NODE old="FromMsgPack (Message.Raw)" new="FromMsgPack (Message Raw)"> 
+    </NODE>
+    <NODE old="AsOscBundle (Message)" new="AsOscBundle (Message Raw)"> 
+    </NODE>
+    <NODE old="AsOscMessage (Message)" new="AsOscMessage (Message Formular)"> 
+    </NODE>
+    <NODE old="FromOscMessage (Message Raw)" new="FromOscMessage (Message Formular)"> 
+    </NODE>
+    <NODE old="Reflection (Message)" new="Reflection (Message Formular)"> 
+    </NODE>
+    <NODE old="AsJson (Message)" new="AsString (Message Json)"> 
+    </NODE>
+    <NODE old="AsMessage (string)" new="FromString (Message Json)"> 
+    </NODE>
+  </PATCH>
+  <PATCH version="2.7.2">
+    <NODE old="Read (Message Dynamic)" new="Read (Message)"> 
+    </NODE>
+  </PATCH>
+</CONVVVVERTER>
+

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="QkHnWz9VG3QLReY7JAoscf" Version="0.55">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <PlatformDependency Id="EyKya2DcQk9MWszvPr7DmN" Location="./src\bin\AnyCPU\Debug\VL.Core.dll" IsForward="true" />
+  <Patch Id="PbvPkXaM4OnLDoQfRWvuWl">
+    <Canvas Id="SlefMp0EI4WPjMSo7WC4yU" BordersChecked="false" />
+  </Patch>
+</Document>

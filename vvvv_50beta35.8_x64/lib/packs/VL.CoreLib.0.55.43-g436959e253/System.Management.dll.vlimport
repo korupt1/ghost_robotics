@@ -1,0 +1,179 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "CimType",
+        "Category": "System.Management",
+        "Help": "Describes the possible CIM types for properties, qualifiers, or method parameters.",
+        "ImportedHelp": "<member name=\"T:System.Management.CimType\">\r\n  <summary>Describes the possible CIM types for properties, qualifiers, or method parameters.          </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Management.CimType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ManagementBaseObject",
+        "Category": "System.Management",
+        "Help": "Contains the basic elements of a management object. It serves as a base class to more specific management object classes.",
+        "ImportedHelp": "<member name=\"T:System.Management.ManagementBaseObject\">\r\n  <summary>Contains the basic elements of a management object. It serves as a base class to more specific management object classes.</summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "GetPropertyValue",
+            "Help": "Gets an equivalent accessor to a property's value.",
+            "ImportedHelp": "<member name=\"M:System.Management.ManagementBaseObject.GetPropertyValue(System.String)\">\r\n  <summary>Gets an equivalent accessor to a property's value.</summary>\r\n  <returns>The value of the specified property.</returns>\r\n  <param name=\"propertyName\">The name of the property of interest. </param>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "The name of the property of interest.",
+                "ImportedHelp": "<param name=\"propertyName\">The name of the property of interest. </param>"
+              },
+              "DotNetName": "propertyName"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Object",
+            "PinAttribute": {
+              "Help": "The value of the specified property.",
+              "ImportedHelp": "<returns>The value of the specified property.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetPropertyValue"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Properties",
+            "ShowCategory": true,
+            "Help": "Gets a collection of PropertyData objects describing the properties of the management object.",
+            "ImportedHelp": "<member name=\"P:System.Management.ManagementBaseObject.Properties\">\r\n  <summary>Gets a collection of <see cref=\"T:System.Management.PropertyData\" /> objects describing the properties of the management object.</summary>\r\n  <returns>Returns a <see cref=\"T:System.Management.PropertyDataCollection\" /> that holds the properties for the management object.</returns>\r\n</member>"
+          },
+          "DotNetName": "Properties"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SystemProperties",
+            "ShowCategory": true,
+            "Help": "Gets  the collection of WMI system properties of the management object (for example, the class name, server, and namespace). WMI system property names begin with \"__\".",
+            "ImportedHelp": "<member name=\"P:System.Management.ManagementBaseObject.SystemProperties\">\r\n  <summary>Gets  the collection of WMI system properties of the management object (for example, the class name, server, and namespace). WMI system property names begin with \"__\".</summary>\r\n  <returns>Returns a <see cref=\"T:System.Management.PropertyDataCollection\" /> that contains the system properties for a management object.</returns>\r\n</member>"
+          },
+          "DotNetName": "SystemProperties"
+        }
+      ],
+      "DotNetName": "System.Management.ManagementBaseObject"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "PropertyData",
+        "Category": "System.Management",
+        "Help": "Represents information about a WMI property.",
+        "ImportedHelp": "<member name=\"T:System.Management.PropertyData\">\r\n  <summary>Represents information about a WMI property.          </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "IsArray",
+            "ShowCategory": true,
+            "Help": "Gets a value indicating whether the property is an array.",
+            "ImportedHelp": "<member name=\"P:System.Management.PropertyData.IsArray\">\r\n  <summary>Gets a value indicating whether the property is an array.          </summary>\r\n  <returns>Returns a <see cref=\"T:System.Boolean\" /> value indicating whether the property is an array.</returns>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "IsArray"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsLocal",
+            "ShowCategory": true,
+            "Help": "Gets a value indicating whether the property has been defined in the current WMI class.",
+            "ImportedHelp": "<member name=\"P:System.Management.PropertyData.IsLocal\">\r\n  <summary>Gets a value indicating whether the property has been defined in the current WMI class.          </summary>\r\n  <returns>Returns a <see cref=\"T:System.Boolean\" /> value indicating whether the property has been defined in the current WMI class.</returns>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "IsLocal"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Name",
+            "ShowCategory": true,
+            "Help": "Gets the name of the property.",
+            "ImportedHelp": "<member name=\"P:System.Management.PropertyData.Name\">\r\n  <summary>Gets the name of the property.          </summary>\r\n  <returns>Returns a <see cref=\"T:System.String\" /> value containing the property name.</returns>\r\n</member>"
+          },
+          "DotNetName": "Name"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Origin",
+            "ShowCategory": true,
+            "Help": "Gets the name of the WMI class in the hierarchy in which the property was introduced.",
+            "ImportedHelp": "<member name=\"P:System.Management.PropertyData.Origin\">\r\n  <summary>Gets the name of the WMI class in the hierarchy in which the property was introduced.          </summary>\r\n  <returns>Returns a <see cref=\"T:System.String\" /> value containing the name of the WMI class in the hierarchy in which the property was introduced.</returns>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "Origin"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Type",
+            "ShowCategory": true,
+            "Help": "Gets the CIM type of the property.",
+            "ImportedHelp": "<member name=\"P:System.Management.PropertyData.Type\">\r\n  <summary>Gets the CIM type of the property.          </summary>\r\n  <returns>Returns a <see cref=\"T:System.Management.CimType\" /> enumeration value representing the CIM type of the property.</returns>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "Type"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Value",
+            "ShowCategory": true,
+            "Help": "Gets or sets the current value of the property.",
+            "ImportedHelp": "<member name=\"P:System.Management.PropertyData.Value\">\r\n  <summary>Gets or sets the current value of the property.          </summary>\r\n  <returns>Returns an <see cref=\"T:System.Object\" /> value representing the value of the property.</returns>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "Value"
+        }
+      ],
+      "DotNetName": "System.Management.PropertyData"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "PropertyDataCollection",
+        "Category": "System.Management",
+        "Help": "Represents the set of properties of a WMI object.",
+        "ImportedHelp": "<member name=\"T:System.Management.PropertyDataCollection\">\r\n  <summary>Represents the set of properties of a WMI object.</summary>\r\n</member>"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true,
+            "Help": "Gets the number of objects in the PropertyDataCollection.",
+            "ImportedHelp": "<member name=\"P:System.Management.PropertyDataCollection.Count\">\r\n  <summary>Gets the number of objects in the <see cref=\"T:System.Management.PropertyDataCollection\" />.          </summary>\r\n  <returns>Returns an <see cref=\"T:System.Int32\" /> value representing the number of objects in the collection.</returns>\r\n  <PermissionSet>\r\n    <IPermission class=\"System.Security.Permissions.RegistryPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Unrestricted=\"true\" />\r\n    <IPermission class=\"System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\" version=\"1\" Flags=\"UnmanagedCode\" />\r\n  </PermissionSet>\r\n</member>"
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsSynchronized",
+            "ShowCategory": true,
+            "Help": "Gets a value indicating whether the object is synchronized.",
+            "ImportedHelp": "<member name=\"P:System.Management.PropertyDataCollection.IsSynchronized\">\r\n  <summary>Gets a value indicating whether the object is synchronized.          </summary>\r\n  <returns>Returns a <see cref=\"T:System.Boolean\" /> value indicating whether the object is synchronized.</returns>\r\n</member>"
+          },
+          "DotNetName": "IsSynchronized"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true,
+            "Help": "Gets the specified property from the PropertyDataCollection, using [] syntax. This property is the indexer for the PropertyDataCollection class.",
+            "ImportedHelp": "<member name=\"P:System.Management.PropertyDataCollection.Item(System.String)\">\r\n  <summary>Gets the specified property from the <see cref=\"T:System.Management.PropertyDataCollection\" />, using [] syntax. This property is the indexer for the <see cref=\"T:System.Management.PropertyDataCollection\" /> class.</summary>\r\n  <returns>Returns a <see cref=\"T:System.Management.PropertyData\" /> containing the data for a specified property in the collection.</returns>\r\n  <param name=\"propertyName\">The name of the property to retrieve.</param>\r\n</member>"
+          },
+          "DotNetName": "Item"
+        }
+      ],
+      "DotNetName": "System.Management.PropertyDataCollection"
+    }
+  ],
+  "IsGAC": true,
+  "DotNetName": "System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+}

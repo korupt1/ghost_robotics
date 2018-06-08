@@ -1,0 +1,633 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SharpMessage</name>
+    </assembly>
+    <members>
+        <member name="P:VVVV.Packs.Messaging.BinList`1.IsChanged">
+            <summary>Indicates, if a bin has been changed. Will be set to true internally, when the bin was changed</summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinList`1.Clear">
+            <summary>Empties the bin</summary>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.BinList`1.Item(System.Int32)">
+            <summary>Allows slicewise and generic access to the bin. </summary>
+            <param name="slice">The field to read or written. </param>
+            <exception cref="T:System.ArgumentNullException">This exception is thrown if null is to be written into a bin.</exception>
+            <exception cref="T:System.InvalidCastException">This exception is thrown if an item is attempting to be written to a bin without the type matching.</exception>
+            <exception cref="T:System.IndexOutOfRangeException">This exception is thrown if attempt is made to read a slice that does not exist.</exception>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.BinList`1.VVVV#Packs#Messaging#Bin#Item(System.Int32)">
+            <summary>Allows slicewise and generic access to the bin. </summary>
+            <param name="slice">The field to read or written. </param>
+            <exception cref="T:System.ArgumentNullException">This exception is thrown if null is to be written into a bin.</exception>
+            <exception cref="T:System.InvalidCastException">This exception is thrown if an item is attempting to be written to a bin without the type matching.</exception>
+            <exception cref="T:System.IndexOutOfRangeException">This exception is thrown if attempt is made to read a slice that does not exist.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinList`1.ToString">
+            <summary>Make a string representation of the Message.</summary>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.BinList`1.First">
+            <summary>Allows access to the first element of the bin. </summary>
+            <exception cref="T:System.ArgumentNullException">This exception is thrown if null is to be written into a bin.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">This exception is thrown if an item is attempting to be written to a bin without a proper registration in TypeIdentity</exception>
+            <exception cref="T:System.InvalidCastException">This exception is thrown if an item is attempting to be written to a bin without the type matching.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinList`1.Add(System.Object)">
+            <summary>Think of this as a combined Add and AddRange with internal type checks. it will NOT accept null, and stop adding right then!</summary>
+            <exception cref="T:System.ArgumentNullException">This exception is thrown if null is to be written into a bin.</exception>
+            <exception cref="T:System.InvalidCastException">This exception is thrown if an item is attempting to be written to a bin without the type matching.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.BinTypeMismatchException">This exception is thrown if an item is attempting to be written to a bin without the type matching.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinList`1.AssignFrom(System.Collections.IEnumerable)">
+            <summary>Replaces the contents of the bin with new data.</summary>
+            <exception cref="T:System.ArgumentNullException">This exception is thrown if null is to be written into a bin.</exception>
+            <exception cref="T:System.InvalidCastException">This exception is thrown if an item is attempting to be written to a bin without the type matching.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.BinTypeMismatchException">This exception is thrown if an item is attempting to be written to a bin without the type matching.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinList`1.Equals(VVVV.Packs.Messaging.Bin)">
+            <summary>Checks for type- and slicewise equality.</summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinList`1.Equals(System.Collections.IEnumerable)">
+            <summary>Checks for type- and slicewise equality against an enumerable.</summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinList`1.Equals(System.Object)">
+            <summary>Checks for type- and slicewise equality against an arbitrary object.</summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.Bin">
+            <summary>Non-Generic interface for a Bin.</summary>
+            <remarks>
+            Bin are used as named fields in a Message. On convention, ANY change to it will set the IsDirty flag to true.
+            </remarks>    
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Bin.Item(System.Int32)">
+            <summary>Access to individual elements of a bin</summary>
+            <param name="slice">The field to read or written. </param>
+            <exception cref="T:System.ArgumentNullException">Thrown if null is to be written into a bin.</exception>
+            <exception cref="T:System.InvalidCastException">Thrown if an item is attempting to be written to a bin without the type matching.</exception>
+            <exception cref="T:System.IndexOutOfRangeException">Thrown if attempt is made to read a slice that does not exist.</exception>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Bin.First">
+            <summary>Access to the first element in the bin</summary>
+            <exception cref="T:System.ArgumentNullException">Thrown if null is to be written into a bin.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">Thrown if an item is attempting to be written to a bin without a proper registration in TypeIdentity</exception>
+            <exception cref="T:System.InvalidCastException">Thrown if an item is attempting to be written to a bin without the type matching.</exception>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Bin.Count">
+            <summary>The current number of elements in the bin</summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Bin.IsSweeping(System.Object)">
+            <summary>Indicates if the bin has been marked for sweeping recently. </summary>
+            <returns>If reference is not null, check if it is the Sweeper, i.e. if reference was the last Committer</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Bin.Sweep(System.Object)">
+            <summary>
+            Commit change, and leave a breadcrumb, so you can identify it
+            </summary>
+            <param name="reference">A value of null means Sweeping is done.</param>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Bin.GetInnerType">
+            <summary>
+            The runtime type of the bin.
+            </summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Bin.Add(System.Object)">
+            <summary>
+            Versatile Add method. 
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+            <remarks>
+            Can accept single items (which will be casted or autoconverted if necessary), or IEnumerable, all of which will be appended to the bin.
+            Does not allow null in any way. If it encounters null or any other fault, it will stop right then, and throw an Exception.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException">This exception is thrown if null is to be written into a bin.</exception>
+            <exception cref="T:System.InvalidCastException">This exception is thrown if an item is attempting to be written to a bin without the type matching.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.BinTypeMismatchException">This exception is thrown if an item is attempting to be written to a bin without the type matching.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Bin.AssignFrom(System.Collections.IEnumerable)">
+            <summary>
+            Overwrites any data in an existing bin. 
+            </summary>
+            <param name="item"></param>
+            <remarks>Does not allow null in any way.  If it encounters null or any other fault, it will stop right then, and throw an Exception.</remarks>
+            <exception cref="T:System.ArgumentNullException">Thrown if null is to be written into a bin.</exception>
+            <exception cref="T:System.InvalidCastException">Thrown if an item is attempting to be written to a bin without the type matching.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.BinTypeMismatchException">Thrown if an item is attempting to be written to a bin without the type matching.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Bin.Clear">
+            <summary>
+            Removes all data from the bin. 
+            </summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.Bin`1">
+            <summary>Generic interface for a Bin.</summary>
+            <remarks>
+            Bin are used as named fields in a Message. On convention, ANY change to it will set the IsDirty flag to true.
+            </remarks>    
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Bin`1.Item(System.Int32)">
+            <summary>Access to individual elements of a bin</summary>
+            <exception cref="T:System.ArgumentNullException">Thrown if null is to be written into a bin.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">Thrown if an item is attempting to be written to a bin without a proper registration in TypeIdentity</exception>
+            <exception cref="T:System.InvalidCastException">Thrown if an item is attempting to be written to a bin without the type matching.</exception>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Bin`1.First">
+            <summary>Access to the first element in the bin</summary>
+            <exception cref="T:System.ArgumentNullException">Thrown if null is to be written into a bin.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">Thrown if an item is attempting to be written to a bin without a proper registration in TypeIdentity</exception>
+            <exception cref="T:System.InvalidCastException">Thrown if an item is attempting to be written to a bin without the type matching.</exception>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.BinFactory">
+            <summary>
+            This Factory class provides alternative constructors for design-time and runtime typing of a Bin</summary>
+            <remarks>
+            Bin are used as fields in a Message. Internally, Bins are usually BinLists, which should only be used through either the generic or non-generic Bin interface.
+            </remarks>    
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinFactory.New(System.Type,System.Int32)">
+            <summary>Constructs and initializes a new object with a non-generic Bin interface.</summary>
+            <typeparam name = "T" >Any registered, valid type, as of TypeIdentity.</typeparam>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">Thrown if the wanted type is not registered, nor any of its base types.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinFactory.New``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>Constructs and initializes a new object with a generic Bin interface.</summary>
+            <typeparam name = "T" >Any </typeparam>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">Thrown if the wanted type is not registered, nor any of its base types.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.BinFactory.New``1(``0[])">
+            <summary>Constructs and initializes a new object with a generic Bin interface.</summary>
+            <typeparam name = "T" >Any type </typeparam>
+            <returns>true, if the Message has Changed</returns>        
+            <remarks>Use like this: var b = BinFactory.New(1, 23, 42);
+            The first parameter will define T, unless explicitly specified.
+            </remarks>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">Thrown if the wanted type is not registered, nor any of its base types.</exception>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.MessageKeep">
+            <summary>
+            An archive for Messages. Archives will have knowledge of changes in any Message they keep.
+            </summary>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageKeep.IsChanged">
+            <summary>
+            Detects if any changes happened to Messages in the Keep since the last Sync.
+            </summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.Message">
+            <summary>
+            Message is a base object to handle strongly typed data in a dynamic way.</summary>
+            <remarks>
+            see http://www.github.com/velcrome/vvvv-Message for details
+            </remarks>    
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Message.Fields">
+            <summary>Provides access to the names of all Fields</summary>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Message.Topic">
+            <summary>The topic is a brief identifier of the Message. It can be used to sift or sort Messages quickly.</summary>
+            <remarks>A topic is best used with a dot-separated Namespace (e.g. MyCompany.Project.Input.Touch)
+            Only actually changing the topic will mark the message with IsChanged = true
+            </remarks>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Message.TimeStamp">
+            <summary>Returns the last geo-localized timestamp of the Message.</summary>
+            <remarks>Will be automatically updated with every Sync
+            Needs the vvvv-Time contribution or nuget.
+            </remarks>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Message.Formular">
+            <summary>Returns an ad-hoc Formular describing all fields of the Message, or ensures that all fields from a given formular are created in the Message</summary>
+        </member>
+        <member name="E:VVVV.Packs.Messaging.Message.ChangedWithDetails">
+            <summary>Get all changes when Message is Sync'ed</summary>
+        </member>
+        <member name="E:VVVV.Packs.Messaging.Message.Changed">
+            <summary>Returns the last geo-localized timestamp of the Message.</summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.Init(System.String,System.Object[])">
+            <summary>Initializes a new named Field. Use comma separated values to init the field.</summary>
+            <param name="fieldName">The field to be added</param>
+            <param name="values"></param>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.AssignFrom(System.String,System.Collections.IEnumerable,System.Type)">
+            <summary>Initializes a new field, or overwrites an existing one. Can optionally be typed strongly.</summary>
+            <param name="fieldName">The field to be added</param>
+            <param name="values">IEnumerable containing </param>
+            <param name="type"></param>
+            <exception cref="T:VVVV.Packs.Messaging.ParseFormularException">This exception is thrown if the fieldName contains invalid characters.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.EmptyBinException">This exception is thrown if values is or contains null.</exception>
+            <exception cref="T:System.InvalidCastException">This exception is thrown if a value is added to a bin that cannot be cast to the bin's type.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.BinTypeMismatchException">This exception is thrown if a value is added to a bin that cannot be cast to the bin's type.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">This exception is thrown if the new bin's type is not registered in TypeIdentity.</exception>
+            <exception cref="T:System.ArgumentNullException">This exception is thrown if attempt is made to add null to a the bin.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.AddFrom(System.String,System.Collections.IEnumerable)">
+            <summary>Initializes a new field, or overwrites an existing one. Can optionally be typed strongly.</summary>
+            <param name="fieldName">The field to be added</param>
+            <param name="values">IEnumerable containing </param>
+            <param name="type"></param>
+            <exception cref="T:VVVV.Packs.Messaging.ParseFormularException">This exception is thrown if the fieldName contains invalid characters.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.EmptyBinException">This exception is thrown if values is or contains null.</exception>
+            <exception cref="T:System.InvalidCastException">This exception is thrown if a value is added to a bin that cannot be cast to the bin's type.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.BinTypeMismatchException">This exception is thrown if a value is added to a bin that cannot be cast to the bin's type.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">This exception is thrown if the new bin's type is not registered in TypeIdentity.</exception>
+            <exception cref="T:System.ArgumentNullException">This exception is thrown if attempt is made to add null to a the bin.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.Remove(System.String)">
+            <summary>Removes a field from the message</summary>
+            <param name="fieldName">The field to be added</param>
+            <returns>False, if fieldName did not exist.</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.Rename(System.String,System.String,System.Boolean)">
+            <summary>Initializes a new field, or overwrites an existing one. Can optionally be typed strongly.</summary>
+            <param name="fieldName">The field to be renamed</param>
+            <param name="newName">The new name of the field.</param>
+            <param name="overwrite">Allow renaming, even if the new Name already exists.</param>
+            <exception cref="T:VVVV.Packs.Messaging.ParseFormularException">This exception is thrown if the fieldName contains invalid characters.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.EmptyBinException">This exception is thrown the field does not exist.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.DuplicateFieldException">This exception is thrown if a field with newName already exists, and overwrite is set to false.</exception>
+            <returns>success</returns>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Message.Item(System.String)">
+            <summary>Initializes a new field, or overwrites an existing one. Can optionally be typed strongly.</summary>
+            <param name="fieldName">The field to be renamed</param>
+            <param name="newName">The new name of the field.</param>
+            <param name="overwrite">Allow renaming, even if the new Name already exists.</param>
+            <exception cref="T:VVVV.Packs.Messaging.ParseFormularException">This exception is thrown if the fieldName contains invalid characters.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.DuplicateFieldException">This exception is thrown if a field with newName already exists, and overwrite is set to false.</exception>
+            <returns>success</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.InjectWith(VVVV.Packs.Messaging.Message,System.Boolean)">
+            <summary>Attempts to conjoin data from another message.</summary>
+            <param name="modifier">The message whose data should be injected.</param>
+            <param name="deepInspection">Flag, whether Fields should be compared for actual change before insertion.</param>
+            <remarks>The message will update its Topic too, if different.</remarks>
+            <exception cref="T:System.ArgumentNullException">This exception is thrown if message is null.</exception>
+            <exception cref="T:System.InvalidCastException">This exception is thrown if a value is added to a bin that cannot be cast to the bin's type.</exception>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Message.IsChanged">
+            <summary>Indicates, if any Field or the topic has been changed since the last Commit.</summary>
+            <returns>true, if the Message has Changed</returns>        
+            <remarks></remarks>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.HasRecentCommit(System.Object)">
+            <summary>
+            Checks, if the Message has been recently committed to. 
+            </summary>
+            <param name="fromTarget">If an object is supplied, method will check if this object was a recent committer.</param>
+            <returns></returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.Commit(System.Object,System.Boolean)">
+            <summary>Sets the IsChanged flag to false, and publishes any changes. </summary>
+            <returns>true only if the Message had been changed.</returns>
+            <remarks>
+            The timestamp will be updated to Now.
+            In case IsChanged was true, the message will be swept until the next Commit with this reference
+            </remarks>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.Message.IsEmpty">
+            <summary>Checks if the Message contains any fields</summary>
+            <returns>true, if the Message contains no fields.</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.Contains(System.String)">
+            <summary>Checks if the Message contains a specific field</summary>
+            <param name="fieldName">The field to be checked</param>
+            <returns>true, if the Message contains the field.</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.Clone">
+            <summary>Deep Clones the given Message. Fields of type Message will not be deep cloned.</summary>
+            <returns>A new Message</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.ToString">
+            <summary>Creates a string representation of a given Message</summary>
+            <returns>A string representing the Message</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.Equals(VVVV.Packs.Messaging.Message)">
+            <summary>
+            Equality is given, only when the contents of the Message exactly match
+            </summary>
+            <remarks>Will not deep-inspect Streams</remarks>
+            <param name="other"></param>
+            <returns>Will deep-inspect nested Messages.</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Message.Equals(System.Object)">
+            <summary>
+            Equality is only given, if  the other object is a Message with identical content.
+            </summary>
+            <param name="other"></param>
+            <returns>true, when identical.</returns>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.MessageUtils">
+            <summary>
+            Utils and Constraints for Message 
+            </summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageUtils.CreateWildCardRegex(System.String)">
+            <summary>Extension method for creating a regex out of a wildcard pattern</summary>
+            <param name="wildcardPattern">A string that can contain * as a placeholder for any amount of characters</param>
+        </member>
+        <member name="F:VVVV.Packs.Messaging.MessageUtils.ConfigurationParser">
+            <summary>
+            A Parser that can check if a single trimmed field configuration is structurally sound
+            </summary>
+            <remarks>Type[N] name</remarks>
+            <remarks>Name can constitute of alphanumericals, dots, underscores and hyphens.</remarks>
+        </member>
+        <member name="F:VVVV.Packs.Messaging.MessageUtils.NameParser">
+            <summary>
+            A Parser that can check, if a string contains only alphanumericals, dots, underscores and hyphens
+            </summary>
+        </member>
+        <member name="F:VVVV.Packs.Messaging.MessageUtils.ForbiddenNames">
+            <summary>
+            A number of forbidden names for a Message Field. This helps to prevent vvvv to create potentially ambiguous pins
+            </summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageUtils.IsValidFieldName(System.String)">
+            <summary>
+            Convenience check if a string would qualify as a proper Field name
+            </summary>
+            <param name="fieldName"></param>
+            <returns>true, if string could be used without restrictions.</returns>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.PinConnectionException">
+            <summary>
+            Raised when code attempts to manipulate a pin that is linked.
+            </summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.TypeNotSupportedException">
+            <summary>
+            The required type is not defined in TypeIdentity, or no serializer is provided
+            </summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.BinTypeMismatchException">
+            <summary>
+            An operation tried to apply a incoompatible argument to a Bin
+            </summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.ParseFormularException">
+            <summary>
+            Generic exception for problems when parsing a string to a Formular
+            </summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.ParseMessageException">
+            <summary>
+            Generic exception for problems when deserializing
+            </summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.DuplicateFieldException">
+            <summary>
+            Raised when field definitions in Formulars clash
+            </summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.RegistryException">
+            <summary>
+            Faults when adding, removing or editing within the Registry
+            </summary>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.EmptyBinException">
+            <summary>
+            Raised when an empty (but necessarily typed) bin is attempted to be created by nothing to go on. 
+            </summary>
+            <remarks>Try to use generic BinFactory instead.</remarks>
+        </member>
+        <member name="T:VVVV.Packs.Messaging.FormularFieldDescriptor">
+            <summary>
+            This class is a simple descriptor of structural data about a formulars field.
+            </summary>
+            <remarks>
+            While this functionality could also be done with .net reflections, this is a lot more light weight 
+            </remarks>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.FormularFieldDescriptor.#ctor(System.Type,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="type"></param>
+            <param name="fieldName"></param>
+            <param name="size"></param>
+            <param name="isRequired"></param>
+            <exception cref="T:VVVV.Packs.Messaging.ParseFormularException">Thrown if the fieldName is not valid.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">Thrown if the required type is not supported by TypeIdentity.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.FormularFieldDescriptor.#ctor(System.String,System.Boolean)">
+            <summary>Constructor that parses a configuration string.</summary>
+            <param name="config">A path to a directory that will be zipped.</param>
+            <param name="isRequired">A bool indicating if all fields should be required by force.</param>
+            <exception cref="T:VVVV.Packs.Messaging.ParseFormularException">This exception is thrown if a syntax error prevents the config to be parsed.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.FormularFieldDescriptor.Equals(VVVV.Packs.Messaging.FormularFieldDescriptor)">
+            <summary>
+            Checks Equality against another field descriptor
+            </summary>
+            <remarks>Does also check, if DefaultSize is equal.</remarks>
+            <param name="other"></param>
+            <returns>true if Equal</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.FormularFieldDescriptor.ToString(System.Boolean)">
+            <summary>
+            Create a string representing the Configuration of the field
+            </summary>
+            <param name="withCount">If set to false, indication of the length in the configuration string will be omitted.</param>
+            <returns>The configuration string. </returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.FormularFieldDescriptor.Clone">
+            <summary>
+            Get a deep copy of a formular field descriptor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:VVVV.Packs.Messaging.MessageFormular.DYNAMIC">
+            <summary>Name of the Formular that can only be used fully dynamically.</summary>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageFormular.Name">
+            <summary>The name of the Formular.</summary>
+            <remarks>Has no checks for name validity yet. Trim yourself.
+            </remarks>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageFormular.FieldNames">
+            <summary>Returns all names of all defined Fields</summary>
+            <remarks>Can be used to iterate or acccess all Fields with the indexer []
+            </remarks>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageFormular.FieldDescriptors">
+            <summary>Returns all Field definitions.</summary>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageFormular.IsDynamic">
+            <summary>Convenient way to ask, if the Formular is dynamic only.</summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.#ctor(System.String,VVVV.Packs.Messaging.Message,System.Boolean)">
+            <summary>Constructor, that uses a given message</summary>
+            <param name="formularName">The name of the new Formular.</param>
+            <param name="template">The message whose data structure should be expressed with this Formular.</param>
+            <param name="withCount">Use the messages bin's size as default size. Otherwise: -1</param>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.#ctor(System.String,System.String)">
+            <summary>Constructor, that uses a given message</summary>
+            <param name="formularName">The name of the new Formular.</param>
+            <param name="config">Comma separated Configuration string defining the Formular</param>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.#ctor(System.String,System.Collections.Generic.IEnumerable{VVVV.Packs.Messaging.FormularFieldDescriptor})">
+            <summary>Constructor, that uses a number of field definitions.</summary>
+            <param name="formularName">The name of the new Formular.</param>
+            <param name="fields">The message whose data structure should be expressed with this Formular.</param>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.#ctor(VVVV.Packs.Messaging.MessageFormular)">
+            <summary>Constructor, that uses a number of field definitions.</summary>
+            <param name="formularName">The name of the new Formular.</param>
+            <param name="fields">The message whose data structure should be expressed with this Formular.</param>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.Require(VVVV.Packs.Messaging.RequireEnum,VVVV.Packs.Messaging.MessageFormular)">
+            <summary>
+            High-Level method to set the IsRequired field rulebased for all fields of a Formular
+            </summary>
+            <param name="choice">Select the Rule to use.</param>
+            <param name="otherFormular">Optional parameter, some rules require a secondary Formular. In most cases it will inspect the IsRequired field.</param>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.Append(VVVV.Packs.Messaging.FormularFieldDescriptor,System.Boolean)">
+            <summary>Appends a field to an existing Formular, with extensive type checking.</summary>
+            <param name="field">The field to be added</param>
+            <param name="isRequired">A bool indicating if the registry should skip informing interested parties about this change.</param>
+            <exception cref="T:VVVV.Packs.Messaging.DuplicateFieldException">This exception is thrown if a syntax error prevents the config to be parsed.</exception>
+            <returns>success</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.CanAppend(VVVV.Packs.Messaging.FormularFieldDescriptor)">
+            <summary>Checks if a field can be appended to an existing Formular, with extensive type checking.</summary>
+            <param name="field">The field to be added</param>
+            <returns>true, if possible to append</returns>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageFormular.Item(System.String)">
+            <summary>Access a specific Field definition by name</summary>
+            <param name="fieldName">The message whose data should be injected.</param>
+            <remarks>returns null, if a Field definition by that name does not exist in the Formular
+            </remarks>
+            <exception cref="T:System.ArgumentNullException">Thrown if attempt is made to set null.</exception>
+            <exception cref="T:System.IndexOutOfRangeException">Thrown if the fieldName contains invalid characters.</exception>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageFormular.Configuration">
+            <summary>The configuration is a comma-separated list of all required Fields</summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.ToString">
+            <summary>Creates a string representation of a given Formular</summary>
+            <returns>A string representing the Formular</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.Clone">
+            <summary>
+            Deep Clone, including all Field descriptors
+            </summary>
+            <returns>a FormularFieldDescriptor object</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormular.Equals(VVVV.Packs.Messaging.MessageFormular)">
+            <summary>
+            Checks deep equality, including Name, Type and BinSize of each field
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="E:VVVV.Packs.Messaging.MessageFormularRegistry.FormularChanged">
+            <summary>
+            Subscribe to be informed, if a Formular definition was changed
+            </summary>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageFormularRegistry.Context">
+            <summary>
+            The Registry for all Formulars is a singleton.
+            </summary>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageFormularRegistry.Item(System.String)">
+            <summary>
+            Retrieve the currently defined Formular by name, regardless of the Definer
+            </summary>
+            <param name="formularName"></param>
+            <returns>Null, if no match found</returns>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.MessageFormularRegistry.AllFormularNames">
+            <summary>
+            Retrieve the names of all Formulars currently defined. 
+            </summary>
+            <returns>At least the empty DYNAMIC type</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormularRegistry.GetFormularsFrom(System.String)">
+            <summary>
+            Retrieve all currently defined Formulars of a specific sender entity
+            </summary>
+            <param name="definerId"></param>
+            <returns>Yields empty, when definer is unknown</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormularRegistry.Define(System.String,VVVV.Packs.Messaging.MessageFormular,System.Boolean)">
+            <summary>Tries to define a Formular. Each named Formular can only be defined by one sender entity</summary>
+            <param name="definerId">A unique string that helps to keep track, who registered a given Formular.</param>
+            <param name="formular">A MessageFormular to be registered.</param>
+            <param name="supressEvent">A bool indicating if the registry should skip informing interested parties about this change.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the Formular is null.</exception>
+            <exception cref="T:VVVV.Packs.Messaging.RegistryException">This exception is thrown if a syntax error prevents the config to be parsed.</exception>
+            <returns>success</returns>
+            <remarks>Setting the supressEvent parameter to true will prevent this method to inform any TypeChanged subscribers.</remarks>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormularRegistry.UndefineAll(System.String)">
+            <summary>
+            Unregisters all Formulars from a specific definer source
+            </summary>
+            <param name="definerId"></param>
+            <returns>true, if remove had an effect</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.MessageFormularRegistry.Undefine(System.String,VVVV.Packs.Messaging.MessageFormular)">
+            <summary>
+            Unregisters a specific Formular from a specific definer source
+            </summary>
+            <param name="definerId"></param>
+            <returns>true, if undefine had an effect.</returns>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.TypeIdentity.Instance">
+            <summary>
+            TypeIdentity is a singleton right now. 
+            </summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.TypeIdentity.ScanAssemblies">
+            <summary>
+            Scans all loaded assemblies for Profile classes extending TypeIdentity.
+            Will then proceed to attempt extracting and registering all public 
+            </summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.TypeIdentity.TryAddRecord(VVVV.Packs.Messaging.TypeRecord)">
+            <summary>
+            This allows late additions of Records. Nonetheless, it could be used in subclasses constructors for alternative initialization.
+            </summary>
+            <param name="newRecord"></param>
+            <returns>success, when the record type is now available across the application.</returns>
+        </member>
+        <member name="P:VVVV.Packs.Messaging.TypeIdentity.Aliases">
+            <summary>
+            Retrieve a list of all currently valid Aliases
+            </summary>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.TypeIdentity.FindBaseType(System.Type)">
+            <summary>
+            Retrieve the registered type for any given inherited type
+            </summary>
+            <param name="type"></param>
+            <returns>Null, if no base Type was found.</returns>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Serializing.MsgPackMessageSerializer.UnpackFromCore(MsgPack.Unpacker)">
+            <summary>
+            Utility method to unpack from msgpack. 
+            </summary>
+            <remarks>Will be used recursively to parse nested messages</remarks>
+            <param name="unpacker"></param>
+            <returns></returns>
+            <exception cref="T:VVVV.Packs.Messaging.TypeNotSupportedException">Thrown, when a datatype of msgpack is not supported, e.g. enums</exception>
+            <exception cref="T:VVVV.Packs.Messaging.ParseMessageException">Generic exception </exception>
+            <exception cref="T:System.OverflowException" >Thrown from msgpack, if a received long does not fit into an int.</exception>
+        </member>
+        <member name="M:VVVV.Packs.Messaging.Serializing.MsgPackMessageSerializer.FromCurrent(MsgPack.Unpacker,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="unpacker"></param>
+            <param name="alias"></param>
+            <returns></returns>
+            <exception cref="T:VVVV.Packs.Messaging.ParseMessageException">thrown if any error is detected during parsing of a single Item</exception>
+        </member>
+    </members>
+</doc>

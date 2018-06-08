@@ -1,0 +1,507 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "Extensions",
+        "Category": "XML.XPath",
+        "Help": "This class contains the LINQ to XML extension methods that enable you to evaluate XPath expressions.",
+        "ImportedHelp": "<member name=\"T:System.Xml.XPath.Extensions\">\r\n  <summary>This class contains the LINQ to XML extension methods that enable you to evaluate XPath expressions.</summary>\r\n  <filterpriority>2</filterpriority>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "XPathEvaluate",
+            "Category": "XML",
+            "Help": "Evaluates an XPath expression.",
+            "ImportedHelp": "<member name=\"M:System.Xml.XPath.Extensions.XPathEvaluate(System.Xml.Linq.XNode,System.String)\">\r\n  <summary>Evaluates an XPath expression.</summary>\r\n  <returns>An object that can contain a bool, a double, a string, or an <see cref=\"T:System.Collections.Generic.IEnumerable`1\" />. </returns>\r\n  <param name=\"node\">The <see cref=\"T:System.Xml.Linq.XNode\" /> on which to evaluate the XPath expression.</param>\r\n  <param name=\"expression\">A <see cref=\"T:System.String\" /> that contains an XPath expression.</param>\r\n  <filterpriority>2</filterpriority>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Xml.Linq.XNode",
+              "PinAttribute": {
+                "Help": "The XNode on which to evaluate the XPath expression.",
+                "ImportedHelp": "<param name=\"node\">The <see cref=\"T:System.Xml.Linq.XNode\" /> on which to evaluate the XPath expression.</param>"
+              },
+              "DotNetName": "node"
+            },
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "A T:System.String that contains an XPath expression.",
+                "ImportedHelp": "<param name=\"expression\">A <see cref=\"T:System.String\" /> that contains an XPath expression.</param>"
+              },
+              "DotNetName": "expression"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Object",
+            "PinAttribute": {
+              "Help": "An object that can contain a bool, a double, a string, or an T:System.Collections.Generic.IEnumerable`1.",
+              "ImportedHelp": "<returns>An object that can contain a bool, a double, a string, or an <see cref=\"T:System.Collections.Generic.IEnumerable`1\" />. </returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "XPathEvaluate"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "XPathSelectElement",
+            "Category": "XML",
+            "Help": "Selects an XElement using a XPath expression.",
+            "ImportedHelp": "<member name=\"M:System.Xml.XPath.Extensions.XPathSelectElement(System.Xml.Linq.XNode,System.String)\">\r\n  <summary>Selects an <see cref=\"T:System.Xml.Linq.XElement\" /> using a XPath expression.</summary>\r\n  <returns>An <see cref=\"T:System.Xml.Linq.XElement\" />, or null.</returns>\r\n  <param name=\"node\">The <see cref=\"T:System.Xml.Linq.XNode\" /> on which to evaluate the XPath expression.</param>\r\n  <param name=\"expression\">A <see cref=\"T:System.String\" /> that contains an XPath expression.</param>\r\n  <filterpriority>2</filterpriority>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Xml.Linq.XNode",
+              "PinAttribute": {
+                "Help": "The XNode on which to evaluate the XPath expression.",
+                "ImportedHelp": "<param name=\"node\">The <see cref=\"T:System.Xml.Linq.XNode\" /> on which to evaluate the XPath expression.</param>"
+              },
+              "DotNetName": "node"
+            },
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "A T:System.String that contains an XPath expression.",
+                "ImportedHelp": "<param name=\"expression\">A <see cref=\"T:System.String\" /> that contains an XPath expression.</param>"
+              },
+              "DotNetName": "expression"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Xml.Linq.XElement",
+            "PinAttribute": {
+              "Help": "An XElement, or null.",
+              "ImportedHelp": "<returns>An <see cref=\"T:System.Xml.Linq.XElement\" />, or null.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "XPathSelectElement"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "XPathSelectElements",
+            "Category": "XML",
+            "Help": "Selects a collection of elements using an XPath expression.",
+            "ImportedHelp": "<member name=\"M:System.Xml.XPath.Extensions.XPathSelectElements(System.Xml.Linq.XNode,System.String)\">\r\n  <summary>Selects a collection of elements using an XPath expression.</summary>\r\n  <returns>An <see cref=\"T:System.Collections.Generic.IEnumerable`1\" /> of <see cref=\"T:System.Xml.Linq.XElement\" /> that contains the selected elements.</returns>\r\n  <param name=\"node\">The <see cref=\"T:System.Xml.Linq.XNode\" /> on which to evaluate the XPath expression.</param>\r\n  <param name=\"expression\">A <see cref=\"T:System.String\" /> that contains an XPath expression.</param>\r\n  <filterpriority>2</filterpriority>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Xml.Linq.XNode",
+              "PinAttribute": {
+                "Help": "The XNode on which to evaluate the XPath expression.",
+                "ImportedHelp": "<param name=\"node\">The <see cref=\"T:System.Xml.Linq.XNode\" /> on which to evaluate the XPath expression.</param>"
+              },
+              "DotNetName": "node"
+            },
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "A T:System.String that contains an XPath expression.",
+                "ImportedHelp": "<param name=\"expression\">A <see cref=\"T:System.String\" /> that contains an XPath expression.</param>"
+              },
+              "DotNetName": "expression"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<System.Xml.Linq.XElement>",
+            "PinAttribute": {
+              "Help": "An T:System.Collections.Generic.IEnumerable`1 of XElement that contains the selected elements.",
+              "ImportedHelp": "<returns>An <see cref=\"T:System.Collections.Generic.IEnumerable`1\" /> of <see cref=\"T:System.Xml.Linq.XElement\" /> that contains the selected elements.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "XPathSelectElements"
+        }
+      ],
+      "DotNetName": "System.Xml.XPath.Extensions"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "LoadOptions",
+        "Category": "XML.Dev",
+        "Help": "Specifies load options when parsing XML.",
+        "ImportedHelp": "<member name=\"T:System.Xml.Linq.LoadOptions\">\r\n  <summary>Specifies load options when parsing XML. </summary>\r\n</member>",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Xml.Linq.LoadOptions"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SaveOptions",
+        "Category": "XML.Dev",
+        "Help": "Specifies serialization options.",
+        "ImportedHelp": "<member name=\"T:System.Xml.Linq.SaveOptions\">\r\n  <summary>Specifies serialization options.</summary>\r\n</member>",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "DisableFormatting",
+            "Help": "Preserve all insignificant white space while serializing.",
+            "ImportedHelp": "<member name=\"F:System.Xml.Linq.SaveOptions.DisableFormatting\">\r\n  <summary>Preserve all insignificant white space while serializing.</summary>\r\n</member>",
+            "Hidden": true
+          },
+          "DotNetName": "DisableFormatting"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "None",
+            "Help": "Format (indent) the XML while serializing.",
+            "ImportedHelp": "<member name=\"F:System.Xml.Linq.SaveOptions.None\">\r\n  <summary>Format (indent) the XML while serializing.</summary>\r\n</member>",
+            "Hidden": true
+          },
+          "DotNetName": "None"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OmitDuplicateNamespaces",
+            "Help": "Remove the duplicate namespace declarations while serializing.",
+            "ImportedHelp": "<member name=\"F:System.Xml.Linq.SaveOptions.OmitDuplicateNamespaces\">\r\n  <summary>Remove the duplicate namespace declarations while serializing.</summary>\r\n</member>",
+            "Hidden": true
+          },
+          "DotNetName": "OmitDuplicateNamespaces"
+        }
+      ],
+      "DotNetName": "System.Xml.Linq.SaveOptions"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "XAttribute",
+        "Category": "XML",
+        "Help": "Represents an XML attribute.",
+        "ImportedHelp": "<member name=\"T:System.Xml.Linq.XAttribute\">\r\n  <summary>Represents an XML attribute.</summary>\r\n</member>",
+        "Hidden": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "NextAttribute",
+            "Category": "",
+            "ShowCategory": true,
+            "Help": "Gets the next attribute of the parent element.",
+            "ImportedHelp": "<member name=\"P:System.Xml.Linq.XAttribute.NextAttribute\">\r\n  <summary>Gets the next attribute of the parent element.</summary>\r\n  <returns>An <see cref=\"T:System.Xml.Linq.XAttribute\" /> containing the next attribute of the parent element.</returns>\r\n  <filterpriority>2</filterpriority>\r\n</member>"
+          },
+          "DotNetName": "NextAttribute"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PreviousAttribute",
+            "Category": "",
+            "ShowCategory": true,
+            "Help": "Gets the previous attribute of the parent element.",
+            "ImportedHelp": "<member name=\"P:System.Xml.Linq.XAttribute.PreviousAttribute\">\r\n  <summary>Gets the previous attribute of the parent element.</summary>\r\n  <returns>An <see cref=\"T:System.Xml.Linq.XAttribute\" /> containing the previous attribute of the parent element.</returns>\r\n  <filterpriority>2</filterpriority>\r\n</member>"
+          },
+          "DotNetName": "PreviousAttribute"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString",
+            "Category": "",
+            "Help": "Converts the current XAttribute object to a string representation.",
+            "ImportedHelp": "<member name=\"M:System.Xml.Linq.XAttribute.ToString\">\r\n  <summary>Converts the current <see cref=\"T:System.Xml.Linq.XAttribute\" /> object to a string representation.</summary>\r\n  <returns>A <see cref=\"T:System.String\" /> containing the XML text representation of an attribute and its value.</returns>\r\n</member>",
+            "Hidden": true
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinAttribute": {
+              "Help": "A T:System.String containing the XML text representation of an attribute and its value.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.String\" /> containing the XML text representation of an attribute and its value.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        }
+      ],
+      "DotNetName": "System.Xml.Linq.XAttribute"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "XDeclaration",
+        "Category": "XML",
+        "Help": "Represents an XML declaration.",
+        "ImportedHelp": "<member name=\"T:System.Xml.Linq.XDeclaration\">\r\n  <summary>Represents an XML declaration.</summary>\r\n  <filterpriority>2</filterpriority>\r\n</member>"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ToString",
+            "Version": "XDeclaration",
+            "Help": "Provides the declaration as a formatted string.",
+            "ImportedHelp": "<member name=\"M:System.Xml.Linq.XDeclaration.ToString\">\r\n  <summary>Provides the declaration as a formatted string.</summary>\r\n  <returns>A <see cref=\"T:System.String\" /> that contains the formatted XML string.</returns>\r\n</member>",
+            "Hidden": true
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinAttribute": {
+              "Help": "A T:System.String that contains the formatted XML string.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.String\" /> that contains the formatted XML string.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        }
+      ],
+      "DotNetName": "System.Xml.Linq.XDeclaration"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "XDocument",
+        "Category": "XML",
+        "Help": "Represents an XML document. For the components and usage of an XDocument object, see XDocument Class Overview.To browse the .NET Framework source code for this type, see the Reference Source.",
+        "ImportedHelp": "<member name=\"T:System.Xml.Linq.XDocument\">\r\n  <summary>Represents an XML document. For the components and usage of an <see cref=\"T:System.Xml.Linq.XDocument\" /> object, see XDocument Class Overview.To browse the .NET Framework source code for this type, see the Reference Source.</summary>\r\n</member>",
+        "Hidden": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Load",
+            "Category": "XML.Dev",
+            "Help": "Creates a new XDocument from a file.",
+            "ImportedHelp": "<member name=\"M:System.Xml.Linq.XDocument.Load(System.String)\">\r\n  <summary>Creates a new <see cref=\"T:System.Xml.Linq.XDocument\" /> from a file. </summary>\r\n  <returns>An <see cref=\"T:System.Xml.Linq.XDocument\" /> that contains the contents of the specified file.</returns>\r\n  <param name=\"uri\">A URI string that references the file to load into a new <see cref=\"T:System.Xml.Linq.XDocument\" />.</param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "A URI string that references the file to load into a new XDocument.",
+                "ImportedHelp": "<param name=\"uri\">A URI string that references the file to load into a new <see cref=\"T:System.Xml.Linq.XDocument\" />.</param>"
+              },
+              "DotNetName": "uri"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Xml.Linq.XDocument",
+            "PinAttribute": {
+              "Help": "An XDocument that contains the contents of the specified file.",
+              "ImportedHelp": "<returns>An <see cref=\"T:System.Xml.Linq.XDocument\" /> that contains the contents of the specified file.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Load"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Parse",
+            "Category": "XML",
+            "Tags": "Deserialize, ToXDocument, AsXDocument, FromString",
+            "Help": "Creates a new XDocument from a string, optionally preserving white space, setting the base URI, and retaining line information.",
+            "ImportedHelp": "<member name=\"M:System.Xml.Linq.XDocument.Parse(System.String,System.Xml.Linq.LoadOptions)\">\r\n  <summary>Creates a new <see cref=\"T:System.Xml.Linq.XDocument\" /> from a string, optionally preserving white space, setting the base URI, and retaining line information.</summary>\r\n  <returns>An <see cref=\"T:System.Xml.Linq.XDocument\" /> populated from the string that contains XML.</returns>\r\n  <param name=\"text\">A string that contains XML.</param>\r\n  <param name=\"options\">A <see cref=\"T:System.Xml.Linq.LoadOptions\" /> that specifies white space behavior, and whether to load base URI and line information.</param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "PinAttribute": {
+                "Help": "A string that contains XML.",
+                "ImportedHelp": "<param name=\"text\">A string that contains XML.</param>"
+              },
+              "DotNetName": "text"
+            },
+            {
+              "TypeFullName": "System.Xml.Linq.LoadOptions",
+              "PinAttribute": {
+                "Help": "A LoadOptions that specifies white space behavior, and whether to load base URI and line information.",
+                "ImportedHelp": "<param name=\"options\">A <see cref=\"T:System.Xml.Linq.LoadOptions\" /> that specifies white space behavior, and whether to load base URI and line information.</param>"
+              },
+              "DotNetName": "options"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Xml.Linq.XDocument",
+            "PinAttribute": {
+              "Help": "An XDocument populated from the string that contains XML.",
+              "ImportedHelp": "<returns>An <see cref=\"T:System.Xml.Linq.XDocument\" /> populated from the string that contains XML.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Parse"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Root",
+            "Category": "",
+            "ShowCategory": true,
+            "Help": "Gets the root element of the XML Tree for this document.",
+            "ImportedHelp": "<member name=\"P:System.Xml.Linq.XDocument.Root\">\r\n  <summary>Gets the root element of the XML Tree for this document.</summary>\r\n  <returns>The root <see cref=\"T:System.Xml.Linq.XElement\" /> of the XML tree.</returns>\r\n</member>"
+          },
+          "DotNetName": "Root"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Save",
+            "Category": "XML.Dev",
+            "Help": "Outputs this XDocument to the specified T:System.IO.Stream, optionally specifying formatting behavior.",
+            "ImportedHelp": "<member name=\"M:System.Xml.Linq.XDocument.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)\">\r\n  <summary>Outputs this <see cref=\"T:System.Xml.Linq.XDocument\" /> to the specified <see cref=\"T:System.IO.Stream\" />, optionally specifying formatting behavior.</summary>\r\n  <param name=\"stream\">The stream to output this <see cref=\"T:System.Xml.Linq.XDocument\" /> to.</param>\r\n  <param name=\"options\">A <see cref=\"T:System.Xml.Linq.SaveOptions\" /> that specifies formatting behavior.</param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IO.Stream",
+              "PinAttribute": {
+                "Help": "The stream to output this XDocument to.",
+                "ImportedHelp": "<param name=\"stream\">The stream to output this <see cref=\"T:System.Xml.Linq.XDocument\" /> to.</param>"
+              },
+              "DotNetName": "stream"
+            },
+            {
+              "TypeFullName": "System.Xml.Linq.SaveOptions",
+              "PinAttribute": {
+                "Help": "A SaveOptions that specifies formatting behavior.",
+                "ImportedHelp": "<param name=\"options\">A <see cref=\"T:System.Xml.Linq.SaveOptions\" /> that specifies formatting behavior.</param>"
+              },
+              "DotNetName": "options"
+            }
+          ],
+          "DotNetName": "Save"
+        }
+      ],
+      "DotNetName": "System.Xml.Linq.XDocument"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "XDocumentType",
+        "Category": "XML",
+        "Help": "Represents an XML Document Type Definition (DTD).",
+        "ImportedHelp": "<member name=\"T:System.Xml.Linq.XDocumentType\">\r\n  <summary>Represents an XML Document Type Definition (DTD). </summary>\r\n  <filterpriority>2</filterpriority>\r\n</member>"
+      },
+      "Members": [],
+      "DotNetName": "System.Xml.Linq.XDocumentType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "XElement",
+        "Category": "XML",
+        "Help": "Represents an XML element.  See XElement Class Overview and the Remarks section on this page for usage information and examples.To browse the .NET Framework source code for this type, see the Reference Source.",
+        "ImportedHelp": "<member name=\"T:System.Xml.Linq.XElement\">\r\n  <summary>Represents an XML element.  See XElement Class Overview and the Remarks section on this page for usage information and examples.To browse the .NET Framework source code for this type, see the Reference Source.</summary>\r\n</member>",
+        "Hidden": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "FirstAttribute",
+            "Category": "",
+            "ShowCategory": true,
+            "Help": "Gets the first attribute of this element.",
+            "ImportedHelp": "<member name=\"P:System.Xml.Linq.XElement.FirstAttribute\">\r\n  <summary>Gets the first attribute of this element.</summary>\r\n  <returns>An <see cref=\"T:System.Xml.Linq.XAttribute\" /> that contains the first attribute of this element.</returns>\r\n  <filterpriority>2</filterpriority>\r\n</member>"
+          },
+          "DotNetName": "FirstAttribute"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "HasAttributes",
+            "Category": "",
+            "ShowCategory": true,
+            "Help": "Gets a value indicating whether this element as at least one attribute.",
+            "ImportedHelp": "<member name=\"P:System.Xml.Linq.XElement.HasAttributes\">\r\n  <summary>Gets a value indicating whether this element as at least one attribute.</summary>\r\n  <returns>true if this element has at least one attribute; otherwise false.</returns>\r\n</member>"
+          },
+          "DotNetName": "HasAttributes"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "HasElements",
+            "Category": "",
+            "ShowCategory": true,
+            "Help": "Gets a value indicating whether this element has at least one child element.",
+            "ImportedHelp": "<member name=\"P:System.Xml.Linq.XElement.HasElements\">\r\n  <summary>Gets a value indicating whether this element has at least one child element.</summary>\r\n  <returns>true if this element has at least one child element; otherwise false.</returns>\r\n</member>"
+          },
+          "DotNetName": "HasElements"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "Category": "",
+            "ShowCategory": true,
+            "Help": "Gets a value indicating whether this element contains no content.",
+            "ImportedHelp": "<member name=\"P:System.Xml.Linq.XElement.IsEmpty\">\r\n  <summary>Gets a value indicating whether this element contains no content.</summary>\r\n  <returns>true if this element contains no content; otherwise false.</returns>\r\n</member>"
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "LastAttribute",
+            "Category": "",
+            "ShowCategory": true,
+            "Help": "Gets the last attribute of this element.",
+            "ImportedHelp": "<member name=\"P:System.Xml.Linq.XElement.LastAttribute\">\r\n  <summary>Gets the last attribute of this element.</summary>\r\n  <returns>An <see cref=\"T:System.Xml.Linq.XAttribute\" /> that contains the last attribute of this element.</returns>\r\n  <filterpriority>2</filterpriority>\r\n</member>"
+          },
+          "DotNetName": "LastAttribute"
+        }
+      ],
+      "DotNetName": "System.Xml.Linq.XElement"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "XNode",
+        "Category": "XML",
+        "Help": "Represents the abstract concept of a node (element, comment, document type, processing instruction, or text node) in the XML tree.",
+        "ImportedHelp": "<member name=\"T:System.Xml.Linq.XNode\">\r\n  <summary>Represents the abstract concept of a node (element, comment, document type, processing instruction, or text node) in the XML tree.  </summary>\r\n  <filterpriority>2</filterpriority>\r\n</member>",
+        "Hidden": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ToString",
+            "Category": "XML",
+            "Tags": "XDocument, XElement, Serialize, FromXDocument, FromXElement",
+            "Help": "Returns the indented XML for this node.",
+            "ImportedHelp": "<member name=\"M:System.Xml.Linq.XNode.ToString\">\r\n  <summary>Returns the indented XML for this node.</summary>\r\n  <returns>A <see cref=\"T:System.String\" /> containing the indented XML.</returns>\r\n</member>"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinAttribute": {
+              "Help": "A T:System.String containing the indented XML.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.String\" /> containing the indented XML.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString",
+            "Version": "SaveOptions",
+            "Category": "XML",
+            "Tags": "XDocument, XElement, Serialize, FromXDocument, FromXElement",
+            "Help": "Returns the XML for this node, optionally disabling formatting.",
+            "ImportedHelp": "<member name=\"M:System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)\">\r\n  <summary>Returns the XML for this node, optionally disabling formatting.</summary>\r\n  <returns>A <see cref=\"T:System.String\" /> containing the XML.</returns>\r\n  <param name=\"options\">A <see cref=\"T:System.Xml.Linq.SaveOptions\" /> that specifies formatting behavior.</param>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Xml.Linq.SaveOptions",
+              "PinAttribute": {
+                "Help": "A SaveOptions that specifies formatting behavior.",
+                "ImportedHelp": "<param name=\"options\">A <see cref=\"T:System.Xml.Linq.SaveOptions\" /> that specifies formatting behavior.</param>"
+              },
+              "DotNetName": "options"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinAttribute": {
+              "Help": "A T:System.String containing the XML.",
+              "ImportedHelp": "<returns>A <see cref=\"T:System.String\" /> containing the XML.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        }
+      ],
+      "DotNetName": "System.Xml.Linq.XNode"
+    }
+  ],
+  "IsGAC": true,
+  "DotNetName": "System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+}

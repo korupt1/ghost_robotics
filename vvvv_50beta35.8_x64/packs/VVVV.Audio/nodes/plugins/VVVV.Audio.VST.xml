@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VVVV.Audio.VST</name>
+    </assembly>
+    <members>
+        <member name="F:VVVV.Audio.VST.GenericUI.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VVVV.Audio.VST.GenericUI.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VVVV.Audio.VST.GenericUI.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VVVV.Audio.VST.HostCommandStub">
+            <summary>
+            The HostCommandStub class represents the part of the host that a plugin can call.
+            </summary>
+        </member>
+        <member name="E:VVVV.Audio.VST.HostCommandStub.PluginCalled">
+            <summary>
+            Raised when one of the methods is called.
+            </summary>
+        </member>
+        <member name="P:VVVV.Audio.VST.HostCommandStub.PluginContext">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.BeginEdit(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.CanDo(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.CloseFileSelector(Jacobi.Vst.Core.VstFileSelect)">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.EndEdit(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetAutomationState">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetBlockSize">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetDirectory">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetInputLatency">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetLanguage">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetOutputLatency">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetProcessLevel">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetProductString">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetSampleRate">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetTimeInfo(Jacobi.Vst.Core.VstTimeInfoFlags)">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetVendorString">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetVendorVersion">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.IoChanged">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.OpenFileSelector(Jacobi.Vst.Core.VstFileSelect)">
+            <inheritdoc />
+        </member>
+        <member name="F:VVVV.Audio.VST.HostCommandStub.FProcessEventsAction">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.SizeWindow(System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.UpdateDisplay">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetCurrentPluginID">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.GetVersion">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.ProcessIdle">
+            <inheritdoc />
+        </member>
+        <member name="M:VVVV.Audio.VST.HostCommandStub.SetParameterAutomated(System.Int32,System.Single)">
+            <inheritdoc />
+        </member>
+        <member name="T:VVVV.Audio.VST.PluginCalledEventArgs">
+            <summary>
+            Event arguments used when one of the mehtods is called.
+            </summary>
+        </member>
+        <member name="M:VVVV.Audio.VST.PluginCalledEventArgs.#ctor(System.String)">
+            <summary>
+            Constructs a new instance with a <paramref name="message"/>.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="P:VVVV.Audio.VST.PluginCalledEventArgs.Message">
+            <summary>
+            Gets the message.
+            </summary>
+        </member>
+        <member name="F:VVVV.Audio.VST.PluginInfoForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VVVV.Audio.VST.PluginInfoForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VVVV.Audio.VST.PluginInfoForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:VVVV.Nodes.VSTHostNode.AnyInputChanged">
+            <summary>
+            Should return whether new parameters need to be set on the audio signals
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VVVV.Nodes.VSTHostNode.GetSpreadMax(System.Int32)">
+            <summary>
+            Override this in subclass if you want to set the number of output signals manually
+            </summary>
+            <param name="originalSpreadMax"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VVVV.Nodes.VSTHostNode.GetInstance(System.Int32)">
+            <summary>
+            This should return a new instance of the desired audio signal class
+            </summary>
+            <param name="i">The current slice index of the output signal</param>
+            <returns>New instnace of the audio signal class</returns>
+        </member>
+        <member name="M:VVVV.Nodes.VSTHostNode.SetParameters(System.Int32,VVVV.Audio.VST.VSTSignal)">
+            <summary>
+            This should set the parameters of the given audio signal class
+            </summary>
+            <param name="i">Current index of the output signal spread</param>
+            <param name="instance">Curretn instance</param>
+        </member>
+        <member name="M:VVVV.Nodes.VSTHostNode.SetOutputs(System.Int32,VVVV.Audio.VST.VSTSignal)">
+            <summary>
+            Set the output pins of the node
+            </summary>
+            <param name="i">Current slice index</param>
+            <param name="instance">Current instance</param>
+        </member>
+        <member name="M:VVVV.Nodes.VSTHostNode.SetOutputSliceCount(System.Int32)">
+            <summary>
+            In this method the slicecount of the output pins should be set
+            </summary>
+            <param name="sliceCount"></param>
+        </member>
+        <member name="T:VVVV.Nodes.Nodes.VST.VstPluginControl">
+            <summary>
+            Description of VstPluginControl.
+            </summary>
+        </member>
+        <member name="F:VVVV.Nodes.Nodes.VST.VstPluginControl.components">
+            <summary>
+            Designer variable used to keep track of non-visual components.
+            </summary>
+        </member>
+        <member name="M:VVVV.Nodes.Nodes.VST.VstPluginControl.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources used by the control.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VVVV.Nodes.Nodes.VST.VstPluginControl.InitializeComponent">
+            <summary>
+            This method is required for Windows Forms designer support.
+            Do not change the method contents inside the source code editor. The Forms designer might
+            not be able to load this method if it was changed manually.
+            </summary>
+        </member>
+    </members>
+</doc>

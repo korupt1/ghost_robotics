@@ -1,0 +1,547 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "Buffer",
+        "Category": "Collections",
+        "Help": "Represents a buffer exposing a shared view over an underlying enumerable sequence.T: Element type.\r\n",
+        "ImportedHelp": "<member name=\"T:System.Linq.IBuffer`1\">\r\n  <summary>\r\n            Represents a buffer exposing a shared view over an underlying enumerable sequence.\r\n            </summary>\r\n  <typeparam name=\"T\">Element type.</typeparam>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "System.Linq.IBuffer`1"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "EnumerableEx",
+        "Category": "Collections",
+        "Help": "Provides a set of additional static methods that allow querying enumerable sequences.",
+        "ImportedHelp": "<member name=\"T:System.Linq.EnumerableEx\">\r\n  <summary>\r\n            Provides a set of additional static methods that allow querying enumerable sequences.\r\n            </summary>\r\n</member>",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Distinct",
+            "Version": "Selector",
+            "Category": "Collections.Sequence",
+            "Help": "Returns elements with a distinct key value by using the default equality comparer to compare key values.TSource: Source sequence element type.\r\nTKey: Key type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.Distinct``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})\">\r\n  <summary>\r\n            Returns elements with a distinct key value by using the default equality comparer to compare key values.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <typeparam name=\"TKey\">Key type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <param name=\"keySelector\">Key selector.</param>\r\n  <returns>Sequence that contains the elements from the source sequence with distinct key values.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            },
+            {
+              "TypeFullName": "System.Func<TSource, TKey>",
+              "PinAttribute": {
+                "Help": "Key selector.",
+                "ImportedHelp": "<param name=\"keySelector\">Key selector.</param>"
+              },
+              "DotNetName": "keySelector"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+            "PinAttribute": {
+              "Help": "Sequence that contains the elements from the source sequence with distinct key values.",
+              "ImportedHelp": "<returns>Sequence that contains the elements from the source sequence with distinct key values.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Distinct"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DistinctUntilChanged",
+            "Category": "Collections.Sequence",
+            "Help": "Returns consecutive distinct elements by using the default equality comparer to compare values.TSource: Source sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.DistinctUntilChanged``1(System.Collections.Generic.IEnumerable{``0})\">\r\n  <summary>\r\n            Returns consecutive distinct elements by using the default equality comparer to compare values.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <returns>Sequence without adjacent non-distinct elements.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+            "PinAttribute": {
+              "Help": "Sequence without adjacent non-distinct elements.",
+              "ImportedHelp": "<returns>Sequence without adjacent non-distinct elements.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DistinctUntilChanged"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DistinctUntilChanged",
+            "Version": "Selector",
+            "Category": "Collections.Sequence",
+            "Help": "Returns consecutive distinct elements based on a key value by using the specified equality comparer to compare key values.TSource: Source sequence element type.\r\nTKey: Key type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.DistinctUntilChanged``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})\">\r\n  <summary>\r\n            Returns consecutive distinct elements based on a key value by using the specified equality comparer to compare key values.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <typeparam name=\"TKey\">Key type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <param name=\"keySelector\">Key selector.</param>\r\n  <returns>Sequence without adjacent non-distinct elements.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            },
+            {
+              "TypeFullName": "System.Func<TSource, TKey>",
+              "PinAttribute": {
+                "Help": "Key selector.",
+                "ImportedHelp": "<param name=\"keySelector\">Key selector.</param>"
+              },
+              "DotNetName": "keySelector"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+            "PinAttribute": {
+              "Help": "Sequence without adjacent non-distinct elements.",
+              "ImportedHelp": "<returns>Sequence without adjacent non-distinct elements.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DistinctUntilChanged"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Do",
+            "Category": "Collections.Sequence",
+            "Help": "Lazily invokes an action for each value in the sequence, and executes an action for successful termination.TSource: Source sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.Do``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0},System.Action)\">\r\n  <summary>\r\n            Lazily invokes an action for each value in the sequence, and executes an action for successful termination.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <param name=\"onNext\">Action to invoke for each element.</param>\r\n  <param name=\"onCompleted\">Action to invoke on successful termination of the sequence.</param>\r\n  <returns>Sequence exhibiting the specified side-effects upon enumeration.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            },
+            {
+              "TypeFullName": "System.Action<TSource>",
+              "PinAttribute": {
+                "Help": "Action to invoke for each element.",
+                "ImportedHelp": "<param name=\"onNext\">Action to invoke for each element.</param>"
+              },
+              "DotNetName": "onNext"
+            },
+            {
+              "TypeFullName": "System.Action",
+              "PinAttribute": {
+                "Help": "Action to invoke on successful termination of the sequence.",
+                "ImportedHelp": "<param name=\"onCompleted\">Action to invoke on successful termination of the sequence.</param>"
+              },
+              "DotNetName": "onCompleted"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+            "PinAttribute": {
+              "Help": "Sequence exhibiting the specified side-effects upon enumeration.",
+              "ImportedHelp": "<returns>Sequence exhibiting the specified side-effects upon enumeration.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Do"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Expand",
+            "Category": "Collections.Sequence",
+            "Help": "Expands the sequence by recursively applying a selector function.TSource: Source sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.Expand``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})\">\r\n  <summary>\r\n            Expands the sequence by recursively applying a selector function.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <param name=\"selector\">Selector function to retrieve the next sequence to expand.</param>\r\n  <returns>Sequence with results from the recursive expansion of the source sequence.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            },
+            {
+              "TypeFullName": "System.Func<TSource, System.Collections.Generic.IEnumerable<TSource>>",
+              "PinAttribute": {
+                "Help": "Selector function to retrieve the next sequence to expand.",
+                "ImportedHelp": "<param name=\"selector\">Selector function to retrieve the next sequence to expand.</param>"
+              },
+              "DotNetName": "selector"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+            "PinAttribute": {
+              "Help": "Sequence with results from the recursive expansion of the source sequence.",
+              "ImportedHelp": "<returns>Sequence with results from the recursive expansion of the source sequence.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Expand"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "Category": "Collections.Sequence",
+            "Help": "Determines whether an enumerable sequence is empty.TSource: Source sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})\">\r\n  <summary>\r\n            Determines whether an enumerable sequence is empty.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <returns>true if the sequence is empty; false otherwise.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinAttribute": {
+              "Help": "true if the sequence is empty; false otherwise.",
+              "ImportedHelp": "<returns>true if the sequence is empty; false otherwise.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MaxBy",
+            "Category": "Collections.Sequence",
+            "Help": "Returns the elements with the maximum key value by using the default comparer to compare key values.TSource: Source sequence element type.\r\nTKey: Key type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.MaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})\">\r\n  <summary>\r\n            Returns the elements with the maximum key value by using the default comparer to compare key values.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <typeparam name=\"TKey\">Key type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <param name=\"keySelector\">Key selector used to extract the key for each element in the sequence.</param>\r\n  <returns>List with the elements that share the same maximum key value.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            },
+            {
+              "TypeFullName": "System.Func<TSource, TKey>",
+              "PinAttribute": {
+                "Help": "Key selector used to extract the key for each element in the sequence.",
+                "ImportedHelp": "<param name=\"keySelector\">Key selector used to extract the key for each element in the sequence.</param>"
+              },
+              "DotNetName": "keySelector"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IList<TSource>",
+            "PinAttribute": {
+              "Help": "List with the elements that share the same maximum key value.",
+              "ImportedHelp": "<returns>List with the elements that share the same maximum key value.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "MaxBy"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Memoize",
+            "Category": "Collections.Sequence",
+            "Help": "Creates a buffer with a view over the source sequence, causing each enumerator to obtain access to all of the sequence's elements without causing multiple enumerations over the source.TSource: Source sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.Memoize``1(System.Collections.Generic.IEnumerable{``0})\">\r\n  <summary>\r\n            Creates a buffer with a view over the source sequence, causing each enumerator to obtain access to all of the sequence's elements without causing multiple enumerations over the source.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <returns>Buffer enabling each enumerator to retrieve all elements from the shared source sequence, without duplicating source enumeration side-effects.</returns>\r\n  <example>\r\n            var rng = Enumerable.Range(0, 10).Do(x =&gt; Console.WriteLine(x)).Memoize();\r\n            \r\n            var e1 = rng.GetEnumerator();\r\n            \r\n            Assert.IsTrue(e1.MoveNext());    // Prints 0\r\n            Assert.AreEqual(0, e1.Current);\r\n            \r\n            Assert.IsTrue(e1.MoveNext());    // Prints 1\r\n            Assert.AreEqual(1, e1.Current);\r\n            \r\n            var e2 = rng.GetEnumerator();\r\n            \r\n            Assert.IsTrue(e2.MoveNext());    // Doesn't print anything; the side-effect of Do\r\n            Assert.AreEqual(0, e2.Current);  // has already taken place during e1's iteration.\r\n            \r\n            Assert.IsTrue(e1.MoveNext());    // Prints 2\r\n            Assert.AreEqual(2, e1.Current);\r\n            </example>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Linq.IBuffer<TSource>",
+            "PinAttribute": {
+              "Help": "Buffer enabling each enumerator to retrieve all elements from the shared source sequence, without duplicating source enumeration side-effects.",
+              "ImportedHelp": "<returns>Buffer enabling each enumerator to retrieve all elements from the shared source sequence, without duplicating source enumeration side-effects.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Memoize"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MinBy",
+            "Category": "Collections.Sequence",
+            "Help": "Returns the elements with the minimum key value by using the default comparer to compare key values.TSource: Source sequence element type.\r\nTKey: Key type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.MinBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})\">\r\n  <summary>\r\n            Returns the elements with the minimum key value by using the default comparer to compare key values.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <typeparam name=\"TKey\">Key type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <param name=\"keySelector\">Key selector used to extract the key for each element in the sequence.</param>\r\n  <returns>List with the elements that share the same minimum key value.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            },
+            {
+              "TypeFullName": "System.Func<TSource, TKey>",
+              "PinAttribute": {
+                "Help": "Key selector used to extract the key for each element in the sequence.",
+                "ImportedHelp": "<param name=\"keySelector\">Key selector used to extract the key for each element in the sequence.</param>"
+              },
+              "DotNetName": "keySelector"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IList<TSource>",
+            "PinAttribute": {
+              "Help": "List with the elements that share the same minimum key value.",
+              "ImportedHelp": "<returns>List with the elements that share the same minimum key value.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "MinBy"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Publish",
+            "Category": "Collections.Sequence",
+            "Help": "Creates a buffer with a view over the source sequence, causing each enumerator to obtain access to the remainder of the sequence from the current index in the buffer.TSource: Source sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.Publish``1(System.Collections.Generic.IEnumerable{``0})\">\r\n  <summary>\r\n            Creates a buffer with a view over the source sequence, causing each enumerator to obtain access to the remainder of the sequence from the current index in the buffer.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <returns>Buffer enabling each enumerator to retrieve elements from the shared source sequence, starting from the index at the point of obtaining the enumerator.</returns>\r\n  <example>\r\n            var rng = Enumerable.Range(0, 10).Publish();\r\n            \r\n            var e1 = rng.GetEnumerator();    // e1 has a view on the source starting from element 0\r\n            \r\n            Assert.IsTrue(e1.MoveNext());\r\n            Assert.AreEqual(0, e1.Current);\r\n            \r\n            Assert.IsTrue(e1.MoveNext());\r\n            Assert.AreEqual(1, e1.Current);\r\n            \r\n            var e2 = rng.GetEnumerator();\r\n            \r\n            Assert.IsTrue(e2.MoveNext());    // e2 has a view on the source starting from element 2\r\n            Assert.AreEqual(2, e2.Current);\r\n            \r\n            Assert.IsTrue(e1.MoveNext());    // e1 continues to enumerate over its view\r\n            Assert.AreEqual(2, e1.Current);\r\n            </example>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Linq.IBuffer<TSource>",
+            "PinAttribute": {
+              "Help": "Buffer enabling each enumerator to retrieve elements from the shared source sequence, starting from the index at the point of obtaining the enumerator.",
+              "ImportedHelp": "<returns>Buffer enabling each enumerator to retrieve elements from the shared source sequence, starting from the index at the point of obtaining the enumerator.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Publish"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Repeat",
+            "Category": "Collections.Sequence",
+            "Help": "Generates a sequence that contains one repeated value.TResult: Result sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.Repeat``1(``0,System.Int32)\">\r\n  <summary>\r\n            Generates a sequence that contains one repeated value.\r\n            </summary>\r\n  <typeparam name=\"TResult\">Result sequence element type.</typeparam>\r\n  <param name=\"element\">The value to be repeated.</param>\r\n  <param name=\"count\">The number of times to repeat the value in the generated sequence.</param>\r\n  <returns>Sequence that contains a repeated value.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TResult",
+              "PinAttribute": {
+                "Help": "The value to be repeated.",
+                "ImportedHelp": "<param name=\"element\">The value to be repeated.</param>"
+              },
+              "DotNetName": "element"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The number of times to repeat the value in the generated sequence.",
+                "ImportedHelp": "<param name=\"count\">The number of times to repeat the value in the generated sequence.</param>"
+              },
+              "DotNetName": "count"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<TResult>",
+            "PinAttribute": {
+              "Help": "Sequence that contains a repeated value.",
+              "ImportedHelp": "<returns>Sequence that contains a repeated value.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Repeat"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Scan",
+            "Category": "Collections.Sequence",
+            "Help": "Generates a sequence of accumulated values by scanning the source sequence and applying an accumulator function.TSource: Source sequence element type.\r\nTAccumulate: Accumulation type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.Scan``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})\">\r\n  <summary>\r\n            Generates a sequence of accumulated values by scanning the source sequence and applying an accumulator function.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <typeparam name=\"TAccumulate\">Accumulation type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <param name=\"seed\">Accumulator seed value.</param>\r\n  <param name=\"accumulator\">Accumulation function to apply to the current accumulation value and each element of the sequence.</param>\r\n  <returns>Sequence with all intermediate accumulation values resulting from scanning the sequence.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            },
+            {
+              "TypeFullName": "TAccumulate",
+              "PinAttribute": {
+                "Help": "Accumulator seed value.",
+                "ImportedHelp": "<param name=\"seed\">Accumulator seed value.</param>"
+              },
+              "DotNetName": "seed"
+            },
+            {
+              "TypeFullName": "System.Func<TAccumulate, TSource, TAccumulate>",
+              "PinAttribute": {
+                "Help": "Accumulation function to apply to the current accumulation value and each element of the sequence.",
+                "ImportedHelp": "<param name=\"accumulator\">Accumulation function to apply to the current accumulation value and each element of the sequence.</param>"
+              },
+              "DotNetName": "accumulator"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<TAccumulate>",
+            "PinAttribute": {
+              "Help": "Sequence with all intermediate accumulation values resulting from scanning the sequence.",
+              "ImportedHelp": "<returns>Sequence with all intermediate accumulation values resulting from scanning the sequence.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Scan"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Share",
+            "Category": "Collections.Sequence",
+            "Help": "Creates a buffer with a shared view over the source sequence, causing each enumerator to fetch the next element from the source sequence.TSource: Source sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.Share``1(System.Collections.Generic.IEnumerable{``0})\">\r\n  <summary>\r\n            Creates a buffer with a shared view over the source sequence, causing each enumerator to fetch the next element from the source sequence.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <returns>Buffer enabling each enumerator to retrieve elements from the shared source sequence.</returns>\r\n  <example>\r\n            var rng = Enumerable.Range(0, 10).Share();\r\n            \r\n            var e1 = rng.GetEnumerator();    // Both e1 and e2 will consume elements from\r\n            var e2 = rng.GetEnumerator();    // the source sequence.\r\n            \r\n            Assert.IsTrue(e1.MoveNext());\r\n            Assert.AreEqual(0, e1.Current);\r\n            \r\n            Assert.IsTrue(e1.MoveNext());\r\n            Assert.AreEqual(1, e1.Current);\r\n            \r\n            Assert.IsTrue(e2.MoveNext());    // e2 \"steals\" element 2\r\n            Assert.AreEqual(2, e2.Current);\r\n            \r\n            Assert.IsTrue(e1.MoveNext());    // e1 can't see element 2\r\n            Assert.AreEqual(3, e1.Current);\r\n            </example>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Linq.IBuffer<TSource>",
+            "PinAttribute": {
+              "Help": "Buffer enabling each enumerator to retrieve elements from the shared source sequence.",
+              "ImportedHelp": "<returns>Buffer enabling each enumerator to retrieve elements from the shared source sequence.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Share"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SkipLast",
+            "Category": "Collections.Sequence",
+            "Help": "Bypasses a specified number of contiguous elements from the end of the sequence and returns the remaining elements.TSource: Source sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.SkipLast``1(System.Collections.Generic.IEnumerable{``0},System.Int32)\">\r\n  <summary>\r\n            Bypasses a specified number of contiguous elements from the end of the sequence and returns the remaining elements.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <param name=\"count\">The number of elements to skip from the end of the sequence before returning the remaining elements.</param>\r\n  <returns>Sequence bypassing the specified number of elements counting from the end of the source sequence.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The number of elements to skip from the end of the sequence before returning the remaining elements.",
+                "ImportedHelp": "<param name=\"count\">The number of elements to skip from the end of the sequence before returning the remaining elements.</param>"
+              },
+              "DotNetName": "count"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+            "PinAttribute": {
+              "Help": "Sequence bypassing the specified number of elements counting from the end of the source sequence.",
+              "ImportedHelp": "<returns>Sequence bypassing the specified number of elements counting from the end of the source sequence.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "SkipLast"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TakeLast",
+            "Category": "Collections.Sequence",
+            "Help": "Returns a specified number of contiguous elements from the end of the sequence.TSource: Source sequence element type.\r\n",
+            "ImportedHelp": "<member name=\"M:System.Linq.EnumerableEx.TakeLast``1(System.Collections.Generic.IEnumerable{``0},System.Int32)\">\r\n  <summary>\r\n            Returns a specified number of contiguous elements from the end of the sequence.\r\n            </summary>\r\n  <typeparam name=\"TSource\">Source sequence element type.</typeparam>\r\n  <param name=\"source\">Source sequence.</param>\r\n  <param name=\"count\">The number of elements to take from the end of the sequence.</param>\r\n  <returns>Sequence with the specified number of elements counting from the end of the source sequence.</returns>\r\n</member>"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+              "PinAttribute": {
+                "Help": "Source sequence.",
+                "ImportedHelp": "<param name=\"source\">Source sequence.</param>"
+              },
+              "DotNetName": "source"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "PinAttribute": {
+                "Help": "The number of elements to take from the end of the sequence.",
+                "ImportedHelp": "<param name=\"count\">The number of elements to take from the end of the sequence.</param>"
+              },
+              "DotNetName": "count"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerable<TSource>",
+            "PinAttribute": {
+              "Help": "Sequence with the specified number of elements counting from the end of the source sequence.",
+              "ImportedHelp": "<returns>Sequence with the specified number of elements counting from the end of the source sequence.</returns>"
+            },
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "TakeLast"
+        }
+      ],
+      "DotNetName": "System.Linq.EnumerableEx"
+    }
+  ],
+  "DotNetName": "System.Interactive, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+}

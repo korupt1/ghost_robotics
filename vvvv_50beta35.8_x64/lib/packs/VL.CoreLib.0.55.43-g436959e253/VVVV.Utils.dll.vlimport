@@ -1,0 +1,643 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "GestureBeginNotification",
+        "Category": "IO.Gesture",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.GestureBeginNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GestureDevice",
+        "Category": "IO.Gesture",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Empty",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Empty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Notifications",
+            "ShowCategory": true
+          },
+          "DotNetName": "Notifications"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.GestureDevice"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GestureEndNotification",
+        "Category": "IO.Gesture",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.GestureEndNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GestureNotification",
+        "Category": "IO.Gesture",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ExtraArguments",
+            "ShowCategory": true
+          },
+          "DotNetName": "ExtraArguments"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Flags",
+            "ShowCategory": true
+          },
+          "DotNetName": "Flags"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GestureDeviceID",
+            "ShowCategory": true
+          },
+          "DotNetName": "GestureDeviceID"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Id",
+            "ShowCategory": true
+          },
+          "DotNetName": "Id"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsGestureBegin",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsGestureBegin"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsGestureEnd",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsGestureEnd"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsGesturePan",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsGesturePan"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsGesturePressAndTap",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsGesturePressAndTap"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsGestureRotate",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsGestureRotate"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsGestureTwoFingerTap",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsGestureTwoFingerTap"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsGestureZoom",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsGestureZoom"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Kind",
+            "ShowCategory": true
+          },
+          "DotNetName": "Kind"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SequenceId",
+            "ShowCategory": true
+          },
+          "DotNetName": "SequenceId"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.GestureNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GestureNotificationKind",
+        "Category": "IO.Gesture",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "GestureBegin"
+          },
+          "DotNetName": "GestureBegin"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GestureEnd"
+          },
+          "DotNetName": "GestureEnd"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GesturePan"
+          },
+          "DotNetName": "GesturePan"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GesturePressAndTap"
+          },
+          "DotNetName": "GesturePressAndTap"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GestureRotate"
+          },
+          "DotNetName": "GestureRotate"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GestureTwoFingerTap"
+          },
+          "DotNetName": "GestureTwoFingerTap"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GestureZoom"
+          },
+          "DotNetName": "GestureZoom"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.GestureNotificationKind"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GesturePanNotification",
+        "Category": "IO.Gesture"
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.GesturePanNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GesturePressAndTapNotification",
+        "Category": "IO.Gesture"
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.GesturePressAndTapNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GestureRotateNotification",
+        "Category": "IO.Gesture"
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.GestureRotateNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GestureTwoFingerTapNotification",
+        "Category": "IO.Gesture"
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.GestureTwoFingerTapNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GestureZoomNotification",
+        "Category": "IO.Gesture"
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.GestureZoomNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "KeyCodeNotification",
+        "Category": "IO.Keyboard",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "KeyCode"
+          },
+          "DotNetName": "KeyCode"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.KeyCodeNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "KeyDownNotification",
+        "Category": "IO.Keyboard",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.KeyDownNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "KeyNotification",
+        "Category": "IO.Keyboard",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "IsDeviceLost"
+          },
+          "DotNetName": "IsDeviceLost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsKeyDown"
+          },
+          "DotNetName": "IsKeyDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsKeyPress"
+          },
+          "DotNetName": "IsKeyPress"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsKeyUp"
+          },
+          "DotNetName": "IsKeyUp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Kind"
+          },
+          "DotNetName": "Kind"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.KeyNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "KeyNotificationKind",
+        "Category": "IO.Keyboard",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.KeyNotificationKind"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "KeyPressNotification",
+        "Category": "IO.Keyboard",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "KeyChar"
+          },
+          "DotNetName": "KeyChar"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.KeyPressNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "KeyUpNotification",
+        "Category": "IO.Keyboard",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.KeyUpNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "KeyboardDevice",
+        "Category": "IO.Keyboard",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Empty",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Empty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Notifications"
+          },
+          "DotNetName": "KeyNotifications"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PressedModifiers"
+          },
+          "DotNetName": "Modifiers"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.Keyboard"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseButtonNotification",
+        "Category": "IO.Mouse",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Buttons"
+          },
+          "DotNetName": "Buttons"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.MouseButtonNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseClickNotification",
+        "Category": "IO.Mouse",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ClickCount"
+          },
+          "DotNetName": "ClickCount"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.MouseClickNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseDevice",
+        "Category": "IO.Mouse",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Empty",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Empty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Notifications"
+          },
+          "DotNetName": "MouseNotifications"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PressedButtons",
+            "Help": "The currently pressed mouse buttons.",
+            "ImportedHelp": "<member name=\"P:VVVV.Utils.IO.Mouse.PressedButtons\">\r\n  <summary>\r\n            The currently pressed mouse buttons.\r\n            </summary>\r\n</member>"
+          },
+          "DotNetName": "PressedButtons"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.Mouse"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseDownNotification",
+        "Category": "IO.Mouse",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.MouseDownNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseMoveNotification",
+        "Category": "IO.Mouse",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.MouseMoveNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseNotification",
+        "Category": "IO.Mouse",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "IsMouseClick"
+          },
+          "DotNetName": "IsMouseClick"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsMouseDown"
+          },
+          "DotNetName": "IsMouseDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsMouseMove"
+          },
+          "DotNetName": "IsMouseMove"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsMouseUp"
+          },
+          "DotNetName": "IsMouseUp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsMouseWheel"
+          },
+          "DotNetName": "IsMouseWheel"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Kind"
+          },
+          "DotNetName": "Kind"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.MouseNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseNotificationKind",
+        "Category": "IO.Mouse",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.MouseNotificationKind"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseUpNotification",
+        "Category": "IO.Mouse",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.MouseUpNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MouseWheelNotification",
+        "Category": "IO.Mouse",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "WheelDelta"
+          },
+          "DotNetName": "WheelDelta"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.MouseWheelNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "TouchDevice",
+        "Category": "IO.Touch",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Empty",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Empty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Notifications",
+            "ShowCategory": true
+          },
+          "DotNetName": "Notifications"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.TouchDevice"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "TouchDownNotification",
+        "Category": "IO.Touch",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.TouchDownNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "TouchMoveNotification",
+        "Category": "IO.Touch",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.TouchMoveNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "TouchNotification",
+        "Category": "IO.Touch",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Id"
+          },
+          "DotNetName": "Id"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsTouchDown"
+          },
+          "DotNetName": "IsTouchDown"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsTouchMove"
+          },
+          "DotNetName": "IsTouchMove"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsTouchUp"
+          },
+          "DotNetName": "IsTouchUp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Kind"
+          },
+          "DotNetName": "Kind"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Primary"
+          },
+          "DotNetName": "Primary"
+        }
+      ],
+      "DotNetName": "VVVV.Utils.IO.TouchNotification"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "TouchNotificationKind",
+        "Category": "IO.Touch",
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.TouchNotificationKind"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "TouchUpNotification",
+        "Category": "IO.Touch",
+        "Hidden": true,
+        "IsImmutable": true
+      },
+      "Members": [],
+      "DotNetName": "VVVV.Utils.IO.TouchUpNotification"
+    }
+  ],
+  "DotNetName": "VVVV.Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+}

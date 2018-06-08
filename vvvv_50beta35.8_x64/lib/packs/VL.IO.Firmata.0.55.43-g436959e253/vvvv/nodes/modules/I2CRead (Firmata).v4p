@@ -1,0 +1,207 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.107.dtd" >
+   <PATCH nodename="C:\Work\vvvv-private\public-vl\VL.IO.Firmata\vvvv\nodes\modules\I2CRead (Firmata).v4p" systemname="I2CRead (Firmata)" filename="C:\Work\vl-testpacks\VL.Firmata\vvvv\nodes\modules\I2CRead (Firmata).v4p" scrollx="0" scrolly="0">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2745" top="630" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2745" top="630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Address">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1785" top="630" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1785" top="630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Register">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="270" top="630" width="795" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="270" top="630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Num Bytes to Read|">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Enum2Ord (Enumerations)" nodename="Enum2Ord (Enumerations)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2775" top="2580" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enum" visible="1">
+   </PIN>
+   <PIN pinname="Ord Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NULL (Enumerations)" nodename="NULL (Enumerations)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="3705" top="2565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enum" slicecount="1" visible="1" values="Firmata.I2CAddressMode">
+   </PIN>
+   <PIN pinname="Receive" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="5" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="4635" top="630" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4635" top="630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|7 bit|">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Address Mode|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="6" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="2925" top="2040" width="2115" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2925" top="2040" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="FirmataI2CAddressModes">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Num Bytes to Read">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Register">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Ord Value" dstnodeid="7" dstpinname="Address Mode">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read">
+   </PIN>
+   <BOUNDS type="Box" left="6540" top="630" width="465" height="525">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6540" top="630" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Do Read">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="3" dstpinname="Enum">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output Enum" dstnodeid="4" dstpinname="Enum">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="4" dstpinname="Receive">
+   </LINK>
+   <BOUNDS type="Window" left="10500" top="4395" width="10230" height="5775">
+   </BOUNDS>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="14" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1935" top="4485" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1935" top="4485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="34.101.0">
+   </PACK>
+   <NODE systemname="Enum2Ord (Enumerations)" nodename="Enum2Ord (Enumerations)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="7260" top="2010" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enum" visible="1">
+   </PIN>
+   <PIN pinname="Ord Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NULL (Enumerations)" nodename="NULL (Enumerations)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="8190" top="1995" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enum" slicecount="1" visible="1" values="Firmata.I2CAddressMode">
+   </PIN>
+   <PIN pinname="Receive" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="16" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="7245" top="630" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7245" top="630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="READ_ONCE">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="15" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="7410" top="1470" width="2115" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7410" top="1470" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="FirmataI2CReadModes">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output Enum" dstnodeid="18" dstpinname="Enum">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output Enum" dstnodeid="17" dstpinname="Enum">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Output Enum" dstnodeid="17" dstpinname="Receive">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Ord Value" dstnodeid="7" dstpinname="Read Mode">
+   </LINK>
+   <INFO author="" description="Encodes I2C Read request." tags="sysex">
+   </INFO>
+   <NODE systemname="I2CReadEncoder (Firmata Internal)" filename="..\vl\VVVV.Devices.Firmata.vl" nodename="I2CReadEncoder (Firmata Internal)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="1935" top="3765" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Num Bytes to Read">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Register">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Ord Value" dstnodeid="24" dstpinname="Read Mode">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Ord Value" dstnodeid="24" dstpinname="Address Mode">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Address">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Do Read">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Result" dstnodeid="14" dstpinname="Input Node">
+   </LINK>
+   <PACK Name="dx11" Version="0.7.2">
+   </PACK>
+   </PATCH>

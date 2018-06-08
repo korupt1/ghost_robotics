@@ -1,0 +1,123 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
+   <PATCH nodename="C:\Users\Andrej\Dropbox\KinectHitboxes_tracker_dx11_v3.2b\subpatches\_uitemp.v4p" systemname="_uitemp" filename="C:\Users\Andrej\Dropbox\KinectHitboxes_tracker_dx11_v2.9a\subpatches\_uitemp.v4p" locked="0">
+   <BOUNDS height="11925" left="4170" top="1185" type="Window" width="23790">
+   </BOUNDS>
+   <NODE nodename="IOBOX (VALUE ADVANCED)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="1116" top="276" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1116" top="276" width="5508" height="2808">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="54" values="0.92,0.77,1.4,0.55,0.78,1.25,2.34,1.52,1.91,0.24,0.61,0.4475,2.34,1.52,2.3575,0.24,0.61,0.4475,2.34,1.52,2.805,0.24,0.61,0.4475,2.34,1.52,3.2525,0.24,0.61,0.4475,2.51,1.66,-0.19,0.92,0.98,0.82,2.24,0.29,0.29,0.68,0.45,0.75,1.64,0.57,1.21,0.56,0.5,2.1,1.13,1.34,5.85,2.34,1.51,0.68">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="XYZWHD">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="m">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBOX (STRING)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8016" top="276" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8016" top="276" width="1248" height="2784">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|OSC Address|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Input String" slicecount="9" encoded="0" values="/box1,/box2,/box3,/box4,/box5,/box6,/box7,/box8,/box9">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBOX (VALUE ADVANCED)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6636" top="276" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6636" top="276" width="1260" height="2808">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="9" values="0.42,0.42,0.42,0.42,0.42,0.42,0.42,0.42,0.42">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Coliding points|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBOX (VALUE ADVANCED)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="9324" top="276" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9324" top="276" width="588" height="2832">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Changes only|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="9" values="0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="9" values="0,0,0,0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBOX (VALUE ADVANCED)" componentmode="InABox" id="110" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" width="100" height="100" left="276" top="276">
+   </BOUNDS>
+   <BOUNDS type="Box" width="816" height="2808" left="276" top="276">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Active">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBOX (STRING)" componentmode="InABox" id="1237" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8013" top="3405" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8013" top="3405" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|OSC addresses output|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="1237" dstpinname="Input String">
+   </LINK>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
+   <PACK Name="imagepack" Version="0.1.0">
+   </PACK>
+   </PATCH>

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="UgNhnAFWJBNMjmnblzVmcm" Version="0.55">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <NugetDependency Id="KA8dLDh8Rk8QdweJ5YIfJ5" Location="VL.Core" Version="0.36.54-alpha-ge7023a82a5" />
+  <NugetDependency Id="Q4GG73D9yFaLx0ENOUXTA9" Location="VL.CoreLib" Version="0.36.54-alpha-ge7023a82a5" />
+  <PlatformDependency Id="GSEclzYm66fL65ms9Oa54N" Location="./TDx.TDxInput.dll.vlimport" />
+  <Patch Id="QqooYSTlltMNcXpOPtUdIS">
+    <Canvas Id="CP8H6Mp8xFkPiJEtDJIZLl" BordersChecked="false">
+      <Canvas Id="Cx8S5woZY5jQaRbWhw5qPY" Name="Vector3Utils" Position="100,200" DefaultCategory="Devices.SpaceMouse" BordersChecked="false">
+        <!--
+
+    ************************ ToVector3 (AngleAxis) ************************
+
+-->
+        <Node Name="ToVector3 (AngleAxis)" Bounds="231,191,294,210" Id="CYSjh2pwpXEQCUdmhahBkC">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="COdgKtnP4bNOGkCu9G9Eoa" IsGeneric="true">
+            <Pin Id="CK3iTpDG39FQME7bTvtdQF" Name="IAngleAxis" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="TDx.TDxInput" LastSymbolSource="TDxInput.dll" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="IAngleAxis" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="GVtKmESnf9WLprv69Z8qTm" Name="Rotation" Kind="OutputPin" />
+            <Pin Id="EaAxCz87PWyQGh5Wb7SqAr" Name="Angle" Kind="OutputPin" />
+            <Node Bounds="307,252,20,13" Id="O3ECvCRFR4NNptcLvq6ak0">
+              <p:NodeReference LastCategoryFullName="TDx.TDxInput.IAngleAxis" LastSymbolSource="TDxInput.dll">
+                <Choice Kind="OperationNode" Name="Y" />
+                <CategoryReference Kind="Category" Name="IAngleAxis" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="PdvZrOUNmaEOgKr5YvdRBh" Name="Input" Kind="InputPin" />
+              <Pin Id="Laee8jn8r3WL97yWxOnZjX" Name="Output" Kind="OutputPin" />
+              <Pin Id="VmOwAPEMXxJNojw1q09vPk" Name="Y" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="249,255,20,13" Id="VNw6Cc0K078QXLMbDTyWeM">
+              <p:NodeReference LastCategoryFullName="TDx.TDxInput.IAngleAxis" LastSymbolSource="TDxInput.dll">
+                <Choice Kind="OperationNode" Name="X" />
+                <CategoryReference Kind="Category" Name="IAngleAxis" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="OnqrDHngXyEOfpJ5vGNuOD" Name="Input" Kind="InputPin" />
+              <Pin Id="LTnsfSZHxG5PKQoOj4N8XB" Name="Output" Kind="OutputPin" />
+              <Pin Id="N7KdLKvbI59PvCx9BCWJYs" Name="X" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="378,253,20,13" Id="EU9Q69hMHnuNw4zi76SumY">
+              <p:NodeReference LastCategoryFullName="TDx.TDxInput.IAngleAxis" LastSymbolSource="TDxInput.dll">
+                <Choice Kind="OperationNode" Name="Z" />
+                <CategoryReference Kind="Category" Name="IAngleAxis" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="O2Nz0aJDYuFOqMToptGl5S" Name="Input" Kind="InputPin" />
+              <Pin Id="GxWCcP1J368LH0yCPL1Ocx" Name="Output" Kind="OutputPin" />
+              <Pin Id="Cn69zfHjMN7M7kn2pjbbEI" Name="Z" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="457,288,56,22" Id="FAubr5gZjN8PmYmzcHUQFI">
+              <p:NodeReference LastCategoryFullName="Primitive.Float64" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="ToFloat32" />
+                <CategoryReference Kind="Category" Name="Float64" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="IPSrtSWB24OPvNMfcDxIw6" Name="Input" Kind="InputPin" />
+              <Pin Id="OjhcBB6XLdIM3l3EEdJzNb" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="376,302,56,22" Id="LA5cIsxKYXXQWv94PvANzh">
+              <p:NodeReference LastCategoryFullName="Primitive.Float64" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="ToFloat32" />
+                <CategoryReference Kind="Category" Name="Float64" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="G5OTwigK0SqLCM2m87fMlp" Name="Input" Kind="InputPin" />
+              <Pin Id="O2W9apfdMAzMPCOT9dVsGt" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="457,249,35,13" Id="UERTrG3mMBbQVco1IBBS4Y">
+              <p:NodeReference LastCategoryFullName="TDx.TDxInput.IAngleAxis" LastSymbolSource="TDxInput.dll">
+                <CategoryReference Kind="Category" Name="IAngleAxis" />
+                <Choice Kind="OperationNode" Name="Angle" />
+              </p:NodeReference>
+              <Pin Id="OX4UuU2LDh0N2Dx6a9YeVq" Name="Input" Kind="InputPin" />
+              <Pin Id="EqlVRa8mPczQT5F4gvNE9Z" Name="Output" Kind="OutputPin" />
+              <Pin Id="PMY9siM2CcvPB8LzYEQs2z" Name="Angle" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="309,301,56,22" Id="DRlbLfBPHJINjUYjYlGyuz">
+              <p:NodeReference LastCategoryFullName="Primitive.Float64" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="ToFloat32" />
+                <CategoryReference Kind="Category" Name="Float64" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="MPjKOtunRGGPQ4LEAmtgWI" Name="Input" Kind="InputPin" />
+              <Pin Id="P1i7jwVYYx7LMNomUqDJaM" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="243,300,56,22" Id="Sk6mnV2TxjoN3JRUvctIvB">
+              <p:NodeReference LastCategoryFullName="Primitive.Float64" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="ToFloat32" />
+                <CategoryReference Kind="Category" Name="Float64" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="DJJ18cfLciHNcIaeL4E2bT" Name="Input" Kind="InputPin" />
+              <Pin Id="UbJHTYMQrllPoCiXdrUSAP" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="295,352,39,13" Id="OoVM5z9yd8nQYp2QYPxVoa">
+              <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="SharpDX.Mathematics.dll">
+                <Choice Kind="OperationNode" Name="Vector (Join)" />
+                <CategoryReference Kind="Category" Name="Vector3" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="VlCFVrN7ruZPdhlEYapD65" Name="X" Kind="InputPin" />
+              <Pin Id="OgKOFQBJN1xP1XjfC8GWmB" Name="Y" Kind="InputPin" />
+              <Pin Id="Lp1JmXaKjNiLgmOvlpv3V1" Name="Z" Kind="InputPin" />
+              <Pin Id="DlD2J4ZiWZiMEyRoGFux5d" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="DvUJ10utQyzN4NvNLV4LoU" Bounds="247,208" />
+            <ControlPoint Id="TJjeJG9oYcWO1zgaMZUwbH" Bounds="292,376" />
+            <ControlPoint Id="TcRvdx6Fj4RPTNVQ2hMJmS" Bounds="454,376" />
+            <Link Id="LQUPZXFmP6FM3A4XRtyDHE" Ids="DvUJ10utQyzN4NvNLV4LoU,OnqrDHngXyEOfpJ5vGNuOD" />
+            <Link Id="JpXbejjHWaOLiEpTfy0xVX" Ids="DlD2J4ZiWZiMEyRoGFux5d,TJjeJG9oYcWO1zgaMZUwbH" />
+            <Link Id="SMteJZ1vfgWQdyBNOGX64I" Ids="OjhcBB6XLdIM3l3EEdJzNb,TcRvdx6Fj4RPTNVQ2hMJmS" />
+            <Link Id="QpWAUi4bLXeNSbwWXjQITE" Ids="Laee8jn8r3WL97yWxOnZjX,O2Nz0aJDYuFOqMToptGl5S" />
+            <Link Id="LFZ3q0HHYRLNeSs164wj11" Ids="VmOwAPEMXxJNojw1q09vPk,MPjKOtunRGGPQ4LEAmtgWI" />
+            <Link Id="K4MbBcmpFHkMyAXvCw33hJ" Ids="LTnsfSZHxG5PKQoOj4N8XB,PdvZrOUNmaEOgKr5YvdRBh" />
+            <Link Id="BSeCGJzRfTvK9iXWkb6ORP" Ids="N7KdLKvbI59PvCx9BCWJYs,DJJ18cfLciHNcIaeL4E2bT" />
+            <Link Id="LYpQsv7JX3WN1P7W4ihdKT" Ids="GxWCcP1J368LH0yCPL1Ocx,OX4UuU2LDh0N2Dx6a9YeVq" />
+            <Link Id="UGbqkWx2yL3MjhOYhAc4Up" Ids="Cn69zfHjMN7M7kn2pjbbEI,G5OTwigK0SqLCM2m87fMlp" />
+            <Link Id="DWruzvh0NXrPdcdle95Bgs" Ids="O2W9apfdMAzMPCOT9dVsGt,Lp1JmXaKjNiLgmOvlpv3V1" />
+            <Link Id="PXFA7gssxzNPWO0MZibVYP" Ids="PMY9siM2CcvPB8LzYEQs2z,IPSrtSWB24OPvNMfcDxIw6" />
+            <Link Id="CKIcMHH9w5KNHvLpgyiep8" Ids="P1i7jwVYYx7LMNomUqDJaM,OgKOFQBJN1xP1XjfC8GWmB" />
+            <Link Id="DSHWWF1f7RINVpYWMoFaxQ" Ids="UbJHTYMQrllPoCiXdrUSAP,VlCFVrN7ruZPdhlEYapD65" />
+            <Link Id="B0PKD9waneXNYG3OKfyxDX" Ids="CK3iTpDG39FQME7bTvtdQF,DvUJ10utQyzN4NvNLV4LoU" IsHidden="true" />
+            <Link Id="BVqh4VtZfxENQNtS4m7Xpm" Ids="TJjeJG9oYcWO1zgaMZUwbH,GVtKmESnf9WLprv69Z8qTm" IsHidden="true" />
+            <Link Id="FQHvrZpNou9MEys07WJExP" Ids="TcRvdx6Fj4RPTNVQ2hMJmS,EaAxCz87PWyQGh5Wb7SqAr" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ToVector3 ************************
+
+-->
+        <Node Name="ToVector3" Bounds="-62,192,215,208" Id="VZmp7TDbH1lLgAQ9AOn7Lm">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="OHmKONR0ObwNjKI5YyIZa8" IsGeneric="true">
+            <Pin Id="Gr8Ix3h5HfBPxQ3ENF3Fvv" Name="IVector3D" Kind="InputPin" />
+            <Pin Id="VCQwFDs4mwsLrpPmAyohnE" Name="Vector3" Kind="OutputPin" />
+            <Node Bounds="-46,253,20,13" Id="G4vRJOg6IpKNt32IArI0zD">
+              <p:NodeReference LastCategoryFullName="TDx.TDxInput.IVector3D" LastSymbolSource="TDxInput.dll">
+                <CategoryReference Kind="Category" Name="IVector3D" />
+                <Choice Kind="OperationNode" Name="X" />
+              </p:NodeReference>
+              <Pin Id="GNbcbtRQnUrPrCFnSWzvZV" Name="Input" Kind="InputPin" />
+              <Pin Id="USndf3kSMUsNYRvtMGNGXV" Name="Output" Kind="OutputPin" />
+              <Pin Id="UYhmNgT4lUuM0aZaP8aRub" Name="X" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="28,249,20,13" Id="MtHQEDBkPa1MRQidycVs2f">
+              <p:NodeReference LastCategoryFullName="TDx.TDxInput.IVector3D" LastSymbolSource="TDxInput.dll">
+                <CategoryReference Kind="Category" Name="IVector3D" />
+                <Choice Kind="OperationNode" Name="Y" />
+              </p:NodeReference>
+              <Pin Id="Hufx5KvaspJNZ0pcD7xKiF" Name="Input" Kind="InputPin" />
+              <Pin Id="TLx8UoIOnbPPAuHM0YI55Y" Name="Output" Kind="OutputPin" />
+              <Pin Id="F6V3nRh201aMZN5QNC0WnF" Name="Y" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="20,293,56,22" Id="RQp8avNXrUEP0RsZyqHGxg">
+              <p:NodeReference LastCategoryFullName="Primitive.Float64" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="ToFloat32" />
+                <CategoryReference Kind="Category" Name="Float64" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="Oq0DSxyeyzOPUhS5X9T64w" Name="Input" Kind="InputPin" />
+              <Pin Id="H5wI42AeXrvQXzinVhpBmw" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="-46,292,56,22" Id="OLedHazpTIiPRFmaoSo4BQ">
+              <p:NodeReference LastCategoryFullName="Primitive.Float64" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="ToFloat32" />
+                <CategoryReference Kind="Category" Name="Float64" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="JgrXVjtsBOULnflkXrFpdo" Name="Input" Kind="InputPin" />
+              <Pin Id="DIRdYAayqdMM3RV1OY2IRH" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="86,294,56,22" Id="UxgVIRbpZQ1LULeF8BzjLZ">
+              <p:NodeReference LastCategoryFullName="Primitive.Float64" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="OperationNode" Name="ToFloat32" />
+                <CategoryReference Kind="Category" Name="Float64" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="F8KaUdqS7YeLnDtrX5hXww" Name="Input" Kind="InputPin" />
+              <Pin Id="H7lARtyc4rdM5qHxqjA5nN" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="86,249,20,13" Id="KnzGWIAYpUHP4OkfYguJMJ">
+              <p:NodeReference LastCategoryFullName="TDx.TDxInput.IVector3D" LastSymbolSource="TDxInput.dll">
+                <CategoryReference Kind="Category" Name="IVector3D" />
+                <Choice Kind="OperationNode" Name="Z" />
+              </p:NodeReference>
+              <Pin Id="LL1jVMZkRFfPW2EcpyLkaw" Name="Input" Kind="InputPin" />
+              <Pin Id="TP1KKLpe6fXMEkksik7nZP" Name="Output" Kind="OutputPin" />
+              <Pin Id="DbLPN9rGKrTOD1OFcbtONa" Name="Z" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="4,332,39,13" Id="KnehqOTUNJQL8g5I7x5HD5">
+              <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="SharpDX.Mathematics.dll">
+                <Choice Kind="OperationNode" Name="Vector (Join)" />
+                <CategoryReference Kind="Category" Name="Vector3" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="GG11hjLN44uLFwJlejRQM4" Name="X" Kind="InputPin" />
+              <Pin Id="TEwPaMHlYlqOD3B5Y0Jf9v" Name="Y" Kind="InputPin" />
+              <Pin Id="PJKFfmF2QUMNAmCS3s6GuO" Name="Z" Kind="InputPin" />
+              <Pin Id="R3HrEUKBiVQPh0nzP5zZSu" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="N2Bx5JO7JObMMmdrjlV3Zm" Bounds="-46,209" />
+            <ControlPoint Id="C8lt7CXcvYxN5yjENuCkyP" Bounds="0,382" />
+            <Link Id="ISVfQxW7O6hQCXSUAKqtjt" Ids="N2Bx5JO7JObMMmdrjlV3Zm,GNbcbtRQnUrPrCFnSWzvZV" />
+            <Link Id="UxdnxpNjfnBNZMFPWtIICo" Ids="R3HrEUKBiVQPh0nzP5zZSu,C8lt7CXcvYxN5yjENuCkyP" />
+            <Link Id="UgZz12qV8WPQFIJOAuOeqp" Ids="USndf3kSMUsNYRvtMGNGXV,Hufx5KvaspJNZ0pcD7xKiF" />
+            <Link Id="TNRTxm0lTxNP7NxmZ5UlFC" Ids="UYhmNgT4lUuM0aZaP8aRub,JgrXVjtsBOULnflkXrFpdo" />
+            <Link Id="IWiMQaLSvwJPFHCBfAFkr1" Ids="TLx8UoIOnbPPAuHM0YI55Y,LL1jVMZkRFfPW2EcpyLkaw" />
+            <Link Id="LC9rn7irppLN9iqdBsAW3l" Ids="F6V3nRh201aMZN5QNC0WnF,Oq0DSxyeyzOPUhS5X9T64w" />
+            <Link Id="SCNBsKzNzKMLTYkBx7HJTp" Ids="H5wI42AeXrvQXzinVhpBmw,TEwPaMHlYlqOD3B5Y0Jf9v" />
+            <Link Id="MmVzU4sJX5jPbmHOeD68D9" Ids="DIRdYAayqdMM3RV1OY2IRH,GG11hjLN44uLFwJlejRQM4" />
+            <Link Id="HyCWSVgtY7eN73KYlMFGif" Ids="H7lARtyc4rdM5qHxqjA5nN,PJKFfmF2QUMNAmCS3s6GuO" />
+            <Link Id="T1kgjllRxnjNvlEVsrL6rn" Ids="DbLPN9rGKrTOD1OFcbtONa,F8KaUdqS7YeLnDtrX5hXww" />
+            <Link Id="AzjaMULNxb4QRZZ7PyXy8u" Ids="Gr8Ix3h5HfBPxQ3ENF3Fvv,N2Bx5JO7JObMMmdrjlV3Zm" IsHidden="true" />
+            <Link Id="I3CODwDTC1NOpdE3LU7Df8" Ids="C8lt7CXcvYxN5yjENuCkyP,VCQwFDs4mwsLrpPmAyohnE" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+  </Patch>
+</Document>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VVVV.Audio.MIDI</name>
+    </assembly>
+    <members>
+        <member name="T:VVVV.Audio.MIDI.TimeArrayIterator">
+            <summary>
+            Iterates thru an array of time values
+            </summary>
+        </member>
+        <member name="M:VVVV.Audio.MIDI.TimeArrayIterator.Init(System.Double)">
+            <summary>
+            Move the index to the time just before the input time
+            </summary>
+            <param name="currentTime"></param>
+        </member>
+        <member name="M:VVVV.Audio.MIDI.TimeArrayIterator.Next">
+            <summary>
+            Returns the next time value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VVVV.Audio.MIDI.TimeArrayIterator.HasTime(System.Double)">
+            <summary>
+            True if the current index time is lower than the input time
+            </summary>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VVVV.Audio.MIDI.MidiSequence.Init(System.Double)">
+            <summary>
+            Sets the sequence to the current beat, called just before first Read() call
+            </summary>
+        </member>
+        <member name="M:VVVV.Audio.MIDI.MidiSequence.Read(System.Double[],System.Int32)">
+            <summary>
+            Called from the sequence signal just befor the audio buffer will be calculated
+            </summary>
+            <param name="beatBuffer">Array of beat time values for each sample of the next buffer</param>
+            <param name="count"></param>
+        </member>
+        <member name="M:VVVV.Audio.MIDI.MidiSequenceSignal.NotifyProcess(System.Int32)">
+            <summary>
+            Called just befor the audio buffer will be calculated
+            </summary>
+            <param name="count"></param>
+        </member>
+        <member name="T:VVVV.Nodes.MidiMergeNode">
+            <summary>
+            Description of MidiMergeNode.
+            </summary>
+        </member>
+    </members>
+</doc>

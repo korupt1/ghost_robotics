@@ -1,0 +1,44 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "MessagePattern",
+        "Category": "OSC"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "pattern"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsMatch"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "part"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsMatch"
+        }
+      ],
+      "DotNetName": "OSC.MessagePattern"
+    }
+  ],
+  "DotNetName": "OSCSharp, Version=0.36.0.0, Culture=neutral, PublicKeyToken=null"
+}

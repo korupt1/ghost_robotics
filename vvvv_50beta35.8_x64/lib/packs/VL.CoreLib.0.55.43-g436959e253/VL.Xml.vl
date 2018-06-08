@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="DekR8FeSWkILGLRrir5wUO" Version="0.55">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <NugetDependency Id="Vg2xnOsXbR6NxQKaXKgckn" Location="VL.Core" Version="0.35.33" />
+  <Patch Id="ASFIym52stPN1PuCUAOytF">
+    <Canvas Id="POMRF0wHzKKMGFQzoh2Gxa" DefaultCategory="XML" BordersChecked="false">
+      <!--
+
+    ************************ FileReader (XML) ************************
+
+-->
+      <Node Name="FileReader (XML)" Category="IO" Bounds="564,159" Id="QNhNuElWAyLMrvV1vo1WHO">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Info Summary="Reads a .xml text file and returns an XDocument" />
+        <Patch Id="UwnirSuOcoxMyTXCxM5W4g">
+          <Canvas Id="SZonOKVbpaePfU2YTRE9p6" BordersChecked="false">
+            <Node Name="Try (3Outputs)" Bounds="256,471,258,80" Id="VbFYkXLTwuxOtNWZkEfkph">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.dll">
+                <Choice Kind="ProcessNode" Name="Try (3Outputs)" />
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              </p:NodeReference>
+              <Pin Id="QEmYUy24TrtPR8knp1VI0W" Name="Default Output 1" Kind="InputPin" />
+              <Pin Id="QKM1mfTpHlnMKmRSERSdk1" Name="Default Output 2" Kind="InputPin" />
+              <Pin Id="UReKpoPXF8yLHGdZxmftiz" Name="Default Output 3" Kind="InputPin" />
+              <Pin Id="LjfkJJuAnsDP2ZDYZumZ33" Name="Output 1" Kind="OutputPin" />
+              <Pin Id="TNuzCylG1O2MXkOsS0TyCM" Name="Output 2" Kind="OutputPin" />
+              <Pin Id="Cmi5poyROoGLLhrIJi2r1S" Name="Output 3" Kind="OutputPin" />
+              <Pin Id="CjSsBNf31vyOeM9hjsRFG3" Name="Success" Kind="OutputPin" />
+              <Pin Id="KqG4LiGkJ7TPNipg3FmdkS" Name="Error Message" Kind="OutputPin" />
+              <Patch Id="OBPa5mqlO6RNKfbGfo2EPs">
+                <Patch Id="PTbDBqfs965MgT2Zy4BwOC" Name="Create" />
+                <Patch Id="Q70AR73R9roMTJLLOqYFq9" Name="Try" ParticipatingElements="OugJhkLfB7EPC9ab8qYfM2,KSU6yoZc42qLDwXWiJfndZ">
+                  <Pin Id="A2Xri2em278PEnpd6jkNCN" Name="Data" Kind="OutputPin" />
+                  <Pin Id="QvJCGzcaBqNPXYs2F6m25L" Name="Root" Kind="OutputPin" />
+                  <Pin Id="NvjcuLP6IDxLsIa6ym98SQ" Name="On Completed" Kind="OutputPin" />
+                </Patch>
+                <ControlPoint Id="JVtzSh4hherLF94qmo9xqt" Bounds="262,540" />
+                <ControlPoint Id="AFuTAT0hP8kPFQxz5zAYoe" Bounds="360,544" />
+                <ControlPoint Id="T7Ags9tDkjnPiGIlV47vbu" Bounds="424,540" />
+                <Node Bounds="292,494,137,13" Id="RzGUZsqIorfOoC9hKD4YTP">
+                  <p:NodeReference LastCategoryFullName="XML.Dev" LastSymbolSource="VL.Xml.Dev.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessNode" Name="FileReader (XML NoErrorHandling)" />
+                  </p:NodeReference>
+                  <Pin Id="DuQ5DH4oViQPXWTpK3u3sN" Name="File Path" Kind="InputPin" />
+                  <Pin Id="Hv215lIjAkPQH2LVAMpxvE" Name="Encoding" Kind="InputPin" />
+                  <Pin Id="Sn7cEmjR2W5NQh8aObLa1d" Name="Options" Kind="InputPin" />
+                  <Pin Id="EF9opV3W1MyPawul9oQzbT" Name="Read" Kind="ApplyPin" />
+                  <Pin Id="TfymY7e63oFLUn16jPiHr2" Name="Data" Kind="OutputPin" />
+                  <Pin Id="Mnl9lCqp3GaOZ89H0xBG0M" Name="Root" Kind="OutputPin" />
+                  <Pin Id="Ibu3l4rpnCBM78FQBtr8Qg" Name="On Completed" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="Ds9VQhWqjNqMZ76hGY9ohL" Bounds="258,590" />
+            <ControlPoint Id="DqxZL1Wk0S4MSufjpRy3PL" Bounds="328,590" />
+            <ControlPoint Id="QJDlPq0UF8KLGJZIqBOojn" Bounds="396,590" />
+            <ControlPoint Id="LAAPyBGlasfO8fRXe26ajQ" Bounds="492,590" />
+            <ControlPoint Id="JfsbUVQOEsnMZEjr0Yi1IH" Bounds="552,590" />
+            <Pad Id="JojkiWA8ubnNYjhIUEe40R" Bounds="295,441">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="FhtrHpyP0LKLab5UkpQeXE" Bounds="470,441">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="Jb5eNGFNbauP4Hkamx3C8x" Bounds="296,404" />
+            <ControlPoint Id="Fjkfz4ONgMlPYvLYdytzgr" Bounds="472,404" />
+            <Pad Id="J2FMZfvYNSgNqmJSMgK4bM" Bounds="354,441">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="IOk4dQieLsAQaweciNFQKE" Bounds="401,441">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="HqyBYAndaP4QAB61qzoQlw" Bounds="356,404" />
+            <ControlPoint Id="Hnr9bCBTliHMb8KH60kTIl" Bounds="420,404" />
+          </Canvas>
+          <Patch Id="PFoTkb2SBeNPhYvuA4Y2cx" Name="Create" IsExplicitlyHidden="true" />
+          <Patch Id="P7XkRB1h1AKMr2DmxXK9Qx" Name="Update" IsExplicitlyHidden="true">
+            <Pin Id="HXkjWwEVPesPt9DYN3GmT8" Name="Data" Kind="OutputPin" />
+            <Pin Id="Mz2Oouj9EsGN0HOFmkxEM0" Name="Root" Kind="OutputPin" />
+            <Pin Id="C1upwZuktrMMljWOzaqpGG" Name="On Completed" Kind="OutputPin" />
+            <Pin Id="SE7KvJu2YVEL5QOwVtQ0L7" Name="Success" Kind="OutputPin" />
+            <Pin Id="CFKDj9VTUGqNptiKDMUPyl" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="UDkTPA5OLb2LenSy0wGlhG" Name="File Path" Kind="InputPin" />
+            <Pin Id="ATo4PvKkxyLPWeytrfya0g" Name="Read" Kind="InputPin" />
+            <Pin Id="Pld73TPjXJAM05PBmzv7Wy" Name="Encoding" Kind="InputPin" />
+            <Pin Id="FhGcRW4ftngPz4pnsnK3JH" Name="Options" Kind="InputPin" />
+          </Patch>
+          <ProcessDefinition Id="FrZd4q9rYZlOScr4kxCLDV">
+            <Fragment Id="QW4FfQtp1n1Oqbr2ABulJO" Patch="PFoTkb2SBeNPhYvuA4Y2cx" Enabled="true" />
+            <Fragment Id="OpPBMzaOrywMpds3WRiJUP" Patch="P7XkRB1h1AKMr2DmxXK9Qx" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="D4BodogwaliLnwpDdeBzGZ" Ids="JVtzSh4hherLF94qmo9xqt,A2Xri2em278PEnpd6jkNCN" IsHidden="true" />
+          <Link Id="J83BiaPzc0sMA0jRbN5H1c" Ids="AFuTAT0hP8kPFQxz5zAYoe,QvJCGzcaBqNPXYs2F6m25L" IsHidden="true" />
+          <Link Id="VuswLEGiB0YLXEccDNFJhr" Ids="T7Ags9tDkjnPiGIlV47vbu,NvjcuLP6IDxLsIa6ym98SQ" IsHidden="true" />
+          <Link Id="MhVVr5PaXfuMgz7DmubuBh" Ids="TfymY7e63oFLUn16jPiHr2,JVtzSh4hherLF94qmo9xqt" />
+          <Link Id="Af56cBk6pJmPelrDoN0jy6" Ids="Mnl9lCqp3GaOZ89H0xBG0M,AFuTAT0hP8kPFQxz5zAYoe" />
+          <Link Id="SuY56wxe6VrMVoFklwIiCI" Ids="Ibu3l4rpnCBM78FQBtr8Qg,T7Ags9tDkjnPiGIlV47vbu" />
+          <Link Id="HYemjw3SqtfPR1NaCNEUbq" Ids="LjfkJJuAnsDP2ZDYZumZ33,Ds9VQhWqjNqMZ76hGY9ohL" />
+          <Link Id="De56dtdsWcVP8YC2kL075W" Ids="Ds9VQhWqjNqMZ76hGY9ohL,HXkjWwEVPesPt9DYN3GmT8" IsHidden="true" />
+          <Link Id="VxNC8yTBEeFMD75TVnkgRi" Ids="TNuzCylG1O2MXkOsS0TyCM,DqxZL1Wk0S4MSufjpRy3PL" />
+          <Link Id="H1Y4UNVGRGSP7QZcvOGtlk" Ids="DqxZL1Wk0S4MSufjpRy3PL,Mz2Oouj9EsGN0HOFmkxEM0" IsHidden="true" />
+          <Link Id="PiIdzprpOrbL0kuxBihDFA" Ids="Cmi5poyROoGLLhrIJi2r1S,QJDlPq0UF8KLGJZIqBOojn" />
+          <Link Id="CyGbZn1eovGLka6G1r5TQI" Ids="QJDlPq0UF8KLGJZIqBOojn,C1upwZuktrMMljWOzaqpGG" IsHidden="true" />
+          <Link Id="UpE1XmRlzx5Pbqkt440Qxs" Ids="CjSsBNf31vyOeM9hjsRFG3,LAAPyBGlasfO8fRXe26ajQ" />
+          <Link Id="GQPGxmyqeOWPBF372cgbkG" Ids="LAAPyBGlasfO8fRXe26ajQ,SE7KvJu2YVEL5QOwVtQ0L7" IsHidden="true" />
+          <Link Id="VXbCJtQCFr1OvdJ7Yd0maR" Ids="KqG4LiGkJ7TPNipg3FmdkS,JfsbUVQOEsnMZEjr0Yi1IH" />
+          <Link Id="VnU5GGIuQbrM1PMUZ24bIX" Ids="JfsbUVQOEsnMZEjr0Yi1IH,CFKDj9VTUGqNptiKDMUPyl" IsHidden="true" />
+          <Link Id="OugJhkLfB7EPC9ab8qYfM2" Ids="JojkiWA8ubnNYjhIUEe40R,DuQ5DH4oViQPXWTpK3u3sN" />
+          <Link Id="KSU6yoZc42qLDwXWiJfndZ" Ids="FhtrHpyP0LKLab5UkpQeXE,EF9opV3W1MyPawul9oQzbT" />
+          <Link Id="KcUEaVGhL1KMkM6zrXlkrE" Ids="Jb5eNGFNbauP4Hkamx3C8x,JojkiWA8ubnNYjhIUEe40R" />
+          <Link Id="IKZY3OtGNiyObAmwrCBcuN" Ids="UDkTPA5OLb2LenSy0wGlhG,Jb5eNGFNbauP4Hkamx3C8x" IsHidden="true" />
+          <Link Id="GjwKd2hKVPPNGFFzbpEVVG" Ids="Fjkfz4ONgMlPYvLYdytzgr,FhtrHpyP0LKLab5UkpQeXE" />
+          <Link Id="GpvVfV0RAclP5P3iWIUC1H" Ids="ATo4PvKkxyLPWeytrfya0g,Fjkfz4ONgMlPYvLYdytzgr" IsHidden="true" />
+          <Link Id="DvHMuur7P3fLcoHI1jaqAO" Ids="Pld73TPjXJAM05PBmzv7Wy,HqyBYAndaP4QAB61qzoQlw" IsHidden="true" />
+          <Link Id="LTmhXGRkbrHPVCI6cXQyj3" Ids="FhGcRW4ftngPz4pnsnK3JH,Hnr9bCBTliHMb8KH60kTIl" IsHidden="true" />
+          <Link Id="DbdjzFwr2uHLeJL6vUZsdB" Ids="Hnr9bCBTliHMb8KH60kTIl,IOk4dQieLsAQaweciNFQKE" />
+          <Link Id="U3HehLfZbHbLjoClmoOKSh" Ids="IOk4dQieLsAQaweciNFQKE,Sn7cEmjR2W5NQh8aObLa1d" />
+          <Link Id="FyaHIPMClFvPQFRT9uVYTA" Ids="HqyBYAndaP4QAB61qzoQlw,J2FMZfvYNSgNqmJSMgK4bM" />
+          <Link Id="UI7x6CWNuojMMQjE67gfMV" Ids="J2FMZfvYNSgNqmJSMgK4bM,Hv215lIjAkPQH2LVAMpxvE" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ FileReader (JSON) ************************
+
+-->
+      <Node Name="FileReader (JSON)" Category="IO" Bounds="544,262" Id="HtqIZTlqS6bOeCG7V6NBG3">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Info Summary="Reads a .json text file and returns an XDocument" Tags="async,load" />
+        <Patch Id="OOVzqFcRXeKQKRWNKxcRfN" IsGeneric="true">
+          <Canvas Id="Fgh1pj9NLy7LEpQ6M0nuS7" BordersChecked="false">
+            <Pad Id="KFhnuoy6jq4N0x0sISOKc0" Bounds="122,383">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="S5LttOMYBRePiJmbKH3ISs" Bounds="122,340" />
+            <ControlPoint Id="GrlgAjXDkwjMwDJVZLCspP" Bounds="102,534" />
+            <ControlPoint Id="LgvfdtdRhvBPWJ08qaFVUj" Bounds="180,536" />
+            <ControlPoint Id="HVdQDy7zwkxOFaSsljJ6cE" Bounds="230,536" />
+            <ControlPoint Id="FXJ5QUdNB9VPYPMquxE1rO" Bounds="318,536" />
+            <ControlPoint Id="CgSnKQpug0SP83ErNIpjyo" Bounds="426,538" />
+            <Node Name="Try (3Outputs)" Bounds="100,406,240,78" Id="TXFfV0saf0FO7W56CgomrJ">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.dll">
+                <Choice Kind="ProcessNode" Name="Try (3Outputs)" />
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              </p:NodeReference>
+              <Pin Id="TD6d8ugfns7Ng2oJ0lZJME" Name="Default Output 1" Kind="InputPin" />
+              <Pin Id="OSxC1iYe1UKPppp7qJ2nfu" Name="Default Output 2" Kind="InputPin" />
+              <Pin Id="NlgKKmjZ5mNLxiKGzJdbkn" Name="Default Output 3" Kind="InputPin" />
+              <Pin Id="CLCegGQqGFPQMiJqGb8mbC" Name="Output 1" Kind="OutputPin" />
+              <Pin Id="ChLMxDeKE5AQCB0u0FtbfN" Name="Output 2" Kind="OutputPin" />
+              <Pin Id="BXtpZ9pFvEOMgRuzEWZ3Aq" Name="Output 3" Kind="OutputPin" />
+              <Pin Id="ONHCyArWiNbQJf3ZlhlelD" Name="Success" Kind="OutputPin" />
+              <Pin Id="IGEVRQT0950Ngo8zX85us7" Name="Error Message" Kind="OutputPin" />
+              <Patch Id="CnYepHB6KGLNqIRBXB3vm4">
+                <Patch Id="KWuIaYWnlhJO1tV4yQf4Xp" Name="Create" />
+                <Patch Id="UhxfIt5vG2oPT6nIkA3TZz" Name="Try" ParticipatingElements="CrrPR90fhJzLtxxQqDWBn8">
+                  <Pin Id="PXdbu96NyH8Omi7LSoNev5" Name="Data" Kind="OutputPin" />
+                  <Pin Id="CrVmQIB5RHNM1h40angkrc" Name="Root" Kind="OutputPin" />
+                  <Pin Id="MLMaRPXaiTsQKmzNAmPkwW" Name="On Completed" Kind="OutputPin" />
+                </Patch>
+                <ControlPoint Id="KaXBhuozrsLOR5T0AqDrCe" Bounds="106,476" />
+                <ControlPoint Id="V4u6vAvaA7fL11vQttpYCu" Bounds="196,476" />
+                <ControlPoint Id="F0lMMKJ5zlDLltTn20yUg2" Bounds="250,476" />
+                <Node Bounds="120,429,85,13" Id="RGrav4kl2TFQWWIXO576mr">
+                  <p:NodeReference LastCategoryFullName="XML.Dev" LastSymbolSource="VL.Xml.Dev.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessNode" Name="FileReader (JSON NoErrorHandling)" />
+                  </p:NodeReference>
+                  <Pin Id="KPmBFBw0CqPLB4Aa0jvoGC" Name="File Path" Kind="InputPin" />
+                  <Pin Id="Ee8CdUPcuLWOwo9uh35mMb" Name="Encoding" Kind="InputPin" />
+                  <Pin Id="G1V3QTsKpAaOInCjMKwGPT" Name="Deserialize Root Element Name" Kind="InputPin" />
+                  <Pin Id="DeaY3TNP50MNVOzXOZ2oSw" Name="Write Array Attribute" Kind="InputPin" />
+                  <Pin Id="RlpPhLHiMu5LNm49qgCpV1" Name="Read" Kind="ApplyPin" />
+                  <Pin Id="Jm4URwJdWIYQGXnf4J9Y2E" Name="Data" Kind="OutputPin" />
+                  <Pin Id="LC8yueLPUEHLQX4BFRRxza" Name="Root" Kind="OutputPin" />
+                  <Pin Id="NvMEzdQTE4jOgUj71CTe6P" Name="On Completed" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="DeGkbsJr6cjMsdQ0sJROCE" Bounds="480,340" />
+            <Pad Id="AkFlGSE0zhcO92LVy5pvTJ" Bounds="259,383">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="TA5MxvR3I7hL6TDv5Sj5vn" Bounds="193,383">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="OaKkgev3qhpMeva2ZaPuyt" Bounds="234,383">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="B8NENJThtNpPXgPj85VTAL" Bounds="256,340" />
+            <ControlPoint Id="QOQQlge3oZqMdFmFnAxlPl" Bounds="368,340" />
+            <Pad Id="FrRwfrWh8nnPjz6QxabJsX" Bounds="159,383">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="UgUr8c8VS1VNdmbUNmZ3qE" Bounds="186,340" />
+          </Canvas>
+          <Patch Id="SP7PxyfFaS2PAW5BuNoCqI" Name="Create" IsExplicitlyHidden="true" />
+          <Patch Id="VUf33S9KZ7TL1fy1IsqEvY" Name="Update" IsExplicitlyHidden="true">
+            <Pin Id="CRoACl8nqNRNdqFqlLl9El" Name="File Path" Kind="InputPin" />
+            <Pin Id="QKQeBBDVkpbORHPIAhThed" Name="Data" Kind="OutputPin" />
+            <Pin Id="M95UZTWydRNNxxBXx4JSLq" Name="Root" Kind="OutputPin" />
+            <Pin Id="CiijWfvOBXUL0AYCfHcibL" Name="On Completed" Kind="OutputPin" />
+            <Pin Id="R6Sl0SK8trrOYF3Zveb03V" Name="Success" Kind="OutputPin" />
+            <Pin Id="D7n70o7gk79NKUK1HG6aTD" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="JUWWTF7ArPwLcOh8Ut2W8a" Name="Read" Kind="InputPin" />
+            <Pin Id="CgDeA7gQFldN3j8ClyXatv" Name="Root Element Name" Kind="InputPin" />
+            <Pin Id="Oiy3wQTt8IdOqlJk9HXKHJ" Name="Write Array Attribute" Kind="InputPin" />
+            <Pin Id="JXJ0DVUfSryQHMYqJwAZzw" Name="Encoding" Kind="InputPin" />
+          </Patch>
+          <ProcessDefinition Id="CNVuUb6ILlqNBUAnQdAxXy">
+            <Fragment Id="NkhnzSDyNe3Oqlg9F1A1UK" Patch="SP7PxyfFaS2PAW5BuNoCqI" Enabled="true" />
+            <Fragment Id="GW0oyDaMeixOPdN51l83UM" Patch="VUf33S9KZ7TL1fy1IsqEvY" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="H4FAjUr9yaqL0MdvXrnBKk" Ids="CRoACl8nqNRNdqFqlLl9El,S5LttOMYBRePiJmbKH3ISs" IsHidden="true" />
+          <Link Id="DaiDOPIS6Z8Popo6VLjzo6" Ids="S5LttOMYBRePiJmbKH3ISs,KFhnuoy6jq4N0x0sISOKc0" />
+          <Link Id="CrrPR90fhJzLtxxQqDWBn8" Ids="KFhnuoy6jq4N0x0sISOKc0,KPmBFBw0CqPLB4Aa0jvoGC" />
+          <Link Id="TKyOgkXrJnZQA4PIT3wA53" Ids="GrlgAjXDkwjMwDJVZLCspP,QKQeBBDVkpbORHPIAhThed" IsHidden="true" />
+          <Link Id="H3yXTMmhknnQEaz0nBVYvx" Ids="LgvfdtdRhvBPWJ08qaFVUj,M95UZTWydRNNxxBXx4JSLq" IsHidden="true" />
+          <Link Id="DnmxFeaZaMiN5TuRwycaaD" Ids="HVdQDy7zwkxOFaSsljJ6cE,CiijWfvOBXUL0AYCfHcibL" IsHidden="true" />
+          <Link Id="VSjyANdIpbwPRvGlshuMvU" Ids="FXJ5QUdNB9VPYPMquxE1rO,R6Sl0SK8trrOYF3Zveb03V" IsHidden="true" />
+          <Link Id="QG74XHc3BJtLI49jSE4Lcm" Ids="CgSnKQpug0SP83ErNIpjyo,D7n70o7gk79NKUK1HG6aTD" IsHidden="true" />
+          <Link Id="NmKu2sb8z4XOHStfaX50yd" Ids="KaXBhuozrsLOR5T0AqDrCe,PXdbu96NyH8Omi7LSoNev5" IsHidden="true" />
+          <Link Id="NeVxAhgDR4zPELU75W5XNF" Ids="V4u6vAvaA7fL11vQttpYCu,CrVmQIB5RHNM1h40angkrc" IsHidden="true" />
+          <Link Id="GEV99ZQzH6ZNZ14kblBN4C" Ids="F0lMMKJ5zlDLltTn20yUg2,MLMaRPXaiTsQKmzNAmPkwW" IsHidden="true" />
+          <Link Id="ASMxwiFmgmtP8sM2CE456u" Ids="Jm4URwJdWIYQGXnf4J9Y2E,KaXBhuozrsLOR5T0AqDrCe" />
+          <Link Id="TwCtsZEJkeVOcHGOp0KB66" Ids="LC8yueLPUEHLQX4BFRRxza,V4u6vAvaA7fL11vQttpYCu" />
+          <Link Id="VXRrWcuoXwpNsZHlWea7aZ" Ids="NvMEzdQTE4jOgUj71CTe6P,F0lMMKJ5zlDLltTn20yUg2" />
+          <Link Id="NsytWu9MQR1LWS68DtXfsg" Ids="CLCegGQqGFPQMiJqGb8mbC,GrlgAjXDkwjMwDJVZLCspP" />
+          <Link Id="I9boj9Pd1BJOglcf1SnYWN" Ids="ChLMxDeKE5AQCB0u0FtbfN,LgvfdtdRhvBPWJ08qaFVUj" />
+          <Link Id="MjKmFOf024OLBzfElQFue0" Ids="BXtpZ9pFvEOMgRuzEWZ3Aq,HVdQDy7zwkxOFaSsljJ6cE" />
+          <Link Id="QNvPeSDETZWN6SAIkfvMsQ" Ids="ONHCyArWiNbQJf3ZlhlelD,FXJ5QUdNB9VPYPMquxE1rO" />
+          <Link Id="R3CSCbe3lakOOSKTTxG6Ck" Ids="IGEVRQT0950Ngo8zX85us7,CgSnKQpug0SP83ErNIpjyo" />
+          <Link Id="VxEruZsLlzWLvg5JJRJkeS" Ids="JUWWTF7ArPwLcOh8Ut2W8a,DeGkbsJr6cjMsdQ0sJROCE" IsHidden="true" />
+          <Link Id="Gr401CkPFWQP6225Nd8Gt3" Ids="DeGkbsJr6cjMsdQ0sJROCE,AkFlGSE0zhcO92LVy5pvTJ" />
+          <Link Id="EMxko8YpE3yMhxM7cOhPEU" Ids="AkFlGSE0zhcO92LVy5pvTJ,RlpPhLHiMu5LNm49qgCpV1" />
+          <Link Id="PMPX49p68XqNKoEDxRzArO" Ids="OaKkgev3qhpMeva2ZaPuyt,DeaY3TNP50MNVOzXOZ2oSw" />
+          <Link Id="GmME1mgFjBrL26fP93B1g8" Ids="TA5MxvR3I7hL6TDv5Sj5vn,G1V3QTsKpAaOInCjMKwGPT" />
+          <Link Id="HLdYud4L9FRLXgAhfgsDxa" Ids="B8NENJThtNpPXgPj85VTAL,TA5MxvR3I7hL6TDv5Sj5vn" />
+          <Link Id="BPPZaWk4NeUOaLSZ0LoaMw" Ids="CgDeA7gQFldN3j8ClyXatv,B8NENJThtNpPXgPj85VTAL" IsHidden="true" />
+          <Link Id="J90RZKSon22OTbrhE8K7Ab" Ids="QOQQlge3oZqMdFmFnAxlPl,OaKkgev3qhpMeva2ZaPuyt" />
+          <Link Id="CCa5WWF34OkQBGZoyJ7iGK" Ids="Oiy3wQTt8IdOqlJk9HXKHJ,QOQQlge3oZqMdFmFnAxlPl" IsHidden="true" />
+          <Link Id="Q1OhT1B0ojXOC74RHcvAnK" Ids="JXJ0DVUfSryQHMYqJwAZzw,UgUr8c8VS1VNdmbUNmZ3qE" IsHidden="true" />
+          <Link Id="POsdMNI5JSwQRnAdXxF3ZZ" Ids="UgUr8c8VS1VNdmbUNmZ3qE,FrRwfrWh8nnPjz6QxabJsX" />
+          <Link Id="PtMjTVOhyU3QKjuDDlsSiK" Ids="FrRwfrWh8nnPjz6QxabJsX,Ee8CdUPcuLWOwo9uh35mMb" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ FileWriter (XML) ************************
+
+-->
+      <Node Name="FileWriter (XML)" Category="IO" Bounds="563,102" Id="LoPibiKqNZxLPfkCkb1D8Z">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Info Summary="Takes an XDocument or XElement and writes it to a .xml text file asynchronously" />
+        <Patch Id="E5NXo4dEuefNIrzncCqXQA" IsGeneric="true">
+          <Canvas Id="Vsdbl5zF2kVODf5WNXMQ4P" BordersChecked="false">
+            <Pad Id="LazP26bVBCANL9BOGeGSkD" Bounds="358,488">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="R5kcckyqmFxMahFedqYTMO" Bounds="379,488">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="IJkz6kxiF8oLxIcsZu2o5V" Bounds="500,485">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="B8YNLf3fPNVLQSkUbf2m71" Bounds="354,442" />
+            <ControlPoint Id="PILvs22BrGXMUjd0WM1wUN" Bounds="434,444" />
+            <ControlPoint Id="BLNeWBq5MP7Mt3L5uXd23Q" Bounds="564,442" />
+            <ControlPoint Id="FWo1AWnnrr8Nrmeq7ak3R2" Bounds="328,646" />
+            <ControlPoint Id="QDXzQyfhChTM7ExCXNVvKM" Bounds="410,650" />
+            <ControlPoint Id="ReoaypqyzhINS7mG96nHH1" Bounds="478,650" />
+            <ControlPoint Id="G07RrUbqOUcO9cXdxkfh6v" Bounds="550,646" />
+            <Pad Id="L2cAFskU1pmLaycN1e7WJf" Bounds="532,486">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="M5CPzPxj1ZOLF0wAO3hJ2R" Bounds="660,442" />
+            <Node Name="Try (2Outputs)" Bounds="330,510,184,71" Id="K3AUv9Wqer9NyUtU3QULtl">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.dll">
+                <Choice Kind="ProcessNode" Name="Try (2Outputs)" />
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              </p:NodeReference>
+              <Pin Id="RpLGNeDworHO75cXNRrYGu" Name="Default Output 1" Kind="InputPin" />
+              <Pin Id="SaNSWnVuh7BMV5FIz4e130" Name="Default Output 2" Kind="InputPin" />
+              <Pin Id="HFuW64reOkVOqH7h2eztsq" Name="Output 1" Kind="OutputPin" />
+              <Pin Id="QuizBTTfEfcP6HNXVte4bF" Name="Output 2" Kind="OutputPin" />
+              <Pin Id="VPEsqyTcLzrO55sTaOq8J2" Name="Success" Kind="OutputPin" />
+              <Pin Id="NOyOeP2LGGULeL8TkyZdu5" Name="Error Message" Kind="OutputPin" />
+              <Patch Id="OPjTIibxyQwPGLh2YUAZgq">
+                <Patch Id="TYtare9P5MjPCUMMs7j5wc" Name="Create" />
+                <Patch Id="JpDvK0Fue7qMj88Fu3xV7u" Name="Try" ParticipatingElements="QtkhT1g7tgIPilqfX2xmXM,EfGUoUhznj7Lb2C319BKPk,KLcRzmQIcbNPaJMJw6kdSo,SFrbzQmIqh6QULePc74c6F">
+                  <Pin Id="UelqhlYOhpgMTkgiTZo1MT" Name="On Completed" Kind="OutputPin" />
+                  <Pin Id="UX5QNBMOBT5LdSED8GKYo7" Name="In Progress" Kind="OutputPin" />
+                </Patch>
+                <ControlPoint Id="DcqsZjdYOVMMDd8vfQCsDX" Bounds="336,576" />
+                <ControlPoint Id="OMHtQuzo0kINHc9B1au7V0" Bounds="442,574" />
+                <Node Bounds="354,533,85,11" Id="PPQU0rK0Le0QWZYg1qe046">
+                  <p:NodeReference LastCategoryFullName="XML.Dev" LastSymbolSource="VL.Xml.Dev.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessNode" Name="FileWriter (XML NoErrorHandling)" />
+                  </p:NodeReference>
+                  <Pin Id="IyvQlMbKODvLk1bWU3sBym" Name="XDocument" Kind="InputPin" />
+                  <Pin Id="Oe9Z9vtYEqjOriDVh3F53N" Name="File Path" Kind="InputPin" />
+                  <Pin Id="Qyk2IMToYF7OQ73UOLg5Ti" Name="SaveOptions" Kind="InputPin" />
+                  <Pin Id="KgfANLFc3MuM0Ypojwk6ci" Name="Write" Kind="ApplyPin" />
+                  <Pin Id="U3UeneM0RYVP50iGRY3bRM" Name="On Completed" Kind="OutputPin" />
+                  <Pin Id="SWnAZOutrTDMii0tTKfqBk" Name="In Progress" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+          </Canvas>
+          <Patch Id="U81sCkkE0RyOYA6tis4e6t" Name="Create" IsExplicitlyHidden="true" />
+          <Patch Id="AQpdfpkGfr4Qdxu6XFzVGM" Name="Update" IsExplicitlyHidden="true">
+            <Pin Id="AONtTJ5WmLNLFfeQmyPDGX" Name="Data" Kind="InputPin" />
+            <Pin Id="NOJfxHMcZI2QS7F5CKx26M" Name="File Path" Kind="InputPin" />
+            <Pin Id="DXsLfvZnUmMOEnNZgMvZns" Name="SaveOptions" Kind="InputPin" />
+            <Pin Id="S0AiUb0r35dNbaJKowezJU" Name="On Completed" Kind="OutputPin" />
+            <Pin Id="P4kQRD77NzGLMzBBpG468w" Name="In Progress" Kind="OutputPin" />
+            <Pin Id="Fr3oFCfC6e6QIZZLipGz13" Name="Success" Kind="OutputPin" />
+            <Pin Id="Pias6Mi1g7NNcFvFliHYN6" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="GoIC3Ju4TiCOGVatB0mrCu" Name="Write" Kind="InputPin" />
+          </Patch>
+          <ProcessDefinition Id="Qz5rJuTSfhqP75Arq0oEHA">
+            <Fragment Id="VmnIbEx7CPjNZ7EwHcE6II" Patch="U81sCkkE0RyOYA6tis4e6t" Enabled="true" />
+            <Fragment Id="Tv5zTeVyVG5QFdXiK7x1vT" Patch="AQpdfpkGfr4Qdxu6XFzVGM" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="VBZZn53uTkfLGSnNYK1PPR" Ids="AONtTJ5WmLNLFfeQmyPDGX,B8YNLf3fPNVLQSkUbf2m71" IsHidden="true" />
+          <Link Id="IpxiHn3X8waLmdn3UtRsv5" Ids="NOJfxHMcZI2QS7F5CKx26M,PILvs22BrGXMUjd0WM1wUN" IsHidden="true" />
+          <Link Id="TI1sjQFgKImNCN5te5XRQv" Ids="DXsLfvZnUmMOEnNZgMvZns,BLNeWBq5MP7Mt3L5uXd23Q" IsHidden="true" />
+          <Link Id="QtkhT1g7tgIPilqfX2xmXM" Ids="LazP26bVBCANL9BOGeGSkD,IyvQlMbKODvLk1bWU3sBym" />
+          <Link Id="U9XDf91jQuHNx2HjVlRHvS" Ids="PILvs22BrGXMUjd0WM1wUN,R5kcckyqmFxMahFedqYTMO" />
+          <Link Id="EfGUoUhznj7Lb2C319BKPk" Ids="R5kcckyqmFxMahFedqYTMO,Oe9Z9vtYEqjOriDVh3F53N" />
+          <Link Id="AMTRD9vqSLbPZsbcH01uri" Ids="BLNeWBq5MP7Mt3L5uXd23Q,IJkz6kxiF8oLxIcsZu2o5V" />
+          <Link Id="KLcRzmQIcbNPaJMJw6kdSo" Ids="IJkz6kxiF8oLxIcsZu2o5V,Qyk2IMToYF7OQ73UOLg5Ti" />
+          <Link Id="Kl3EBjCiZg6NBYrh5siebu" Ids="FWo1AWnnrr8Nrmeq7ak3R2,S0AiUb0r35dNbaJKowezJU" IsHidden="true" />
+          <Link Id="TwbxA0guvMVMuRpt6J8Jw7" Ids="QDXzQyfhChTM7ExCXNVvKM,P4kQRD77NzGLMzBBpG468w" IsHidden="true" />
+          <Link Id="HiWwDsf9FYeNZTNKGN5xyM" Ids="ReoaypqyzhINS7mG96nHH1,Fr3oFCfC6e6QIZZLipGz13" IsHidden="true" />
+          <Link Id="FGemasoTvTQMtMYbJ7P6Bx" Ids="G07RrUbqOUcO9cXdxkfh6v,Pias6Mi1g7NNcFvFliHYN6" IsHidden="true" />
+          <Link Id="MRixVzUi3YPQXb1eOvJvRt" Ids="GoIC3Ju4TiCOGVatB0mrCu,M5CPzPxj1ZOLF0wAO3hJ2R" IsHidden="true" />
+          <Link Id="RSBa6dlr0CoPZ6XWVRH3QU" Ids="M5CPzPxj1ZOLF0wAO3hJ2R,L2cAFskU1pmLaycN1e7WJf" />
+          <Link Id="SFrbzQmIqh6QULePc74c6F" Ids="L2cAFskU1pmLaycN1e7WJf,KgfANLFc3MuM0Ypojwk6ci" />
+          <Link Id="GvljBSnenXgOw7FMKoqkxo" Ids="B8YNLf3fPNVLQSkUbf2m71,LazP26bVBCANL9BOGeGSkD" />
+          <Link Id="RoORvRd9m0JO2GXs54DgMX" Ids="DcqsZjdYOVMMDd8vfQCsDX,UelqhlYOhpgMTkgiTZo1MT" IsHidden="true" />
+          <Link Id="OHjhzXwug5EODH0mmxayIx" Ids="OMHtQuzo0kINHc9B1au7V0,UX5QNBMOBT5LdSED8GKYo7" IsHidden="true" />
+          <Link Id="QoReEtil5MjOHyiIqR5I4G" Ids="U3UeneM0RYVP50iGRY3bRM,DcqsZjdYOVMMDd8vfQCsDX" />
+          <Link Id="UchGfSr4faSOqLUA7MK9yA" Ids="SWnAZOutrTDMii0tTKfqBk,OMHtQuzo0kINHc9B1au7V0" />
+          <Link Id="AN1PABkZVM7LebDyHDx8oh" Ids="NOyOeP2LGGULeL8TkyZdu5,G07RrUbqOUcO9cXdxkfh6v" />
+          <Link Id="Sp5Sd8xXxBmLUbAcpOEkrw" Ids="VPEsqyTcLzrO55sTaOq8J2,ReoaypqyzhINS7mG96nHH1" />
+          <Link Id="IYQV4QzHbzPNT1NXUR9K40" Ids="QuizBTTfEfcP6HNXVte4bF,QDXzQyfhChTM7ExCXNVvKM" />
+          <Link Id="RLS3EV2kszbMebgP3RGPmA" Ids="HFuW64reOkVOqH7h2eztsq,FWo1AWnnrr8Nrmeq7ak3R2" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ FileWriter (JSON) ************************
+
+-->
+      <Node Name="FileWriter (JSON)" Category="IO" Bounds="539,208" Id="UXXMsyuApUlOPGuVaVwVgY">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Info Summary="Takes an XDocument or XElement and writes it to a .json text file asynchronously" />
+        <Patch Id="J2HM6RoK1kpPoaOFUuwGHY" IsGeneric="true">
+          <Canvas Id="LKQ5Vw3eZCiNtDoIr5ykc6" BordersChecked="false">
+            <ControlPoint Id="By5uF7nBX0MLxK7lqF9TPQ" Bounds="274,370" />
+            <ControlPoint Id="Fv75pshyRmWLaltg2jCNjR" Bounds="364,370" />
+            <ControlPoint Id="PbEKEY2qz7hNCT8itZZ7rF" Bounds="612,370" />
+            <ControlPoint Id="U4U0SkchrHwM7gQN0PhABc" Bounds="218,372" />
+            <ControlPoint Id="RejV81xeEqENvX7omXSx0F" Bounds="430,372" />
+            <ControlPoint Id="KkksVFkpplQK9wPsOJdW6Z" Bounds="488,372" />
+            <Node Name="Try (2Outputs)" Bounds="316,444,186,63" Id="RCDfsCn34m7LzY82PWtcYL">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.dll">
+                <Choice Kind="ProcessNode" Name="Try (2Outputs)" />
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              </p:NodeReference>
+              <Pin Id="R0vWWMJ2AF0N4H6n1wXtKh" Name="Default Output 1" Kind="InputPin" />
+              <Pin Id="Ps6PAfNFhzhLH3XtseLaBj" Name="Default Output 2" Kind="InputPin" />
+              <Pin Id="EN2uaH4ofYZOfEQpUvCo2R" Name="Output 1" Kind="OutputPin" />
+              <Pin Id="PNnzEFqrjKmLAly4AJNSxm" Name="Output 2" Kind="OutputPin" />
+              <Pin Id="NZVZcd8AuIGN1tcAcbtBKQ" Name="Success" Kind="OutputPin" />
+              <Pin Id="AokQow8ZlHDM8A6rGZUwZC" Name="Error Message" Kind="OutputPin" />
+              <Patch Id="OCemICLaqIILHtDZW4o8Iv">
+                <Patch Id="InkQG9sPiGqLTASxplLLp1" Name="Create" />
+                <Patch Id="CUUrtkRku3GMGu7sQOwF9h" Name="Try" ParticipatingElements="MltjpP4W1DLOMhHd92xvee,C2bG2jOaMDnMuUQ3AQTW1U,NynSv0qudSDQXOf76Sw85W,GPBLbBCelWWPXc2iHud0lI,JWkgrcIARJcQQQM2CVKJi9,MykbBBL4KGiP893VyBsDkJ">
+                  <Pin Id="OiY5eZbedVaL8f2JU7BLTr" Name="On Completed" Kind="OutputPin" />
+                  <Pin Id="Uh5fOQGZXFXLy9CcZtg6W7" Name="In Progress" Kind="OutputPin" />
+                </Patch>
+                <ControlPoint Id="Elfr8hfWUeaOTbxIxhlKYt" Bounds="330,498" />
+                <ControlPoint Id="Cu8MHevTGcPMXF9yi38zSw" Bounds="430,502" />
+                <Node Bounds="328,467,105,11" Id="GjXU6xDRvGLPWfaV5tSGMx">
+                  <p:NodeReference LastCategoryFullName="XML.Dev" LastSymbolSource="VL.Xml.Dev.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessNode" Name="FileWriter (JSON NoErrorHandling)" />
+                  </p:NodeReference>
+                  <Pin Id="F6us0Kl6g8HMmN05hYKTY6" Name="XNode" Kind="InputPin" />
+                  <Pin Id="MctTHQGIfWTLckqSxaK0Ap" Name="File Path" Kind="InputPin" />
+                  <Pin Id="FA7PtBp9r7COV9niI4Fv5N" Name="Encoding" Kind="InputPin" />
+                  <Pin Id="V51mFWFgmQFN3J5EBERT7w" Name="Indent" Kind="InputPin" />
+                  <Pin Id="QplBKyepsNfOc3acD0Rfwy" Name="Omit Root Object" Kind="InputPin" />
+                  <Pin Id="IcvaojKdg7oMmPwKo9QoCx" Name="Write" Kind="ApplyPin" />
+                  <Pin Id="AedB7bNFCboQcD77wiImtK" Name="On Completed" Kind="OutputPin" />
+                  <Pin Id="F8eYm7rVAhkLnkB6bDpE0C" Name="In Progress" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="ChTmk0HpugqO7C89T4ERKD" Bounds="292,564" />
+            <ControlPoint Id="D9rCaD4YlHhLxtJGdqApQD" Bounds="376,564" />
+            <ControlPoint Id="Hhrjc5ZymiNMA9UubRMTzh" Bounds="444,564" />
+            <ControlPoint Id="QI59MIZynyPMQ0B9aPVwUR" Bounds="504,564" />
+            <Pad Id="Juw9bEqpvm9LZabSmbYuL3" Bounds="442,427">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="RXhG7CfldzwPrr7739uuTg" Bounds="355,426">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="LmP2WMr8xTaOLapGdfNWLz" Bounds="377,426">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="JqXfeFrkrsKOgSvsFa8C9A" Bounds="332,426">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="Mn8UIfYMRcDMJ5yzRBKvyq" Bounds="392,427">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Pad Id="KRHE99umN4vNlKl5eIi0od" Bounds="415,427">
+              <p:ValueBoxSettings />
+            </Pad>
+          </Canvas>
+          <Patch Id="KVN69RK86OWO60FypLkFPT" Name="Create" IsExplicitlyHidden="true" />
+          <Patch Id="OXRBUVfdp8vPfrQAxQoq3g" Name="Update" IsExplicitlyHidden="true">
+            <Pin Id="UiPVY1As55cP3GCCichRgI" Name="File Path" Kind="InputPin" />
+            <Pin Id="S55ZlQfb0fkNJEEZZAgYko" Name="Encoding" Kind="InputPin" />
+            <Pin Id="PTufhPjDPpkMGTeefRPYcY" Name="Write" Kind="InputPin" />
+            <Pin Id="O4Wu6VEo7OaPzoQzJ9wUpB" Name="Data" Kind="InputPin" />
+            <Pin Id="CSssl5rAYEkLtNyEudY7aH" Name="Indent" Kind="InputPin" />
+            <Pin Id="Fwyly2O0Nz4QZe12AQn4wX" Name="Omit Root Object" Kind="InputPin" />
+            <Pin Id="KrFgYcMmHQ0NBC7Qn7Tn3A" Name="On Completed" Kind="OutputPin" />
+            <Pin Id="CP2auxp2iKXOAaYzqUKhHe" Name="In Progress" Kind="OutputPin" />
+            <Pin Id="JRdBALrScnrNyXWZ7IAzRP" Name="Success" Kind="OutputPin" />
+            <Pin Id="VKRB2w1f2piNn0jLgCALfA" Name="Error Message" Kind="OutputPin" />
+          </Patch>
+          <ProcessDefinition Id="T20IzE7FSZwNDh6srGARtN">
+            <Fragment Id="OmoGNksCQfTLCgkECx3ZGz" Patch="KVN69RK86OWO60FypLkFPT" Enabled="true" />
+            <Fragment Id="Ry9d2vGeH0KNKsAp7PK7EF" Patch="OXRBUVfdp8vPfrQAxQoq3g" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="DAFgnMAGZ5CNNLyubDqGFb" Ids="UiPVY1As55cP3GCCichRgI,By5uF7nBX0MLxK7lqF9TPQ" IsHidden="true" />
+          <Link Id="HKQxPZH68XHPgIPQkpHUST" Ids="S55ZlQfb0fkNJEEZZAgYko,Fv75pshyRmWLaltg2jCNjR" IsHidden="true" />
+          <Link Id="FpwiesquJMHOAo6vv7kycH" Ids="PTufhPjDPpkMGTeefRPYcY,PbEKEY2qz7hNCT8itZZ7rF" IsHidden="true" />
+          <Link Id="AVnL9CaX91WPuVLVyKMZog" Ids="O4Wu6VEo7OaPzoQzJ9wUpB,U4U0SkchrHwM7gQN0PhABc" IsHidden="true" />
+          <Link Id="E86oYPo6ncPMNyVrtYzQvG" Ids="CSssl5rAYEkLtNyEudY7aH,RejV81xeEqENvX7omXSx0F" IsHidden="true" />
+          <Link Id="GsFrbWNujkeLoEEeVpiihq" Ids="Fwyly2O0Nz4QZe12AQn4wX,KkksVFkpplQK9wPsOJdW6Z" IsHidden="true" />
+          <Link Id="GLzzpziQ5q5MHiuhXEIILU" Ids="Elfr8hfWUeaOTbxIxhlKYt,OiY5eZbedVaL8f2JU7BLTr" IsHidden="true" />
+          <Link Id="ACHcGDU3yDeOQ9P0tdGL3X" Ids="Cu8MHevTGcPMXF9yi38zSw,Uh5fOQGZXFXLy9CcZtg6W7" IsHidden="true" />
+          <Link Id="FLKJ0Pad8ENQXvcTLfKBkx" Ids="AedB7bNFCboQcD77wiImtK,Elfr8hfWUeaOTbxIxhlKYt" />
+          <Link Id="FrHclLObag0PUxJYjSi0ee" Ids="F8eYm7rVAhkLnkB6bDpE0C,Cu8MHevTGcPMXF9yi38zSw" />
+          <Link Id="T8RvgonQxMzLB9ipx5aQOH" Ids="EN2uaH4ofYZOfEQpUvCo2R,ChTmk0HpugqO7C89T4ERKD" />
+          <Link Id="Dkyxuu7tuAJNqEDXQ9xQCD" Ids="ChTmk0HpugqO7C89T4ERKD,KrFgYcMmHQ0NBC7Qn7Tn3A" IsHidden="true" />
+          <Link Id="UQrqT2kD4yeNc8h6u515yg" Ids="PNnzEFqrjKmLAly4AJNSxm,D9rCaD4YlHhLxtJGdqApQD" />
+          <Link Id="Dlbv9h7fB9lM3kWlykMdPB" Ids="D9rCaD4YlHhLxtJGdqApQD,CP2auxp2iKXOAaYzqUKhHe" IsHidden="true" />
+          <Link Id="URoHNlLB1GwOKJRWamSH3B" Ids="NZVZcd8AuIGN1tcAcbtBKQ,Hhrjc5ZymiNMA9UubRMTzh" />
+          <Link Id="VYsUMSlGNmFLFLi3IeADAF" Ids="Hhrjc5ZymiNMA9UubRMTzh,JRdBALrScnrNyXWZ7IAzRP" IsHidden="true" />
+          <Link Id="E1teDcZgUVPN7olI211Kct" Ids="AokQow8ZlHDM8A6rGZUwZC,QI59MIZynyPMQ0B9aPVwUR" />
+          <Link Id="Og766mFQAoGMocNgsLhC5f" Ids="QI59MIZynyPMQ0B9aPVwUR,VKRB2w1f2piNn0jLgCALfA" IsHidden="true" />
+          <Link Id="TZ78xDOEm56MQJOk7eN7ZX" Ids="PbEKEY2qz7hNCT8itZZ7rF,Juw9bEqpvm9LZabSmbYuL3" />
+          <Link Id="MltjpP4W1DLOMhHd92xvee" Ids="Juw9bEqpvm9LZabSmbYuL3,IcvaojKdg7oMmPwKo9QoCx" />
+          <Link Id="Gzupqz7t2CTParWtujio5Z" Ids="By5uF7nBX0MLxK7lqF9TPQ,RXhG7CfldzwPrr7739uuTg" />
+          <Link Id="C2bG2jOaMDnMuUQ3AQTW1U" Ids="RXhG7CfldzwPrr7739uuTg,MctTHQGIfWTLckqSxaK0Ap" />
+          <Link Id="Lq4nlSb6VO2PglkoYwooA0" Ids="Fv75pshyRmWLaltg2jCNjR,LmP2WMr8xTaOLapGdfNWLz" />
+          <Link Id="NynSv0qudSDQXOf76Sw85W" Ids="LmP2WMr8xTaOLapGdfNWLz,FA7PtBp9r7COV9niI4Fv5N" />
+          <Link Id="C4e9Hoozl4CNKMlr7hvf5C" Ids="U4U0SkchrHwM7gQN0PhABc,JqXfeFrkrsKOgSvsFa8C9A" />
+          <Link Id="GPBLbBCelWWPXc2iHud0lI" Ids="JqXfeFrkrsKOgSvsFa8C9A,F6us0Kl6g8HMmN05hYKTY6" />
+          <Link Id="Gc3UfKSpRbiPrV1w0pkOxO" Ids="RejV81xeEqENvX7omXSx0F,Mn8UIfYMRcDMJ5yzRBKvyq" />
+          <Link Id="JWkgrcIARJcQQQM2CVKJi9" Ids="Mn8UIfYMRcDMJ5yzRBKvyq,V51mFWFgmQFN3J5EBERT7w" />
+          <Link Id="MEVEvJgZLBJOBSQuqlM4zV" Ids="KkksVFkpplQK9wPsOJdW6Z,KRHE99umN4vNlKl5eIi0od" />
+          <Link Id="MykbBBL4KGiP893VyBsDkJ" Ids="KRHE99umN4vNlKl5eIi0od,QplBKyepsNfOc3acD0Rfwy" />
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <PlatformDependency Id="OzM7wcNgusSMXXT2xdxl4J" Location="./System.Xml.Linq.dll.vlimport" IsForward="true" />
+  <DocumentDependency Id="MCcMNwzuD2kPYZKlAzeATR" Location="./VL.CoreLib.vl" />
+  <NugetDependency Id="Iik66dzxDPTNwe9ZBMGsss" Location="VL.DevLib" Version="0.0.711-gc88f9783c4" />
+  <NugetDependency Id="Nc8RAWp8eehOASZe1aWVGX" Location="VL.CoreLib.Experimental" Version="0.0.711-gc88f9783c4" />
+  <DocumentDependency Id="RlWn6ut5nq9QXELjcHUP95" Location="./VL.Xml.Dev.vl" />
+</Document>

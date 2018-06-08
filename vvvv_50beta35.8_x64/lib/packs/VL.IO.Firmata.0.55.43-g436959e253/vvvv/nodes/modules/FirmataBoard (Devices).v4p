@@ -1,0 +1,695 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.5.dtd" >
+   <PATCH nodename="C:\Work\vvvv-private\public-vl\VL.IO.Firmata\vvvv\nodes\modules\FirmataBoard (Devices).v4p" systemname="FirmataBoard (Devices)" filename="C:\Work\vvvv-private\public-vl\VL.IO.Firmata\vvvv\nodes\modules\FirmataBoard (Devices).v4p" scrollx="0" scrolly="1350">
+   <NODE systemname="RS232 (Devices)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="RS232 (Devices)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="480" top="5595" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Port Name" visible="1">
+   </PIN>
+   <PIN pinname="Update Port List" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Baudrate" visible="1">
+   </PIN>
+   <PIN pinname="Connected" visible="1">
+   </PIN>
+   <PIN pinname="DTR Enable" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Do Send" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="On Data" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="810" top="5130" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="810" top="5130" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="57600">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="3" nodename="FrameDelay (Animation)" systemname="FrameDelay (Animation Legacy)">
+   <BOUNDS height="100" left="4230" top="6270" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Delay (Animation)" nodename="Delay (Animation)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="5160" top="7125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Time" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="5" componentmode="Hidden" nodename="TogEdge (Animation)" systemname="TogEdge (Animation)">
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="100" left="4230" top="6675" width="100">
+   </BOUNDS>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="5160" top="7530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5325" top="6600" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5325" top="6600" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Wait for Reset|">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="3990" top="7950" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Raw)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Change (Raw)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="645" top="4575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="11" nodename="OR (Boolean)" systemname="OR (Boolean)">
+   <BOUNDS height="100" left="5205" top="3135" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="16" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Sysex Messages|">
+   </PIN>
+   <BOUNDS type="Box" left="3975" top="810" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3975" top="810" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="OnChange" dstnodeid="1" dstpinname="Do Send" hiddenwhenlocked="0">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Baudrate">
+   </LINK>
+   <NODE id="17" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|DTR Enable|">
+   </PIN>
+   <BOUNDS type="Box" left="5325" top="810" width="435" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5325" top="810" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="1" dstpinname="DTR Enable">
+   </LINK>
+   <NODE id="18" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Update Port List|">
+   </PIN>
+   <BOUNDS type="Box" left="8610" top="855" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8610" top="855" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Update Port List">
+   </LINK>
+   <NODE id="19" systemname="IOBox (Enumerations)" componentmode="InABox" nodename="IOBox (Enumerations)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Port Name|">
+   </PIN>
+   <BOUNDS type="Box" left="10050" top="855" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10050" top="855" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output Enum" dstnodeid="1" dstpinname="Port Name">
+   </LINK>
+   <NODE id="20" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <BOUNDS type="Box" left="11775" top="780" width="465" height="450">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11775" top="780" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Enabled" hiddenwhenlocked="1">
+   </LINK>
+   <NODE id="21" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|On Data|">
+   </PIN>
+   <BOUNDS type="Box" left="5475" top="13440" width="600" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5475" top="13440" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="On Data" dstnodeid="21" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="22" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Connected">
+   </PIN>
+   <BOUNDS type="Box" left="6375" top="13440" width="600" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6375" top="13440" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Connected" dstnodeid="22" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="24" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Sysex Messages|">
+   </PIN>
+   <BOUNDS type="Box" left="2010" top="13560" width="600" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2010" top="13560" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Up Edge" dstnodeid="8" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="8" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output 1" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Connected" dstnodeid="3" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Up Edge" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Time">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="6" dstpinname="Input 1">
+   </LINK>
+   <NODE id="25" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
+   </PIN>
+   <BOUNDS type="Box" left="11130" top="825" width="420" height="450">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11130" top="825" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="11" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="8070" y="10115">
+   </LINKPOINT>
+   <LINKPOINT x="7275" y="1105">
+   </LINKPOINT>
+   </LINK>
+   <BOUNDS type="Window" left="13290" top="1005" width="15510" height="13125">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE id="12" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Pin Values|">
+   </PIN>
+   <BOUNDS type="Box" left="465" top="795" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="465" top="795" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="79">
+   <BOUNDS type="Node" left="840" top="11085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="840" top="11085">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="83" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="480" top="13545" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="480" top="13545" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Pin State|">
+   </PIN>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="86" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1410" top="810" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1410" top="810" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="40">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Sample Rate|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="40">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="87" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2415" top="810" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2415" top="810" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="7">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|I2C Delay|">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="855" top="10710" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="20" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="855" top="10710">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="79" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="114" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9330" top="13470" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9330" top="13470" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Firmware Version|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="120" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="7305" top="750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7305" top="750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Firmata Config|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="136" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="11715" top="13485" width="690" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11715" top="13485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Debug">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DebugReporter (Firmata Internal)" filename="..\vl\VVVV.Devices.Firmata.vl" nodename="Report (Firmata)" componentmode="Hidden" id="137">
+   <BOUNDS type="Node" left="11715" top="10650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="EncoderInfo" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="DecoderInfo" slicecount="1" visible="1" values="||">
+   </PIN>
+   <BOUNDS type="Box" left="11715" top="10650">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="141">
+   <BOUNDS type="Node" left="1890" top="11085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1890" top="11085">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="140">
+   <BOUNDS type="Node" left="1905" top="10710" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="20" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1905" top="10710">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="140" srcpinname="Output" dstnodeid="141" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="FirmataEncoder (Firmata)" filename="..\vl\VVVV.Devices.Firmata.vl" nodename="FirmataEncoder (Devices.Firmata)" componentmode="Hidden" id="142">
+   <BOUNDS type="Node" left="465" top="3780" width="4815" height="270">
+   </BOUNDS>
+   <PIN pinname="Pin Reporting" visible="1" slicecount="20" values="0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Pin Mode" visible="1">
+   </PIN>
+   <PIN pinname="Data" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Firmata Config" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Output Node" dstnodeid="142" dstpinname="Pin Values">
+   </LINK>
+   <LINK srcnodeid="86" srcpinname="Y Output Value" dstnodeid="142" dstpinname="Sample Rate">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="142" dstpinname="I2C Delay">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Output Node" dstnodeid="142" dstpinname="Sysex Messages">
+   </LINK>
+   <LINK srcnodeid="142" srcpinname="Data" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="142" srcpinname="Data" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="142" srcpinname="Debug" dstnodeid="137" dstpinname="EncoderInfo">
+   </LINK>
+   <LINK srcnodeid="79" srcpinname="Output 1" dstnodeid="142" dstpinname="Pin Mode" linkstyle="Bezier">
+   <LINKPOINT x="11395" y="16845">
+   </LINKPOINT>
+   <LINKPOINT x="12140" y="1125">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="141" srcpinname="Output 1" dstnodeid="142" dstpinname="Pin Reporting" linkstyle="Bezier">
+   <LINKPOINT x="6985" y="14220">
+   </LINKPOINT>
+   <LINKPOINT x="12200" y="1920">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Input 1" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="142" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="PinSettingsManager (Firmata Internal)" filename="..\vl\VVVV.Devices.Firmata.vl" nodename="PinSettingsManager (Firmata Internal)" componentmode="Hidden" id="143">
+   <BOUNDS type="Node" left="465" top="10110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Pin State" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Box" left="465" top="10110">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="143" srcpinname="Pin State" dstnodeid="83" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="143" srcpinname="Mode" dstnodeid="89" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="143" srcpinname="IsReporting" dstnodeid="140" dstpinname="Input">
+   </LINK>
+   <PACK Name="dx11" Version="0.7.2">
+   </PACK>
+   <NODE systemname="FirmataDecoder (Firmata)" filename="..\vl\VVVV.Devices.Firmata.vl" nodename="FirmataDecoder (Devices.Firmata)" componentmode="Hidden" id="147">
+   <BOUNDS type="Node" left="465" top="8985" width="6105" height="270">
+   </BOUNDS>
+   <PIN pinname="Sysex Messages" visible="1">
+   </PIN>
+   <PIN pinname="Firmata Config" visible="1">
+   </PIN>
+   <PIN pinname="Data" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Sysex Messages" dstnodeid="24" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Debug" dstnodeid="137" dstpinname="DecoderInfo">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="147" dstpinname="Reset" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Pin State" dstnodeid="143" dstpinname="Pin State">
+   </LINK>
+   <NODE systemname="CapabilityResponse (Firmata)" filename="CapabilityResponse (Firmata).v4p" nodename="CapabilityResponse (Firmata)" componentmode="Hidden" id="150">
+   <BOUNDS type="Node" left="5700" top="10095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Count" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="3375" top="1590" width="5370" height="6615">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="156">
+   <BOUNDS type="Node" left="3180" top="11640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3180" top="11640">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="157">
+   <BOUNDS type="Node" left="3165" top="11160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3165" top="11160">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="159">
+   <BOUNDS type="Node" left="5070" top="11625" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5070" top="11625">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="158">
+   <BOUNDS type="Node" left="5070" top="11175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5070" top="11175">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="161">
+   <BOUNDS type="Node" left="7215" top="11595" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="7215" top="11595">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="160">
+   <BOUNDS type="Node" left="7215" top="11190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="7215" top="11190">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="FirmataConfig (Firmata Internal)" filename="..\vl\VVVV.Devices.Firmata.vl" nodename="FirmataConfig (Firmata Internal)" componentmode="Hidden" id="164">
+   <BOUNDS type="Node" left="4470" top="12390" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Analog Pin Index" visible="1">
+   </PIN>
+   <PIN pinname="Board Pin Index" visible="1">
+   </PIN>
+   <PIN pinname="Pin Count" visible="1">
+   </PIN>
+   <PIN pinname="Firmata Config" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ConfigSwitcher (Firmata Internal)" filename="..\vl\VVVV.Devices.Firmata.vl" nodename="ConfigSwitcher (Firmata Internal)" componentmode="Hidden" id="167">
+   <BOUNDS type="Node" left="1320" top="3105" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Custom Config" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Default Config" visible="1">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="164" srcpinname="Firmata Config" dstnodeid="167" dstpinname="Default Config" linkstyle="Bezier">
+   <LINKPOINT x="15330" y="15805">
+   </LINKPOINT>
+   <LINKPOINT x="2505" y="730">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="167" srcpinname="Result" dstnodeid="142" dstpinname="Firmata Config">
+   </LINK>
+   <LINK srcnodeid="167" srcpinname="Result" dstnodeid="147" dstpinname="Firmata Config">
+   </LINK>
+   <LINK srcnodeid="120" srcpinname="Output Node" dstnodeid="167" dstpinname="Custom Config">
+   </LINK>
+   <NODE systemname="AnalogMappingResponse" filename="AnalogMappingResponse.v4p" nodename="AnalogMappingResponse.v4p" componentmode="Hidden" id="179">
+   <BOUNDS type="Node" left="3168" top="10076" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="588" top="7949" width="5160" height="4255">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18705" top="4395" width="9345" height="9120">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Sysex Messages" dstnodeid="179" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Sysex Messages" dstnodeid="150" dstpinname="Input">
+   </LINK>
+   <INFO author="" description="Communicates with a microcontroller board using the Firmata protocol." tags="arduino, lilypad, teensy, particle.io, atmel, arm, microchip, nordic">
+   </INFO>
+   <LINK srcnodeid="156" srcpinname="Output 1" dstnodeid="164" dstpinname="Analog Pin Index">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Output 1" dstnodeid="164" dstpinname="Board Pin Index">
+   </LINK>
+   <LINK srcnodeid="161" srcpinname="Output 1" dstnodeid="164" dstpinname="Pin Count">
+   </LINK>
+   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="161" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="158" srcpinname="Output" dstnodeid="159" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="Output" dstnodeid="156" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Output" dstnodeid="157" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Output 1" dstnodeid="158" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="150" srcpinname="Pin Count" dstnodeid="160" dstpinname="Input">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="181">
+   <BOUNDS type="Node" left="11775" top="1365" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="181" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="181" srcpinname="Up Edge" dstnodeid="11" dstpinname="Input 3" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="FirmwareResponse (Firmata)" filename="FirmwareResponse (Firmata).v4p" nodename="FirmwareResponse (Firmata).v4p" componentmode="Hidden" id="189">
+   <BOUNDS type="Node" left="9320" top="10110" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7590" top="8073" width="3460" height="4075">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11100" top="6405" width="6315" height="6120">
+   </BOUNDS>
+   <PIN pinname="Input 2">
+   </PIN>
+   <PIN pinname="Input">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Sysex Messages" dstnodeid="189" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="189" srcpinname="Output" dstnodeid="114" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="189" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="137" srcpinname="Result" dstnodeid="136" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="147" dstpinname="Data">
+   </LINK>
+   </PATCH>

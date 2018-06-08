@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="AMsJsrrhltMMjgtUbICS42" Version="0.55">
+  <p:NodeReference>
+    <Choice Kind="Document" />
+  </p:NodeReference>
+  <PlatformDependency Id="EMDwpDB5vmrNxA0oTALxPj" Location="./src\bin\AnyCPU\Debug\VL.Lang.dll" IsForward="true" />
+  <Patch Id="NUyVSKUY3dtNQYmkIwDdrD">
+    <Canvas Id="QTsMGc5FCcUORELuj49VxZ" BordersChecked="false">
+      <!--
+
+    ************************ Root ************************
+
+-->
+      <Node Name="Root" Category="Main" Bounds="100,200" Id="FXZE6YxFPr2NUWpwWXEHap">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <Patch Id="FfBLhgeOuWLNCNahlMxA3V">
+          <Canvas Id="P1gxU643Xs5O3BhA56Dh8p" BordersChecked="false" />
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+</Document>

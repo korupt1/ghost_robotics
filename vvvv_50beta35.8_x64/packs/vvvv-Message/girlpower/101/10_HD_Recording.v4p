@@ -1,0 +1,279 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Message\build\AnyCPU\Debug\girlpower\101\10_HD_Recording.v4p" systemname="10_HD_Recording" filename="C:\dev\vvvv\vvvv-Message\patches\girlpower\101\10_HD_Recording.v4p" scrollx="0" scrolly="-720">
+   <BOUNDS type="Window" left="2805" top="0" width="20145" height="10515">
+   </BOUNDS>
+   <NODE systemname="Reader (Message)" filename="%VVVV%\packs\vvvv-Message\nodes\modules\Reader (Message).v4p" nodename="Reader (Message)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="681" top="4575" width="1248" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="681" top="4575">
+   </BOUNDS>
+   <PIN pinname="Handle" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="8388" top="4776" width="6012" height="6156">
+   </BOUNDS>
+   <PIN pinname="Message" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Writer (Message)" filename="%VVVV%\packs\vvvv-Message\nodes\modules\Writer (Message).v4p" nodename="Writer (Message)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="1137" top="3843" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1137" top="3843">
+   </BOUNDS>
+   <PIN pinname="Handle" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="10680" top="3156" width="14400" height="7464">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Save" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="693" top="3327" width="1212" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="693" top="3327" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Demo.json">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="15" dstpinname="Handle">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="14" dstpinname="Handle">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1137" top="4071" width="564" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1137" top="4071" width="324" height="540">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="v">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="19">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="594" top="963" width="9120" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="594" top="963" width="1836" height="720">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Writing a savegame is just as easy as passing it along your hard drive.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Create (Message Formular)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Create (Message Formular)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1128" top="2505" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Foo" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="New" visible="1">
+   </PIN>
+   <PIN pinname="Configuration" slicecount="1" values="|string ThisIsATest|">
+   </PIN>
+   <PIN pinname="ThisIsATest" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="7620" top="4440" width="6000" height="4500">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="14" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1113" top="2145" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1113" top="2145" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|hello world|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="10" dstpinname="Foo">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3003" top="1980" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3003" top="1980" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2253" top="1860" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2253" top="1860" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Save">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="807" top="6144" width="2505" height="510">
+   </BOUNDS>
+   <BOUNDS type="Node" left="807" top="6144" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="10" dstpinname="New">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="408" top="303" width="6600" height="1056">
+   </BOUNDS>
+   <BOUNDS type="Box" left="408" top="303" width="6564" height="468">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" visible="1" values="12">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Persisting a Message|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4809" top="1293" width="9120" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4809" top="1293" width="2940" height="1200">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|These two modules help you to stream Messages continuously, similar to SequentialReader for texts|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="34.101.0">
+   </PACK>
+   <NODE systemname="Reader (Message)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Reader (Message)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="6078" top="2835" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7680" top="615" width="6195" height="7605">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6078" top="2835">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HoldKeep (Message)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="HoldKeep (Message)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="654" top="5127" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Message" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.0">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.8.6">
+   </PACK>
+   <NODE systemname="Writer (Message Streaming)" filename="%VVVV%\packs\vvvv-Message\nodes\modules\Writer (Message Streaming).v4p" nodename="Writer (Message Streaming)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="4665" top="2820" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Read (Message)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Read (Message)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="672" top="5694" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Configuration" slicecount="1" values="|string Value|">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Field" visible="1">
+   </PIN>
+   <PIN pinname="Type" visible="1">
+   </PIN>
+   <PIN pinname="Key" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Field" dstnodeid="5" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="8" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="16">
+   <BOUNDS type="Box" left="1755" top="5205" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1755" top="5205" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="string">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output Enum" dstnodeid="8" dstpinname="Type">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="3555" top="5280" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3555" top="5280" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="ThisIsATest">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Foo">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output String" dstnodeid="8" dstpinname="Key">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="10" dstpinname="ThisIsATest">
+   </LINK>
+   </PATCH>
