@@ -234,7 +234,7 @@
    </LINK>
    <LINK srcnodeid="11" srcpinname="Texture Out" dstnodeid="13" dstpinname="Input 1">
    </LINK>
-   <BOUNDS type="Window" left="5100" top="2415" width="16335" height="12315">
+   <BOUNDS type="Window" left="1185" top="2040" width="16335" height="12315">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -249,7 +249,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="|..\Texture\Zeichenfläche 1waben.png|">
+   <PIN pinname="Filename" slicecount="1" values="|..\Texture\Element 4triPattern2.png|">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Texture Out" dstnodeid="13" dstpinname="Input 2">
@@ -305,7 +305,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8730" top="6510" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="35">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="37.59">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -355,7 +355,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8595" top="4155" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="40">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="35">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
