@@ -1,0 +1,155 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\node17_bullet3d\Workshop\Landscape\SuPatches\CarCam.v4p" systemname="CarCam" filename="C:\node17_bullet3d\Workshop\Landscape\SuPatches\CarCam.v4p" scrollx="0" scrolly="135">
+   <NODE systemname="Perspective (Transform)" nodename="Perspective (Transform)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2550" top="5655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="FOV" slicecount="1" values="0.15">
+   </PIN>
+   <PIN pinname="Far Plane" slicecount="1" values="1000">
+   </PIN>
+   </NODE>
+   <NODE systemname="Inverse (Transform)" nodename="Inverse (Transform)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1500" top="5685" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2115" top="1470" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Chassis">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetBodyTransform (Bullet)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="GetBodyTransform (Bullet)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2115" top="1860" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2115" top="1860" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Bodies" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Position" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1500" top="5280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateZ" slicecount="1" visible="1" values="15.16">
+   </PIN>
+   <PIN pinname="Pitch" slicecount="1" values="-0.04">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" values="-1.18">
+   </PIN>
+   </NODE>
+   <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="2115" top="2355" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2115" top="2355" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="TranslateXYZ" visible="1">
+   </PIN>
+   <PIN pinname="RotateXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2040" top="2790" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" slicecount="1" values="1.35">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="2010" top="4320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Translate XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Rotate XYZ" visible="1" slicecount="3" values="-0.0217325029833103,8.65121697790098,4.51762713120614">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="1" dstpinname="Source">
+   </LINK>
+   <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="6285" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="6285" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="11" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Position Out" dstnodeid="7" dstpinname="Translate XYZ">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="TranslateXYZ" dstnodeid="6" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Position" dstnodeid="5" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Input Value" dstnodeid="3" dstpinname="Bodies">
+   </LINK>
+   <NODE id="12" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out 1|">
+   </PIN>
+   <BOUNDS type="Box" left="2550" top="6285" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2550" top="6285" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="4900" height="7285">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
+   <BOUNDS type="Box" left="630" top="3420" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="630" top="3420" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="29.58">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TranslateZ">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="4" dstpinname="TranslateZ">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="3120" top="3600" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Cyclic" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" slicecount="1" values="3.28">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="RotateXYZ" dstnodeid="16" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Position Out" dstnodeid="7" dstpinname="Rotate XYZ">
+   </LINK>
+   </PATCH>

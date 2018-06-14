@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="0" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="15" scrolly="360" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
    <BOUNDS type="Window" left="10155" top="1740" width="12405" height="11070">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -72,20 +72,6 @@
    <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
-   <BOUNDS type="Node" left="2835" top="9210" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Maximum Background FPS" slicecount="1" visible="1" values="90">
-   </PIN>
-   <PIN pinname="Maximum Foreground FPS" slicecount="1" visible="1" values="90">
-   </PIN>
-   <PIN pinname="Increase Timing Precision" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Present UpFront" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Time Mode" slicecount="1" values="Filtered">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2430" top="9690" width="795" height="240">
    </BOUNDS>
@@ -103,7 +89,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2835" top="8760" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="120">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="90">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -114,10 +100,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
-   </LINK>
    <LINK srcnodeid="24" srcpinname="Layer Out" dstnodeid="12" dstpinname="Layer">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="52" systemname="IOBox (Value Advanced)">
@@ -395,7 +377,7 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1215" top="2670" width="15840" height="12075">
+   <BOUNDS type="Window" left="3210" top="3060" width="15840" height="12075">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="96" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 4">
@@ -420,4 +402,28 @@
    <PIN pinname="StateXML" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&cr;&lf;&lt;ArrayOfState xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;Init&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Init&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;122&lt;/X&gt;&cr;&lf;        &lt;Y&gt;192&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;122&lt;/X&gt;&cr;&lf;      &lt;Y&gt;192&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;Yhhscg4N&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Leerlauf&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;258&lt;/X&gt;&cr;&lf;        &lt;Y&gt;142&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;258&lt;/X&gt;&cr;&lf;      &lt;Y&gt;142&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;dhYZh16b&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;ControllerControl&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;381&lt;/X&gt;&cr;&lf;        &lt;Y&gt;41&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;381&lt;/X&gt;&cr;&lf;      &lt;Y&gt;41&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;m7YKTY5h&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;MotorControll&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;612&lt;/X&gt;&cr;&lf;        &lt;Y&gt;139&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;612&lt;/X&gt;&cr;&lf;      &lt;Y&gt;139&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;ZAaRSMGj&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Option/info&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;432&lt;/X&gt;&cr;&lf;        &lt;Y&gt;259&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;432&lt;/X&gt;&cr;&lf;      &lt;Y&gt;259&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;QjmJUDkj&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Eingabe&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;381&lt;/X&gt;&cr;&lf;        &lt;Y&gt;358&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;381&lt;/X&gt;&cr;&lf;      &lt;Y&gt;358&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;u29Ts5ZI&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;automatedConroll&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;491&lt;/X&gt;&cr;&lf;        &lt;Y&gt;149&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;491&lt;/X&gt;&cr;&lf;      &lt;Y&gt;149&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;&lt;/ArrayOfState&gt;|">
    </PIN>
    </NODE>
+   <NODE systemname="WorldPhysics" filename="Subpatches\WorldPhysics.v4p" componentmode="InAWindow" id="99" nodename="Subpatches\WorldPhysics.v4p">
+   <BOUNDS type="Node" left="5115" top="4935" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5115" top="4935" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4950" top="4275" width="18225" height="13815">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="99" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
+   <BOUNDS type="Node" left="2820" top="9180" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum Foreground FPS" visible="1">
+   </PIN>
+   <PIN pinname="Maximum Background FPS" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
+   </LINK>
    </PATCH>

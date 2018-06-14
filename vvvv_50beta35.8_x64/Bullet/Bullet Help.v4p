@@ -1,0 +1,325 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.dtd" >
+   <PATCH nodename="C:\vvvv\beta25\myplugins\plugins\Bullet\Bullet Help.v4p" filename="C:\vvvv\beta25\myplugins\plugins\Bullet\Bullet Help.v4p" systemname="Bullet Help">
+   <BOUNDS height="9390" left="1800" top="945" type="Window" width="14190">
+   </BOUNDS>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="0" nodename="Box (Bullet)" systemname="Box (Bullet)">
+   <BOUNDS height="100" left="2430" top="840" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2430" top="840" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="1" nodename="Rope (Bullet)" systemname="Rope (Bullet)">
+   <BOUNDS height="100" left="465" top="4920" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="465" top="4920" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="2" nodename="Patch (Bullet)" systemname="Patch (Bullet)">
+   <BOUNDS height="100" left="465" top="5340" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="465" top="5340" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="3" nodename="Sphere (Bullet)" systemname="Sphere (Bullet)">
+   <BOUNDS height="100" left="2430" top="1305" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2430" top="1305" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="4" nodename="TetGen (Bullet SoftShape)" systemname="TetGen (Bullet SoftShape)">
+   <BOUNDS height="100" left="465" top="5865" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="465" top="5865" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="5" nodename="RayCast (Bullet)" systemname="RayCast (Bullet)">
+   <BOUNDS height="100" left="390" top="840" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="390" top="840" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="6" nodename="SetMass (Bullet SoftBody)" systemname="SetMass (Bullet SoftBody)">
+   <BOUNDS height="100" left="3915" top="4980" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3915" top="4980" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="7" nodename="TriMesh (Bullet SoftShape)" systemname="TriMesh (Bullet SoftShape)">
+   <BOUNDS height="100" left="465" top="6360" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="465" top="6360" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="8" nodename="Cylinder (Bullet)" systemname="Cylinder (Bullet)">
+   <BOUNDS height="100" left="2430" top="1725" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2430" top="1725" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="9" nodename="SoftBody (Bullet EX9.Geometry)" systemname="SoftBody (Bullet EX9.Geometry)">
+   <BOUNDS height="270" left="6735" top="5025" type="Node" width="1020">
+   </BOUNDS>
+   <BOUNDS left="6735" top="5025" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="10" nodename="Ellipsoid (Bullet)" systemname="Ellipsoid (Bullet)">
+   <BOUNDS height="100" left="465" top="6720" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="465" top="6720" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="11" nodename="RigidBody (Bullet EX9.Geometry)" systemname="RigidBody (Bullet EX9.Geometry)">
+   <BOUNDS height="100" left="7350" top="795" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="7350" top="795" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="12" nodename="SoftWorld (Bullet)" systemname="SoftWorld (Bullet)">
+   <BOUNDS height="100" left="390" top="1290" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="390" top="1290" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="13" nodename="ApplyForce (Bullet)" systemname="ApplyForce (Bullet)">
+   <BOUNDS height="100" left="4620" top="1740" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="4620" top="1740" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="14" nodename="ConvexHull (Bullet)" systemname="ConvexHull (Bullet)">
+   <BOUNDS height="100" left="2430" top="2250" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2430" top="2250" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="15" nodename="ConvexHull (Bullet SoftShape)" systemname="ConvexHull (Bullet SoftShape)">
+   <BOUNDS height="100" left="465" top="7170" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="465" top="7170" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="16" nodename="ApplyTorque (Bullet)" systemname="ApplyTorque (Bullet)">
+   <BOUNDS height="100" left="4620" top="2190" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="4620" top="2190" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="17" nodename="DestroyBody (Bullet)" systemname="DestroyBody (Bullet)">
+   <BOUNDS height="100" left="9975" top="810" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="9975" top="810" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="18" nodename="HeightField (Bullet)" systemname="HeightField (Bullet)">
+   <BOUNDS height="100" left="2430" top="2655" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2430" top="2655" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="19" nodename="AppendAnchor (Bullet)" systemname="AppendAnchor (Bullet)">
+   <BOUNDS height="100" left="9975" top="1215" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="9975" top="1215" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="20" nodename="ApplyImpulse (Bullet)" systemname="ApplyImpulse (Bullet)">
+   <BOUNDS height="100" left="4620" top="2640" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="4620" top="2640" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="21" nodename="CompoundShape (Bullet Group)" systemname="CompoundShape (Bullet Group)">
+   <BOUNDS height="100" left="2430" top="3060" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2430" top="3060" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="22" nodename="CompoundShape (Bullet Spread)" systemname="CompoundShape (Bullet Spread)">
+   <BOUNDS height="100" left="2430" top="3405" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="2430" top="3405" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="23" nodename="CreateSoftBody (Bullet)" systemname="CreateSoftBody (Bullet)">
+   <BOUNDS height="100" left="3915" top="6000" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3915" top="6000" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="24" nodename="CreateRigidBody (Bullet)" systemname="CreateRigidBody (Bullet)">
+   <BOUNDS height="100" left="4620" top="840" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="4620" top="840" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="25" nodename="CreateRigidBody (Bullet Persist)" systemname="CreateRigidBody (Bullet Persist)">
+   <BOUNDS height="100" left="4620" top="1275" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="4620" top="1275" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="28" nodename="GetSoftBodyDetails (Bullet)" systemname="GetSoftBodyDetails (Bullet)">
+   <BOUNDS height="270" left="6735" top="5475" type="Node" width="1680">
+   </BOUNDS>
+   <BOUNDS left="6735" top="5475" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="29" nodename="GetRigidBodyDetails (Bullet)" systemname="GetRigidBodyDetails (Bullet)">
+   <BOUNDS height="100" left="7350" top="1275" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="7350" top="1275" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="30" nodename="UpdateSoftBodyConfig (Bullet)" systemname="UpdateSoftBodyConfig (Bullet)">
+   <BOUNDS height="100" left="3915" top="5505" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="3915" top="5505" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="InABox" id="31" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="390" top="330" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="360" left="390" top="330" type="Box" width="1695">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|World Management|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="32" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="2430" top="330" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="360" left="2430" top="330" type="Box" width="1695">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Rigid Shapes|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="33" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="4575" top="315" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="315" left="4575" top="315" type="Box" width="2775">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Rigid Bodies Creation/Interaction|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="34" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="7290" top="330" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="300" left="7290" top="330" type="Box" width="2085">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Rigid Bodies/Shapes Info|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="35" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="9945" top="225" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="315" left="9945" top="225" type="Box" width="2775">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|General Bodies Interaction|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="36" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="450" top="4425" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="360" left="450" top="4425" type="Box" width="1695">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Soft Shapes|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="37" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="3870" top="4470" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="315" left="3870" top="4470" type="Box" width="2775">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Soft Bodies Creation/Interaction|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="38" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="6750" top="4455" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="300" left="6750" top="4455" type="Box" width="1260">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Soft Bodies Info|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="39" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="9345" top="4665" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="3930" left="9345" top="4665" type="Box" width="3585">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Bullet Physics 3d Node Set:&cr;&lf;36 nodes for you to play with, have fun :)&cr;&lf;&cr;&lf;Bullet vvvv mini contest:&cr;&lf;best bullet patch get entitled to my next plugin collection pre release. No help patch to make it a bit of a challenge :)&cr;&lf;End of contest in 2 weeks (then will release help files).&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="26" nodename="UpdateRigidBody (Bullet)" systemname="UpdateBody (Bullet Rigid)">
+   <BOUNDS height="100" left="4620" top="3120" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="4620" top="3120" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="40" nodename="GetRigidShapeDetails (Bullet)" systemname="GetRigidShapeDetails (Bullet)">
+   <BOUNDS height="100" left="7380" top="1710" type="Node" width="100">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="41" nodename="GetContactDetails (Bullet)" systemname="GetContactDetails (Bullet)">
+   <BOUNDS height="100" left="360" top="1680" type="Node" width="100">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" id="42" nodename="GetContactPointDetails (Bullet)" systemname="GetContactPointDetails (Bullet)">
+   <BOUNDS height="100" left="345" top="2025" type="Node" width="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Point2Point (Bullet Constraint.Single)" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" nodename="Point2Point (Bullet Constraint.Single)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="10005" top="2790" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="InABox" id="44" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="9960" top="2340" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="315" left="9960" top="2340" type="Box" width="2775">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Constraints (Experimental)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="DestroyConstraint (Bullet)" filename="%VVVV%\myplugins\plugins\Bullet\VVVV.Nodes.Bullet.dll" nodename="DestroyConstraint (Bullet)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="9990" top="3195" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
