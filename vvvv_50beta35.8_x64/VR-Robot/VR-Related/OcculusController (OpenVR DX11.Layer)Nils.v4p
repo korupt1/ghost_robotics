@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\vvvv_50beta35.8_x64\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" systemname="OcculusController (OpenVR DX11.Layer)" filename="C:\vvvv_50beta35.8_x64\packs\VVVV.OpenVR\nodes\modules\OcculusController (OpenVR DX11.Layer)Nils.v4p" scrollx="135" scrolly="11805">
-   <BOUNDS type="Window" left="8625" top="3765" width="18405" height="13185">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" systemname="OcculusController (OpenVR DX11.Layer)" filename="C:\vvvv_50beta35.8_x64\packs\VVVV.OpenVR\nodes\modules\OcculusController (OpenVR DX11.Layer)Nils.v4p" scrollx="135" scrolly="11805">
+   <BOUNDS type="Window" left="1275" top="4215" width="18405" height="13185">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -939,5 +939,75 @@
    <LINK srcnodeid="500" srcpinname="Output" dstnodeid="471" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="498" srcpinname="TranslateXYZ" dstnodeid="452" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="501">
+   <BOUNDS type="Node" left="6150" top="16305" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="ControllerTranformation">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="369" srcpinname="Output Node" dstnodeid="501" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="502">
+   <BOUNDS type="Node" left="8490" top="20520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="TEsttransform">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Transform)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Transform)" componentmode="Hidden" id="503">
+   <BOUNDS type="Node" left="7785" top="20040" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7785" top="20040" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="504">
+   <BOUNDS type="Box" left="8730" top="19095" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8730" top="19095" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="503" srcpinname="Output" dstnodeid="502" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output Node" dstnodeid="503" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="505">
+   <BOUNDS type="Node" left="12495" top="15825" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12495" top="15825" width="540" height="2265">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="8" values="0,1,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="8" values="0,1,0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="505" srcpinname="Y Output Value" dstnodeid="503" dstpinname="Select">
    </LINK>
    </PATCH>

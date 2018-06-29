@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Arm contrains berechnen.v4p" scrollx="0" scrolly="0" systemname="Arm contrains berechnen" filename="C:\vvvv_50beta35.8_x64\Arm contrains berechnen.v4p">
-   <BOUNDS type="Window" left="4140" top="3630" width="15840" height="12075">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Arm contrains berechnen.v4p" scrollx="4365" scrolly="17145" systemname="Arm contrains berechnen" filename="C:\vvvv_50beta35.8_x64\Arm contrains berechnen.v4p">
+   <BOUNDS type="Window" left="1110" top="4875" width="15840" height="12075">
    </BOUNDS>
    <NODE systemname="Cylinder (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Cylinder (DX11.Geometry)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="7650" top="19536" width="100" height="100">
@@ -367,7 +367,7 @@
    </PIN>
    </NODE>
    <NODE id="73" componentmode="Hidden" nodename="Rotate (Transform)" systemname="Rotate (Transform)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" height="276" left="23466" top="19044" width="2124">
+   <BOUNDS type="Node" height="276" left="23496" top="18849" width="2124">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1" pintype="Output">
    </PIN>
@@ -409,9 +409,9 @@
    <LINK srcnodeid="73" srcpinname="Transform Out" dstnodeid="74" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="72" srcpinname="Transform Out" dstnodeid="73" dstpinname="Transform In" linkstyle="Bezier">
-   <LINKPOINT x="22848" y="18666">
+   <LINKPOINT x="22858" y="18601">
    </LINKPOINT>
-   <LINKPOINT x="23460" y="18666">
+   <LINKPOINT x="23480" y="18536">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="52" srcpinname="Center" dstnodeid="72" dstpinname="XYZ">
@@ -1794,10 +1794,10 @@
    </NODE>
    <LINK srcnodeid="320" srcpinname="Y Output Value" dstnodeid="214" dstpinname="Yaw">
    </LINK>
-   <NODE systemname="robotarm" filename="%VVVV%\VR-Robot\Subpatches\robotarm.v4p" nodename="%VVVV%\VR-Robot\Subpatches\robotarm.v4p" componentmode="InAWindow" id="321">
+   <NODE systemname="robotarm" filename="%VVVV%\VR-Robot\Subpatches\robotarm.v4p" nodename="%VVVV%\VR-Robot\Subpatches\robotarm.v4p" componentmode="Hidden" id="321">
    <BOUNDS type="Node" left="17370" top="22875" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="6300" top="4590" width="14235" height="10335">
+   <BOUNDS type="Window" left="7560" top="2505" width="14235" height="10335">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
