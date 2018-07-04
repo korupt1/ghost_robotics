@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUI.v4p" systemname="interfaceUI" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUI.v4p" scrollx="0" scrolly="5715">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUI.v4p" systemname="interfaceUI" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUI.v4p" scrollx="0" scrolly="3075">
    <NODE systemname="Intersect (EX9.Geometry Quad)" nodename="Intersect (EX9.Geometry Quad)" componentmode="Hidden" id="8">
    <BOUNDS type="Node" left="4035" top="4485" width="100" height="100">
    </BOUNDS>
@@ -77,9 +77,9 @@
    <LINK srcnodeid="20" srcpinname="Layer Out" dstnodeid="9" dstpinname="Input Node">
    </LINK>
    <NODE systemname="SceneFile (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\assimp\VVVV.DX11.Nodes.Assimp.dll" nodename="SceneFile (DX11.Geometry Assimp)" componentmode="Hidden" id="28">
-   <BOUNDS type="Node" left="12780" top="780" width="100" height="100">
+   <BOUNDS type="Node" left="11310" top="4515" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="12780" top="780" width="3000" height="3000">
+   <BOUNDS type="Box" left="11310" top="4515" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\..\..\Users\Linkzlin\Desktop\interface.fbx">
    </PIN>
@@ -185,7 +185,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.73494,0.73494,0.73494,1.00000|" visible="1">
+   <PIN pinname="Color" slicecount="1" visible="1" values="|0.73494,0.73494,0.73494,1.00000|">
    </PIN>
    <PIN pinname="Color Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -307,7 +307,7 @@
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="60">
    <BOUNDS type="Node" left="8325" top="6015" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -371,7 +371,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="16200" top="2160" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="TranslateXYZ" visible="1">
    </PIN>
@@ -685,46 +685,6 @@
    <LINK srcnodeid="86" srcpinname="Output" dstnodeid="100" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="100" srcpinname="Output" dstnodeid="85" dstpinname="Red Max">
-   </LINK>
-   <NODE systemname="Cylinder (DX11 Geometry)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.Geometry\Cylinder (DX11 Geometry).v4p" nodename="Cylinder (DX11 Geometry)" componentmode="Hidden" id="103">
-   <BOUNDS type="Node" left="6285" top="9585" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Geometry Out" visible="1">
-   </PIN>
-   <PIN pinname="Radius 1" visible="1">
-   </PIN>
-   <PIN pinname="Radius 2" visible="1">
-   </PIN>
-   <PIN pinname="Length" slicecount="1" values="0.2">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="104">
-   <BOUNDS type="Box" left="6285" top="8760" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6285" top="8760" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.002">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="104" srcpinname="Y Output Value" dstnodeid="103" dstpinname="Radius 1">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="105">
-   <BOUNDS type="Box" left="6510" top="9075" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6510" top="9075" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.002">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="105" srcpinname="Y Output Value" dstnodeid="103" dstpinname="Radius 2">
    </LINK>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="106">
    <BOUNDS type="Node" left="8250" top="8820" width="100" height="100">
