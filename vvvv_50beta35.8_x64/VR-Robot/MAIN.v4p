@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="1890" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
-   <BOUNDS type="Window" left="6945" top="6480" width="14745" height="11070">
+   <BOUNDS type="Window" left="4005" top="2025" width="14745" height="11070">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -127,7 +127,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="555" top="10995" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="18345" top="2430" width="17265" height="11010">
+   <BOUNDS type="Window" left="19890" top="1695" width="17265" height="13110">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -344,7 +344,7 @@
    </PACK>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
-   <NODE systemname="OcculusController (OpenVR DX11.Layer)Nils" filename="%VVVV%\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" nodename="%VVVV%\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" componentmode="InAWindow" id="94" debug="0">
+   <NODE systemname="OcculusController (OpenVR DX11.Layer)Nils" filename="%VVVV%\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" nodename="%VVVV%\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" componentmode="Hidden" id="94" debug="0">
    <BOUNDS type="Node" left="7305" top="4890" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Controller" visible="1">
@@ -372,16 +372,14 @@
    </NODE>
    <LINK srcnodeid="95" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 1">
    </LINK>
-   <NODE systemname="Arm contrains berechnen" filename="%VVVV%\VR-Robot\Arm contrains berechnen.v4p" nodename="%VVVV%\VR-Robot\Arm contrains berechnen.v4p" componentmode="Hidden" id="96" debug="0">
+   <NODE systemname="Arm contrains berechnen" filename="%VVVV%\VR-Robot\Arm contrains berechnen.v4p" nodename="%VVVV%\VR-Robot\Arm contrains berechnen.v4p" componentmode="InAWindow" id="96" debug="0">
    <BOUNDS type="Node" left="9495" top="4830" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1110" top="4875" width="15840" height="12075">
+   <BOUNDS type="Window" left="10215" top="2220" width="21960" height="14160">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="96" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 4">
-   </LINK>
    <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="92">
    <BOUNDS type="Node" left="2520" top="10365" width="100" height="100">
    </BOUNDS>
@@ -402,7 +400,7 @@
    <PIN pinname="StateXML" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&cr;&lf;&lt;ArrayOfState xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;Init&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Init&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;63&lt;/X&gt;&cr;&lf;        &lt;Y&gt;193&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;63&lt;/X&gt;&cr;&lf;      &lt;Y&gt;193&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;Yhhscg4N&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Leerlauf&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;255&lt;/X&gt;&cr;&lf;        &lt;Y&gt;111&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;255&lt;/X&gt;&cr;&lf;      &lt;Y&gt;111&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;dhYZh16b&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;ControllerControl&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;381&lt;/X&gt;&cr;&lf;        &lt;Y&gt;41&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;381&lt;/X&gt;&cr;&lf;      &lt;Y&gt;41&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;m7YKTY5h&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;MotorControll&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;680&lt;/X&gt;&cr;&lf;        &lt;Y&gt;131&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;680&lt;/X&gt;&cr;&lf;      &lt;Y&gt;131&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;ZAaRSMGj&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Option/info&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;456&lt;/X&gt;&cr;&lf;        &lt;Y&gt;228&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;456&lt;/X&gt;&cr;&lf;      &lt;Y&gt;228&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;QjmJUDkj&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Eingabe&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;318&lt;/X&gt;&cr;&lf;        &lt;Y&gt;227&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;318&lt;/X&gt;&cr;&lf;      &lt;Y&gt;227&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;u29Ts5ZI&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;automatedConroll&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;494&lt;/X&gt;&cr;&lf;        &lt;Y&gt;105&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;494&lt;/X&gt;&cr;&lf;      &lt;Y&gt;105&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;&lt;/ArrayOfState&gt;|">
    </PIN>
    </NODE>
-   <NODE systemname="WorldPhysics" filename="Subpatches\WorldPhysics.v4p" componentmode="Hidden" id="99" nodename="Subpatches\WorldPhysics.v4p">
+   <NODE systemname="WorldPhysics" filename="Subpatches\WorldPhysics.v4p" componentmode="InAWindow" id="99" nodename="Subpatches\WorldPhysics.v4p">
    <BOUNDS type="Node" left="5115" top="4935" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="5115" top="4935" width="4800" height="3600">
@@ -436,10 +434,10 @@
    <PIN pinname="Mode" slicecount="1" values="NoCullSimple">
    </PIN>
    </NODE>
-   <NODE systemname="interfaceUI" filename="%VVVV%\VR-Robot\Subpatches\interfaceUI.v4p" nodename="%VVVV%\VR-Robot\Subpatches\interfaceUI.v4p" componentmode="InAWindow" id="114">
-   <BOUNDS type="Node" left="12510" top="2561" width="0" height="0">
+   <NODE systemname="interfaceUI" filename="%VVVV%\VR-Robot\Subpatches\interfaceUI.v4p" nodename="%VVVV%\VR-Robot\Subpatches\interfaceUI.v4p" componentmode="Hidden" id="114">
+   <BOUNDS type="Node" left="11730" top="4721" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9378" top="-834" width="6264" height="6790">
+   <BOUNDS type="Box" left="8598" top="1326" width="6264" height="6790">
    </BOUNDS>
    <BOUNDS type="Window" left="6735" top="6720" width="16815" height="12510">
    </BOUNDS>
@@ -455,5 +453,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="HMD Pose" dstnodeid="115" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="96" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 4">
    </LINK>
    </PATCH>

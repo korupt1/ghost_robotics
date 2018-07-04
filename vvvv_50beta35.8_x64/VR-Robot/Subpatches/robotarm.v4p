@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\robotarm.v4p" systemname="robotarm" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\robotarm.v4p">
-   <BOUNDS type="Window" left="6300" top="4590" width="14235" height="10335">
+   <BOUNDS type="Window" left="7560" top="2505" width="14235" height="10335">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -277,7 +277,7 @@
    </PIN>
    <PIN pinname="TranslateY" slicecount="1" values="0.65">
    </PIN>
-   <PIN pinname="TranslateX" slicecount="1" values="0.55">
+   <PIN pinname="TranslateX" slicecount="1" values="1.6">
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Transform Out" dstnodeid="11" dstpinname="Transform In 2">
