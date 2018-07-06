@@ -187,9 +187,9 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Lightness" slicecount="1" values="0.99">
+   <PIN pinname="Lightness" slicecount="1" values="0.79">
    </PIN>
-   <PIN pinname="Hue" slicecount="1" values="0.61">
+   <PIN pinname="Hue" slicecount="1" values="0.53">
    </PIN>
    <PIN pinname="Saturation" slicecount="1" values="1">
    </PIN>
@@ -325,9 +325,9 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Lightness" slicecount="1" values="0">
+   <PIN pinname="Lightness" slicecount="1" values="0.04">
    </PIN>
-   <PIN pinname="Hue" slicecount="1" values="0.85">
+   <PIN pinname="Hue" slicecount="1" values="0.69">
    </PIN>
    </NODE>
    <NODE systemname="Cons (Color)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Color)" componentmode="Hidden" id="28">
