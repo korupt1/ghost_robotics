@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" systemname="OcculusController (OpenVR DX11.Layer)" filename="C:\vvvv_50beta35.8_x64\packs\VVVV.OpenVR\nodes\modules\OcculusController (OpenVR DX11.Layer)Nils.v4p" scrollx="135" scrolly="11805">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" systemname="OcculusController (OpenVR DX11.Layer)" filename="C:\vvvv_50beta35.8_x64\packs\VVVV.OpenVR\nodes\modules\OcculusController (OpenVR DX11.Layer)Nils.v4p" scrollx="0" scrolly="13170">
    <BOUNDS type="Window" left="1275" top="4215" width="18405" height="13185">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -951,7 +951,7 @@
    <LINK srcnodeid="369" srcpinname="Output Node" dstnodeid="501" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="502">
-   <BOUNDS type="Node" left="8490" top="20520" width="100" height="100">
+   <BOUNDS type="Node" left="7695" top="20460" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>

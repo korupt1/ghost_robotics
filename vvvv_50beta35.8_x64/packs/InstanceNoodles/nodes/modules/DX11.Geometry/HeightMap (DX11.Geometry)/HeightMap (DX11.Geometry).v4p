@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
-   <PATCH nodename="C:\Users\Kyle\Desktop\Dropbox\VVVV Files\vvvv_50beta35.7_x64\packs\InstanceNoodles\nodes\modules\DX11.Geometry\HeightMap (DX11.Geometry)\HeightMap (DX11.Geometry).v4p" systemname="HeightMap (DX11.Geometry)" filename="W:\Heightmap\HeightMap (DX11.Geometry).v4p">
-   <BOUNDS type="Window" left="8100" top="6885" width="5655" height="7860">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\packs\InstanceNoodles\nodes\modules\DX11.Geometry\HeightMap (DX11.Geometry)\HeightMap (DX11.Geometry).v4p" systemname="HeightMap (DX11.Geometry)" filename="W:\Heightmap\HeightMap (DX11.Geometry).v4p" scrollx="0" scrolly="2790">
+   <BOUNDS type="Window" left="15360" top="5640" width="5655" height="7860">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -145,7 +145,9 @@
    </BOUNDS>
    <BOUNDS type="Node" left="810" top="5715" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="TriangleList">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="LineStrip">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Topology">
    </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output Enum" dstnodeid="20" dstpinname="Topology">
@@ -271,7 +273,7 @@
    <LINK srcnodeid="5" srcpinname="Output Node" dstnodeid="8" dstpinname="tW">
    </LINK>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="930" top="4200" width="100" height="100">
+   <BOUNDS type="Node" left="1200" top="4050" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -362,9 +364,9 @@
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output Enum" dstnodeid="11" dstpinname="Topology">
    </LINK>
-   <PACK Name="dx11" Version="1.0.2">
+   <PACK Name="dx11" Version="1.0.4">
    </PACK>
-   <PACK Name="vvvv-Message" Version="2.9.0">
+   <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.3">
    </PACK>
