@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Invirement.v4p" systemname="Invirement" filename="C:\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Invirement.v4p" scrollx="0" scrolly="870">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Invirement.v4p" systemname="Invirement" filename="C:\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Invirement.v4p" scrollx="0" scrolly="750">
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="4569" top="7872" width="100" height="100">
    </BOUNDS>
@@ -129,17 +129,23 @@
    </PIN>
    </NODE>
    <NODE systemname="Gradient (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Source\Gradient.tfx" nodename="Gradient (DX11.TextureFX)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="8211" top="8154" width="100" height="100">
+   <BOUNDS type="Node" left="8541" top="7584" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Color2" visible="1" slicecount="1" values="|0.86000,1.00000,0.97480,1.00000|">
    </PIN>
-   <PIN pinname="Gamma" slicecount="1" values="3.28">
+   <PIN pinname="Gamma" slicecount="1" values="2.38">
    </PIN>
-   <PIN pinname="Color1" visible="1">
+   <PIN pinname="Color1" visible="1" slicecount="1" values="|0.68000,0.92320,1.00000,1.00000|">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" values="Smoothstep">
+   <PIN pinname="Technique" slicecount="1" values="Exponential">
+   </PIN>
+   <PIN pinname="Use Default Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default SizeXY" slicecount="2" values="1024,1024">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="12">
@@ -167,7 +173,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1932" top="2088" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="2" visible="1" values="NoCullSimple,NoCullSimple">
+   <PIN pinname="Input Enum" slicecount="2" visible="1" values="FrontCullSimple,NoCullSimple">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="BackCullSimple">
    </PIN>
@@ -181,15 +187,15 @@
    </PIN>
    </NODE>
    <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="8703" top="7485" width="2184" height="276">
+   <BOUNDS type="Node" left="10908" top="7110" width="2184" height="276">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Lightness" slicecount="1" values="0.79">
+   <PIN pinname="Lightness" slicecount="1" values="0.84">
    </PIN>
-   <PIN pinname="Hue" slicecount="1" values="0.53">
+   <PIN pinname="Hue" slicecount="1" values="0.54">
    </PIN>
    <PIN pinname="Saturation" slicecount="1" values="1">
    </PIN>
@@ -226,9 +232,7 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="Layer Out" dstnodeid="18" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="11" srcpinname="Texture Out" dstnodeid="13" dstpinname="Input 1">
-   </LINK>
-   <BOUNDS type="Window" left="1185" top="2040" width="16335" height="12315">
+   <BOUNDS type="Window" left="19455" top="1455" width="16335" height="12315">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -315,7 +319,7 @@
    </BOUNDS>
    <PIN pinname="Sampler" visible="1">
    </PIN>
-   <PIN pinname="Mode" slicecount="1" values="LinearMirror">
+   <PIN pinname="Mode" slicecount="1" values="PointMirror">
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Sampler" dstnodeid="2" dstpinname="Sampler State">
@@ -325,7 +329,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Lightness" slicecount="1" values="0.04">
+   <PIN pinname="Lightness" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Hue" slicecount="1" values="0.69">
    </PIN>
@@ -384,8 +388,6 @@
    </LINK>
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="28" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="11" dstpinname="Color1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6261" top="1326" width="792" height="240">
    </BOUNDS>
@@ -405,5 +407,77 @@
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="6" dstpinname="ScaleZ">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="6" dstpinname="ScaleY">
+   </LINK>
+   <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="10170" top="5970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Lightness" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Hue" slicecount="1" values="0.69">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="37">
+   <BOUNDS type="Box" left="11610" top="8130" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11610" top="8130" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="37" dstpinname="Color Input">
+   </LINK>
+   <NODE systemname="Writer (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Writer (DX11.Texture 2d)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="10770" top="9330" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10770" top="9330" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Format" slicecount="1" values="Png">
+   </PIN>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\Users\Linkzlin\Desktop\render.png">
+   </PIN>
+   <PIN pinname="Write" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="12225" top="5505" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="40" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="11" dstpinname="Color1">
+   </LINK>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="7755" top="8250" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7755" top="8250" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\Users\Linkzlin\Desktop\render.png">
+   </PIN>
+   </NODE>
+   <NODE systemname="Blur (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Blur.tfx" nodename="Blur (DX11.TextureFX)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="9990" top="7785" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Texture Out" dstnodeid="43" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Texture Out" dstnodeid="13" dstpinname="Input 1">
    </LINK>
    </PATCH>
