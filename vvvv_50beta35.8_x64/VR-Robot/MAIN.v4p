@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="0" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
-   <BOUNDS type="Window" left="19665" top="1605" width="16725" height="11070">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="1875" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <BOUNDS type="Window" left="19665" top="1605" width="18120" height="12195">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -89,7 +89,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2745" top="10470" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="120">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="999999">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -127,7 +127,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="465" top="12705" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="195" top="390" width="18600" height="15285">
+   <BOUNDS type="Window" left="2355" top="165" width="18600" height="15285">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -181,7 +181,7 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Layer 3" visible="1">
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Layer Out" dstnodeid="74" dstpinname="Layer 1">
@@ -325,8 +325,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="89" srcpinname="Output Enum" dstnodeid="12" dstpinname="AA Samples per Pixel">
-   </LINK>
-   <LINK srcnodeid="25" srcpinname="Layer" dstnodeid="74" dstpinname="Layer 3">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="93" systemname="IOBox (String)">
    <BOUNDS type="Node" left="3315" top="11385" width="1560" height="270">
@@ -951,13 +949,11 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10390" top="4930" width="3100" height="3100">
    </BOUNDS>
-   <BOUNDS type="Window" left="18885" top="4440" width="18060" height="14445">
+   <BOUNDS type="Window" left="14655" top="855" width="18060" height="14445">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="184" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 6">
-   </LINK>
    <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="185">
    <BOUNDS type="Node" left="837" top="813" width="2184" height="276">
    </BOUNDS>
@@ -975,5 +971,9 @@
    <LINK srcnodeid="185" srcpinname="Output" dstnodeid="138" dstpinname="Color Input">
    </LINK>
    <LINK srcnodeid="99" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Layer" dstnodeid="74" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="184" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 6">
    </LINK>
    </PATCH>

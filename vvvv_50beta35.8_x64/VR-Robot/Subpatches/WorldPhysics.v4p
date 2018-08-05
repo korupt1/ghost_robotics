@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" systemname="WorldPhysics" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" scrollx="2115" scrolly="11970">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" systemname="WorldPhysics" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" scrollx="0" scrolly="6555">
    <BOUNDS type="Window" left="22620" top="2805" width="18225" height="13815">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
@@ -1084,8 +1084,6 @@
    </NODE>
    <LINK srcnodeid="60" srcpinname="Geometry Out" dstnodeid="160" dstpinname="Geometry In">
    </LINK>
-   <LINK srcnodeid="160" srcpinname="Geometry Out" dstnodeid="34" dstpinname="Geometry">
-   </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="161">
    <BOUNDS type="Box" left="1245" top="9780" width="1590" height="270">
    </BOUNDS>
@@ -1181,5 +1179,7 @@
    <LINK srcnodeid="165" srcpinname="Geometry Out" dstnodeid="170" dstpinname="Geometry">
    </LINK>
    <LINK srcnodeid="167" srcpinname="Transform Out" dstnodeid="170" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="Geometry Out" dstnodeid="34" dstpinname="Geometry">
    </LINK>
    </PATCH>

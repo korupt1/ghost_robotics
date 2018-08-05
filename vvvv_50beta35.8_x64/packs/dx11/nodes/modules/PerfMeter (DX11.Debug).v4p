@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.dtd" >
-   <PATCH nodename="D:\Dropbox\Git Repos\dx11-vvvv-girlpower\nodes\modules\PerfMeter (DX11.Debug).v4p" systemname="PerfMeter" filename="D:\Dropbox\Git Repos\dx11-vvvv-girlpower\nodes\modules\PerfMeter.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\packs\dx11\nodes\modules\PerfMeter (DX11.Debug).v4p" systemname="PerfMeter" filename="D:\Dropbox\Git Repos\dx11-vvvv-girlpower\nodes\modules\PerfMeter.v4p">
    <BOUNDS type="Window" left="9090" top="2175" width="11970" height="10515">
    </BOUNDS>
    <NODE componentmode="InABox" id="39" nodename="IOBox (Node)" systemname="IOBox (Node)">
@@ -610,33 +610,33 @@
    </NODE>
    <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Size">
    </LINK>
-   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="44">
+   <NODE systemname="QUAD (DX11.LAYER)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="44">
    <BOUNDS type="Node" left="1440" top="7155" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="backdrop">
    </PIN>
-   <PIN pinname="Layer Out" visible="1">
+   <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Color" slicecount="1" values="|0.00185,0.00185,0.00185,1.00000|">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="45">
+   <NODE systemname="QUAD (DX11.LAYER)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="4335" top="7755" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Layer Out" visible="1">
+   <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Color" visible="1">
    </PIN>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="45" dstpinname="Color">
    </LINK>
-   <NODE nodename="Quad (DX11.Layer)" componentmode="Hidden" id="4" systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll">
+   <NODE nodename="Quad (DX11.Layer)" componentmode="Hidden" id="4" systemname="QUAD (DX11.LAYER)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll">
    <BOUNDS type="Node" left="5505" top="8220" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="5505" top="8220" width="0" height="0">
@@ -647,14 +647,10 @@
    </PIN>
    <PIN pinname="Transform" visible="1">
    </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="4" dstpinname="Transform In">
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="4" dstpinname="Transform">
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Transform Out" dstnodeid="45" dstpinname="Transform In">
+   <LINK srcnodeid="12" srcpinname="Transform Out" dstnodeid="45" dstpinname="Transform">
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="46">
    <BOUNDS type="Node" left="1965" top="8130" width="100" height="100">
@@ -666,17 +662,17 @@
    </NODE>
    <LINK srcnodeid="46" srcpinname="Render State" dstnodeid="41" dstpinname="Render State">
    </LINK>
-   <LINK srcnodeid="45" srcpinname="Layer Out" dstnodeid="41" dstpinname="Layer 2">
+   <LINK srcnodeid="45" srcpinname="Layer" dstnodeid="41" dstpinname="Layer 2">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Layer Out" dstnodeid="41" dstpinname="Layer 3">
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="41" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="40" srcpinname="Layer" dstnodeid="41" dstpinname="Layer 4">
    </LINK>
-   <LINK srcnodeid="24" srcpinname="Transform Out" dstnodeid="44" dstpinname="Transform In">
+   <LINK srcnodeid="24" srcpinname="Transform Out" dstnodeid="44" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="24" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="44" srcpinname="Layer Out" dstnodeid="41" dstpinname="Layer 1">
+   <LINK srcnodeid="44" srcpinname="Layer" dstnodeid="41" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="PixelBillBoard (DX11.Layer)" filename="%VVVV%\packs\DX11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="PixelBillBoard (DX11.Layer)" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="1485" top="10080" width="100" height="100">
@@ -726,4 +722,10 @@
    </LINK>
    <LINK srcnodeid="51" srcpinname="Transform Out" dstnodeid="48" dstpinname="Transform In">
    </LINK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>
