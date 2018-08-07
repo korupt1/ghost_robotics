@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" systemname="OcculusController (OpenVR DX11.Layer)" filename="C:\vvvv_50beta35.8_x64\packs\VVVV.OpenVR\nodes\modules\OcculusController (OpenVR DX11.Layer)Nils.v4p" scrollx="0" scrolly="13170">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" systemname="OcculusController (OpenVR DX11.Layer)" filename="C:\vvvv_50beta35.8_x64\packs\VVVV.OpenVR\nodes\modules\OcculusController (OpenVR DX11.Layer)Nils.v4p" scrollx="1920" scrolly="630">
    <BOUNDS type="Window" left="1275" top="4215" width="18405" height="13185">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -621,7 +621,7 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 4" visible="1">
    </PIN>
@@ -680,12 +680,6 @@
    <LINKPOINT x="15150" y="5038">
    </LINKPOINT>
    <LINKPOINT x="14775" y="5793">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="325" srcpinname="Touchpad Touch" dstnodeid="423" dstpinname="Input 3" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="13365" y="5053">
-   </LINKPOINT>
-   <LINKPOINT x="15345" y="5808">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="325" srcpinname="Trigger Press" dstnodeid="423" dstpinname="Input 4" linkstyle="Bezier" hiddenwhenlocked="1">
@@ -1009,5 +1003,11 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="505" srcpinname="Y Output Value" dstnodeid="503" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="325" srcpinname="Touchpad Press" dstnodeid="423" dstpinname="Input 3" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="13335" y="5430">
+   </LINKPOINT>
+   <LINKPOINT x="15735" y="5430">
+   </LINKPOINT>
    </LINK>
    </PATCH>
