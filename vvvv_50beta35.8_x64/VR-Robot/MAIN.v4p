@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="4185" scrolly="1395" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="3120" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
    <BOUNDS type="Window" left="19590" top="1605" width="18810" height="12570">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -150,6 +150,8 @@
    <PIN pinname="VSync" slicecount="1" values="0">
    </PIN>
    <PIN pinname="AA Samples per Pixel" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Refresh Rate" slicecount="1" values="90">
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="67">
@@ -365,7 +367,7 @@
    <LINK srcnodeid="94" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 3">
    </LINK>
    <NODE systemname="Invirement" filename="%VVVV%\VR-Robot\Subpatches\Invirement.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Invirement.v4p" componentmode="Hidden" id="95" debug="0">
-   <BOUNDS type="Node" left="2520" top="6630" width="100" height="100">
+   <BOUNDS type="Node" left="2385" top="6525" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
@@ -405,7 +407,7 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
+   <PIN pinname="Enabled" slicecount="1" values="0" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
@@ -937,13 +939,15 @@
    <LINK srcnodeid="182" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 5">
    </LINK>
    <NODE systemname="interfaceUITorus" filename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" nodename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" componentmode="Hidden" id="184" debug="0">
-   <BOUNDS type="Node" left="11940" top="6480" width="0" height="0">
+   <BOUNDS type="Node" left="11820" top="6465" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="10390" top="4930" width="3100" height="3100">
+   <BOUNDS type="Box" left="10270" top="4915" width="3100" height="3100">
    </BOUNDS>
    <BOUNDS type="Window" left="9195" top="690" width="25035" height="14445">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="185">
@@ -968,14 +972,56 @@
    </LINK>
    <LINK srcnodeid="184" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 6">
    </LINK>
-   <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="InAWindow" id="188" debug="0">
-   <BOUNDS type="Node" left="13665" top="5602" width="0" height="0">
+   <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="Hidden" id="188" debug="0">
+   <BOUNDS type="Node" left="13770" top="5752" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="12100" top="3730" width="3130" height="3745">
+   <BOUNDS type="Box" left="12205" top="3880" width="3130" height="3745">
    </BOUNDS>
    <BOUNDS type="Window" left="20820" top="2760" width="12420" height="12735">
    </BOUNDS>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="188" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 7">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="189">
+   <BOUNDS type="Box" left="5430" top="4635" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5430" top="4635" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="189" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="190">
+   <BOUNDS type="Box" left="11895" top="5745" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11895" top="5745" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="190" srcpinname="Y Output Value" dstnodeid="184" dstpinname="Evaluate">
    </LINK>
    </PATCH>

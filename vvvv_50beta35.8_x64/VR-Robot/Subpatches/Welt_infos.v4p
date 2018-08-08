@@ -18,12 +18,12 @@
    </PACK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="Flag" filename="%VVVV%\VR-Robot\Subpatches\Flag.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Flag.v4p" componentmode="Hidden" id="31">
+   <NODE systemname="Flag" filename="%VVVV%\VR-Robot\Subpatches\Flag.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Flag.v4p" componentmode="Hidden" id="31" debug="0">
    <BOUNDS type="Node" left="3110" top="5361" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="-1765" top="-531" width="9750" height="11785">
    </BOUNDS>
-   <BOUNDS type="Window" left="25845" top="6300" width="9750" height="11775">
+   <BOUNDS type="Window" left="22860" top="2895" width="9750" height="11775">
    </BOUNDS>
    <PIN pinname="Go To Position" visible="1">
    </PIN>
@@ -120,12 +120,12 @@
    </LINK>
    <LINK srcnodeid="36" srcpinname="Layer Out" dstnodeid="2" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="Chain" filename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" componentmode="InAWindow" id="42">
+   <NODE systemname="Chain" filename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" componentmode="Hidden" id="42" debug="0">
    <BOUNDS type="Node" left="6204" top="3942" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3537" top="-600" width="5335" height="9085">
    </BOUNDS>
-   <BOUNDS type="Window" left="23685" top="3390" width="11640" height="11895">
+   <BOUNDS type="Window" left="24555" top="1410" width="11640" height="11895">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="42" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 2">
