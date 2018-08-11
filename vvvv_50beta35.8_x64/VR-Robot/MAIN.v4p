@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="3120" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="7530" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
    <BOUNDS type="Window" left="19590" top="1605" width="18810" height="12570">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -129,7 +129,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="465" top="12705" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="1605" top="405" width="18600" height="15285">
+   <BOUNDS type="Window" left="1680" top="0" width="18600" height="15285">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -376,16 +376,6 @@
    </NODE>
    <LINK srcnodeid="95" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 1">
    </LINK>
-   <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="92">
-   <BOUNDS type="Node" left="2430" top="12075" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Initial Distance" slicecount="1" values="2.99">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="92" srcpinname="View" dstnodeid="66" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="92" srcpinname="Projection" dstnodeid="66" dstpinname="Projection">
-   </LINK>
    <NODE systemname="AutomataUI (Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="AutomataUI (Animation)" componentmode="Hidden" id="98">
    <BOUNDS type="Node" left="6270" top="795" width="100" height="100">
    </BOUNDS>
@@ -407,7 +397,7 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="0" visible="1">
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
@@ -943,7 +933,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10270" top="4915" width="3100" height="3100">
    </BOUNDS>
-   <BOUNDS type="Window" left="9195" top="690" width="25035" height="14445">
+   <BOUNDS type="Window" left="19950" top="630" width="25035" height="14445">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -979,7 +969,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="20820" top="2760" width="12420" height="12735">
    </BOUNDS>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="0">
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="188" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 7">
@@ -1023,5 +1013,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="190" srcpinname="Y Output Value" dstnodeid="184" dstpinname="Evaluate">
+   </LINK>
+   <NODE id="92" systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden">
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="2430" top="12075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Initial Distance" slicecount="1" values="2.99">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="92" srcpinname="Projection" dstnodeid="66" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="View" dstnodeid="66" dstpinname="View">
    </LINK>
    </PATCH>
