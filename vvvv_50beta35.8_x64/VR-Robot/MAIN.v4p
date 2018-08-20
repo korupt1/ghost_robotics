@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="5805" scrolly="945" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
-   <BOUNDS type="Window" left="14715" top="2190" width="18810" height="12570">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="75" scrolly="945" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <BOUNDS type="Window" left="15405" top="2295" width="17040" height="8730">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="750" top="14730" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="-3285" top="510" width="18600" height="14715">
+   <BOUNDS type="Window" left="1005" top="795" width="18600" height="14715">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -373,8 +373,10 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="19455" top="1455" width="16335" height="12315">
+   <BOUNDS type="Window" left="12375" top="600" width="16335" height="12315">
    </BOUNDS>
+   <PIN pinname="Scalo" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="95" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 1">
    </LINK>
@@ -390,6 +392,8 @@
    <PIN pinname="Input 2" visible="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
@@ -571,7 +575,7 @@
    <LINK srcnodeid="128" srcpinname="Input Value" dstnodeid="127" dstpinname="Input">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="118">
-   <BOUNDS type="Node" left="17985" top="4845" width="100" height="100">
+   <BOUNDS type="Node" left="17805" top="5940" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -635,7 +639,7 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="19560" top="585" width="24090" height="14625">
+   <BOUNDS type="Window" left="17895" top="5250" width="24090" height="14625">
    </BOUNDS>
    <PIN pinname="Armlänge" visible="1">
    </PIN>
@@ -906,8 +910,6 @@
    </LINK>
    <LINK srcnodeid="99" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 2">
    </LINK>
-   <LINK srcnodeid="25" srcpinname="Layer" dstnodeid="74" dstpinname="Layer 3">
-   </LINK>
    <LINK srcnodeid="184" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 6">
    </LINK>
    <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="Hidden" id="188" debug="0">
@@ -915,9 +917,9 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12265" top="3880" width="3130" height="3745">
    </BOUNDS>
-   <BOUNDS type="Window" left="9645" top="2505" width="12420" height="12735">
+   <BOUNDS type="Window" left="19290" top="5805" width="12420" height="12735">
    </BOUNDS>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="188" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 7">
@@ -927,7 +929,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5430" top="4635" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -937,7 +939,9 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="189" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Enabled">
@@ -978,12 +982,12 @@
    </LINK>
    <LINK srcnodeid="205" srcpinname="XYZ" dstnodeid="141" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Höhenverstellung" filename="%VVVV%\VR-Robot\Subpatches\Höhenverstellung.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Höhenverstellung.v4p" componentmode="Hidden" id="217">
-   <BOUNDS type="Node" left="15732" top="1461" width="0" height="0">
+   <NODE systemname="Höhenverstellung" filename="%VVVV%\VR-Robot\Subpatches\Höhenverstellung.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Höhenverstellung.v4p" componentmode="Hidden" id="217" debug="0">
+   <BOUNDS type="Node" left="15762" top="1941" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="13260" top="0" width="4945" height="6310">
+   <BOUNDS type="Box" left="13290" top="480" width="4945" height="6310">
    </BOUNDS>
-   <BOUNDS type="Window" left="16020" top="1320" width="21270" height="14625">
+   <BOUNDS type="Window" left="12570" top="1290" width="21270" height="14625">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -1017,5 +1021,35 @@
    <LINK srcnodeid="217" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 8">
    </LINK>
    <LINK srcnodeid="217" srcpinname="Output" dstnodeid="205" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Layer" dstnodeid="74" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="95" dstpinname="Scalo">
+   </LINK>
+   <NODE systemname="AutomataUI (Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="AutomataUI (Animation)" componentmode="Hidden" id="240">
+   <BOUNDS type="Node" left="7635" top="465" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7635" top="465" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="StateXML" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&cr;&lf;&lt;ArrayOfState xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;Init&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Init&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;32&lt;/X&gt;&cr;&lf;        &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;32&lt;/X&gt;&cr;&lf;      &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;  &lt;State&gt;&cr;&lf;    &lt;ID&gt;hDxaOgR4&lt;/ID&gt;&cr;&lf;    &lt;Name&gt;Höhe verstellen&lt;/Name&gt;&cr;&lf;    &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;202&lt;/X&gt;&cr;&lf;        &lt;Y&gt;106&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;202&lt;/X&gt;&cr;&lf;      &lt;Y&gt;106&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/State&gt;&cr;&lf;&lt;/ArrayOfState&gt;|">
+   </PIN>
+   <PIN pinname="TransitionXML" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&cr;&lf;&lt;ArrayOfTransition xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&cr;&lf;  &lt;Transition&gt;&cr;&lf;    &lt;Name&gt;toHöhe verstellen&lt;/Name&gt;&cr;&lf;    &lt;startState&gt;&cr;&lf;      &lt;ID&gt;Init&lt;/ID&gt;&cr;&lf;      &lt;Name&gt;Init&lt;/Name&gt;&cr;&lf;      &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;      &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;      &lt;Bounds&gt;&cr;&lf;        &lt;Location&gt;&cr;&lf;          &lt;X&gt;32&lt;/X&gt;&cr;&lf;          &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;        &lt;/Location&gt;&cr;&lf;        &lt;Size&gt;&cr;&lf;          &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;          &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;        &lt;/Size&gt;&cr;&lf;        &lt;X&gt;32&lt;/X&gt;&cr;&lf;        &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Bounds&gt;&cr;&lf;    &lt;/startState&gt;&cr;&lf;    &lt;endState&gt;&cr;&lf;      &lt;ID&gt;hDxaOgR4&lt;/ID&gt;&cr;&lf;      &lt;Name&gt;Höhe verstellen&lt;/Name&gt;&cr;&lf;      &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;      &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;      &lt;Bounds&gt;&cr;&lf;        &lt;Location&gt;&cr;&lf;          &lt;X&gt;291&lt;/X&gt;&cr;&lf;          &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;        &lt;/Location&gt;&cr;&lf;        &lt;Size&gt;&cr;&lf;          &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;          &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;        &lt;/Size&gt;&cr;&lf;        &lt;X&gt;291&lt;/X&gt;&cr;&lf;        &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Bounds&gt;&cr;&lf;    &lt;/endState&gt;&cr;&lf;    &lt;startBezierPoint&gt;&cr;&lf;      &lt;X&gt;0&lt;/X&gt;&cr;&lf;      &lt;Y&gt;0&lt;/Y&gt;&cr;&lf;    &lt;/startBezierPoint&gt;&cr;&lf;    &lt;endBezierPoint&gt;&cr;&lf;      &lt;X&gt;0&lt;/X&gt;&cr;&lf;      &lt;Y&gt;0&lt;/Y&gt;&cr;&lf;    &lt;/endBezierPoint&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;IsPingPong&gt;false&lt;/IsPingPong&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;151&lt;/X&gt;&cr;&lf;        &lt;Y&gt;118&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;90&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;26&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;151&lt;/X&gt;&cr;&lf;      &lt;Y&gt;118&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;90&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;26&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/Transition&gt;&cr;&lf;  &lt;Transition&gt;&cr;&lf;    &lt;Name&gt;toInit&lt;/Name&gt;&cr;&lf;    &lt;startState&gt;&cr;&lf;      &lt;ID&gt;hDxaOgR4&lt;/ID&gt;&cr;&lf;      &lt;Name&gt;Höhe verstellen&lt;/Name&gt;&cr;&lf;      &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;      &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;      &lt;Bounds&gt;&cr;&lf;        &lt;Location&gt;&cr;&lf;          &lt;X&gt;291&lt;/X&gt;&cr;&lf;          &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;        &lt;/Location&gt;&cr;&lf;        &lt;Size&gt;&cr;&lf;          &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;          &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;        &lt;/Size&gt;&cr;&lf;        &lt;X&gt;291&lt;/X&gt;&cr;&lf;        &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Bounds&gt;&cr;&lf;    &lt;/startState&gt;&cr;&lf;    &lt;endState&gt;&cr;&lf;      &lt;ID&gt;Init&lt;/ID&gt;&cr;&lf;      &lt;Name&gt;Init&lt;/Name&gt;&cr;&lf;      &lt;Active&gt;false&lt;/Active&gt;&cr;&lf;      &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;      &lt;Bounds&gt;&cr;&lf;        &lt;Location&gt;&cr;&lf;          &lt;X&gt;32&lt;/X&gt;&cr;&lf;          &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;        &lt;/Location&gt;&cr;&lf;        &lt;Size&gt;&cr;&lf;          &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;          &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;        &lt;/Size&gt;&cr;&lf;        &lt;X&gt;32&lt;/X&gt;&cr;&lf;        &lt;Y&gt;96&lt;/Y&gt;&cr;&lf;        &lt;Width&gt;70&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;70&lt;/Height&gt;&cr;&lf;      &lt;/Bounds&gt;&cr;&lf;    &lt;/endState&gt;&cr;&lf;    &lt;startBezierPoint&gt;&cr;&lf;      &lt;X&gt;0&lt;/X&gt;&cr;&lf;      &lt;Y&gt;0&lt;/Y&gt;&cr;&lf;    &lt;/startBezierPoint&gt;&cr;&lf;    &lt;endBezierPoint&gt;&cr;&lf;      &lt;X&gt;0&lt;/X&gt;&cr;&lf;      &lt;Y&gt;0&lt;/Y&gt;&cr;&lf;    &lt;/endBezierPoint&gt;&cr;&lf;    &lt;Frames&gt;0&lt;/Frames&gt;&cr;&lf;    &lt;IsPingPong&gt;false&lt;/IsPingPong&gt;&cr;&lf;    &lt;Bounds&gt;&cr;&lf;      &lt;Location&gt;&cr;&lf;        &lt;X&gt;0&lt;/X&gt;&cr;&lf;        &lt;Y&gt;0&lt;/Y&gt;&cr;&lf;      &lt;/Location&gt;&cr;&lf;      &lt;Size&gt;&cr;&lf;        &lt;Width&gt;0&lt;/Width&gt;&cr;&lf;        &lt;Height&gt;0&lt;/Height&gt;&cr;&lf;      &lt;/Size&gt;&cr;&lf;      &lt;X&gt;0&lt;/X&gt;&cr;&lf;      &lt;Y&gt;0&lt;/Y&gt;&cr;&lf;      &lt;Width&gt;0&lt;/Width&gt;&cr;&lf;      &lt;Height&gt;0&lt;/Height&gt;&cr;&lf;    &lt;/Bounds&gt;&cr;&lf;  &lt;/Transition&gt;&cr;&lf;&lt;/ArrayOfTransition&gt;|">
+   </PIN>
+   <PIN pinname="TransitionNames" slicecount="2" values="|toHöhe verstellen|,toInit">
+   </PIN>
+   <PIN pinname="AutomataUI" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="241">
+   <BOUNDS type="Node" left="9330" top="1005" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="AutomataWelt">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="240" srcpinname="AutomataUI" dstnodeid="241" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="189" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Evaluate">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" systemname="interfaceUITorus" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" scrollx="27720" scrolly="22965">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" systemname="interfaceUITorus" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" scrollx="0" scrolly="10080">
    <BOUNDS type="Window" left="11655" top="3900" width="25035" height="14445">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
@@ -579,7 +579,7 @@
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0" visible="1">
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Inverse Output" visible="1">
    </PIN>
@@ -2353,7 +2353,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Input 4" visible="1">
    </PIN>
@@ -2368,8 +2368,6 @@
    <PIN pinname="Send String" slicecount="1" values="|AUswahl Interface Ring 1|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="186" srcpinname="Output" dstnodeid="269" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="270">
    <BOUNDS type="Node" left="27225" top="16545" width="100" height="100">
    </BOUNDS>
@@ -2379,9 +2377,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="271">
-   <BOUNDS type="Node" left="26730" top="17040" width="100" height="100">
+   <BOUNDS type="Node" left="25770" top="17310" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="26730" top="17040" width="3000" height="3000">
+   <BOUNDS type="Box" left="25770" top="17310" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Select" visible="1">
    </PIN>
@@ -2592,12 +2590,6 @@
    <LINKPOINT x="30720" y="17610">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="271" srcpinname="Former Slice" dstnodeid="268" dstpinname="Switch" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="27240" y="18090">
-   </LINKPOINT>
-   <LINKPOINT x="27240" y="18090">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="267" srcpinname="Texture Out" dstnodeid="268" dstpinname="Input 6" hiddenwhenlocked="1" linkstyle="Bezier">
    <LINKPOINT x="31005" y="18668">
    </LINKPOINT>
@@ -2623,9 +2615,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="271" srcpinname="Former Slice" dstnodeid="282" dstpinname="Switch" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="27270" y="18345">
+   <LINKPOINT x="26630" y="18525">
    </LINKPOINT>
-   <LINKPOINT x="29190" y="18345">
+   <LINKPOINT x="28870" y="18435">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="276" srcpinname="SizeXY" dstnodeid="282" dstpinname="Input 2" hiddenwhenlocked="1" linkstyle="Bezier">
@@ -2733,9 +2725,9 @@
    <LINK srcnodeid="87" srcpinname="Transform Out" dstnodeid="287" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="271" srcpinname="Former Slice" dstnodeid="283" dstpinname="Switch" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="27270" y="18675">
+   <LINKPOINT x="26630" y="18855">
    </LINKPOINT>
-   <LINKPOINT x="30090" y="18675">
+   <LINKPOINT x="29770" y="18765">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="266" srcpinname="File Count" dstnodeid="283" dstpinname="Input 6" hiddenwhenlocked="1" linkstyle="Bezier">
@@ -4480,8 +4472,6 @@
    </NODE>
    <LINK srcnodeid="314" srcpinname="Output" dstnodeid="431" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="431" srcpinname="Output" dstnodeid="430" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="437">
    <BOUNDS type="Node" left="22785" top="2190" width="100" height="100">
    </BOUNDS>
@@ -4515,5 +4505,15 @@
    <LINK srcnodeid="439" srcpinname="Output" dstnodeid="102" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="348" srcpinname="Up Edge" dstnodeid="431" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="271" srcpinname="Former Slice" dstnodeid="268" dstpinname="Switch" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="26600" y="18270">
+   </LINKPOINT>
+   <LINKPOINT x="26920" y="18180">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="186" srcpinname="Output" dstnodeid="269" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="431" srcpinname="Output" dstnodeid="430" dstpinname="Input Value">
    </LINK>
    </PATCH>
