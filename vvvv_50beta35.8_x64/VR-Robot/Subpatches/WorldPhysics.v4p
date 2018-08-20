@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" systemname="WorldPhysics" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" scrollx="885" scrolly="6135">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" systemname="WorldPhysics" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" scrollx="45" scrolly="1080">
    <BOUNDS type="Window" left="22620" top="2805" width="18225" height="13815">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
@@ -338,6 +338,8 @@
    <PIN pinname="Blue Min" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Green Min" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Green Max" slicecount="1" values="0.01">
    </PIN>
    </NODE>
    <LINK srcnodeid="37" srcpinname="Transform Out" dstnodeid="34" dstpinname="Color Transform">
@@ -786,20 +788,6 @@
    </NODE>
    <LINK srcnodeid="124" srcpinname="Input Value" dstnodeid="9" dstpinname="Enabled">
    </LINK>
-   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="159">
-   <BOUNDS type="Node" left="5550" top="14970" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5550" top="14970" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Layer 1" visible="1">
-   </PIN>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="159" dstpinname="Layer 1">
-   </LINK>
    <NODE systemname="Topology (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Topology (DX11.Geometry)" componentmode="Hidden" id="160">
    <BOUNDS type="Node" left="1110" top="10680" width="100" height="100">
    </BOUNDS>
@@ -832,34 +820,6 @@
    </NODE>
    <LINK srcnodeid="161" srcpinname="Output Enum" dstnodeid="160" dstpinname="Topology">
    </LINK>
-   <NODE systemname="Box (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Box (DX11.Geometry)" componentmode="Hidden" id="165">
-   <BOUNDS type="Node" left="6330" top="13260" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6330" top="13260" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Geometry Out" visible="1">
-   </PIN>
-   <PIN pinname="SizeXYZ" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="166">
-   <BOUNDS type="Box" left="6465" top="11655" width="795" height="720">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6465" top="11655" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="3.93,0.001,4.86">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="166" srcpinname="Y Output Value" dstnodeid="165" dstpinname="SizeXYZ">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="168">
    <BOUNDS type="Box" left="3930" top="2385" width="795" height="240">
    </BOUNDS>
@@ -876,42 +836,6 @@
    </NODE>
    <LINK srcnodeid="168" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Y">
    </LINK>
-   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="169">
-   <BOUNDS type="Node" left="6270" top="5565" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.013">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="168" srcpinname="Y Output Value" dstnodeid="169" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="167">
-   <BOUNDS type="Node" left="6195" top="10365" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="CenterY" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="TranslateY" visible="1">
-   </PIN>
-   <PIN pinname="Translate XYZ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="169" srcpinname="Output" dstnodeid="167" dstpinname="TranslateY">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="167" dstpinname="Translate XYZ">
-   </LINK>
-   <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="170">
-   <BOUNDS type="Node" left="5685" top="13815" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="170" srcpinname="Layer" dstnodeid="159" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="165" srcpinname="Geometry Out" dstnodeid="170" dstpinname="Geometry">
-   </LINK>
-   <LINK srcnodeid="167" srcpinname="Transform Out" dstnodeid="170" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="60" srcpinname="Geometry Out" dstnodeid="34" dstpinname="Geometry">
+   <LINK srcnodeid="160" srcpinname="Geometry Out" dstnodeid="34" dstpinname="Geometry">
    </LINK>
    </PATCH>

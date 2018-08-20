@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\chain_Grafik.v4p" systemname="chain_Grafik" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\chain_Grafik.v4p">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\chain_Grafik.v4p" systemname="chain_Grafik" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\chain_Grafik.v4p" scrollx="0" scrolly="90">
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2865" top="9225" width="100" height="100">
    </BOUNDS>
@@ -337,7 +337,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="8580" top="2430" width="100" height="100">
+   <BOUNDS type="Node" left="7980" top="2340" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="|Controller Button|">
    </PIN>

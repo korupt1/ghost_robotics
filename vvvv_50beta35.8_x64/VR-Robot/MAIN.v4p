@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="75" scrolly="945" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="4770" scrolly="90" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
    <BOUNDS type="Window" left="15405" top="2295" width="17040" height="8730">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -689,6 +689,10 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="157" srcpinname="Output" dstnodeid="120" dstpinname="Input Value">
    </LINK>
@@ -917,7 +921,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12265" top="3880" width="3130" height="3745">
    </BOUNDS>
-   <BOUNDS type="Window" left="19290" top="5805" width="12420" height="12735">
+   <BOUNDS type="Window" left="18720" top="3465" width="12420" height="12735">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -929,7 +933,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5430" top="4635" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -939,7 +943,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1024,7 +1028,7 @@
    </LINK>
    <LINK srcnodeid="25" srcpinname="Layer" dstnodeid="74" dstpinname="Layer 3">
    </LINK>
-   <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="95" dstpinname="Scalo">
+   <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="95" dstpinname="Scalo" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="AutomataUI (Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="AutomataUI (Animation)" componentmode="Hidden" id="240">
    <BOUNDS type="Node" left="7635" top="465" width="100" height="100">
@@ -1051,5 +1055,25 @@
    <LINK srcnodeid="240" srcpinname="AutomataUI" dstnodeid="241" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="189" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Evaluate">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="243">
+   <BOUNDS type="Node" left="28575" top="6495" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="ErrorON">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="244">
+   <BOUNDS type="Node" left="28695" top="7395" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="243" srcpinname="Input Value" dstnodeid="244" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="244" srcpinname="Output" dstnodeid="157" dstpinname="Input 3">
    </LINK>
    </PATCH>
