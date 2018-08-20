@@ -1,0 +1,283 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="G:\gpuparticles\modules\FluidSolverGPUDX11_1\FluidSolver_ROOTdx11.v4p" systemname="FluidSolver_ROOTdx11" filename="C:\Users\david\Desktop\geronemapping\FluidSolverGPU\FluidSolver_ROOTdx11.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="9315" top="765" width="10590" height="14580">
+   </BOUNDS>
+   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="1" dstpinname="viewport width">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Height" dstnodeid="1" dstpinname="viewport height">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="1" dstpinname="mouse xy XY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="116">
+   <BOUNDS type="Node" left="765" top="2610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="765" top="2610" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.99">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Dissipation">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0.9">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="117">
+   <BOUNDS type="Node" left="1770" top="2565" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1770" top="2565" width="585" height="285">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.6">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="TimeStep">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="118" srcpinname="Y Output Value" dstnodeid="1" dstpinname="flowColor ">
+   </LINK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="134">
+   <BOUNDS type="Node" left="1635" top="26415" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1635" top="26415" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="136">
+   <BOUNDS type="Node" left="4245" top="2610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4245" top="2610" width="795" height="300">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.0001">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="fRadius">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="0.01">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="Texture Out" dstnodeid="1" dstpinname="LastMousePos">
+   </LINK>
+   <LINK srcnodeid="135" srcpinname="Output Node" dstnodeid="23" dstpinname="Target">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="14" dstpinname="Velocity">
+   <LINKPOINT x="11539" y="12206">
+   </LINKPOINT>
+   <LINKPOINT x="9863" y="4882">
+   </LINKPOINT>
+   <LINKPOINT x="8831" y="5299">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="228" srcpinname="Output 1" dstnodeid="14" dstpinname="LastMousePos XY">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="229" dstpinname="mouse XY">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Input Value" dstnodeid="229" dstpinname="viewport XY">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Texture Out" dstnodeid="229" dstpinname="LastMousePos">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Input Value" dstnodeid="234" dstpinname="viewport XY">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="239">
+   <BOUNDS type="Node" left="2505" top="2610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2505" top="2610" width="765" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="512">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Resolution">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1000">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="240">
+   <BOUNDS type="Node" left="3375" top="2610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3375" top="2610" width="825" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="500">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Iterations">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="2000">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="248">
+   <BOUNDS type="Node" left="7005" top="2445" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7005" top="2445" width="555" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="SetBoundaries">
+   </PIN>
+   </NODE>
+   <NODE systemname="VelocityFielddx11" filename="VelocityFielddx11.v4p" nodename="VelocityFielddx11.v4p" componentmode="Hidden" id="230">
+   <BOUNDS type="Node" left="435" top="5970" width="2835" height="270">
+   </BOUNDS>
+   <PIN pinname="enable" visible="1">
+   </PIN>
+   <PIN pinname="mouseXY" visible="1">
+   </PIN>
+   <PIN pinname="fRadius" visible="1">
+   </PIN>
+   <PIN pinname="init" visible="1">
+   </PIN>
+   <PIN pinname="dissipation" visible="1">
+   </PIN>
+   <PIN pinname="VelocityTexture" visible="1">
+   </PIN>
+   <PIN pinname="TimeStep" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="6165" top="4260" width="12180" height="13740">
+   </BOUNDS>
+   <PIN pinname="resolution" visible="1">
+   </PIN>
+   <PIN pinname="iterations" visible="1">
+   </PIN>
+   <PIN pinname="SetBoundaries" visible="1">
+   </PIN>
+   <PIN pinname="texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="velomap" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="136" srcpinname="Y Output Value" dstnodeid="230" dstpinname="fRadius" linkstyle="Bezier">
+   <LINKPOINT x="4230" y="4425">
+   </LINKPOINT>
+   <LINKPOINT x="1890" y="4425">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="Y Output Value" dstnodeid="230" dstpinname="dissipation" linkstyle="Bezier">
+   <LINKPOINT x="780" y="4403">
+   </LINKPOINT>
+   <LINKPOINT x="465" y="4403">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="230" dstpinname="TimeStep" linkstyle="Bezier">
+   <LINKPOINT x="1785" y="4403">
+   </LINKPOINT>
+   <LINKPOINT x="810" y="4403">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Y Output Value" dstnodeid="230" dstpinname="resolution" linkstyle="Bezier">
+   <LINKPOINT x="2505" y="4410">
+   </LINKPOINT>
+   <LINKPOINT x="1155" y="4410">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="240" srcpinname="Y Output Value" dstnodeid="230" dstpinname="iterations" linkstyle="Bezier">
+   <LINKPOINT x="3375" y="4410">
+   </LINKPOINT>
+   <LINKPOINT x="1515" y="4410">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="248" srcpinname="Y Output Value" dstnodeid="230" dstpinname="SetBoundaries" linkstyle="Bezier">
+   <LINKPOINT x="7010" y="4430">
+   </LINKPOINT>
+   <LINKPOINT x="3265" y="4435">
+   </LINKPOINT>
+   </LINK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <PACK Name="vvvv.packs_" Version="0.2.0">
+   </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="309" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="3420" top="6885" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3420" top="6885" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Buffers">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="230" srcpinname="velomap" dstnodeid="309" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="311" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3330" top="660" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3330" top="660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.99017199017199,-0.857605177993528">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="311" srcpinname="Y Output Value" dstnodeid="230" dstpinname="mouseXY">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="312" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3840" top="1260" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3840" top="1260" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="init">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="312" srcpinname="Y Output Value" dstnodeid="230" dstpinname="init">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="313" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5640" top="2790" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5640" top="2790" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="enable">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="313" srcpinname="Y Output Value" dstnodeid="230" dstpinname="enable">
+   </LINK>
+   </PATCH>

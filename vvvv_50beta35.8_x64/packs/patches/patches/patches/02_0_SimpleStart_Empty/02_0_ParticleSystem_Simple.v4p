@@ -1,0 +1,119 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="G:\gpuparticles\patches_final\01_0_SimpleStart\01_0_ParticleSystem_Simple.v4p" systemname="ImageEmitter" filename="G:\cs_ps\WorkShop_GPUParticle\02_0_ImageEmitter_(SampleColor_PlayWithForces_NoClearRenderer)PAUL\ImageEmitter.v4p" scrollx="0" scrolly="15">
+   <BOUNDS type="Window" left="0" top="0" width="14940" height="14295">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="97" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2235" top="9720" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2235" top="9720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="alpha">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="98" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1485" top="8820" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1485" top="8820" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.07">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Scale">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="122">
+   <BOUNDS type="Node" left="330" top="10755" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="330" top="10755" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14625" top="585" width="9540" height="6720">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="138">
+   <BOUNDS type="Node" left="9540" top="1890" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   <PIN pinname="Left Button" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ConstantInstanced_Particles_Template (DX11.Effect)" filename="..\..\dx11\ConstantInstanced_Particles_Template.fx" nodename="ConstantInstanced_Particles_Template (DX11.Effect)" componentmode="Hidden" id="145">
+   <BOUNDS type="Node" left="480" top="10200" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="MaxAge" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Geometry" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="particles" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="97" srcpinname="Y Output Value" dstnodeid="145" dstpinname="alpha">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="145" dstpinname="Scale">
+   </LINK>
+   <LINK srcnodeid="145" srcpinname="Layer" dstnodeid="122" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="146" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1740" top="9330" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1740" top="9330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="300">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="MaxAge">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="146" srcpinname="Y Output Value" dstnodeid="145" dstpinname="MaxAge">
+   </LINK>
+   <NODE systemname="Emitter_Template_Start (DX11.Effect)" filename="..\..\dx11\Emitter_Template_Start.fx" nodename="Emitter_Template_Start (DX11.Effect)" componentmode="Hidden" id="149">
+   <BOUNDS type="Node" left="6405" top="5325" width="4665" height="270">
+   </BOUNDS>
+   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="indexOffset" visible="1" slicecount="1" values="2376">
+   </PIN>
+   <PIN pinname="emitCount" visible="1" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="particleCount" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="emit" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="EmitterPos" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Acceleration" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="World_Template_Start (DX11.Effect)" filename="..\..\dx11\World_Template_Start.fx" nodename="World_Template_Start (DX11.Effect)" componentmode="Hidden" id="150">
+   <BOUNDS type="Node" left="3075" top="5325" width="2715" height="270">
+   </BOUNDS>
+   <PIN pinname="reset" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   </PATCH>

@@ -1,0 +1,34 @@
+Texture2D texNew: PREVIOUS;
+Texture2D texOld <string uiname="Texture Old";>;
+SamplerState s0 <bool visible=false;string uiname="Sampler";> {Filter=MIN_MAG_MIP_LINEAR;AddressU=WRAP;AddressV=WRAP;};
+
+float2 R:TARGETSIZE;
+
+cbuffer controls:register(b0){
+	float speed <string uiname = "Speed of Change";> = 0.1;
+};
+
+float4 pBlurByAveredge(float4 PosWVP:SV_POSITION,float2 uv:TEXCOORD0):SV_Target {
+	float4 cNew = texNew.SampleLevel(s0, uv, 0);
+    float4 cOld = texOld.SampleLevel(s0, uv, 0);
+	float4 cBlur = cNew*speed + cOld;	// add part of a new color
+	cBlur /= 1.0+speed;					// normalize
+    return cBlur;
+}
+
+float4 pBlurByTrace(float4 PosWVP:SV_POSITION,float2 uv:TEXCOORD0):SV_Target {
+	float4 cNew = texNew.SampleLevel(s0, uv, 0);
+    float4 cOld = texOld.SampleLevel(s0, uv, 0);
+	float4 cBlur = cNew + (1-speed) * cOld;	// add part of a new color
+    return cBlur;
+}
+
+technique10 BlurByAveredge{
+	pass P0
+	{SetPixelShader(CompileShader(ps_4_0,pBlurByAveredge()));}
+}
+
+technique10 BlurByTrace{
+	pass P0
+	{SetPixelShader(CompileShader(ps_4_0,pBlurByTrace()));}
+}
