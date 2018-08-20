@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" systemname="interfaceUITorus" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" scrollx="23370" scrolly="19725">
-   <BOUNDS type="Window" left="19950" top="630" width="25035" height="14445">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" systemname="interfaceUITorus" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" scrollx="27720" scrolly="22965">
+   <BOUNDS type="Window" left="11655" top="3900" width="25035" height="14445">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="1320" top="37620" width="795" height="240">
@@ -573,13 +573,13 @@
    <LINK srcnodeid="98" srcpinname="Transform Out" dstnodeid="38" dstpinname="Texture Transform">
    </LINK>
    <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="102">
-   <BOUNDS type="Node" left="21330" top="2475" width="1515" height="270">
+   <BOUNDS type="Node" left="21345" top="3690" width="1515" height="270">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
+   <PIN pinname="Reset" slicecount="1" values="0" visible="1">
    </PIN>
    <PIN pinname="Inverse Output" visible="1">
    </PIN>
@@ -1347,7 +1347,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.49" visible="1">
+   <PIN pinname="Alpha" slicecount="1" visible="1" values="0.49">
    </PIN>
    <PIN pinname="Input" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
@@ -1444,14 +1444,6 @@
    </NODE>
    <LINK srcnodeid="172" srcpinname="Y Output Value" dstnodeid="123" dstpinname="Translate XYZ">
    </LINK>
-   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="173">
-   <BOUNDS type="Node" left="36900" top="28575" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Set" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="178">
    <BOUNDS type="Node" left="4440" top="2250" width="100" height="100">
    </BOUNDS>
@@ -1694,22 +1686,10 @@
    </NODE>
    <LINK srcnodeid="198" srcpinname="Input Value" dstnodeid="200" dstpinname="AutomataUI">
    </LINK>
-   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="197">
-   <BOUNDS type="Node" left="36900" top="28050" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="200" srcpinname="StateActive" dstnodeid="197" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="197" srcpinname="Output" dstnodeid="173" dstpinname="Set">
-   </LINK>
    <NODE systemname="TriggerTransition (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="TriggerTransition (AutomataUI Animation)" componentmode="Hidden" id="201">
-   <BOUNDS type="Node" left="20760" top="3150" width="100" height="100">
+   <BOUNDS type="Node" left="20775" top="5160" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="20760" top="3150" width="3000" height="3000">
+   <BOUNDS type="Box" left="20775" top="5160" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="AutomataUI" visible="1">
    </PIN>
@@ -1717,9 +1697,9 @@
    </PIN>
    </NODE>
    <NODE systemname="TriggerTransition (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="TriggerTransition (AutomataUI Animation)" componentmode="Hidden" id="202">
-   <BOUNDS type="Node" left="22200" top="3150" width="100" height="100">
+   <BOUNDS type="Node" left="22215" top="5160" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="22200" top="3150" width="3000" height="3000">
+   <BOUNDS type="Box" left="22215" top="5160" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="AutomataUI" visible="1">
    </PIN>
@@ -2795,7 +2775,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="292">
-   <BOUNDS type="Node" left="31140" top="31815" width="1860" height="270">
+   <BOUNDS type="Node" left="31065" top="32595" width="1860" height="270">
    </BOUNDS>
    <PIN pinname="Geometry" visible="1">
    </PIN>
@@ -3382,16 +3362,6 @@
    <PIN pinname="Input Count" slicecount="1" values="2">
    </PIN>
    </NODE>
-   <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="343">
-   <BOUNDS type="Node" left="33825" top="26760" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="314" srcpinname="Output" dstnodeid="343" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="314" srcpinname="Output" dstnodeid="339" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="339" srcpinname="Output" dstnodeid="342" dstpinname="Input 1">
@@ -4489,5 +4459,61 @@
    <LINK srcnodeid="429" srcpinname="Output" dstnodeid="255" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="178" srcpinname="Position Out" dstnodeid="427" dstpinname="Z">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="430">
+   <BOUNDS type="Node" left="36690" top="32355" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="Rinf2auswahl">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="431">
+   <BOUNDS type="Node" left="36645" top="30915" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="314" srcpinname="Output" dstnodeid="431" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="431" srcpinname="Output" dstnodeid="430" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="437">
+   <BOUNDS type="Node" left="22785" top="2190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Reset1">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="438">
+   <BOUNDS type="Node" left="22800" top="2610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="22800" top="2610" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="437" srcpinname="Input Value" dstnodeid="438" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="439">
+   <BOUNDS type="Node" left="22800" top="3240" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="438" srcpinname="Output" dstnodeid="439" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="439" srcpinname="Output" dstnodeid="102" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="348" srcpinname="Up Edge" dstnodeid="431" dstpinname="Input 2">
    </LINK>
    </PATCH>
