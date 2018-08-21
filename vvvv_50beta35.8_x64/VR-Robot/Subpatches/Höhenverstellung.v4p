@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Höhenverstellung.v4p" systemname="Höhenverstellung" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Höhenverstellung.v4p" scrollx="4590" scrolly="2880">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Höhenverstellung.v4p" systemname="Höhenverstellung" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Höhenverstellung.v4p" scrollx="1725" scrolly="7485">
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -18,16 +18,6 @@
    </PACK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="Eingabeaufforderung contoller" filename="%VVVV%\VR-Robot\Subpatches\Eingabeaufforderung contoller.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Eingabeaufforderung contoller.v4p" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="5197" top="17355" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2725" top="15030" width="4945" height="6850">
-   </BOUNDS>
-   <BOUNDS type="Window" left="15960" top="3720" width="11775" height="10395">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="8">
    <BOUNDS type="Node" left="13560" top="735" width="100" height="100">
    </BOUNDS>
@@ -227,15 +217,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="375" top="19455" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="28" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="28" srcpinname="Layer Out" dstnodeid="5" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="22" srcpinname="XYZ" dstnodeid="12" dstpinname="Input 1">

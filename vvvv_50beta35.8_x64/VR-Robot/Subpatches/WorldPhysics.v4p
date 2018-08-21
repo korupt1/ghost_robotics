@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" systemname="WorldPhysics" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" scrollx="45" scrolly="1080">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" systemname="WorldPhysics" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="22620" top="2805" width="18225" height="13815">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
@@ -35,7 +35,7 @@
    <LINK srcnodeid="0" srcpinname="World" dstnodeid="1" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="2160" top="3045" width="100" height="100">
+   <BOUNDS type="Node" left="2190" top="3045" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -107,9 +107,9 @@
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="0" dstpinname="TimeStep">
    </LINK>
    <NODE systemname="DebugDraw (DX11.Layer Bullet)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="DebugDraw (DX11.Layer Bullet)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="1260" top="12960" width="1275" height="270">
+   <BOUNDS type="Node" left="2145" top="17520" width="1275" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1260" top="12960" width="3000" height="3000">
+   <BOUNDS type="Box" left="2145" top="17520" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="World" visible="1" slicecount="1" values="||">
    </PIN>
@@ -119,7 +119,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="1260" top="12525" width="1215" height="270">
+   <BOUNDS type="Node" left="2145" top="17085" width="1215" height="270">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -303,7 +303,7 @@
    <LINK srcnodeid="33" srcpinname="Layer Out" dstnodeid="11" dstpinname="Input Node">
    </LINK>
    <NODE systemname="PhongDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongDirectional.fx" nodename="PhongDirectional (DX11.Effect)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="2415" top="11400" width="100" height="100">
+   <BOUNDS type="Node" left="2475" top="13455" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
    </PIN>
@@ -315,7 +315,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.59">
+   <PIN pinname="Alpha" slicecount="1" values="0.59" visible="1">
    </PIN>
    <PIN pinname="Ambient Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
@@ -327,7 +327,7 @@
    <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="33" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="RGB (Transform)" nodename="RGB (Transform)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="3825" top="10440" width="100" height="100">
+   <BOUNDS type="Node" left="3885" top="12495" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -447,9 +447,9 @@
    <LINK srcnodeid="59" srcpinname="Shape" dstnodeid="18" dstpinname="Shapes">
    </LINK>
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="60">
-   <BOUNDS type="Node" left="3480" top="9045" width="100" height="100">
+   <BOUNDS type="Node" left="3540" top="11100" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3480" top="9045" width="3000" height="3000">
+   <BOUNDS type="Box" left="3540" top="11100" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
@@ -776,10 +776,8 @@
    </NODE>
    <LINK srcnodeid="123" srcpinname="Bang" dstnodeid="0" dstpinname="Reset">
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Up Edge" dstnodeid="123" dstpinname="Simulate">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="124">
-   <BOUNDS type="Node" left="3765" top="12405" width="100" height="100">
+   <BOUNDS type="Node" left="3330" top="16125" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Debug">
    </PIN>
@@ -789,9 +787,9 @@
    <LINK srcnodeid="124" srcpinname="Input Value" dstnodeid="9" dstpinname="Enabled">
    </LINK>
    <NODE systemname="Topology (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Topology (DX11.Geometry)" componentmode="Hidden" id="160">
-   <BOUNDS type="Node" left="1110" top="10680" width="100" height="100">
+   <BOUNDS type="Node" left="2790" top="12435" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1110" top="10680" width="3000" height="3000">
+   <BOUNDS type="Box" left="2790" top="12435" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Geometry In" visible="1">
    </PIN>
@@ -805,9 +803,9 @@
    <LINK srcnodeid="60" srcpinname="Geometry Out" dstnodeid="160" dstpinname="Geometry In">
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="161">
-   <BOUNDS type="Box" left="1245" top="9780" width="1590" height="270">
+   <BOUNDS type="Box" left="3135" top="8430" width="1590" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="1245" top="9780" width="0" height="0">
+   <BOUNDS type="Node" left="3135" top="8430" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="LineList">
    </PIN>
@@ -820,12 +818,52 @@
    </NODE>
    <LINK srcnodeid="161" srcpinname="Output Enum" dstnodeid="160" dstpinname="Topology">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="168">
-   <BOUNDS type="Box" left="3930" top="2385" width="795" height="240">
+   <LINK srcnodeid="160" srcpinname="Geometry Out" dstnodeid="34" dstpinname="Geometry">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="169">
+   <BOUNDS type="Node" left="3105" top="1665" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="3930" top="2385" width="0" height="0">
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Up Edge" dstnodeid="169" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="169" srcpinname="Output" dstnodeid="123" dstpinname="Simulate">
+   </LINK>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="170">
+   <BOUNDS type="Node" left="4800" top="2715" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.7">
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="0.02">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="171">
+   <BOUNDS type="Node" left="5025" top="1590" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="170" srcpinname="Output" dstnodeid="63" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="171" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="171" srcpinname="Y" dstnodeid="170" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="172">
+   <BOUNDS type="Box" left="3870" top="11625" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3870" top="11625" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.59">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -834,8 +872,86 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="168" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Y">
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="173">
+   <BOUNDS type="Node" left="3870" top="12045" width="1830" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="172" srcpinname="Y Output Value" dstnodeid="173" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="160" srcpinname="Geometry Out" dstnodeid="34" dstpinname="Geometry">
+   <LINK srcnodeid="173" srcpinname="Output" dstnodeid="34" dstpinname="Alpha">
+   </LINK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="174">
+   <BOUNDS type="Node" left="4755" top="9435" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="AutomataWelt">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="175">
+   <BOUNDS type="Node" left="5025" top="10425" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5025" top="10425" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="AutomataUI" visible="1">
+   </PIN>
+   <PIN pinname="State" slicecount="1" values="|Höhe verstellen|">
+   </PIN>
+   <PIN pinname="StateActive" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="174" srcpinname="Input Value" dstnodeid="175" dstpinname="AutomataUI">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="176">
+   <BOUNDS type="Node" left="5655" top="10995" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="175" srcpinname="StateActive" dstnodeid="176" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="173" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="178">
+   <BOUNDS type="Node" left="3555" top="510" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="AutomataWelt">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="177">
+   <BOUNDS type="Node" left="3825" top="1500" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3825" top="1500" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="State" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="StateActive" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="178" srcpinname="Input Value" dstnodeid="177" dstpinname="AutomataUI">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="179">
+   <BOUNDS type="Node" left="4185" top="1845" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="177" srcpinname="StateActive" dstnodeid="179" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Up Edge" dstnodeid="169" dstpinname="Input 2">
    </LINK>
    </PATCH>
