@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="5070" scrolly="780" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
-   <BOUNDS type="Window" left="19410" top="795" width="17040" height="8730">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="4995" scrolly="1830" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <BOUNDS type="Window" left="19410" top="795" width="17040" height="12570">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -127,11 +127,11 @@
    <LINK srcnodeid="52" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Texture ScaleXY">
    </LINK>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="66">
-   <BOUNDS type="Node" left="750" top="14730" width="1800" height="270">
+   <BOUNDS type="Node" left="1230" top="15015" width="1800" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="750" top="14730" width="6000" height="4500">
+   <BOUNDS type="Box" left="1230" top="15015" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="1005" top="795" width="18600" height="14715">
+   <BOUNDS type="Window" left="405" top="0" width="18600" height="14715">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -378,8 +378,6 @@
    <PIN pinname="Scalo" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="95" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 1">
-   </LINK>
    <NODE systemname="WorldPhysics" filename="Subpatches\WorldPhysics.v4p" componentmode="Hidden" id="99" nodename="Subpatches\WorldPhysics.v4p">
    <BOUNDS type="Node" left="4365" top="6375" width="100" height="100">
    </BOUNDS>
@@ -639,15 +637,13 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="17895" top="5250" width="24090" height="14625">
+   <BOUNDS type="Window" left="14745" top="2235" width="24090" height="14625">
    </BOUNDS>
    <PIN pinname="Armlänge" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="96" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 4">
-   </LINK>
    <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="96" dstpinname="Armlänge" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="8190" y="3795">
    </LINKPOINT>
@@ -882,8 +878,6 @@
    </NODE>
    <LINK srcnodeid="96" srcpinname="Output" dstnodeid="182" dstpinname="Transform">
    </LINK>
-   <LINK srcnodeid="182" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 5">
-   </LINK>
    <NODE systemname="interfaceUITorus" filename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" nodename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" componentmode="Hidden" id="184" debug="0">
    <BOUNDS type="Node" left="11925" top="6510" width="0" height="0">
    </BOUNDS>
@@ -910,10 +904,6 @@
    <PIN pinname="Saturation" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="185" srcpinname="Output" dstnodeid="138" dstpinname="Color Input">
-   </LINK>
-   <LINK srcnodeid="99" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 2">
-   </LINK>
    <LINK srcnodeid="184" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 6">
    </LINK>
    <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="Hidden" id="188" debug="0">
@@ -1014,14 +1004,6 @@
    </LINK>
    <LINK srcnodeid="126" srcpinname="Output" dstnodeid="133" dstpinname="Input Value">
    </LINK>
-   <NODE id="237" systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden">
-   <BOUNDS type="Node" left="2025" top="13515" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="237" srcpinname="Projection" dstnodeid="66" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="237" srcpinname="View" dstnodeid="66" dstpinname="View">
-   </LINK>
    <LINK srcnodeid="217" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 8">
    </LINK>
    <LINK srcnodeid="217" srcpinname="Output" dstnodeid="205" dstpinname="Y">
@@ -1075,5 +1057,61 @@
    <LINK srcnodeid="243" srcpinname="Input Value" dstnodeid="244" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="244" srcpinname="Output" dstnodeid="157" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="185" srcpinname="Output" dstnodeid="138" dstpinname="Color Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="254">
+   <BOUNDS type="Box" left="3225" top="16605" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3225" top="16605" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="sichern" filename="%VVVV%\VR-Robot\Subpatches\sichern.v4p" nodename="%VVVV%\VR-Robot\Subpatches\sichern.v4p" componentmode="InAWindow" id="253">
+   <BOUNDS type="Node" left="1347" top="18085" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="14120" width="8050" height="7930">
+   </BOUNDS>
+   <BOUNDS type="Window" left="25125" top="4605" width="8040" height="7920">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Layer Out" dstnodeid="253" dstpinname="Layer">
+   </LINK>
+   <LINK srcnodeid="254" srcpinname="Y Output Value" dstnodeid="253" dstpinname="Input">
+   </LINK>
+   <NODE id="256" systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden">
+   <BOUNDS type="Node" left="2025" top="13515" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="256" srcpinname="Projection" dstnodeid="66" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="256" srcpinname="View" dstnodeid="66" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="256" srcpinname="View" dstnodeid="253" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="256" srcpinname="Projection" dstnodeid="253" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="95" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="96" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="182" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 5">
    </LINK>
    </PATCH>

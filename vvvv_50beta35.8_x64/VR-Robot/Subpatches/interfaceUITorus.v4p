@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" systemname="interfaceUITorus" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" scrollx="6360" scrolly="0">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" systemname="interfaceUITorus" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\interfaceUITorus.v4p" scrollx="17190" scrolly="11355">
    <BOUNDS type="Window" left="11655" top="3900" width="25035" height="14445">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
@@ -123,7 +123,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="1350" top="36450" width="35580" height="270">
+   <BOUNDS type="Node" left="1350" top="36450" width="48990" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1350" top="36450" width="3000" height="3000">
    </BOUNDS>
@@ -135,7 +135,7 @@
    </PIN>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="9">
+   <PIN pinname="Input Count" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -207,9 +207,9 @@
    <LINK srcnodeid="21" srcpinname="Angle" dstnodeid="45" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="53">
-   <BOUNDS type="Node" left="3630" top="18795" width="100" height="100">
+   <BOUNDS type="Node" left="3960" top="21000" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3630" top="18795" width="3000" height="3000">
+   <BOUNDS type="Box" left="3960" top="21000" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -220,6 +220,8 @@
    <PIN pinname="Texture" visible="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="55">
@@ -239,7 +241,7 @@
    </PIN>
    <PIN pinname="TranslateY" visible="1">
    </PIN>
-   <PIN pinname="TranslateZ" visible="1" slicecount="1" values="0">
+   <PIN pinname="TranslateZ" visible="1" slicecount="1" values="-0.005">
    </PIN>
    <PIN pinname="Roll" slicecount="1" visible="1" values="-0.83">
    </PIN>
@@ -1323,7 +1325,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="17760" top="25230" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0.1,0.1,0.1,0.065">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0.1,0.1,0.1,0.076">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1361,7 +1363,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="17115" top="23625" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="4" visible="1" values="|..\..\..\..\Users\Linkzlin\Desktop\grafik\Element 22grafik.png|,|..\..\..\..\Users\Linkzlin\Desktop\grafik\Element 18grafik.png|,|..\..\..\..\Users\Linkzlin\Desktop\grafik\Element 19grafik.png|,|..\..\..\..\Users\Linkzlin\Desktop\grafik\Element 6grafik.png|">
+   <PIN pinname="Input String" slicecount="4" visible="1" values="|..\..\..\..\Users\Linkzlin\Desktop\grafik\Element 22grafik.png|,|..\..\..\..\Users\Linkzlin\Desktop\grafik\Element 18grafik.png|,|..\..\..\..\Users\Linkzlin\Desktop\grafik\Element 19grafik.png|,|..\..\..\..\Users\Linkzlin\Desktop\grafik\Element 5grafik.png|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1477,7 +1479,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="17385" top="21855" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-0.01,-0.01,-0.01,-0.026">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="-0.01,-0.01,-0.01,-0.02">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -4397,7 +4399,7 @@
    </BOUNDS>
    <PIN pinname="Sampler" visible="1">
    </PIN>
-   <PIN pinname="Mode" slicecount="1" values="PointWrap">
+   <PIN pinname="Mode" slicecount="1" values="LinearMirror">
    </PIN>
    </NODE>
    <LINK srcnodeid="423" srcpinname="Sampler" dstnodeid="158" dstpinname="Sampler State">
@@ -4547,5 +4549,65 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="442" srcpinname="Input Value" dstnodeid="438" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="443">
+   <BOUNDS type="Node" left="5325" top="18525" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="444">
+   <BOUNDS type="Node" left="4860" top="20475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="443" srcpinname="Input Value" dstnodeid="444" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="444" srcpinname="Output" dstnodeid="53" dstpinname="Color">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="445">
+   <BOUNDS type="Node" left="6615" top="17280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="104" srcpinname="StateActive" dstnodeid="445" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GE (Value)" nodename="GE (Value)" componentmode="Hidden" id="446">
+   <BOUNDS type="Node" left="7335" top="19200" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="0.3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="447">
+   <BOUNDS type="Node" left="6300" top="19605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="445" srcpinname="Output" dstnodeid="447" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="447" srcpinname="Output" dstnodeid="444" dstpinname="Alpha">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Length" dstnodeid="446" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="446" srcpinname="Output" dstnodeid="447" dstpinname="Input 2">
    </LINK>
    </PATCH>

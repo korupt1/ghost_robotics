@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\ArmEINS.v4p" scrollx="32295" scrolly="17700" systemname="ArmEINS" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\ArmEINS.v4p">
-   <BOUNDS type="Window" left="17895" top="5250" width="24090" height="14625">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\ArmEINS.v4p" scrollx="24240" scrolly="15795" systemname="ArmEINS" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\ArmEINS.v4p">
+   <BOUNDS type="Window" left="14745" top="2235" width="24090" height="14625">
    </BOUNDS>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="3057" top="36603" width="26112" height="276">

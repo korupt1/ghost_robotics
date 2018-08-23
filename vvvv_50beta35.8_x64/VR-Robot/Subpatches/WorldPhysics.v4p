@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" systemname="WorldPhysics" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" systemname="WorldPhysics" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\WorldPhysics.v4p" scrollx="0" scrolly="6900">
    <BOUNDS type="Window" left="22620" top="2805" width="18225" height="13815">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
@@ -302,48 +302,6 @@
    </LINK>
    <LINK srcnodeid="33" srcpinname="Layer Out" dstnodeid="11" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="PhongDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongDirectional.fx" nodename="PhongDirectional (DX11.Effect)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="2475" top="13455" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Color Transform" visible="1">
-   </PIN>
-   <PIN pinname="Render State" visible="1">
-   </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.59" visible="1">
-   </PIN>
-   <PIN pinname="Ambient Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Diffuse Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Specular Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="33" dstpinname="Layer 2">
-   </LINK>
-   <NODE systemname="RGB (Transform)" nodename="RGB (Transform)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="3885" top="12495" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Red Max" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Red Min" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Blue Min" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Green Min" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Green Max" slicecount="1" values="0.01">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="37" srcpinname="Transform Out" dstnodeid="34" dstpinname="Color Transform">
-   </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="38">
    <BOUNDS type="Node" left="2550" top="10485" width="100" height="100">
    </BOUNDS>
@@ -354,8 +312,6 @@
    <PIN pinname="Mode" slicecount="1" values="AlphaAdd">
    </PIN>
    </NODE>
-   <LINK srcnodeid="38" srcpinname="Render State" dstnodeid="34" dstpinname="Render State">
-   </LINK>
    <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="2580" top="9930" width="100" height="100">
    </BOUNDS>
@@ -429,8 +385,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="46" srcpinname="Output" dstnodeid="18" dstpinname="Initial Properties">
-   </LINK>
-   <LINK srcnodeid="32" srcpinname="Position" dstnodeid="34" dstpinname="Transform In">
    </LINK>
    <NODE systemname="Sphere (Bullet)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="Sphere (Bullet)" componentmode="Hidden" id="59">
    <BOUNDS type="Node" left="855" top="5775" width="100" height="100">
@@ -818,8 +772,6 @@
    </NODE>
    <LINK srcnodeid="161" srcpinname="Output Enum" dstnodeid="160" dstpinname="Topology">
    </LINK>
-   <LINK srcnodeid="160" srcpinname="Geometry Out" dstnodeid="34" dstpinname="Geometry">
-   </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="169">
    <BOUNDS type="Node" left="3105" top="1665" width="100" height="100">
    </BOUNDS>
@@ -863,7 +815,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3870" top="11625" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.59">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.23">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -873,7 +825,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="173">
-   <BOUNDS type="Node" left="3870" top="12045" width="1830" height="270">
+   <BOUNDS type="Node" left="4380" top="12045" width="1830" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -883,8 +835,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="172" srcpinname="Y Output Value" dstnodeid="173" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="173" srcpinname="Output" dstnodeid="34" dstpinname="Alpha">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="174">
    <BOUNDS type="Node" left="4755" top="9435" width="100" height="100">
@@ -953,5 +903,29 @@
    <LINK srcnodeid="177" srcpinname="StateActive" dstnodeid="179" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="179" srcpinname="Up Edge" dstnodeid="169" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="180">
+   <BOUNDS type="Node" left="3015" top="13995" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
+   <PIN pinname="Geometry" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="173" srcpinname="Output" dstnodeid="180" dstpinname="Alpha">
+   </LINK>
+   <LINK srcnodeid="160" srcpinname="Geometry Out" dstnodeid="180" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Render State" dstnodeid="180" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Position" dstnodeid="180" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="180" srcpinname="Layer" dstnodeid="33" dstpinname="Layer 2">
    </LINK>
    </PATCH>
