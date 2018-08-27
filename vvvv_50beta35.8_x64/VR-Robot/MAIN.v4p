@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="12075" scrolly="0" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="960" scrolly="1590" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
    <BOUNDS type="Window" left="16530" top="1065" width="17040" height="12570">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -445,7 +445,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="133">
-   <BOUNDS type="Node" left="22413" top="11046" width="1344" height="276">
+   <BOUNDS type="Node" left="21438" top="10626" width="1344" height="276">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="InputPosition">
    </PIN>
@@ -547,11 +547,11 @@
    <LINK srcnodeid="123" srcpinname="Color Output" dstnodeid="122" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="120">
-   <BOUNDS type="Node" left="26352" top="10488" width="1392" height="276">
+   <BOUNDS type="Node" left="26352" top="11043" width="1392" height="276">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="Gripped">
    </PIN>
-   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="119">
@@ -637,7 +637,7 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="14745" top="2235" width="24090" height="14625">
+   <BOUNDS type="Window" left="18960" top="630" width="24090" height="14625">
    </BOUNDS>
    <PIN pinname="Armlänge" visible="1">
    </PIN>
@@ -904,7 +904,7 @@
    </NODE>
    <LINK srcnodeid="184" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 6">
    </LINK>
-   <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="InAWindow" id="188" debug="0">
+   <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="Hidden" id="188" debug="0">
    <BOUNDS type="Node" left="13830" top="5752" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="12265" top="3880" width="3130" height="3745">
@@ -1189,9 +1189,9 @@
    <LINK srcnodeid="265" srcpinname="Output" dstnodeid="264" dstpinname="Input 2">
    </LINK>
    <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="266">
-   <BOUNDS type="Node" left="18795" top="7860" width="100" height="100">
+   <BOUNDS type="Node" left="19035" top="7935" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="18795" top="7860" width="3000" height="3000">
+   <BOUNDS type="Box" left="19035" top="7935" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="AutomataUI" visible="1">
    </PIN>
@@ -1211,9 +1211,9 @@
    <LINK srcnodeid="240" srcpinname="AutomataUI" dstnodeid="266" dstpinname="AutomataUI">
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="273">
-   <BOUNDS type="Box" left="19515" top="7185" width="1590" height="270">
+   <BOUNDS type="Box" left="19755" top="7260" width="1590" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="19515" top="7185" width="0" height="0">
+   <BOUNDS type="Node" left="19755" top="7260" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="AnimationPlaying">
    </PIN>
@@ -1268,22 +1268,6 @@
    <PIN pinname="Bang" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="OR (Boolean)" filename="" nodename="OR (Boolean)" componentmode="Hidden" id="278">
-   <BOUNDS type="Node" left="25845" top="9930" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="25845" top="9930" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="277" srcpinname="Bang" dstnodeid="278" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="264" srcpinname="Output" dstnodeid="278" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="278" srcpinname="Output" dstnodeid="120" dstpinname="Input Value">
+   <LINK srcnodeid="264" srcpinname="Output" dstnodeid="120" dstpinname="Input Value">
    </LINK>
    </PATCH>

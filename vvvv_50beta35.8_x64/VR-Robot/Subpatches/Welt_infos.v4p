@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" systemname="Welt_infos" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" scrollx="3300" scrolly="555">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" systemname="Welt_infos" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" scrollx="135" scrolly="0">
    <NODE id="2" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -65,11 +65,11 @@
    <LINK srcnodeid="36" srcpinname="Layer Out" dstnodeid="2" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Chain" filename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" componentmode="Hidden" id="42" debug="0">
-   <BOUNDS type="Node" left="8619" top="6102" width="0" height="0">
+   <BOUNDS type="Node" left="5514" top="7362" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5952" top="1560" width="5335" height="9085">
+   <BOUNDS type="Box" left="2847" top="2820" width="5335" height="9085">
    </BOUNDS>
-   <BOUNDS type="Window" left="14295" top="5070" width="24480" height="11895">
+   <BOUNDS type="Window" left="16815" top="1455" width="24480" height="11895">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
@@ -79,9 +79,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Error" filename="%VVVV%\VR-Robot\Subpatches\Error.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Error.v4p" componentmode="Hidden" id="61">
-   <BOUNDS type="Node" left="10668" top="6145" width="0" height="0">
+   <BOUNDS type="Node" left="7383" top="7315" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6553" top="1653" width="8230" height="8985">
+   <BOUNDS type="Box" left="3268" top="2823" width="8230" height="8985">
    </BOUNDS>
    <BOUNDS type="Window" left="17595" top="0" width="13440" height="16305">
    </BOUNDS>
