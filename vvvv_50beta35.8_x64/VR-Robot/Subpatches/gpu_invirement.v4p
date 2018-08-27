@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\gpu_invirement.v4p" systemname="gpu_invirement" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\gpu_invirement.v4p" scrollx="510" scrolly="-360">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\gpu_invirement.v4p" systemname="gpu_invirement" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\gpu_invirement.v4p" scrollx="1950" scrolly="7200">
    <NODE systemname="DynamicBuffer (DX11.Buffer 3d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicBuffer (DX11.Buffer 3d)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="14790" top="7485" width="100" height="100">
    </BOUNDS>
@@ -193,7 +193,7 @@
    </PIN>
    <PIN pinname="TranslateX" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="TranslateZ" slicecount="1" values="0" visible="1">
+   <PIN pinname="TranslateZ" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="ScaleY" visible="1" slicecount="1" values="-1">
    </PIN>
@@ -489,9 +489,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4845" top="15855" width="480" height="480">
+   <BOUNDS type="Box" left="5190" top="17280" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4845" top="15855" width="0" height="0">
+   <BOUNDS type="Node" left="5190" top="17280" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -557,7 +557,7 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
-   <PIN pinname="alpha" slicecount="1" values="0.5" visible="1">
+   <PIN pinname="alpha" slicecount="1" visible="1" values="0.5">
    </PIN>
    <PIN pinname="Query" visible="1">
    </PIN>
@@ -1208,8 +1208,6 @@
    </NODE>
    <LINK srcnodeid="99" srcpinname="Output Enum" dstnodeid="96" dstpinname="State">
    </LINK>
-   <LINK srcnodeid="96" srcpinname="StateActive" dstnodeid="95" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="95" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="95" srcpinname="Output" dstnodeid="54" dstpinname="alpha">
@@ -1255,5 +1253,55 @@
    <LINK srcnodeid="74" srcpinname="Input Value" dstnodeid="104" dstpinname="Data">
    </LINK>
    <LINK srcnodeid="104" srcpinname="Texture Out" dstnodeid="54" dstpinname="texture2d">
+   </LINK>
+   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="107">
+   <BOUNDS type="Node" left="8745" top="15735" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8745" top="15735" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="State" visible="1">
+   </PIN>
+   <PIN pinname="StateActive" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="106">
+   <BOUNDS type="Node" left="8730" top="14895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="AutomataWelt">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="106" srcpinname="Input Value" dstnodeid="107" dstpinname="AutomataUI">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="105">
+   <BOUNDS type="Box" left="9435" top="15315" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9435" top="15315" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|Höhe verstellen|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="105" srcpinname="Output Enum" dstnodeid="107" dstpinname="State">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="108">
+   <BOUNDS type="Node" left="9435" top="16110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="107" srcpinname="StateActive" dstnodeid="108" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="108" srcpinname="Output" dstnodeid="95" dstpinname="Input 2">
    </LINK>
    </PATCH>
