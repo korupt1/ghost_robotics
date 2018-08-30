@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="960" scrolly="1590" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
-   <BOUNDS type="Window" left="16530" top="1065" width="17040" height="12570">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="3780" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <BOUNDS type="Window" left="21360" top="2760" width="17040" height="12570">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1230" top="15015" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="405" top="0" width="18600" height="14715">
+   <BOUNDS type="Window" left="1005" top="330" width="18600" height="14715">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -876,12 +876,12 @@
    </NODE>
    <LINK srcnodeid="96" srcpinname="Output" dstnodeid="182" dstpinname="Transform">
    </LINK>
-   <NODE systemname="interfaceUITorus" filename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" nodename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" componentmode="Hidden" id="184" debug="0">
+   <NODE systemname="interfaceUITorus" filename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" nodename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" componentmode="InAWindow" id="184" debug="0">
    <BOUNDS type="Node" left="11925" top="6510" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="10375" top="4960" width="3100" height="3100">
    </BOUNDS>
-   <BOUNDS type="Window" left="11655" top="3900" width="25035" height="14445">
+   <BOUNDS type="Window" left="19530" top="4740" width="25035" height="14445">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -1096,18 +1096,6 @@
    </LINK>
    <LINK srcnodeid="254" srcpinname="Y Output Value" dstnodeid="253" dstpinname="Input">
    </LINK>
-   <NODE id="256" systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden">
-   <BOUNDS type="Node" left="2025" top="13515" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="256" srcpinname="Projection" dstnodeid="66" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="256" srcpinname="View" dstnodeid="66" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="256" srcpinname="View" dstnodeid="253" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="256" srcpinname="Projection" dstnodeid="253" dstpinname="Projection">
-   </LINK>
    <LINK srcnodeid="99" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="95" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layer 1">
@@ -1269,5 +1257,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="264" srcpinname="Output" dstnodeid="120" dstpinname="Input Value">
+   </LINK>
+   <NODE id="278" systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden">
+   <BOUNDS type="Node" left="2025" top="13515" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="278" srcpinname="Projection" dstnodeid="66" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="278" srcpinname="View" dstnodeid="66" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="278" srcpinname="View" dstnodeid="253" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="278" srcpinname="Projection" dstnodeid="253" dstpinname="Projection">
    </LINK>
    </PATCH>
