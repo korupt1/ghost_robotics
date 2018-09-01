@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\ArmEINS.v4p" scrollx="26505" scrolly="11415" systemname="ArmEINS" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\ArmEINS.v4p">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\ArmEINS.v4p" scrollx="9840" scrolly="22515" systemname="ArmEINS" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\ArmEINS.v4p">
    <BOUNDS type="Window" left="18960" top="630" width="24090" height="14625">
    </BOUNDS>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="6">
@@ -1107,6 +1107,8 @@
    </PIN>
    <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
+   <PIN pinname="Technique" slicecount="1" values="Constant">
+   </PIN>
    </NODE>
    <NODE systemname="Mesh (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\assimp\VVVV.DX11.Nodes.Assimp.dll" nodename="Mesh (DX11.Geometry Assimp)" componentmode="Hidden" id="325">
    <BOUNDS type="Node" left="15225" top="28305" width="100" height="100">
@@ -1202,8 +1204,6 @@
    <PIN pinname="Filename" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="331" srcpinname="Texture Out" dstnodeid="326" dstpinname="Texture">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="332" systemname="IOBox (String)">
    <BOUNDS type="Box" left="17880" top="28800" width="3600" height="1875">
    </BOUNDS>
@@ -2453,5 +2453,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="451" srcpinname="Output Enum" dstnodeid="366" dstpinname="Mode">
+   </LINK>
+   <NODE systemname="Blur (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Blur.tfx" nodename="Blur (DX11.TextureFX)" componentmode="Hidden" id="452">
+   <BOUNDS type="Node" left="18615" top="31980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="331" srcpinname="Texture Out" dstnodeid="452" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="452" srcpinname="Texture Out" dstnodeid="326" dstpinname="Texture">
    </LINK>
    </PATCH>

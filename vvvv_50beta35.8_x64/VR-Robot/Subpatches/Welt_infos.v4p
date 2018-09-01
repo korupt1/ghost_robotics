@@ -10,7 +10,7 @@
    <PIN pinname="Input Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="18720" top="3465" width="12420" height="12735">
+   <BOUNDS type="Window" left="21810" top="3135" width="12420" height="12735">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -30,6 +30,8 @@
    <PIN pinname="positionen" visible="1">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="34">
@@ -68,12 +70,12 @@
    </NODE>
    <LINK srcnodeid="36" srcpinname="Layer Out" dstnodeid="2" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="Chain" filename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" componentmode="InAWindow" id="42" debug="0">
+   <NODE systemname="Chain" filename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" componentmode="Hidden" id="42" debug="0">
    <BOUNDS type="Node" left="5514" top="7362" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="2847" top="2820" width="5335" height="9085">
    </BOUNDS>
-   <BOUNDS type="Window" left="16575" top="8190" width="24480" height="11895">
+   <BOUNDS type="Window" left="20460" top="3330" width="24480" height="11895">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
