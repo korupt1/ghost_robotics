@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="2475" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
-   <BOUNDS type="Window" left="18030" top="2655" width="17040" height="12570">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="4275" scrolly="1725" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <BOUNDS type="Window" left="17640" top="6660" width="17040" height="12570">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -881,7 +881,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10375" top="4960" width="3100" height="3100">
    </BOUNDS>
-   <BOUNDS type="Window" left="8895" top="1875" width="25035" height="10365">
+   <BOUNDS type="Window" left="15765" top="5175" width="25035" height="10365">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>

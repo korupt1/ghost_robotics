@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Chain.v4p" scrollx="720" scrolly="3645" systemname="Chain" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Chain.v4p">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Chain.v4p" scrollx="540" scrolly="870" systemname="Chain" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Chain.v4p">
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -10,7 +10,7 @@
    <PIN pinname="Input Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="16575" top="8190" width="24480" height="11895">
+   <BOUNDS type="Window" left="22890" top="1965" width="24480" height="11895">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -41,11 +41,11 @@
    <LINK srcnodeid="11" srcpinname="Layer Out" dstnodeid="5" dstpinname="Input Node">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="3390" top="1920" width="100" height="100">
+   <BOUNDS type="Node" left="3405" top="3840" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="EnterChain">
    </PIN>
-   <PIN pinname="Input Value" visible="1">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="60">
@@ -57,9 +57,9 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="77">
-   <BOUNDS type="Node" left="1590" top="1905" width="100" height="100">
+   <BOUNDS type="Node" left="1725" top="3930" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="Reset1">
    </PIN>
@@ -105,11 +105,9 @@
    </BOUNDS>
    <PIN pinname="On" visible="1">
    </PIN>
+   <PIN pinname="reset" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="100" srcpinname="reset" dstnodeid="77" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="On" dstnodeid="58" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="101">
    <BOUNDS type="Node" left="11400" top="15225" width="100" height="100">
    </BOUNDS>
@@ -362,4 +360,12 @@
    </LINK>
    <LINK srcnodeid="103" srcpinname="Input Value" dstnodeid="105" dstpinname="Enabled">
    </LINK>
+   <NODE systemname="Chainauswahl" filename="%VVVV%\VR-Robot\Subpatches\Chainauswahl.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chainauswahl.v4p" componentmode="InAWindow" id="135">
+   <BOUNDS type="Node" left="5705" top="3013" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="815" top="0" width="9780" height="10230">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="9780" height="10230">
+   </BOUNDS>
+   </NODE>
    </PATCH>
