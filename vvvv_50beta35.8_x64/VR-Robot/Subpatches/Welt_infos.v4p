@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" systemname="Welt_infos" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" systemname="Welt_infos" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" scrollx="1380" scrolly="3120">
    <NODE id="2" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="1785" top="11850" width="750" height="240">
+   <BOUNDS type="Box" left="1815" top="14190" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1785" top="11850" width="750" height="240">
+   <BOUNDS type="Node" left="1815" top="14190" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1">
    </PIN>
@@ -49,9 +49,9 @@
    <LINK srcnodeid="34" srcpinname="XYZ" dstnodeid="31" dstpinname="positionen">
    </LINK>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="36">
-   <BOUNDS type="Node" left="1785" top="8355" width="13065" height="270">
+   <BOUNDS type="Node" left="1815" top="10695" width="13065" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1785" top="8355" width="3000" height="3000">
+   <BOUNDS type="Box" left="1815" top="10695" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -70,12 +70,12 @@
    </NODE>
    <LINK srcnodeid="36" srcpinname="Layer Out" dstnodeid="2" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="Chain" filename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" componentmode="Hidden" id="42" debug="0">
+   <NODE systemname="Chain" filename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" componentmode="InAWindow" id="42" debug="0">
    <BOUNDS type="Node" left="5514" top="7362" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="2847" top="2820" width="5335" height="9085">
    </BOUNDS>
-   <BOUNDS type="Window" left="20460" top="3330" width="24480" height="11895">
+   <BOUNDS type="Window" left="20460" top="4965" width="24480" height="11895">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
@@ -190,12 +190,6 @@
    </LINK>
    <LINK srcnodeid="71" srcpinname="On" dstnodeid="73" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="31" srcpinname="Layer Out" dstnodeid="36" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="42" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 3">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="76">
    <BOUNDS type="Node" left="4365" top="2370" width="100" height="100">
    </BOUNDS>
@@ -271,9 +265,9 @@
    <LINK srcnodeid="80" srcpinname="Bang" dstnodeid="70" dstpinname="Clear">
    </LINK>
    <NODE systemname="liveCam" filename="%VVVV%\VR-Robot\Subpatches\liveCam.v4p" nodename="%VVVV%\VR-Robot\Subpatches\liveCam.v4p" componentmode="Hidden" id="113">
-   <BOUNDS type="Node" left="9214" top="7251" width="0" height="0">
+   <BOUNDS type="Node" left="9259" top="7326" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4039" top="2596" width="10350" height="9310">
+   <BOUNDS type="Box" left="4084" top="2671" width="10350" height="9310">
    </BOUNDS>
    <BOUNDS type="Window" left="20430" top="2955" width="17445" height="13245">
    </BOUNDS>
@@ -281,9 +275,15 @@
    <LINK srcnodeid="113" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="113" srcpinname="Layer 1" dstnodeid="36" dstpinname="Layer 5" linkstyle="Bezier">
-   <LINKPOINT x="10065" y="7920">
+   <LINKPOINT x="10105" y="8750">
    </LINKPOINT>
-   <LINKPOINT x="11055" y="7920">
+   <LINKPOINT x="11090" y="9505">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Layer Out" dstnodeid="36" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 2">
    </LINK>
    </PATCH>

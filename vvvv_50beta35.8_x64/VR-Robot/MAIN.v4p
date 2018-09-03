@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="4275" scrolly="1725" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="3135" scrolly="2430" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
    <BOUNDS type="Window" left="17640" top="6660" width="17040" height="12570">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1230" top="15015" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="1725" top="315" width="13800" height="13800">
+   <BOUNDS type="Window" left="3090" top="1635" width="13800" height="13800">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -378,7 +378,7 @@
    <PIN pinname="Scalo" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="WorldPhysics" filename="Subpatches\WorldPhysics.v4p" componentmode="Hidden" id="99" nodename="Subpatches\WorldPhysics.v4p">
+   <NODE systemname="WorldPhysics" filename="Subpatches\WorldPhysics.v4p" componentmode="InAWindow" id="99" nodename="Subpatches\WorldPhysics.v4p">
    <BOUNDS type="Node" left="4365" top="6375" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4365" top="6375" width="4800" height="3600">
@@ -881,7 +881,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10375" top="4960" width="3100" height="3100">
    </BOUNDS>
-   <BOUNDS type="Window" left="15765" top="5175" width="25035" height="10365">
+   <BOUNDS type="Window" left="19035" top="4665" width="25035" height="10365">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -902,9 +902,7 @@
    <PIN pinname="Saturation" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="184" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 6">
-   </LINK>
-   <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="Hidden" id="188" debug="0">
+   <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="InAWindow" id="188" debug="0">
    <BOUNDS type="Node" left="13830" top="5752" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="12265" top="3880" width="3130" height="3745">
@@ -913,9 +911,9 @@
    </BOUNDS>
    <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="188" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 7">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="189">
    <BOUNDS type="Box" left="5430" top="4635" width="480" height="480">
    </BOUNDS>
@@ -1269,5 +1267,9 @@
    <LINK srcnodeid="279" srcpinname="View" dstnodeid="253" dstpinname="View">
    </LINK>
    <LINK srcnodeid="279" srcpinname="Projection" dstnodeid="253" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="184" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="188" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 7">
    </LINK>
    </PATCH>
