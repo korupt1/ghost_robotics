@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" systemname="Welt_infos" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" scrollx="1380" scrolly="3120">
+   <PATCH nodename="C:\GhostRobotics\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" systemname="Welt_infos" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Welt_infos.v4p" scrollx="3975" scrolly="1545">
    <NODE id="2" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -10,7 +10,7 @@
    <PIN pinname="Input Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="21810" top="3135" width="12420" height="12735">
+   <BOUNDS type="Window" left="37920" top="2565" width="12420" height="12735">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -70,12 +70,12 @@
    </NODE>
    <LINK srcnodeid="36" srcpinname="Layer Out" dstnodeid="2" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="Chain" filename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" componentmode="InAWindow" id="42" debug="0">
+   <NODE systemname="Chain" filename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Chain.v4p" componentmode="Hidden" id="42" debug="0">
    <BOUNDS type="Node" left="5514" top="7362" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="2847" top="2820" width="5335" height="9085">
    </BOUNDS>
-   <BOUNDS type="Window" left="20460" top="4965" width="24480" height="11895">
+   <BOUNDS type="Window" left="31995" top="1590" width="24480" height="11895">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
@@ -269,7 +269,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4084" top="2671" width="10350" height="9310">
    </BOUNDS>
-   <BOUNDS type="Window" left="20430" top="2955" width="17445" height="13245">
+   <BOUNDS type="Window" left="37245" top="1440" width="17445" height="13245">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="113" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 4">

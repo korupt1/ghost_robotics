@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Raum.v4p" systemname="Raum" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Raum.v4p">
+   <PATCH nodename="C:\GhostRobotics\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Raum.v4p" systemname="Raum" filename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Raum.v4p" scrollx="2850" scrolly="1095">
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="5874" top="8322" width="100" height="100">
+   <BOUNDS type="Node" left="5904" top="8487" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5874" top="8322" width="2400" height="2400">
+   <BOUNDS type="Box" left="5904" top="8487" width="2400" height="2400">
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
@@ -41,9 +41,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Geometry)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="6309" top="8847" width="100" height="100">
+   <BOUNDS type="Node" left="6354" top="8877" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6309" top="8847" width="2400" height="2400">
+   <BOUNDS type="Box" left="6354" top="8877" width="2400" height="2400">
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
@@ -99,9 +99,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7716" top="2526" width="792" height="240">
+   <BOUNDS type="Box" left="8076" top="2346" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7716" top="2526" width="0" height="0">
+   <BOUNDS type="Node" left="8076" top="2346" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
    </PIN>
@@ -123,7 +123,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Gradient (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Source\Gradient.tfx" nodename="Gradient (DX11.TextureFX)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="9846" top="8034" width="100" height="100">
+   <BOUNDS type="Node" left="12831" top="8859" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -163,9 +163,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="12" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="3237" top="2538" width="1560" height="432">
+   <BOUNDS type="Box" left="3522" top="3993" width="1560" height="432">
    </BOUNDS>
-   <BOUNDS type="Node" left="3237" top="2538" width="0" height="0">
+   <BOUNDS type="Node" left="3522" top="3993" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="2" visible="1" values="FrontCullSimple,NoCullSimple">
    </PIN>
@@ -181,7 +181,7 @@
    </PIN>
    </NODE>
    <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="12213" top="7560" width="2184" height="276">
+   <BOUNDS type="Node" left="13608" top="6090" width="2184" height="276">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -303,9 +303,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7566" top="1776" width="792" height="240">
+   <BOUNDS type="Box" left="7191" top="1926" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7566" top="1776" width="0" height="0">
+   <BOUNDS type="Node" left="7191" top="1926" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
    </PIN>
@@ -317,7 +317,7 @@
    </PIN>
    </NODE>
    <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="11475" top="6420" width="100" height="100">
+   <BOUNDS type="Node" left="12360" top="6720" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -329,15 +329,15 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="25" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="12915" top="8580" width="2250" height="480">
+   <BOUNDS type="Box" left="14805" top="9480" width="2250" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="12915" top="8580" width="0" height="0">
+   <BOUNDS type="Node" left="14805" top="9480" width="0" height="0">
    </BOUNDS>
    </NODE>
    <NODE systemname="Writer (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Writer (DX11.Texture 2d)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="12075" top="9780" width="100" height="100">
+   <BOUNDS type="Node" left="12810" top="10380" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="12075" top="9780" width="3000" height="3000">
+   <BOUNDS type="Box" left="12810" top="10380" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Format" slicecount="1" values="Png">
    </PIN>
@@ -349,7 +349,7 @@
    </PIN>
    </NODE>
    <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="13530" top="5955" width="100" height="100">
+   <BOUNDS type="Node" left="14895" top="7530" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -369,7 +369,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Blur (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Blur.tfx" nodename="Blur (DX11.TextureFX)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="11295" top="8235" width="100" height="100">
+   <BOUNDS type="Node" left="13050" top="9420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1">
    </PIN>
@@ -389,9 +389,9 @@
    </PIN>
    </NODE>
    <NODE systemname="DepthStencil (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DepthStencil (DX11.RenderState)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="1500" top="1500" width="100" height="100">
+   <BOUNDS type="Node" left="1680" top="2025" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="1500" width="3000" height="3000">
+   <BOUNDS type="Box" left="1680" top="2025" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
@@ -400,11 +400,19 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Output Enum" dstnodeid="15" dstpinname="Mode">
    </LINK>
-   <LINK srcnodeid="15" srcpinname="Render State" dstnodeid="8" dstpinname="Render State">
+   <LINK srcnodeid="15" srcpinname="Render State" dstnodeid="8" dstpinname="Render State" linkstyle="VHV">
+   <LINKPOINT x="1725" y="4425">
+   </LINKPOINT>
+   <LINKPOINT x="2790" y="4425">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="12" srcpinname="Output Enum" dstnodeid="8" dstpinname="Mode">
    </LINK>
-   <LINK srcnodeid="8" srcpinname="Render State" dstnodeid="1" dstpinname="Render State">
+   <LINK srcnodeid="8" srcpinname="Render State" dstnodeid="1" dstpinname="Render State" linkstyle="VHV">
+   <LINKPOINT x="2850" y="7868">
+   </LINKPOINT>
+   <LINKPOINT x="5310" y="7868">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="1" dstpinname="Geometry">
    </LINK>
@@ -462,19 +470,35 @@
    </LINK>
    <LINK srcnodeid="14" srcpinname="Texture Out" dstnodeid="11" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="9" dstpinname="Color1">
+   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="9" dstpinname="Color1" linkstyle="VHV">
+   <LINKPOINT x="12420" y="7928">
+   </LINKPOINT>
+   <LINKPOINT x="13470" y="7928">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="9" dstpinname="Color2">
    </LINK>
-   <LINK srcnodeid="28" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In">
+   <LINK srcnodeid="28" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In" linkstyle="Bezier">
+   <LINKPOINT x="9575" y="9068">
+   </LINKPOINT>
+   <LINKPOINT x="12595" y="9293">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="26" dstpinname="Texture In">
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="25" dstpinname="Color Input">
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="25" dstpinname="Color Input" linkstyle="Bezier">
+   <LINKPOINT x="13445" y="7660">
+   </LINKPOINT>
+   <LINKPOINT x="15010" y="8150">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="27" dstpinname="Input">
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="27" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="13665" y="6930">
+   </LINKPOINT>
+   <LINKPOINT x="14880" y="6930">
+   </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="14760" top="3570" width="15885" height="12255">
+   <BOUNDS type="Window" left="34215" top="1380" width="15885" height="12255">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>

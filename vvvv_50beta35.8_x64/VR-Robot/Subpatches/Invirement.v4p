@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Invirement.v4p" systemname="Invirement" filename="C:\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Invirement.v4p" scrollx="15" scrolly="5955">
+   <PATCH nodename="C:\GhostRobotics\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Invirement.v4p" systemname="Invirement" filename="C:\vvvv_50beta35.8_x64\VR-Robot\Subpatches\Invirement.v4p" scrollx="0" scrolly="0">
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="3330" top="16353" width="100" height="100">
+   <BOUNDS type="Node" left="2325" top="3933" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3330" top="16353" width="2400" height="2400">
+   <BOUNDS type="Box" left="2325" top="3933" width="2400" height="2400">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -15,14 +15,14 @@
    <NODE id="18" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
    </PIN>
-   <BOUNDS type="Box" left="3330" top="16953" width="750" height="240">
+   <BOUNDS type="Box" left="2325" top="4533" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3330" top="16953" width="750" height="240">
+   <BOUNDS type="Node" left="2325" top="4533" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Layer Out" dstnodeid="18" dstpinname="Input Node">
    </LINK>
-   <BOUNDS type="Window" left="12375" top="600" width="16335" height="12315">
+   <BOUNDS type="Window" left="33450" top="1605" width="16335" height="12315">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -31,9 +31,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="gpu_invirement" filename="%VVVV%\VR-Robot\Subpatches\gpu_invirement.v4p" nodename="%VVVV%\VR-Robot\Subpatches\gpu_invirement.v4p" componentmode="Hidden" id="46" debug="0">
-   <BOUNDS type="Node" left="3705" top="15825" width="100" height="100">
+   <BOUNDS type="Node" left="2700" top="3405" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="13500" top="1440" width="20280" height="16500">
+   <BOUNDS type="Window" left="28680" top="-120" width="29040" height="16440">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
@@ -41,13 +41,15 @@
    </PIN>
    <PIN pinname="Scalo" visible="1">
    </PIN>
+   <PIN pinname="Path - Filename" visible="1" slicecount="1" values="..\..\..\..\Users\Linkzlin\Desktop\collada.fbx">
+   </PIN>
    </NODE>
    <LINK srcnodeid="46" srcpinname="Layer Out" dstnodeid="3" dstpinname="Layer 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48" debug="0">
-   <BOUNDS type="Box" left="5040" top="15090" width="795" height="240">
+   <BOUNDS type="Box" left="4005" top="660" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5040" top="15090" width="0" height="0">
+   <BOUNDS type="Node" left="4005" top="660" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -61,11 +63,11 @@
    <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Scalo">
    </LINK>
    <NODE systemname="Raum" filename="%VVVV%\VR-Robot\Subpatches\Raum.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Raum.v4p" componentmode="Hidden" id="49" debug="0">
-   <BOUNDS type="Node" left="3756" top="7503" width="0" height="0">
+   <BOUNDS type="Node" left="2511" top="2628" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="1373" width="15897" height="12261">
+   <BOUNDS type="Box" left="1260" top="0" width="15897" height="12261">
    </BOUNDS>
-   <BOUNDS type="Window" left="14760" top="3570" width="15885" height="12255">
+   <BOUNDS type="Window" left="34215" top="1380" width="15885" height="12255">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>
@@ -73,13 +75,13 @@
    <LINK srcnodeid="49" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="50" debug="0">
-   <BOUNDS type="Node" left="4035" top="5895" width="100" height="100">
+   <BOUNDS type="Node" left="2505" top="1350" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="51" debug="0">
-   <BOUNDS type="Node" left="3720" top="6705" width="100" height="100">
+   <BOUNDS type="Node" left="2490" top="2025" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Set" visible="1">
    </PIN>
@@ -89,5 +91,41 @@
    <LINK srcnodeid="50" srcpinname="Bang" dstnodeid="51" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="51" srcpinname="Output" dstnodeid="49" dstpinname="Evaluate">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="53">
+   <BOUNDS type="Node" left="7080" top="1965" width="3105" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7080" top="1965" width="3975" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;----------collada.fbx FEHLT-------------|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="54">
+   <BOUNDS type="Box" left="6045" top="2025" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6045" top="2025" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\Users\Linkzlin\Desktop\collada.fbx">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Output String" dstnodeid="46" dstpinname="Path - Filename" linkstyle="VHV">
+   <LINKPOINT x="6045" y="2820">
+   </LINKPOINT>
+   <LINKPOINT x="3885" y="2820">
+   </LINKPOINT>
    </LINK>
    </PATCH>

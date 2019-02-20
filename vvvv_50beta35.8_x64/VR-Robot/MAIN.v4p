@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="3135" scrolly="2430" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
-   <BOUNDS type="Window" left="17640" top="6660" width="17040" height="12570">
+   <PATCH nodename="C:\GhostRobotics\ghost_robotics\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p" scrollx="0" scrolly="30" systemname="MAIN" filename="C:\vvvv_50beta35.8_x64\VR-Robot\MAIN.v4p">
+   <BOUNDS type="Window" left="35520" top="1995" width="17040" height="12570">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -126,12 +126,12 @@
    </NODE>
    <LINK srcnodeid="52" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Texture ScaleXY">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="66" stayontop="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="66" stayontop="1">
    <BOUNDS type="Node" left="1230" top="15015" width="1800" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1230" top="15015" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="3090" top="1635" width="13800" height="13800">
+   <BOUNDS type="Window" left="990" top="750" width="16425" height="13800">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -229,7 +229,7 @@
    </PIN>
    </NODE>
    <NODE id="26" systemname="TrackedDevices (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="TrackedDevices (OpenVR)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="6735" top="5805" width="1200" height="270">
+   <BOUNDS type="Node" left="6555" top="5865" width="1200" height="270">
    </BOUNDS>
    <PIN pinname="Events" visible="1" pintype="Output">
    </PIN>
@@ -261,7 +261,7 @@
    </PIN>
    <PIN pinname="All Devices" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Box" left="4965" top="4845" width="2400" height="1800">
+   <BOUNDS type="Box" left="4785" top="4905" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
@@ -311,9 +311,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="88" srcpinname="System" dstnodeid="26" dstpinname="System" linkstyle="Bezier">
-   <LINKPOINT x="6270" y="5640">
+   <LINKPOINT x="6210" y="5660">
    </LINKPOINT>
-   <LINKPOINT x="6735" y="5640">
+   <LINKPOINT x="6615" y="5680">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="12" srcpinname="HMD Pose" dstnodeid="69" dstpinname="Transform In">
@@ -351,7 +351,7 @@
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
    <NODE systemname="OcculusController (OpenVR DX11.Layer)Nils" filename="%VVVV%\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" nodename="%VVVV%\VR-Robot\VR-Related\OcculusController (OpenVR DX11.Layer)Nils.v4p" componentmode="Hidden" id="94" debug="0">
-   <BOUNDS type="Node" left="6285" top="6300" width="100" height="100">
+   <BOUNDS type="Node" left="6225" top="6450" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Controller" visible="1">
    </PIN>
@@ -373,17 +373,17 @@
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="20220" top="810" width="16335" height="12315">
+   <BOUNDS type="Window" left="33450" top="1605" width="16335" height="12315">
    </BOUNDS>
    <PIN pinname="Scalo" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="WorldPhysics" filename="Subpatches\WorldPhysics.v4p" componentmode="InAWindow" id="99" nodename="Subpatches\WorldPhysics.v4p">
-   <BOUNDS type="Node" left="4365" top="6375" width="100" height="100">
+   <NODE systemname="WorldPhysics" filename="Subpatches\WorldPhysics.v4p" componentmode="Hidden" id="99" nodename="Subpatches\WorldPhysics.v4p">
+   <BOUNDS type="Node" left="4290" top="6525" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4365" top="6375" width="4800" height="3600">
+   <BOUNDS type="Box" left="4290" top="6525" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="22620" top="2805" width="18225" height="13815">
+   <BOUNDS type="Window" left="34710" top="1980" width="18225" height="13815">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
@@ -671,9 +671,9 @@
    <LINK srcnodeid="141" srcpinname="Output" dstnodeid="137" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Input 2" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="8335" y="4485">
+   <LINKPOINT x="8310" y="4535">
    </LINKPOINT>
-   <LINKPOINT x="4235" y="4155">
+   <LINKPOINT x="4185" y="4255">
    </LINKPOINT>
    </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="157">
@@ -876,12 +876,12 @@
    </NODE>
    <LINK srcnodeid="96" srcpinname="Output" dstnodeid="182" dstpinname="Transform">
    </LINK>
-   <NODE systemname="interfaceUITorus" filename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" nodename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" componentmode="InAWindow" id="184" debug="0" stayontop="0">
+   <NODE systemname="interfaceUITorus" filename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" nodename="%VVVV%\VR-Robot\Subpatches\interfaceUITorus.v4p" componentmode="Hidden" id="184" debug="0" stayontop="0">
    <BOUNDS type="Node" left="11925" top="6510" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="10375" top="4960" width="3100" height="3100">
    </BOUNDS>
-   <BOUNDS type="Window" left="19035" top="4665" width="25035" height="10365">
+   <BOUNDS type="Window" left="30885" top="3390" width="25035" height="10365">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -902,12 +902,12 @@
    <PIN pinname="Saturation" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="InAWindow" id="188" debug="0">
+   <NODE systemname="Welt_infos" filename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" nodename="%VVVV%\VR-Robot\Subpatches\Welt_infos.v4p" componentmode="Hidden" id="188" debug="0">
    <BOUNDS type="Node" left="13830" top="5752" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="12265" top="3880" width="3130" height="3745">
    </BOUNDS>
-   <BOUNDS type="Window" left="21810" top="3135" width="12420" height="12735">
+   <BOUNDS type="Window" left="37920" top="2565" width="12420" height="12735">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -915,9 +915,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="189">
-   <BOUNDS type="Box" left="5430" top="4635" width="480" height="480">
+   <BOUNDS type="Box" left="5415" top="5430" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5430" top="4635" width="0" height="0">
+   <BOUNDS type="Node" left="5415" top="5430" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1272,4 +1272,32 @@
    </LINK>
    <LINK srcnodeid="188" srcpinname="Layer" dstnodeid="24" dstpinname="Layer 7">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="280">
+   <BOUNDS type="Node" left="360" top="6525" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="360" top="6525" width="1815" height="315">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|---onopen defekt---&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="281">
+   <BOUNDS type="Node" left="10005" top="2595" width="495" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10005" top="2595" width="495" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="fsddf">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
